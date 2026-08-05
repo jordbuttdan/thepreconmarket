@@ -127,5 +127,5 @@ src/
   lib/encodeAnswers.ts       shareable /results?d=… encoding (no personal data)
   components/checker/        Checker.tsx (question flow), Results.tsx (gate)
   layouts/Base.astro         head, header, footer + RECO compliance line
-  pages/                     index, results, book, representation, about, privacy
+  pages/                     index, results, book, about, privacy
 ```

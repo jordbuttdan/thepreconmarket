@@ -52,7 +52,8 @@ import { GHL } from '../config/ghl';
     };
     const params = new URLSearchParams(window.location.search);
     const el = document.getElementById('book-headline');
-    // A named project (from the /representation offer) beats the tag copy.
+    // A named project beats the tag copy. Link in as
+    // /book?project=Union+City from ads or GHL campaigns.
     const project = params.get('project')?.trim().slice(0, 80) ?? '';
     const tag = params.get('tag') ?? '';
     if (el && project) {

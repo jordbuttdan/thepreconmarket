@@ -1,62 +1,33 @@
 ---
 import Base from '../layouts/Base.astro';
 import Checker from '../components/checker/Checker';
-import { LAST_UPDATED, FTHB_GST, ON_ENHR, ONHAP, formatCAD } from '../lib/rebateRules';
-
-// Figures come from the rules engine so the page can never drift from the math.
-const ledger = [
-  {
-    n: '01',
-    program: "Federal first-time home buyers' GST rebate",
-    detail: '100% of the 5% federal GST, first-time buyers only',
-    max: FTHB_GST.MAX_REBATE,
-  },
-  {
-    n: '02',
-    program: 'Ontario enhanced new housing rebate',
-    detail: '100% of the 8% provincial HST — not first-time-buyer restricted',
-    max: ON_ENHR.MAX_REBATE,
-  },
-  {
-    n: '03',
-    program: 'Ontario new home affordability payment',
-    detail: 'Provincial top-up equal to the 5% federal portion, less any federal rebate',
-    max: ONHAP.MAX_PAYMENT,
-  },
-];
-
-const checks = [
-  'The spousal ownership test that disqualifies buyers who never owned a home themselves',
-  'Whether your signing date lands inside the federal and provincial rebate windows',
-  'The assignment clause that hands your rebate to the builder — and who repays CRA if eligibility fails',
-  'The price cliffs at $1M, $1.5M and $1.85M where relief steps down or disappears',
-  'Whether renting the unit out moves you onto the rental path and changes your cash-to-close',
-];
+import RebateBands from '../components/RebateBands.astro';
+import { LAST_UPDATED } from '../lib/rebateRules';
 ---
 
 <Base
   title="New Home GST/HST Rebate Checker — Ontario Pre-Construction | The Precon Market"
   description="Find out in two minutes if you qualify for up to $130,000 in new home GST/HST rebates on your Ontario pre-construction purchase. Built by a licensed broker."
 >
-  <!-- Title block: drawing-sheet metadata, sets the register for the page. -->
+  <!-- Title block. Reads as drawing metadata, doubles as a freshness marker. -->
   <div class="border-b border-rule bg-paper-pure/60">
     <div
       class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-6 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-rule-dark uppercase sm:px-6"
     >
-      <span>Jurisdiction / Ontario</span>
-      <span aria-hidden="true" class="hidden sm:inline">·</span>
-      <span>Source / CRA Notice 346</span>
-      <span aria-hidden="true" class="hidden sm:inline">·</span>
-      <span>Rev / {LAST_UPDATED}</span>
+      <span>Ontario</span>
+      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
+      <span>Pre-construction</span>
+      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
+      <span>GST-HST relief</span>
+      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
+      <span>Rev {LAST_UPDATED}</span>
     </div>
   </div>
 
   <div class="mx-auto max-w-[1100px] px-4 sm:px-6">
-    <!-- Hero: argument on the left, the tool itself on the right. The checker
-         sits above the fold on both breakpoints. -->
-    <!-- DOM order is the mobile order: headline, then the tool, then the
-         trust points. Desktop re-places them into two columns via grid areas
-         so the checker is never pushed below the fold on a phone. -->
+    <!-- DOM order is the mobile order: headline, then the tool. Desktop
+         re-places these into two columns so the checker is never pushed
+         below the fold on a phone. -->
     <div class="grid gap-8 pt-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-8 lg:pt-14">
       <div class="lg:col-span-5 lg:col-start-1 lg:row-start-1">
         <p class="section-label">— 01 / Eligibility check</p>
@@ -66,8 +37,8 @@ const checks = [
           in new home tax rebates.
         </h1>
         <p class="mt-4 max-w-[46ch] text-[15px] leading-relaxed text-ink/75">
-          Ontario's rules changed this year. Two minutes tells you where you actually stand — before your lawyer, and
-          before closing.
+          Two new rebate programs took effect this year. Most buyers are still working from last year's numbers, and
+          on a typical GTA condo the difference runs into six figures.
         </p>
       </div>
 
@@ -78,81 +49,73 @@ const checks = [
         </p>
       </div>
 
-      <dl class="border-t border-rule lg:col-span-5 lg:col-start-1 lg:row-start-2 lg:self-start lg:border-t-0">
-        <div class="flex gap-4 border-b border-rule py-3">
-          <dt class="figure w-8 shrink-0 text-xs text-rule-dark">01</dt>
-          <dd class="text-sm text-ink/75">
-            Built by a licensed Ontario broker — <span class="text-ink">not a builder's sales team</span>
-          </dd>
+      <!-- Credential block, set like a drawing stamp. -->
+      <div class="lg:col-span-5 lg:col-start-1 lg:row-start-2 lg:self-start">
+        <div class="tick-corners border border-rule bg-paper-pure/70 p-4">
+          <p class="section-label">— Prepared by</p>
+          <p class="mt-2 text-sm font-medium text-ink">Jordan Buttarazzi, Broker</p>
+          <p class="text-sm text-ink/70">Valery Real Estate Inc., Brokerage</p>
+          <p class="figure mt-2 text-[11px] text-ink/50">RECO #5009855 · (647) 371-1367</p>
         </div>
-        <div class="flex gap-4 border-b border-rule py-3">
-          <dt class="figure w-8 shrink-0 text-xs text-rule-dark">02</dt>
-          <dd class="text-sm text-ink/75">
-            Models the federal and provincial programs <span class="text-ink">together</span>, the way they actually
-            interact
-          </dd>
-        </div>
-        <div class="flex gap-4 border-b border-rule py-3">
-          <dt class="figure w-8 shrink-0 text-xs text-rule-dark">03</dt>
-          <dd class="text-sm text-ink/75">
-            Your answer is free and immediate — <span class="text-ink">no email required</span>
-          </dd>
-        </div>
-      </dl>
+      </div>
     </div>
 
-    <!-- Where the $130,000 comes from. Real arithmetic, stated plainly. -->
-    <section aria-labelledby="ledger-heading" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">— 02 / Where the number comes from</p>
-      <h2 id="ledger-heading" class="mt-3 max-w-[24ch] text-2xl font-semibold">
-        Three programs, stacked — with one catch most people miss.
+    <!-- Where the number comes from, drawn rather than listed. -->
+    <section aria-labelledby="bands-heading" class="mt-20 border-t border-rule-dark pt-8">
+      <p class="section-label">— 02 / Relief by price</p>
+      <h2 id="bands-heading" class="mt-3 max-w-[28ch] text-2xl font-semibold">
+        What you can actually claim, and where it stops.
       </h2>
+      <p class="mt-4 max-w-[68ch] text-[15px] leading-relaxed text-ink/80">
+        Relief comes from two directions at once, and they behave differently as price climbs. The federal rebate is
+        the one everybody talks about, but it's restricted to first-time buyers and it's gone by $1.5 million. The
+        Ontario enhanced rebate is the bigger of the two, and it is <span class="text-ink">not</span> limited to
+        first-time buyers. That surprises almost everyone, including plenty of agents.
+      </p>
 
-      <dl class="mt-8 grid gap-px border border-rule bg-rule sm:grid-cols-3">
-        {
-          ledger.map((item) => (
-            <div class="flex flex-col bg-paper-pure p-5">
-              <dt class="figure text-xs text-rule-dark">{item.n}</dt>
-              <dd class="mt-3 flex flex-1 flex-col">
-                <span class="figure text-2xl text-ink">{formatCAD(item.max)}</span>
-                <span class="mt-2 text-sm font-medium text-ink">{item.program}</span>
-                <span class="mt-1 text-sm leading-relaxed text-ink/60">{item.detail}</span>
-              </dd>
-            </div>
-          ))
-        }
-      </dl>
+      <RebateBands />
 
-      <p class="mt-5 max-w-[68ch] border-l-2 border-accent pl-4 text-[15px] leading-relaxed text-ink/80">
-        They don't simply add up to $180,000. The provincial top-up is reduced by whatever federal rebate you claim,
-        which caps realistic combined relief near <span class="figure">$130,000</span> — and the enhanced provincial
-        rebate is <span class="text-ink">not</span> limited to first-time buyers, which is the single most misread
-        detail in the new rules.
+      <p class="mt-6 max-w-[68ch] border-l-2 border-accent pl-4 text-[15px] leading-relaxed text-ink/80">
+        The two don't simply add to $180,000. Ontario's 5% top-up is reduced by whatever federal rebate you claim,
+        which is what pins realistic combined relief around <span class="figure">$130,000</span>. Where you land in
+        these bands depends on your agreement date, not your closing date, and the windows are narrow.
       </p>
     </section>
 
-    <!-- Depth signal: what the tool actually examines. -->
-    <section aria-labelledby="checks-heading" class="mt-20 border-t border-rule pt-8 pb-4">
+    <!-- Depth signal, written as prose rather than another checklist. -->
+    <section aria-labelledby="reads-heading" class="mt-20 border-t border-rule pt-8 pb-4">
       <div class="grid gap-8 lg:grid-cols-12">
         <div class="lg:col-span-4">
-          <p class="section-label">— 03 / What it checks</p>
-          <h2 id="checks-heading" class="mt-3 text-2xl font-semibold">The parts that cost people money.</h2>
-          <p class="mt-3 text-sm leading-relaxed text-ink/70">
-            Each of these has taken five figures off a real closing. The checker asks about all of them.
+          <p class="section-label">— 03 / Beyond the number</p>
+          <h2 id="reads-heading" class="mt-3 text-2xl font-semibold">The estimate is the easy part.</h2>
+        </div>
+        <div class="space-y-4 text-[15px] leading-relaxed text-ink/80 lg:col-span-8">
+          <p>
+            Almost every builder agreement prices the unit "inclusive of HST" and assigns the rebate to the builder at
+            closing. That's normal. What buyers miss is the consequence: CRA holds <span class="text-ink">you</span>
+            {' '}responsible for the eligibility, and if it fails, you repay the rebate the builder already took credit
+            for. A rebate credited on your statement of adjustments is not a rebate you've kept.
+          </p>
+          <p>
+            The traps cluster in predictable places. A buyer who has never owned anything loses first-time status
+            because they lived in a home their partner owned. An agreement amended in April 2026 gets deemed back to
+            its original date and falls out of the enhanced window. A unit bought to rent moves onto an entirely
+            different path where the HST is paid in full at closing and clawed back from CRA months later, which is a
+            cash problem long before it's a tax problem.
+          </p>
+          <p>
+            The checker flags which of these apply to you. Reading the actual clause in your actual agreement is the
+            part that needs a person, and that's the part I do.
+          </p>
+          <p class="pt-2">
+            <a
+              href="/book?source=home-depth"
+              class="inline-flex min-h-12 items-center border border-accent px-6 font-medium text-accent hover:bg-accent-tint"
+            >
+              Have your agreement reviewed
+            </a>
           </p>
         </div>
-        <ul class="lg:col-span-8">
-          {
-            checks.map((check, i) => (
-              <li class="flex gap-5 border-t border-rule py-4 first:border-t-0 lg:first:border-t lg:first:border-rule">
-                <span class="figure shrink-0 pt-0.5 text-xs text-rule-dark">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <span class="text-[15px] leading-relaxed text-ink/80">{check}</span>
-              </li>
-            ))
-          }
-        </ul>
       </div>
     </section>
   </div>

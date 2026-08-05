@@ -31,12 +31,19 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Very low-opacity technical grid as page background texture (3% ink). */
+/* Drafting-paper texture: fine minor grid with a heavier major grid over it,
+   the way gridded vellum reads. Never above 4% opacity. */
 body {
   background-image:
-    linear-gradient(to right, rgb(20 22 26 / 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 22 26 / 0.03) 1px, transparent 1px);
-  background-size: 32px 32px;
+    linear-gradient(to right, rgb(20 22 26 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 22 26 / 0.04) 1px, transparent 1px),
+    linear-gradient(to right, rgb(20 22 26 / 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 22 26 / 0.02) 1px, transparent 1px);
+  background-size:
+    96px 96px,
+    96px 96px,
+    16px 16px,
+    16px 16px;
   min-height: 100dvh;
 }
 
