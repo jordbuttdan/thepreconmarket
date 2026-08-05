@@ -38,10 +38,18 @@ export const FTHB_GST = {
 } as const;
 
 /**
- * 2. Ontario Temporary Enhanced New Housing Rebate.
- *    Full 8% provincial HST portion for eligible first-time buyers.
+ * 2. Ontario Enhanced New Housing Rebate (ENHR).
+ *    Source: CRA Notice 346 (June 2026) and canada.ca ENHR pages.
+ *    NOT first-time-buyer restricted — it follows the eligibility conditions
+ *    of the existing Ontario new housing rebate (individual buyer, primary
+ *    place of residence for the buyer or a relation, first occupant).
+ *    Tiers: full 8% up to $1M; flat $80,000 from $1M to $1.5M; partial rebate
+ *    from $1.5M to $1.85M; at $1.85M+ only the standard rebate ($24,000).
+ *    Anti-avoidance: assignment purchases need BOTH the original and the
+ *    assignment agreement inside the window, and agreements re-dated into the
+ *    window are deemed signed before it.
  */
-export const ON_ENHANCED = {
+export const ON_ENHR = {
   /** Agreements signed on or after this date qualify. */
   WINDOW_OPENS: '2026-04-01',
   /** Agreements signed on or before this date qualify. */
@@ -50,6 +58,28 @@ export const ON_ENHANCED = {
   RATE: 0.08,
   /** Maximum rebate. */
   MAX_REBATE: 80_000,
+  /** Full 8% rebate up to this price. */
+  FULL_REBATE_PRICE_LIMIT: 1_000_000,
+  /** Flat $80,000 between FULL_REBATE_PRICE_LIMIT and this price. */
+  FLAT_BAND_END: 1_500_000,
+  /** Partial rebate between FLAT_BAND_END and this price; at or above it,
+   *  only the standard Ontario rebate applies. */
+  PHASE_OUT_END: 1_850_000,
+} as const;
+
+/**
+ * 2b. Ontario new home affordability payment (ONHAP) — the "5% Ontario
+ *     top-up". Province-administered payment of up to $50,000, equivalent to
+ *     the 5% federal part of the HST, for buyers who receive the ENHR.
+ *     Reduced by any federal GST rebate (FTHB or regular) the buyer claims.
+ *     CONSERVATIVE MODEL: not modelled above MODELLED_PRICE_LIMIT, where the
+ *     published guidance doesn't state the amount — those buyers see a flag
+ *     instead of a number.
+ */
+export const ONHAP = {
+  RATE: 0.05,
+  MAX_PAYMENT: 50_000,
+  MODELLED_PRICE_LIMIT: 1_500_000,
 } as const;
 
 /**
@@ -129,6 +159,10 @@ export type RiskFlag =
   | 'outside-on-enhanced-window'
   | 'price-phase-out' // inside the federal FTHB $1M–$1.5M phase-out band
   | 'price-over-fthb-limit' // at or above $1.5M — federal FTHB is zero
+  | 'enhr-phase-out' // inside the ENHR $1.5M–$1.85M partial band
+  | 'enhr-price-cap' // at or above $1.85M — only the standard $24k applies
+  | 'onhap-not-modelled' // ENHR-eligible above $1.5M — top-up rules unpublished
+  | 'ontario-fthb-not-modelled' // FTB outside ENHR window may have more provincial relief
   | 'non-ontario'
   | 'net-of-hst-pricing';
 
@@ -154,6 +188,8 @@ export interface RebateResult {
   /** "Up to" figures, dollars, floored. Zero when not applicable. */
   federalEstimate: number;
   provincialEstimate: number;
+  /** ONHAP / 5% Ontario top-up — separate from the provincial HST rebate. */
+  onhapEstimate: number;
   combinedEstimate: number;
   programs: ProgramLine[];
   flags: RiskFlag[];
@@ -212,9 +248,33 @@ export function fthbFederalAmount(price: number): number {
   return Math.floor((FTHB_GST.MAX_REBATE * (FTHB_GST.PHASE_OUT_END - price)) / band);
 }
 
-/** Ontario Temporary Enhanced rebate. Assumes buyer + window qualify. */
+/**
+ * Ontario ENHR for a given price. Assumes window + occupancy qualify.
+ * Returns 0 at PHASE_OUT_END and above — callers fall back to the standard
+ * rebate there. The $1.5M–$1.85M partial band is interpolated linearly from
+ * $80,000 down to the standard $24,000 (CRA publishes the tiers, not the
+ * formula — the statutory version lives in the June 2026 amendments to the
+ * New Harmonized Value-Added Tax System Regulations, No. 2).
+ */
 export function ontarioEnhancedAmount(price: number): number {
-  return Math.floor(Math.min(price * ON_ENHANCED.RATE, ON_ENHANCED.MAX_REBATE));
+  if (price >= ON_ENHR.PHASE_OUT_END) return 0;
+  if (price <= ON_ENHR.FULL_REBATE_PRICE_LIMIT) {
+    return Math.floor(Math.min(price * ON_ENHR.RATE, ON_ENHR.MAX_REBATE));
+  }
+  if (price <= ON_ENHR.FLAT_BAND_END) return ON_ENHR.MAX_REBATE;
+  const band = ON_ENHR.PHASE_OUT_END - ON_ENHR.FLAT_BAND_END;
+  const drop = ON_ENHR.MAX_REBATE - ON_STANDARD.MAX_REBATE;
+  return Math.floor(ON_ENHR.MAX_REBATE - (drop * (price - ON_ENHR.FLAT_BAND_END)) / band);
+}
+
+/**
+ * ONHAP (5% Ontario top-up) for a buyer who receives the ENHR. Reduced by
+ * whatever federal rebate is being claimed. Conservatively $0 above
+ * MODELLED_PRICE_LIMIT — flagged instead of guessed.
+ */
+export function onhapAmount(price: number, federalRebate: number): number {
+  if (price > ONHAP.MODELLED_PRICE_LIMIT) return 0;
+  return Math.max(0, Math.floor(Math.min(price * ONHAP.RATE, ONHAP.MAX_PAYMENT) - federalRebate));
 }
 
 /** Ontario Standard New Housing Rebate — any owner-occupier. */
@@ -236,11 +296,11 @@ export function inFthbWindow(signingISO: string): boolean {
   return onOrAfter(signingISO, FTHB_GST.WINDOW_OPENS) && before(signingISO, FTHB_GST.WINDOW_CLOSES_BEFORE);
 }
 
-/** Whether a signing date falls in the Ontario enhanced window (inclusive). */
+/** Whether a signing date falls in the Ontario ENHR window (inclusive). */
 export function inOntarioEnhancedWindow(signingISO: string): boolean {
   return (
-    onOrAfter(signingISO, ON_ENHANCED.WINDOW_OPENS) &&
-    !onOrAfter(signingISO, addDays(ON_ENHANCED.WINDOW_CLOSES, 1))
+    onOrAfter(signingISO, ON_ENHR.WINDOW_OPENS) &&
+    !onOrAfter(signingISO, addDays(ON_ENHR.WINDOW_CLOSES, 1))
   );
 }
 
@@ -329,6 +389,7 @@ export function assessRebates(answers: CheckerAnswers, today: Date = new Date())
       firstTimeBuyer: ftb,
       federalEstimate: 0,
       provincialEstimate: 0,
+      onhapEstimate: 0,
       combinedEstimate: 0,
       programs: [],
       flags,
@@ -346,13 +407,14 @@ export function assessRebates(answers: CheckerAnswers, today: Date = new Date())
     programs.push({
       program: 'New Residential Rental Property Rebate (NRRP)',
       amount: null,
-      note: 'Owner-occupied rebates do not apply to rental purchases. You pay the full HST amount at closing and claim the NRRP from CRA yourself afterward — builders will not assign it.',
+      note: 'Owner-occupied rebates do not apply to rental purchases. You pay the full HST amount at closing and claim the NRRP from CRA yourself afterward — builders will not assign it. Ontario has also introduced enhanced relief for new residential rental units; whether it applies to your purchase depends on your agreement and timing, and is worth confirming before closing.',
     });
     return {
       kind: 'investor-nrrp',
       firstTimeBuyer: ftb,
       federalEstimate: 0,
       provincialEstimate: 0,
+      onhapEstimate: 0,
       combinedEstimate: 0,
       programs,
       flags,
@@ -368,7 +430,7 @@ export function assessRebates(answers: CheckerAnswers, today: Date = new Date())
   const fthbWindowOk = inFthbWindow(effectiveSigning);
   const enhancedWindowOk = inOntarioEnhancedWindow(effectiveSigning);
   if (!fthbWindowOk && ftb !== 'no') flags.push('outside-fthb-window');
-  if (!enhancedWindowOk && ftb !== 'no' && answers.province === 'ON') flags.push('outside-on-enhanced-window');
+  if (!enhancedWindowOk && answers.province === 'ON') flags.push('outside-on-enhanced-window');
 
   // Federal. Unknown FTB status underclaims: show the regular-rebate figure.
   let federal = 0;
@@ -402,16 +464,34 @@ export function assessRebates(answers: CheckerAnswers, today: Date = new Date())
   }
 
   // Provincial (Ontario only — other provinces differ; we model federal only).
+  // The ENHR is NOT first-time-buyer restricted: any eligible owner-occupier
+  // with an in-window agreement qualifies (CRA Notice 346).
   let provincial = 0;
+  let onhap = 0;
   if (answers.province === 'ON') {
-    if (ftb === 'yes' && enhancedWindowOk) {
-      provincial = ontarioEnhancedAmount(price);
+    const enhr = enhancedWindowOk ? ontarioEnhancedAmount(price) : 0;
+    if (enhr > 0) {
+      provincial = enhr;
+      if (price > ON_ENHR.FLAT_BAND_END) flags.push('enhr-phase-out');
       programs.push({
-        program: 'Ontario Temporary Enhanced New Housing Rebate',
+        program: 'Ontario Enhanced New Housing Rebate (ENHR)',
         amount: provincial,
-        note: `Full 8% provincial HST portion for first-time buyers on agreements signed ${ON_ENHANCED.WINDOW_OPENS} to ${ON_ENHANCED.WINDOW_CLOSES}.`,
+        note: `Up to $${ON_ENHR.MAX_REBATE.toLocaleString('en-CA')} of the 8% provincial HST on agreements signed ${ON_ENHR.WINDOW_OPENS} to ${ON_ENHR.WINDOW_CLOSES}. Not restricted to first-time buyers.`,
       });
+      // The 5% Ontario top-up rides along with the ENHR.
+      onhap = onhapAmount(price, federal);
+      if (price > ONHAP.MODELLED_PRICE_LIMIT) {
+        flags.push('onhap-not-modelled');
+      } else if (onhap > 0) {
+        programs.push({
+          program: 'Ontario New Home Affordability Payment (5% top-up)',
+          amount: onhap,
+          note: 'Province-paid top-up equivalent to the 5% federal part of the HST for buyers who receive the ENHR, reduced by any federal rebate claimed. No separate application — claimed via consent on the rebate form.',
+        });
+      }
     } else {
+      if (enhancedWindowOk) flags.push('enhr-price-cap');
+      if (ftb === 'yes' && fthbWindowOk && !enhancedWindowOk) flags.push('ontario-fthb-not-modelled');
       provincial = ontarioStandardAmount(price);
       programs.push({
         program: 'Ontario Standard New Housing Rebate',
@@ -426,7 +506,8 @@ export function assessRebates(answers: CheckerAnswers, today: Date = new Date())
     firstTimeBuyer: ftb,
     federalEstimate: federal,
     provincialEstimate: provincial,
-    combinedEstimate: federal + provincial,
+    onhapEstimate: onhap,
+    combinedEstimate: federal + provincial + onhap,
     programs,
     flags,
     leadTag: computeLeadTag(answers, ftb, cooling),

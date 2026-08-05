@@ -64,12 +64,92 @@ describe('regular federal rebate', () => {
   });
 });
 
-describe('Ontario amounts', () => {
-  it('enhanced caps at $80,000 (reached at $1,000,000)', () => {
-    expect(ontarioEnhancedAmount(1_000_000)).toBe(80_000);
-    expect(ontarioEnhancedAmount(2_000_000)).toBe(80_000);
+describe('Ontario ENHR tiers (CRA Notice 346)', () => {
+  it('rebates the full 8% up to $1,000,000', () => {
     expect(ontarioEnhancedAmount(500_000)).toBe(40_000);
+    expect(ontarioEnhancedAmount(1_000_000)).toBe(80_000);
   });
+
+  it('holds a flat $80,000 between $1M and $1.5M', () => {
+    expect(ontarioEnhancedAmount(1_000_001)).toBe(80_000);
+    expect(ontarioEnhancedAmount(1_250_000)).toBe(80_000);
+    expect(ontarioEnhancedAmount(1_500_000)).toBe(80_000);
+  });
+
+  it('tapers between $1.5M and $1.85M', () => {
+    expect(ontarioEnhancedAmount(1_500_001)).toBeLessThan(80_000);
+    expect(ontarioEnhancedAmount(1_675_000)).toBe(52_000); // midpoint: 80k→24k
+    expect(ontarioEnhancedAmount(1_849_999)).toBeGreaterThanOrEqual(24_000);
+  });
+
+  it('is zero at $1.85M and above, leaving only the standard rebate', () => {
+    expect(ontarioEnhancedAmount(1_850_000)).toBe(0);
+    expect(ontarioEnhancedAmount(2_500_000)).toBe(0);
+  });
+
+  it('applies to non-first-time buyers too (not FTB-restricted)', () => {
+    const result = assessRebates(
+      answers({
+        stage: 'signed',
+        signingDate: '2026-06-01',
+        price: 900_000,
+        ownedBefore: 'yes',
+        spouseOwned: undefined,
+      }),
+      TODAY
+    );
+    expect(result.provincialEstimate).toBe(72_000);
+    expect(result.programs.some((p) => p.program.includes('ENHR'))).toBe(true);
+  });
+
+  it('falls back to the standard $24,000 rebate at $1.85M+', () => {
+    const result = assessRebates(
+      answers({ stage: 'signed', signingDate: '2026-06-01', price: 1_900_000 }),
+      TODAY
+    );
+    expect(result.provincialEstimate).toBe(24_000);
+    expect(result.flags).toContain('enhr-price-cap');
+  });
+});
+
+describe('ONHAP (5% Ontario top-up)', () => {
+  it('tops up the federal portion for an ENHR-eligible non-first-time buyer', () => {
+    const result = assessRebates(
+      answers({
+        stage: 'signed',
+        signingDate: '2026-06-01',
+        price: 800_000,
+        ownedBefore: 'yes',
+        spouseOwned: undefined,
+      }),
+      TODAY
+    );
+    // Federal regular rebate is $0 at this price, so ONHAP delivers the full 5%.
+    expect(result.federalEstimate).toBe(0);
+    expect(result.onhapEstimate).toBe(40_000);
+    expect(result.combinedEstimate).toBe(104_000); // 0 + 64,000 + 40,000
+  });
+
+  it('is reduced by the federal FTHB rebate already claimed', () => {
+    const result = assessRebates(
+      answers({ stage: 'signed', signingDate: '2026-06-01', price: 800_000 }),
+      TODAY
+    );
+    expect(result.federalEstimate).toBe(40_000);
+    expect(result.onhapEstimate).toBe(0); // 5% of 800k = 40k, minus 40k federal
+  });
+
+  it('is not modelled above $1.5M and flags instead', () => {
+    const result = assessRebates(
+      answers({ stage: 'signed', signingDate: '2026-06-01', price: 1_600_000 }),
+      TODAY
+    );
+    expect(result.onhapEstimate).toBe(0);
+    expect(result.flags).toContain('onhap-not-modelled');
+  });
+});
+
+describe('Ontario standard amounts', () => {
 
   it('standard caps at $24,000 (reached at $400,000)', () => {
     expect(ontarioStandardAmount(400_000)).toBe(24_000);
@@ -96,9 +176,12 @@ describe('Ontario enhanced signing-date window', () => {
     );
     // Federal FTHB window opened 2025-03-20, so federal still applies…
     expect(result.federalEstimate).toBe(40_000);
-    // …but provincial drops to the standard $24,000 cap instead of $64,000.
+    // …but provincial drops to the standard $24,000 cap instead of $64,000,
+    // and no ONHAP top-up rides along without the ENHR.
     expect(result.provincialEstimate).toBe(24_000);
+    expect(result.onhapEstimate).toBe(0);
     expect(result.flags).toContain('outside-on-enhanced-window');
+    expect(result.flags).toContain('ontario-fthb-not-modelled');
   });
 
   it('grants both enhanced programs inside the window (~$130k ceiling)', () => {
@@ -108,6 +191,7 @@ describe('Ontario enhanced signing-date window', () => {
     );
     expect(result.federalEstimate).toBe(50_000);
     expect(result.provincialEstimate).toBe(80_000);
+    expect(result.onhapEstimate).toBe(0); // 5% cap $50k, fully offset by federal
     expect(result.combinedEstimate).toBe(130_000);
   });
 });
@@ -132,9 +216,12 @@ describe('the spousal trap', () => {
     );
     expect(result.firstTimeBuyer).toBe('no');
     expect(result.flags).toContain('spousal-trap');
-    // Falls back to standard programs: federal regular is $0 at this price.
+    // The trap costs the FEDERAL first-time buyer rebate — regular federal is
+    // $0 at this price. It does NOT cost the provincial ENHR, which is not
+    // first-time-buyer restricted (CRA Notice 346), so $64,000 survives.
     expect(result.federalEstimate).toBe(0);
-    expect(result.provincialEstimate).toBe(24_000);
+    expect(result.provincialEstimate).toBe(64_000);
+    expect(result.onhapEstimate).toBe(40_000);
   });
 
   it('keeps FTB status when the buyer never lived in the spouse-owned home', () => {

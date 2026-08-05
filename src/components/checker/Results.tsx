@@ -21,13 +21,21 @@ const FLAG_COPY: Record<RiskFlag, string> = {
   'occupancy-unsure':
     "You haven't decided whether you'll live in the home. Owner-occupied and rental purchases follow completely different rebate paths with different cash-to-close consequences — this decision changes your closing costs.",
   'assignment-to-builder':
-    'Your agreement assigns the rebate to the builder, which is typical: the advertised price already nets out the rebate. If CRA later finds you ineligible, the builder can charge the rebate amount back to you.',
+    'Your agreement assigns the rebate to the builder, which is typical: the advertised price already nets out the rebate. CRA is explicit that the buyer is responsible for confirming their own eligibility — if the builder credits you a rebate you were not entitled to, you are liable to repay that amount to CRA (and the builder can be on the hook alongside you). A credited rebate is not a settled rebate.',
   'assignment-unknown':
     "You're not sure whether your agreement assigns the rebate to the builder. Most do. This clause determines who receives the money and what happens if eligibility fails — have it read before closing.",
   'outside-fthb-window':
     "Your signing date falls outside the federal first-time-buyer rebate window (agreements signed on or after March 20, 2025 and before January 1, 2031).",
   'outside-on-enhanced-window':
-    'Your signing date falls outside the Ontario enhanced rebate window (April 1, 2026 – March 31, 2027), so the standard Ontario rebate (max $24,000) applies instead of the enhanced one (max $80,000).',
+    'Your signing date falls outside the Ontario ENHR window (April 1, 2026 – March 31, 2027), so the standard Ontario rebate (max $24,000) applies instead of the enhanced one (max $80,000). Note that for assignment purchases, CRA requires BOTH the original agreement and the assignment agreement to fall inside that window — and an older agreement amended or re-signed to land inside it is deemed to have been signed before it.',
+  'enhr-phase-out':
+    'Your price sits in the ENHR partial band between $1,500,000 and $1,850,000, where the provincial rebate tapers from $80,000 down toward $24,000. The exact figure in this band comes from the regulations rather than a published table — treat the number above as an approximation and have it confirmed.',
+  'enhr-price-cap':
+    'At $1,850,000 or above, the Ontario enhanced rebate no longer applies and only the standard Ontario rebate (up to $24,000) is available.',
+  'onhap-not-modelled':
+    "Above $1,500,000 the Ontario new home affordability payment (the 5% provincial top-up worth up to $50,000) may still be available to you, but the published guidance doesn't state the amount at your price point — so it isn't included in the figure above. This is worth asking about directly.",
+  'ontario-fthb-not-modelled':
+    'You may qualify as a first-time buyer under the Ontario first-time home buyers’ rebate for the 8% provincial portion, which is separate from the ENHR. Only the standard Ontario rebate is shown above, so your provincial relief could be higher than the figure quoted.',
   'price-phase-out':
     'Your price sits in the federal phase-out band between $1,000,000 and $1,500,000 — every dollar of price above $1,000,000 reduces the federal rebate by ten cents. Small price changes move real money here.',
   'price-over-fthb-limit':
@@ -86,7 +94,9 @@ function postToWebhook(state: EncodedState, result: RebateResult) {
         rebateAssignmentStatus: a.rebateAssignment,
         federalEstimate: result.federalEstimate,
         provincialEstimate: result.provincialEstimate,
+        onhapEstimate: result.onhapEstimate,
         combinedEstimate: result.combinedEstimate,
+        riskFlags: result.flags,
         leadQuality: result.leadTag,
         submittedAt: new Date().toISOString(),
       }),

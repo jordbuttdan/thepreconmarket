@@ -26,7 +26,11 @@ top section marked `EDITABLE CONSTANTS`:
 1. Open `src/lib/rebateRules.ts` in any text editor.
 2. Find the constant you need — each program has its own block with comments:
    - `FTHB_GST` — federal first-time buyer rebate (dates, $50,000 max, $1M/$1.5M price limits)
-   - `ON_ENHANCED` — Ontario temporary enhanced rebate (window dates, $80,000 max)
+   - `ON_ENHR` — Ontario enhanced new housing rebate (window dates, $80,000 max,
+     and the $1M / $1.5M / $1.85M price tiers)
+   - `ONHAP` — Ontario new home affordability payment, the 5% provincial top-up
+     ($50,000 max; `MODELLED_PRICE_LIMIT` is the price above which we decline to
+     estimate it and show a flag instead)
    - `ON_STANDARD` — Ontario standard rebate ($24,000 max)
    - `FED_REGULAR` — regular federal rebate ($6,300 max, $350k/$450k phase-out)
    - `CONDO_COOLING_OFF_DAYS` — the 10-day condo rescission period
@@ -37,6 +41,23 @@ top section marked `EDITABLE CONSTANTS`:
 5. Save, then run `npm test` (or ask a developer to). The tests check the
    boundary math still holds. Commit and push to `main` — Netlify redeploys
    automatically.
+
+### Source of truth
+
+The Ontario ENHR figures follow CRA Notice 346 (June 2026) and the canada.ca
+ENHR pages. Two things are deliberately conservative and should be revisited
+when CRA publishes more detail:
+
+- **The $1.5M–$1.85M partial band** is interpolated linearly from $80,000 down
+  to $24,000. CRA publishes the tiers but not the formula; the statutory
+  version lives in the June 2026 amendments to the New Harmonized Value-Added
+  Tax System Regulations. Buyers in this band see a flag telling them the
+  number is approximate.
+- **ONHAP above $1.5M** is not estimated at all — those buyers get a flag
+  saying the top-up may still apply but the amount isn't published.
+
+Owner-built homes (construction started in the window) also qualify for the
+ENHR but are not modelled, since the checker is aimed at builder purchases.
 
 ## GHL embed codes and environment variables
 

@@ -98,10 +98,18 @@ function Option({ label, sublabel, onSelect }: OptionProps) {
     <button
       type="button"
       onClick={onSelect}
-      className="block w-full min-h-12 border border-rule bg-paper-pure px-4 py-3 text-left text-[15px] leading-snug text-ink transition-colors hover:border-accent hover:bg-accent-tint focus-visible:border-accent"
+      className="group flex w-full min-h-12 items-center gap-3 border border-rule bg-paper-pure px-4 py-3 text-left text-[15px] leading-snug text-ink transition-colors hover:border-accent hover:bg-accent-tint focus-visible:border-accent"
     >
-      <span className="block font-medium">{label}</span>
-      {sublabel && <span className="mt-0.5 block text-sm text-ink/60">{sublabel}</span>}
+      <span className="flex-1">
+        <span className="block font-medium">{label}</span>
+        {sublabel && <span className="mt-0.5 block text-sm text-ink/60">{sublabel}</span>}
+      </span>
+      <span
+        aria-hidden="true"
+        className="figure shrink-0 text-rule-dark opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+      >
+        →
+      </span>
     </button>
   );
 }
@@ -398,15 +406,25 @@ export default function Checker() {
         )}
       </div>
 
-      {history.length > 1 && step !== 'resaleExit' && (
-        <button
-          type="button"
-          onClick={back}
-          className="mt-4 inline-flex min-h-12 items-center text-sm text-ink/60 underline underline-offset-2 hover:text-accent"
-        >
-          ← Back
-        </button>
-      )}
+      {/* Control bar: keeps the card's base line steady whatever the step. */}
+      <div className="mt-6 flex items-center justify-between gap-4 border-t border-rule pt-3">
+        {history.length > 1 && step !== 'resaleExit' ? (
+          <button
+            type="button"
+            onClick={back}
+            className="inline-flex min-h-12 items-center text-sm text-ink/60 hover:text-accent"
+          >
+            ← Back
+          </button>
+        ) : (
+          <span className="font-mono text-[11px] tracking-[0.06em] text-rule-dark uppercase">
+            Approx. 2 minutes
+          </span>
+        )}
+        <span className="font-mono text-[11px] tracking-[0.06em] text-rule-dark uppercase">
+          No email required
+        </span>
+      </div>
     </div>
   );
 }
