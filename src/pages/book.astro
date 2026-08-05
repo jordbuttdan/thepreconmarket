@@ -50,9 +50,15 @@ import { GHL } from '../config/ghl';
       'warm-shopping': 'Get the worksheet, incentives, and deposit structure on any GTA project.',
       'needs-review': "Not sure what your agreement says? Let's read it together.",
     };
-    const tag = new URLSearchParams(window.location.search).get('tag') ?? '';
-    const headline = HEADLINES[tag];
+    const params = new URLSearchParams(window.location.search);
     const el = document.getElementById('book-headline');
-    if (headline && el) el.textContent = headline;
+    // A named project (from the /representation offer) beats the tag copy.
+    const project = params.get('project')?.trim().slice(0, 80) ?? '';
+    const tag = params.get('tag') ?? '';
+    if (el && project) {
+      el.textContent = `Looking at ${project}? Let's pull the worksheet, incentives, and deposit structure.`;
+    } else if (el && HEADLINES[tag]) {
+      el.textContent = HEADLINES[tag];
+    }
   </script>
 </Base>

@@ -3,42 +3,77 @@ import Base from '../layouts/Base.astro';
 ---
 
 <Base
-  title="The Builder Pays Either Way | The Precon Market"
-  description="Builder co-op commission is paid whether or not you bring your own representation. Walk in without an agent and the builder keeps it."
+  title="Your Agent Is Already Paid For. Make It Count. | The Precon Market"
+  description="Every pre-construction price already includes a commission for the buyer's agent. The question is whether it buys you a specialist who knows the project — or nothing at all."
 >
   <div class="mx-auto max-w-[720px] px-4 pt-8 sm:px-6 sm:pt-12">
     <p class="section-label">— Representation</p>
-    <h1 class="mt-3 text-3xl font-semibold sm:text-4xl">The builder pays for your representation whether you use it or not.</h1>
+    <h1 class="mt-3 text-3xl font-semibold sm:text-4xl">
+      Your agent is already priced into the deal. The question is what you get for it.
+    </h1>
 
     <div class="mt-6 space-y-4 text-[15px] leading-relaxed text-ink/80">
       <p>
-        Most pre-construction projects budget a co-operating commission for the buyer's brokerage. It's built into the
-        price. That number doesn't change based on whether you walk into the sales office alone or with your own
-        broker.
+        Nearly every pre-construction project budgets a co-operating commission for the buyer's brokerage. It's baked
+        into the price before you ever see it, and it gets spent whether you bring an agent or not. Walk in alone and
+        it doesn't come back as a discount — the builder keeps it.
       </p>
       <p>
-        Walk in unrepresented, and that budget doesn't come back to you as a discount — the builder keeps it. You pay
-        the same price and get the builder's sales team, whose job is to sell you the builder's inventory on the
-        builder's paper.
+        But here's the part nobody says out loud: bringing <em>an</em> agent isn't the answer either. Most agents
+        touch a pre-construction deal a handful of times in a career. Registered at the door, they're reading the same
+        brochure you are, while a sales rep who does this every day controls the worksheet, the incentives, and the
+        paper.
       </p>
       <p>
-        Bring your own representation, and the same money buys you someone on your side of the table: reviewing the
-        worksheet, negotiating deposit structure and incentives, flagging the clauses that cost buyers real money at
-        closing — assignment restrictions, development charge caps, and the HST rebate language this site's checker
-        exists to catch.
+        That built-in commission should buy you someone who shows up already knowing the project: what the worksheet
+        looks like this month versus last, which incentives are actually on the table, how the deposit structure
+        compares to the building down the street, what the builder's past closings did to buyers on assignment
+        restrictions, development-charge caps, and the HST rebate language this site's checker exists to catch.
       </p>
       <p class="border-l-2 border-accent pl-4 font-medium text-ink">
-        Same price either way. The only question is who the built-in commission works for.
+        Same price either way. Unrepresented, the commission is a gift to the builder. With a generalist, it's a
+        formality. With a specialist, it's leverage.
       </p>
     </div>
 
-    <div class="mt-8">
-      <a
-        href="/book?source=representation"
-        class="inline-flex min-h-12 items-center border border-accent bg-accent px-6 font-medium text-white hover:bg-accent/90"
-      >
-        Book a call before you visit a sales office
-      </a>
+    <div class="card tick-corners mt-10 p-5 sm:p-8">
+      <p class="section-label">— The offer</p>
+      <h2 class="mt-3 text-xl font-semibold">Name the project. Get the real numbers.</h2>
+      <p class="mt-2 text-[15px] text-ink/80">
+        Tell me which project you're looking at — anywhere in the GTA — and I'll pull the current worksheet,
+        incentives, and deposit structure before you set foot in the sales office. No cost, no commitment.
+      </p>
+      <form id="project-form" class="mt-5 flex flex-col gap-3 sm:flex-row">
+        <label for="project-name" class="sr-only">Project name</label>
+        <input
+          id="project-name"
+          type="text"
+          placeholder="e.g. Sugar Wharf, Union City, Bristol Place…"
+          autocomplete="off"
+          class="min-h-12 flex-1 border border-rule bg-paper-pure px-4 text-base"
+        />
+        <button
+          type="submit"
+          class="inline-flex min-h-12 items-center justify-center border border-accent bg-accent px-6 font-medium text-white hover:bg-accent/90"
+        >
+          Get the numbers
+        </button>
+      </form>
+      <p class="mt-3 text-xs text-ink/50">Still deciding between projects? That works too — book the call anyway.</p>
     </div>
   </div>
+
+  <!-- Carry the project name to /book so the headline can acknowledge it.
+       Project name only — no personal data. -->
+  <script>
+    const form = document.getElementById('project-form') as HTMLFormElement;
+    const input = document.getElementById('project-name') as HTMLInputElement;
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const project = input?.value.trim() ?? '';
+      const params = new URLSearchParams({ source: 'project-intel' });
+      if (project) params.set('project', project.slice(0, 80));
+      window.location.href = `/book?${params.toString()}`;
+    });
+  </script>
 </Base>
