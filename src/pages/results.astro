@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import Results from '../components/checker/Results';
+---
+
+<Base
+  title="Your Rebate Estimate | The Precon Market"
+  description="Your GST/HST new housing rebate estimate, based on your answers to the two-minute eligibility check."
+>
+  <div class="mx-auto max-w-[720px] px-4 pt-8 sm:px-6 sm:pt-12">
+    <Results client:load />
+  </div>
+</Base>

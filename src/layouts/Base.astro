@@ -1,0 +1,92 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource/jetbrains-mono/400.css';
+import '@fontsource/jetbrains-mono/500.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+
+    <!-- ANALYTICS PLACEHOLDER: GA4 -->
+    <!-- Paste the GA4 gtag.js snippet here. Do not hardcode the measurement
+         ID anywhere else in the codebase. -->
+    <!-- END ANALYTICS PLACEHOLDER: GA4 -->
+
+    <!-- ANALYTICS PLACEHOLDER: Meta Pixel -->
+    <!-- Paste the Meta Pixel base code here. -->
+    <!-- END ANALYTICS PLACEHOLDER: Meta Pixel -->
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper-pure focus:px-4 focus:py-2 focus:text-sm"
+    >
+      Skip to content
+    </a>
+
+    <header class="border-b border-rule bg-paper">
+      <div class="mx-auto flex max-w-[1100px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
+        <a href="/" class="font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
+          The Precon Market
+        </a>
+        <nav aria-label="Main">
+          <ul class="flex items-center gap-4 text-sm sm:gap-6">
+            <li class="hidden sm:block">
+              <a href="/representation" class="text-ink/80 hover:text-accent">Representation</a>
+            </li>
+            <li class="hidden sm:block">
+              <a href="/about" class="text-ink/80 hover:text-accent">About</a>
+            </li>
+            <li>
+              <a
+                href="/book"
+                class="inline-flex min-h-12 items-center border border-accent bg-accent px-4 font-medium text-white hover:bg-accent/90"
+              >
+                Book a call
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="mt-16 border-t border-rule bg-paper">
+      <div class="mx-auto max-w-[1100px] px-4 py-8 sm:px-6">
+        <p class="section-label">— Registered Brokerage</p>
+        <!-- RECO: brokerage name at least as prominent as the individual's. -->
+        <p class="mt-3 text-sm text-ink">
+          Jordan Buttarazzi, Broker | Valery Real Estate Inc., Brokerage | RECO #5009855 |
+          <a href="tel:+16473711367" class="text-accent underline underline-offset-2">(647) 371-1367</a>
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule pt-4 text-xs text-ink/60">
+          <span class="font-mono">thepreconmarket.ca</span>
+          <a href="/privacy" class="hover:text-accent">Privacy policy</a>
+          <span>© {year} Valery Real Estate Inc., Brokerage</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
