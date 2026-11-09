@@ -76,10 +76,10 @@ function Disclaimer() {
 
 /** Fire-and-forget webhook post. Never blocks or breaks the UI. */
 function postToWebhook(state: EncodedState, result: RebateResult) {
-  if (!GHL.webhookUrl) return;
+  if (!GHL.checkerWebhookUrl) return;
   try {
     const a = state.answers;
-    void fetch(GHL.webhookUrl, {
+    void fetch(GHL.checkerWebhookUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

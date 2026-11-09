@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import { BROKER, FOOTER_LINE, DISCLAIMER_LONG } from '../config/site';
+
+const paragraphs = DISCLAIMER_LONG.split('\n\n');
+---
+
+<Base
+  title="Disclaimer"
+  description="Terms on which information on thepreconmarket.ca is provided. General information about published program rules, not tax, legal or accounting advice."
+  kicker={['Ontario', 'Disclaimer']}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Disclaimer', href: '/disclaimer' }]}
+>
+  <div class="mx-auto max-w-[720px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— Disclaimer</p>
+    <h1 class="mt-4 text-[1.85rem] font-semibold sm:text-[2.2rem]">Terms of information</h1>
+
+    <div class="prose-precon mt-8">
+      {paragraphs.map((p) => <p>{p}</p>)}
+
+      <h2>About the figures on this site</h2>
+      <p>
+        Dollar amounts shown anywhere on this site — including in the rebate checker — are
+        <strong> maximums for illustration</strong>. They are produced from published program
+        thresholds and are expressed as "up to" amounts deliberately. Your actual entitlement
+        depends on your circumstances, the wording of your agreement of purchase and sale, and
+        program rules that may change.
+      </p>
+      <p>
+        Where published guidance does not state an amount clearly enough for us to model it, the
+        checker shows a flag rather than a number. A figure we are not confident in would be worse
+        than no figure, because you would plan around it.
+      </p>
+
+      <h2>About sources</h2>
+      <p>
+        Pages that make claims about tax or contract rules cite their sources, and those citations
+        link to the originals — Canada Revenue Agency notices, Ontario government pages, Tarion's
+        coverage terms, and the Condominium Authority of Ontario. Where sources disagree, or where
+        the position is genuinely unsettled, the page says so rather than picking the more
+        flattering answer.
+      </p>
+      <p>
+        Program rules change. Each page carries a revision date. If you are reading this long after
+        that date, verify the current position before relying on it.
+      </p>
+
+      <h2>About third-party information</h2>
+      <p>
+        Project details — pricing, sizes, deposit structures, occupancy dates, incentives — come
+        from builder and industry sources and are subject to change without notice. They are
+        provided for general information and are not an offer or a representation. Confirm all
+        details directly with the builder before making any decision.
+      </p>
+
+      <h2>Professional registration</h2>
+      <p>{FOOTER_LINE}</p>
+      <p>
+        {BROKER.name} is a licensed real estate Broker registered with the Real Estate Council of
+        Ontario, operating under {BROKER.brokerage}. He is not a lawyer, accountant or mortgage
+        agent.
+      </p>
+      <p>
+        Not intended to solicit buyers or sellers currently under contract with another brokerage.
+      </p>
+    </div>
+  </div>
+</Base>

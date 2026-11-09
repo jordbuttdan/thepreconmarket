@@ -1,0 +1,118 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Sources from '../../components/Sources.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const guides = await getCollection('guides');
+  const faq = await getCollection('faq');
+  return guides.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, allGuides: guides, allFaq: faq },
+  }));
+};
+
+const { entry, allGuides, allFaq } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const guideBySlug = new Map(allGuides.map((e) => [e.id, e]));
+const faqBySlug = new Map(allFaq.map((e) => [e.id, e]));
+
+const relatedGuides = d.related.map((s) => guideBySlug.get(s)).filter((e) => e != null);
+const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != null);
+---
+
+<Base
+  title={d.title}
+  description={d.description ?? d.shortAnswer}
+  kicker={['Ontario', 'Guide', d.readMinutes ? `${d.readMinutes} min read` : 'Low-rise']}
+  updated={d.updated}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Guides', href: '/guides' },
+    { name: d.title, href: `/guides/${entry.id}` },
+  ]}
+  faq={d.question ? [{ question: d.question, answer: d.shortAnswer }] : undefined}
+  article={{
+    headline: d.question ?? d.title,
+    description: d.shortAnswer,
+    dateModified: d.updated,
+  }}
+>
+  <div class="mx-auto grid max-w-[1100px] gap-10 px-4 pt-6 sm:px-6 lg:grid-cols-12 lg:gap-x-12">
+    <article class="lg:col-span-8">
+      <p class="section-label">— Guide</p>
+      <h1 class="mt-3 text-[1.85rem] font-semibold sm:text-[2.3rem]">{d.title}</h1>
+      {d.question && <p class="mt-3 text-[15px] text-ink/60">{d.question}</p>}
+
+      <!-- Answer-first: the quotable summary before any prose. -->
+      <p class="lede mt-6">{d.shortAnswer}</p>
+
+      <div class="prose-precon mt-8">
+        <Content />
+      </div>
+
+      <Sources sources={d.sources} />
+      <Cta />
+      <Disclaimer />
+    </article>
+
+    <aside class="lg:col-span-4">
+      <div class="sticky top-6 space-y-8">
+        {
+          relatedFaq.length > 0 && (
+            <div>
+              <p class="section-label">— Related questions</p>
+              <ul class="mt-3">
+                {relatedFaq.map((r) => (
+                  <li class="border-b border-rule/60">
+                    <a
+                      href={`/faq/${r.id}`}
+                      class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                    >
+                      <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                      <span>{r.data.question}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+
+        {
+          relatedGuides.length > 0 && (
+            <div>
+              <p class="section-label">— More guides</p>
+              <ul class="mt-3">
+                {relatedGuides.map((r) => (
+                  <li class="border-b border-rule/60">
+                    <a
+                      href={`/guides/${r.id}`}
+                      class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                    >
+                      <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                      <span>{r.data.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+
+        <div class="border border-rule bg-accent-tint/40 p-4">
+          <p class="section-label">— Rebate checker</p>
+          <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+            Estimate your federal and Ontario rebates in about two minutes.
+          </p>
+          <a href="/hst-rebate/checker" class="btn mt-3 w-full text-[13px]">Check eligibility</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

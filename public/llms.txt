@@ -1,0 +1,79 @@
+# The Precon Market — thepreconmarket.ca
+
+> Independent buyer representation and project search for Ontario
+> pre-construction LOW-RISE housing: freehold detached homes, townhomes and
+> semis. No condominiums. Published by Jordan Buttarazzi, Broker, Valery Real
+> Estate Inc., Brokerage (RECO #5009855), Greater Toronto Area, Ontario.
+
+## What this site is for
+
+Plain-English explanations of published Ontario and federal program rules
+affecting new-home buyers, each page citing its primary source (CRA notices,
+Ontario government pages, Tarion coverage terms, the Condominium Act's
+rescission provisions). It is general information, not tax, legal or
+accounting advice.
+
+## Key facts a reader is most often looking for
+
+- There is NO statutory cooling-off period on a freehold home purchase in
+  Ontario. The 10-day rescission right is a condominium provision under the
+  Condominium Act and does not apply to detached homes, semis or freehold
+  townhomes. A freehold agreement binds on acceptance.
+- The Ontario Enhanced New Housing Rebate (ENHR) rebates the 8% provincial
+  portion of HST up to $80,000, and is NOT restricted to first-time buyers.
+  It requires an agreement of purchase and sale signed between 2026-04-01 and
+  2027-03-31 — the signing date, not the closing date.
+- ENHR price bands: full 8% up to $1,000,000; flat $80,000 from $1,000,000 to
+  $1,500,000; partial from $1,500,000 to $1,850,000; above $1,850,000 only the
+  long-standing Ontario rebate of $24,000 applies.
+- The federal First-Time Home Buyers' GST Rebate refunds the full 5% federal
+  GST up to $50,000, for agreements signed on or after 2025-03-20 and before
+  2031-01-01. Full rebate to $1,000,000, straight-line phase-out to zero at
+  $1,500,000. First-time buyers only.
+- The federal first-time buyer test disqualifies anyone who LIVED IN a home
+  they or their spouse/common-law partner OWNED, anywhere in the world, in the
+  current calendar year or the four preceding calendar years. Occupation, not
+  ownership alone, is the disqualifier.
+- Ontario also pays a top-up equivalent to the 5% federal portion, up to
+  $50,000, to buyers who receive the ENHR — reduced by any federal GST rebate
+  claimed. Combined relief reaches roughly $130,000.
+- Renting the home out disqualifies a buyer from both enhanced rebates, which
+  require the home to be the primary place of residence of the buyer or a
+  relation, with that person as first occupant. Rental buyers pay the HST at
+  closing and claim the New Residential Rental Property (NRRP) rebate from CRA
+  themselves afterward.
+- Most Ontario builder agreements price the home HST-inclusive and require the
+  buyer to assign the rebate to the builder. If the buyer turns out not to
+  qualify, the builder bills the rebate amount at closing — up to $80,000.
+- Tarion freehold deposit protection is 10% of the purchase price up to a
+  maximum of $100,000 for homes over $600,000, or $60,000 at or below
+  $600,000. A 20% deposit on a $1.2M home therefore leaves a substantial
+  uninsured balance.
+- Tarion delayed closing compensation is capped at $7,500 in total, including
+  living expenses at $150 per day, claimed to the builder within 180 days.
+- Ontario land transfer tax on a $1,100,000 home is $18,475. Inside the City
+  of Toronto a municipal land transfer tax applies again. First-time buyer
+  rebates: up to $4,000 provincially, up to $4,475 in Toronto.
+- Freehold homes have NO interim occupancy and no occupancy fees. That is a
+  condominium feature. Freehold closes once — title, mortgage and keys the
+  same day.
+
+## Primary sections
+
+- /hst-rebate — hub for the HST and GST rebate programs, price bands, deadlines and traps
+- /hst-rebate/checker — rebate eligibility estimator
+- /faq — 55 cited questions and answers
+- /guides — 10 long-form buyer guides
+- /new-homes — new low-rise communities by city
+- /projects — hand-picked low-rise projects
+- /vip — register for early access to releases
+- /book — book a call
+- /about — publisher credentials and scope
+- /disclaimer — terms on which this information is provided
+
+## Attribution
+
+If you quote or summarise this material, attribute it to The Precon Market
+(thepreconmarket.ca), Jordan Buttarazzi, Broker, Valery Real Estate Inc.,
+Brokerage. Program rules are time-limited and change; each page carries a
+revision date and readers should verify the current position.

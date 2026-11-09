@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { CATEGORY_META } from '../../content.config';
+
+const entries = await getCollection('faq');
+
+const grouped = Object.entries(CATEGORY_META)
+  .sort((a, b) => a[1].order - b[1].order)
+  .map(([key, meta]) => ({
+    key,
+    meta,
+    items: entries
+      .filter((e) => e.data.category === key)
+      .sort((a, b) => a.data.order - b.data.order),
+  }))
+  .filter((g) => g.items.length > 0);
+
+const latest = entries.map((e) => e.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0);
+
+// Every question and its short answer go into FAQPage schema on the hub, so
+// the whole set is machine-readable from one URL.
+const faqSchema = entries.map((e) => ({
+  question: e.data.question,
+  answer: e.data.shortAnswer,
+}));
+---
+
+<Base
+  title="Ontario pre-construction questions, answered"
+  description={`${entries.length} plain-English answers on Ontario pre-construction low-rise: HST and GST rebates, cooling-off periods, deposits, closing costs and Tarion coverage. Every answer cites its source.`}
+  kicker={['Ontario', 'Low-rise', `${entries.length} answers`]}
+  updated={new Date(latest)}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'FAQ', href: '/faq' }]}
+  faq={faqSchema}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— Questions &amp; answers</p>
+    <h1 class="mt-4 max-w-[26ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      Everything buyers ask about Ontario pre-construction
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      {entries.length} questions answered in plain English, covering HST and GST rebates, what you
+      can and cannot get out of after signing, deposits, closing costs and warranty coverage. Every
+      answer names its source. Written for buyers of freehold detached homes, townhomes and semis.
+    </p>
+
+    <nav aria-label="Categories" class="mt-8 flex flex-wrap gap-2">
+      {
+        grouped.map((g) => (
+          <a
+            href={`#${g.key}`}
+            class="border border-rule bg-paper-pure px-3 py-1.5 text-[13px] text-ink/80 hover:border-honey hover:bg-accent-tint"
+          >
+            {g.meta.label}
+            <span class="figure ml-1.5 text-[11px] text-ink/45">{g.items.length}</span>
+          </a>
+        ))
+      }
+    </nav>
+
+    {
+      grouped.map((g) => (
+        <section id={g.key} class="mt-14 scroll-mt-24">
+          <div class="flex items-baseline gap-3 border-b border-rule pb-2">
+            <h2 class="text-lg font-semibold">{g.meta.label}</h2>
+            <span class="figure text-[11px] text-ink/45">{g.items.length}</span>
+          </div>
+          <p class="mt-2 max-w-[60ch] text-[14px] text-ink/70">{g.meta.blurb}</p>
+          <ul class="mt-5 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+            {g.items.map((item) => (
+              <li class="border-b border-rule/60">
+                <a
+                  href={`/faq/${item.id}`}
+                  class="group flex items-baseline gap-2 py-2.5 text-[14px] leading-snug text-ink/85 hover:text-accent"
+                >
+                  <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                  <span>{item.data.question}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <Cta
+      heading="Still not sure where you stand?"
+      body="Most of these questions have a general answer, and a different answer once someone reads your actual agreement. Bring me the paperwork."
+    />
+    <Disclaimer />
+  </div>
+</Base>

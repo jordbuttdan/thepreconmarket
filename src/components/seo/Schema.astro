@@ -1,0 +1,178 @@
+---
+/**
+ * Single source of JSON-LD for the whole site, so structured data can never
+ * drift between page types.
+ *
+ * Every page emits the RealEstateAgent node (the publisher identity that AI
+ * search uses to attribute an answer) plus whatever page-specific node fits.
+ *
+ * Pass `faq` for a question page, `article` for a guide, `place` for a
+ * project, and `breadcrumbs` on anything nested.
+ */
+import { SITE, BROKER } from '../../config/site';
+
+interface Breadcrumb {
+  name: string;
+  href: string;
+}
+
+interface FaqEntry {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  /** Emitted on every page. */
+  pageTitle: string;
+  pageDescription: string;
+  /** One or more Q&A pairs → FAQPage. */
+  faq?: FaqEntry[];
+  /** Guide / explainer → Article. */
+  article?: {
+    headline: string;
+    description: string;
+    datePublished?: Date;
+    dateModified: Date;
+  };
+  /** Project → Place + Residence. */
+  place?: {
+    name: string;
+    city: string;
+    intersection?: string;
+    lat?: number;
+    lng?: number;
+    priceFrom?: number;
+    priceTo?: number;
+  };
+  breadcrumbs?: Breadcrumb[];
+  /** True only on the home page — adds WebSite + SearchAction. */
+  isHome?: boolean;
+}
+
+const { pageTitle, pageDescription, faq, article, place, breadcrumbs, isHome } = Astro.props;
+
+const abs = (path: string) => new URL(path, SITE.url).href;
+
+/** The publisher identity. Repeated on every page by design. */
+const agentNode = {
+  '@type': 'RealEstateAgent',
+  '@id': abs('/#broker'),
+  name: BROKER.name,
+  jobTitle: BROKER.title,
+  telephone: BROKER.phone,
+  email: BROKER.email,
+  url: SITE.url,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: BROKER.areaServed,
+  },
+  memberOf: {
+    '@type': 'Organization',
+    name: BROKER.brokerage,
+  },
+  identifier: {
+    '@type': 'PropertyValue',
+    name: 'RECO registration',
+    value: BROKER.reco,
+  },
+  knowsAbout: [
+    'Ontario pre-construction real estate',
+    'New home HST and GST rebates',
+    'Ontario Enhanced New Housing Rebate',
+    "Federal First-Time Home Buyers' GST Rebate",
+    'Freehold detached, townhome and semi-detached purchases',
+    'Agreement of purchase and sale review',
+  ],
+};
+
+const graph: Record<string, unknown>[] = [agentNode];
+
+if (isHome) {
+  graph.push({
+    '@type': 'WebSite',
+    '@id': abs('/#website'),
+    url: SITE.url,
+    name: SITE.name,
+    description: SITE.description,
+    publisher: { '@id': abs('/#broker') },
+    inLanguage: 'en-CA',
+  });
+}
+
+if (faq?.length) {
+  graph.push({
+    '@type': 'FAQPage',
+    '@id': new URL(Astro.url.pathname, SITE.url).href + '#faq',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  });
+}
+
+if (article) {
+  graph.push({
+    '@type': 'Article',
+    '@id': new URL(Astro.url.pathname, SITE.url).href + '#article',
+    headline: article.headline,
+    description: article.description,
+    datePublished: (article.datePublished ?? article.dateModified).toISOString(),
+    dateModified: article.dateModified.toISOString(),
+    author: { '@id': abs('/#broker') },
+    publisher: { '@id': abs('/#broker') },
+    inLanguage: 'en-CA',
+    isAccessibleForFree: true,
+  });
+}
+
+if (place) {
+  graph.push({
+    '@type': 'Residence',
+    '@id': new URL(Astro.url.pathname, SITE.url).href + '#project',
+    name: place.name,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: place.intersection,
+      addressLocality: place.city,
+      addressRegion: 'ON',
+      addressCountry: 'CA',
+    },
+    ...(place.lat != null && place.lng != null
+      ? { geo: { '@type': 'GeoCoordinates', latitude: place.lat, longitude: place.lng } }
+      : {}),
+    ...(place.priceFrom != null
+      ? {
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'CAD',
+            lowPrice: place.priceFrom,
+            ...(place.priceTo != null ? { highPrice: place.priceTo } : {}),
+            availability: 'https://schema.org/PreOrder',
+            offeredBy: { '@id': abs('/#broker') },
+          },
+        }
+      : {}),
+  });
+}
+
+if (breadcrumbs?.length) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: abs(b.href),
+    })),
+  });
+}
+
+const jsonLd = { '@context': 'https://schema.org', '@graph': graph };
+---
+
+<script
+  type="application/ld+json"
+  is:inline
+  set:html={JSON.stringify(jsonLd)}
+/>

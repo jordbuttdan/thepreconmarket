@@ -3,14 +3,68 @@ import '@fontsource-variable/inter';
 import '@fontsource/jetbrains-mono/400.css';
 import '@fontsource/jetbrains-mono/500.css';
 import '../styles/global.css';
+import { SITE, BROKER, FOOTER_LINE, NAV } from '../config/site';
+import Schema from '../components/seo/Schema.astro';
+
+interface Breadcrumb {
+  name: string;
+  href: string;
+}
 
 interface Props {
   title: string;
   description: string;
+  /** Appears in the title block strip above the page. */
+  kicker?: string[];
+  breadcrumbs?: Breadcrumb[];
+  /** Visible + schema dateModified. Freshness is a citation signal. */
+  updated?: Date;
+  isHome?: boolean;
+  /** Passed straight through to the Schema component. */
+  faq?: { question: string; answer: string }[];
+  article?: {
+    headline: string;
+    description: string;
+    datePublished?: Date;
+    dateModified: Date;
+  };
+  place?: {
+    name: string;
+    city: string;
+    intersection?: string;
+    lat?: number;
+    lng?: number;
+    priceFrom?: number;
+    priceTo?: number;
+  };
+  /** Set true on thin utility pages that should not be indexed. */
+  noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const {
+  title,
+  description,
+  kicker,
+  breadcrumbs,
+  updated,
+  isHome,
+  faq,
+  article,
+  place,
+  noindex,
+} = Astro.props;
+
 const year = new Date().getFullYear();
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
+
+const dateFmt = new Intl.DateTimeFormat('en-CA', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
 <!doctype html>
@@ -18,13 +72,45 @@ const year = new Date().getFullYear();
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
-    <meta property="og:title" content={title} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    {
+      !noindex && (
+        <meta
+          name="robots"
+          content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+        />
+      )
+    }
+
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_CA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <meta name="author" content={`${BROKER.name}, ${BROKER.title}`} />
+    <meta name="geo.region" content="CA-ON" />
+    {updated && <meta name="last-modified" content={updated.toISOString()} />}
+
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+
+    <Schema
+      pageTitle={fullTitle}
+      pageDescription={description}
+      faq={faq}
+      article={article}
+      place={place}
+      breadcrumbs={breadcrumbs}
+      isHome={isHome}
+    />
 
     <!-- ANALYTICS PLACEHOLDER: GA4 -->
     <!-- Paste the GA4 gtag.js snippet here. Do not hardcode the measurement
@@ -43,45 +129,181 @@ const year = new Date().getFullYear();
       Skip to content
     </a>
 
-    <header class="border-b border-rule bg-paper">
+    <header class="border-b border-rule bg-paper/95 backdrop-blur">
       <div class="mx-auto flex max-w-[1100px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a href="/" class="font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
-          The Precon Market
+        <a href="/" class="group shrink-0">
+          <span class="block font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
+            The Precon Market
+          </span>
+          <span class="mt-0.5 block font-mono text-[10px] tracking-[0.06em] text-rule-dark uppercase">
+            Low-rise · Ontario
+          </span>
         </a>
-        <nav aria-label="Main">
-          <ul class="flex items-center gap-4 text-sm sm:gap-6">
-            <li class="hidden sm:block">
-              <a href="/about" class="text-ink/80 hover:text-accent">About</a>
-            </li>
-            <li>
-              <a
-                href="/book"
-                class="inline-flex min-h-12 items-center border border-accent bg-accent px-4 font-medium text-white hover:bg-accent/90"
-              >
-                Book a call
-              </a>
-            </li>
+
+        <nav aria-label="Main" class="flex items-center gap-4 sm:gap-6">
+          <ul class="hidden items-center gap-5 text-sm lg:flex">
+            {
+              NAV.map((item) => (
+                <li>
+                  <a
+                    href={item.href}
+                    aria-current={isActive(item.href) ? 'page' : undefined}
+                    class:list={[
+                      'py-1 transition-colors hover:text-accent',
+                      isActive(item.href)
+                        ? 'border-b border-honey font-medium text-ink'
+                        : 'text-ink/75',
+                    ]}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
+          <a href="/book" class="btn px-4 text-sm">Book a call</a>
         </nav>
       </div>
+
+      <!-- Mobile nav: a horizontally scrollable rail, no hamburger to tap. -->
+      <div class="border-t border-rule lg:hidden">
+        <ul
+          class="mx-auto flex max-w-[1100px] gap-4 overflow-x-auto px-4 py-2 text-[13px] sm:px-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
+          {
+            NAV.map((item) => (
+              <li class="shrink-0">
+                <a
+                  href={item.href}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
+                  class:list={[
+                    'inline-block py-1 whitespace-nowrap',
+                    isActive(item.href)
+                      ? 'border-b border-honey font-medium text-ink'
+                      : 'text-ink/70',
+                  ]}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </header>
+
+    {
+      (kicker?.length || updated) && (
+        <div class="border-b border-rule bg-paper-pure/60">
+          <div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-5 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-rule-dark uppercase sm:px-6">
+            {kicker?.map((k, i) => (
+              <>
+                {i > 0 && (
+                  <span aria-hidden="true" class="hidden text-rule sm:inline">
+                    /
+                  </span>
+                )}
+                <span>{k}</span>
+              </>
+            ))}
+            {updated && (
+              <span class="ml-auto">
+                Rev <time datetime={updated.toISOString()}>{dateFmt.format(updated)}</time>
+              </span>
+            )}
+          </div>
+        </div>
+      )
+    }
+
+    {
+      breadcrumbs?.length && (
+        <nav aria-label="Breadcrumb" class="mx-auto max-w-[1100px] px-4 pt-4 sm:px-6">
+          <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-ink/55">
+            {breadcrumbs.map((b, i) => (
+              <li class="flex items-center gap-2">
+                {i > 0 && (
+                  <span aria-hidden="true" class="text-rule-dark">
+                    /
+                  </span>
+                )}
+                {i === breadcrumbs.length - 1 ? (
+                  <span class="text-ink/75">{b.name}</span>
+                ) : (
+                  <a href={b.href} class="hover:text-accent hover:underline">
+                    {b.name}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
 
     <main id="main">
       <slot />
     </main>
 
-    <footer class="mt-16 border-t border-rule bg-paper">
-      <div class="mx-auto max-w-[1100px] px-4 py-8 sm:px-6">
-        <p class="section-label">— Registered Brokerage</p>
-        <!-- RECO: brokerage name at least as prominent as the individual's. -->
-        <p class="mt-3 text-sm text-ink">
-          Jordan Buttarazzi, Broker | Valery Real Estate Inc., Brokerage | RECO #5009855 |
-          <a href="tel:+16473711367" class="text-accent underline underline-offset-2">(647) 371-1367</a>
+    <footer class="mt-20 border-t border-rule bg-paper">
+      <div class="mx-auto max-w-[1100px] px-4 py-10 sm:px-6">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="section-label">— Browse</p>
+            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
+              <li><a href="/new-homes" class="hover:text-accent">New home communities</a></li>
+              <li><a href="/projects" class="hover:text-accent">All projects</a></li>
+              <li><a href="/vip" class="hover:text-accent">Register for VIP access</a></li>
+              <li><a href="/book" class="hover:text-accent">Book a call</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-label">— Learn</p>
+            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
+              <li><a href="/hst-rebate" class="hover:text-accent">HST &amp; GST rebates</a></li>
+              <li><a href="/hst-rebate/checker" class="hover:text-accent">Rebate checker</a></li>
+              <li><a href="/guides" class="hover:text-accent">Buyer guides</a></li>
+              <li><a href="/faq" class="hover:text-accent">Questions &amp; answers</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-label">— Contact</p>
+            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
+              <li>
+                <a href={BROKER.phoneHref} class="figure hover:text-accent">{BROKER.phone}</a>
+              </li>
+              <li><a href={`mailto:${BROKER.email}`} class="hover:text-accent">Email Jordan</a></li>
+              <li><a href="/about" class="hover:text-accent">About</a></li>
+              <li><a href="/disclaimer" class="hover:text-accent">Disclaimer</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="section-label">— Registered brokerage</p>
+            <!-- RECO: brokerage name at least as prominent as the individual's. -->
+            <p class="mt-3 text-sm leading-relaxed text-ink">
+              <span class="block font-medium">{BROKER.brokerage}</span>
+              <span class="block text-ink/75">{BROKER.name}, {BROKER.title}</span>
+              <span class="figure mt-1 block text-[11px] text-ink/55">RECO #{BROKER.reco}</span>
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-8 border-t border-rule pt-5 text-xs leading-relaxed text-ink/55">
+          {FOOTER_LINE}
         </p>
-        <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule pt-4 text-xs text-ink/60">
-          <span class="font-mono">thepreconmarket.ca</span>
+        <p class="mt-3 text-xs leading-relaxed text-ink/55">
+          This site provides general information about published program rules, not tax, legal or
+          accounting advice. Rebate eligibility is determined by the Canada Revenue Agency.
+          Confirm your situation with your own lawyer and accountant before relying on any figure.
+          Read the <a href="/disclaimer" class="text-accent underline underline-offset-2">full disclaimer</a>.
+        </p>
+        <div
+          class="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule pt-4 text-xs text-ink/50"
+        >
+          <span class="font-mono">{SITE.domain}</span>
           <a href="/privacy" class="hover:text-accent">Privacy policy</a>
-          <span>© {year} Valery Real Estate Inc., Brokerage</span>
+          <a href="/sitemap-index.xml" class="hover:text-accent">Sitemap</a>
+          <span>© {year} {BROKER.brokerage}</span>
         </div>
       </div>
     </footer>

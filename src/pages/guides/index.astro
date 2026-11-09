@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const latest = guides.map((g) => g.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0);
+---
+
+<Base
+  title="Ontario pre-construction buyer guides"
+  description="In-depth guides to buying new freehold low-rise in Ontario: HST rebates, what to check before signing, closing costs, choosing a lot, and assessing a builder. Written by a licensed broker."
+  kicker={['Ontario', 'Low-rise', `${guides.length} guides`]}
+  updated={new Date(latest)}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/guides' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— Buyer guides</p>
+    <h1 class="mt-4 max-w-[28ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      How to buy new low-rise in Ontario, properly
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      Longer-form guides for buyers of freehold detached homes, townhomes and semis. Each one is
+      written for a specific decision and cites its sources. Start with the buyer's guide if you
+      are new to pre-construction, or the HST rebate guide if you are trying to work out what you
+      qualify for.
+    </p>
+
+    <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+      {
+        guides.map((g, i) => (
+          <li class="tick-corners card flex flex-col p-5">
+            <p class="section-label">
+              — {String(i + 1).padStart(2, '0')}
+              {g.data.readMinutes && <span class="ml-2">{g.data.readMinutes} min</span>}
+            </p>
+            <h2 class="mt-3 text-[17px] font-semibold leading-snug">
+              <a href={`/guides/${g.id}`} class="hover:text-accent">
+                {g.data.title}
+              </a>
+            </h2>
+            <p class="mt-2 grow text-[14px] leading-relaxed text-ink/70">{g.data.shortAnswer}</p>
+            <p class="mt-4">
+              <a href={`/guides/${g.id}`} class="text-[13px] text-accent underline underline-offset-2">
+                Read the guide →
+              </a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <Cta
+      heading="Rather just ask someone?"
+      body="The guides cover the general case. Your agreement, your lot and your tax position are specific. Bring them."
+    />
+    <Disclaimer />
+  </div>
+</Base>

@@ -1,62 +1,137 @@
 ---
 import Base from '../layouts/Base.astro';
+import Cta from '../components/Cta.astro';
+import { BROKER, SITE, DISCLAIMER_LONG } from '../config/site';
+
+const paragraphs = DISCLAIMER_LONG.split('\n\n');
 ---
 
 <Base
-  title="About Jordan Buttarazzi, Broker | The Precon Market"
-  description="Jordan Buttarazzi is a Broker with Valery Real Estate Inc., Brokerage (RECO #5009855), focused on Ontario pre-construction buyers."
+  title="About — Jordan Buttarazzi, Broker"
+  description="Jordan Buttarazzi, Broker with Valery Real Estate Inc., Brokerage. RECO #5009855. Independent buyer representation for Ontario pre-construction low-rise: detached homes, townhomes and semis."
+  kicker={['Ontario', 'Low-rise', 'About']}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]}
 >
-  <div class="mx-auto max-w-[720px] px-4 pt-8 sm:px-6 sm:pt-12">
-    <p class="section-label">— About</p>
-    <h1 class="mt-3 text-3xl font-semibold sm:text-4xl">Jordan Buttarazzi</h1>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <div class="grid gap-10 lg:grid-cols-12 lg:gap-x-12">
+      <div class="lg:col-span-7">
+        <p class="section-label">— About</p>
+        <h1 class="mt-4 text-[1.95rem] leading-[1.1] font-semibold sm:text-[2.4rem]">
+          {BROKER.name}, {BROKER.title}
+        </h1>
+        <p class="lede mt-6">
+          I represent buyers of new freehold low-rise homes in Ontario — detached, townhomes and
+          semis. Not condos. The site exists because pre-construction is sold with urgency and
+          bought with incomplete information, and the gap between those two things costs people
+          real money.
+        </p>
 
-    <dl class="card tick-corners mt-6 grid gap-x-8 gap-y-3 p-5 text-[15px] sm:grid-cols-[auto_1fr] sm:p-6">
-      <dt class="font-mono text-xs uppercase tracking-wider text-rule-dark sm:pt-1">Title</dt>
-      <dd>Broker</dd>
-      <dt class="font-mono text-xs uppercase tracking-wider text-rule-dark sm:pt-1">Brokerage</dt>
-      <dd>Valery Real Estate Inc., Brokerage</dd>
-      <dt class="font-mono text-xs uppercase tracking-wider text-rule-dark sm:pt-1">RECO</dt>
-      <dd class="figure">#5009855</dd>
-      <dt class="font-mono text-xs uppercase tracking-wider text-rule-dark sm:pt-1">Phone</dt>
-      <dd><a href="tel:+16473711367" class="text-accent underline underline-offset-2">(647) 371-1367</a></dd>
-    </dl>
+        <div class="prose-precon mt-8">
+          <h2>Why low-rise only</h2>
+          <p>
+            Most pre-construction advice online is written about condominiums, because that is
+            where the volume and the marketing budgets are. Low-rise is a different transaction
+            with different risks, and some of them are worse.
+          </p>
+          <p>
+            A freehold buyer gets <strong>no cooling-off period</strong> — the ten-day rescission
+            right everyone has heard about is a condominium provision. A freehold buyer's deposit
+            protection caps at 10% of the price up to $100,000, with no trust protection layer. A
+            freehold buyer pays development levies and connection charges a condo buyer never
+            sees. And a freehold buyer is usually making a larger purchase with less mandated
+            disclosure.
+          </p>
+          <p>
+            Those are the things I spend my time on, so narrowing the focus made more sense than
+            pretending to cover everything.
+          </p>
 
-    <div class="mt-6 space-y-4 text-[15px] leading-relaxed text-ink/80">
-      <p>
-        I work with pre-construction buyers across the GTA. This site exists because the same phone call kept
-        happening: someone reaches me a few weeks before closing, having just learned their price was "inclusive of
-        HST" and that the rebate they assumed was theirs had been assigned to the builder on page nine.
-      </p>
-      <p>
-        By that point the options are thin. Caught early, most of it is manageable, and some of it is negotiable
-        before you sign.
-      </p>
-      <p>
-        The checker on the home page gives you the rules for nothing. What it won't do is read your agreement, get a
-        rebate worksheet out of a builder, or sit on your side of the table at the sales office. Those need a person.
-      </p>
-      <p>
-        Book a call if something in your result didn't sit right. If you haven't signed yet, book one before you do.
-      </p>
+          <h2>What I actually do</h2>
+          <p>
+            Read the agreement commercially alongside your lawyer's legal review — the HST rebate
+            clause, the levy cap, the deposit schedule, the assignment rights. Tell you what a
+            builder's delivery record and date reliability actually look like. Tell you which lots
+            and premiums are worth paying for and which are not. Tell you when a release is not
+            worth your time.
+          </p>
+          <p>
+            The builder budgets a co-operating brokerage commission whether or not you bring
+            representation. If you walk in alone, they keep it — the price does not drop. So
+            having someone whose obligation is to you costs you nothing.{' '}
+            <a href="/faq/does-it-cost-more-to-use-a-realtor-precon">The economics</a>.
+          </p>
+
+          <h2>What I don't do</h2>
+          <p>
+            I am a licensed real estate Broker. I am <strong>not</strong> a lawyer, an accountant
+            or a mortgage agent, and I will not pretend otherwise. The content on this site
+            explains published program rules — CRA notices, Tarion's coverage terms, the
+            Condominium Act's rescission provisions — and cites its sources so you can check it.
+          </p>
+          <p>
+            Where a question turns on the law or on your tax position, you will be told to take it
+            to the right professional. That is not a disclaimer for its own sake. A rebate worth up
+            to $80,000 that gets billed back to you at closing is not something to resolve from a
+            web page.
+          </p>
+
+          <h2>Where I work</h2>
+          <p>
+            New low-rise communities across the Greater Toronto Area — York Region, Peel, Halton
+            and Durham. {SITE.domain} covers the questions that come up most, and the{' '}
+            <a href="/hst-rebate/checker">rebate checker</a> gives you an estimate in about two
+            minutes.
+          </p>
+        </div>
+      </div>
+
+      <aside class="lg:col-span-5">
+        <div class="tick-corners card p-5">
+          <p class="section-label">— Registration</p>
+          <!-- RECO: brokerage name at least as prominent as the individual's. -->
+          <p class="mt-3 text-[15px] font-semibold text-ink">{BROKER.brokerage}</p>
+          <p class="text-[15px] text-ink/80">{BROKER.name}, {BROKER.title}</p>
+          <dl class="mt-4 space-y-2 border-t border-rule pt-4 text-[13px]">
+            <div class="flex gap-3">
+              <dt class="w-24 shrink-0 text-ink/55">RECO</dt>
+              <dd class="figure text-ink">#{BROKER.reco}</dd>
+            </div>
+            <div class="flex gap-3">
+              <dt class="w-24 shrink-0 text-ink/55">Phone</dt>
+              <dd>
+                <a href={BROKER.phoneHref} class="figure text-accent underline underline-offset-2">
+                  {BROKER.phone}
+                </a>
+              </dd>
+            </div>
+            <div class="flex gap-3">
+              <dt class="w-24 shrink-0 text-ink/55">Email</dt>
+              <dd>
+                <a href={`mailto:${BROKER.email}`} class="text-accent underline underline-offset-2">
+                  {BROKER.email}
+                </a>
+              </dd>
+            </div>
+            <div class="flex gap-3">
+              <dt class="w-24 shrink-0 text-ink/55">Serves</dt>
+              <dd class="text-ink/80">{BROKER.areaServed}</dd>
+            </div>
+            <div class="flex gap-3">
+              <dt class="w-24 shrink-0 text-ink/55">Focus</dt>
+              <dd class="text-ink/80">Freehold low-rise — detached, towns, semis</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="mt-6 border border-rule bg-accent-tint/40 p-5">
+          <p class="section-label">— Disclaimer</p>
+          <div class="mt-2 space-y-3 text-[12px] leading-relaxed text-ink/70">
+            {paragraphs.map((p) => <p>{p}</p>)}
+          </div>
+        </div>
+      </aside>
     </div>
 
-    <div class="mt-8">
-      <a
-        href="/book?source=about"
-        class="inline-flex min-h-12 items-center border border-accent bg-accent px-6 font-medium text-white hover:bg-accent/90"
-      >
-        Book a call
-      </a>
-    </div>
-
-    <div class="mt-10 border-t border-rule pt-4 text-xs leading-relaxed text-ink/60">
-      <p>
-        This tool provides a general estimate only and is not tax, legal, or accounting advice. Rebate eligibility is
-        determined by the Canada Revenue Agency and depends on your specific circumstances, the wording of your
-        agreement of purchase and sale, and program deadlines that may change. Amounts shown are maximums for
-        illustration. Confirm your eligibility with your own lawyer and accountant before relying on any figure. Not
-        intended to solicit buyers or sellers currently under contract with another brokerage.
-      </p>
-    </div>
+    <Cta />
   </div>
 </Base>

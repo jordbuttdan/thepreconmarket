@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import VipForm from '../components/VipForm';
+import Disclaimer from '../components/Disclaimer.astro';
+import { GHL } from '../config/ghl';
+import { BROKER } from '../config/site';
+---
+
+<Base
+  title="Register for VIP access to Ontario low-rise releases"
+  description="Get first access to new freehold detached, townhome and semi releases across the GTA — opening price lists, lot selection and deposit structures, before public opening."
+  kicker={['Ontario', 'Low-rise', 'VIP access']}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'VIP access', href: '/vip' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <div class="grid gap-10 lg:grid-cols-12 lg:gap-x-12">
+      <div class="lg:col-span-5">
+        <p class="section-label">— VIP access</p>
+        <h1 class="mt-4 text-[1.95rem] leading-[1.1] font-semibold sm:text-[2.4rem]">
+          First access to new low-rise releases.
+        </h1>
+        <p class="lede mt-6">
+          Builders release new communities in phases, and the best lots go before the sales centre
+          opens to the public. Registering puts you on the list for opening price lists, lot
+          selection and deposit structures on freehold detached homes, townhomes and semis across
+          the GTA.
+        </p>
+
+        <div class="mt-8 space-y-5">
+          {
+            [
+              {
+                n: '01',
+                h: 'First choice of lot',
+                b: 'On low-rise the lot is the decision you cannot revisit. Walkouts, wider frontages and lots backing onto protected land are finite and chosen in order.',
+              },
+              {
+                n: '02',
+                h: 'The opening price list',
+                b: 'Builders commonly raise prices between phases. The first release is the lowest price a community will see.',
+              },
+              {
+                n: '03',
+                h: 'Honest assessment',
+                b: 'Including when a release is not worth your time. You will hear about the builder’s delivery record and date reliability, not just the renderings.',
+              },
+              {
+                n: '04',
+                h: 'No cost to you',
+                b: 'The builder budgets the co-operating commission whether or not you bring a broker. Walk in alone and they keep it — the price does not drop.',
+              },
+            ].map((item) => (
+              <div class="flex gap-4">
+                <p class="section-label shrink-0 pt-1">— {item.n}</p>
+                <div>
+                  <h2 class="text-[15px] font-semibold">{item.h}</h2>
+                  <p class="mt-1 text-[14px] leading-relaxed text-ink/70">{item.b}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="tick-corners mt-8 border border-rule bg-paper-pure/70 p-4">
+          <p class="section-label">— Registered by</p>
+          <p class="mt-2 text-sm font-medium text-ink">{BROKER.name}, {BROKER.title}</p>
+          <p class="text-sm text-ink/70">{BROKER.brokerage}</p>
+          <p class="figure mt-2 text-[11px] text-ink/50">
+            RECO #{BROKER.reco} · <a href={BROKER.phoneHref} class="text-accent">{BROKER.phone}</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="card p-5 sm:p-7">
+          <p class="section-label">— Register</p>
+          <h2 class="mt-2 text-xl font-semibold">Tell me what you're looking for</h2>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/70">
+            Four fields are required. The rest helps me send you releases worth your attention
+            rather than everything.
+          </p>
+          <div class="mt-6">
+            <VipForm webhookUrl={GHL.vipWebhookUrl} client:load />
+          </div>
+        </div>
+
+        <div class="mt-6 border border-rule bg-accent-tint/40 p-5">
+          <p class="section-label">— One important note</p>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
+            Most builders require your broker to be registered <strong class="font-semibold">at or
+            before your first visit</strong> for representation to be recognised. If you visit a
+            sales centre unrepresented, you often cannot add representation afterward. Register
+            before you go.
+          </p>
+          <a
+            href="/faq/do-i-need-a-realtor-pre-construction"
+            class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2"
+          >
+            Why this matters →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <Disclaimer />
+  </div>
+</Base>

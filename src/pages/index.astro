@@ -1,122 +1,283 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Checker from '../components/checker/Checker';
-import RebateBands from '../components/RebateBands.astro';
-import { LAST_UPDATED } from '../lib/rebateRules';
+import Cta from '../components/Cta.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import { SITE, BROKER } from '../config/site';
+import { LAST_UPDATED, ON_ENHR } from '../lib/rebateRules';
+
+const faq = await getCollection('faq');
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const cities = (await getCollection('cities')).sort((a, b) => a.data.order - b.data.order);
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+
+const topGuides = guides.slice(0, 4);
+
+// The questions most worth surfacing on the home page: the ones where being
+// wrong is expensive.
+const HERO_FAQ = [
+  'cooling-off-period-freehold-ontario',
+  'do-i-have-to-be-first-time-buyer-ontario-rebate',
+  'spouse-owned-home-first-time-buyer',
+  'builder-keeps-hst-rebate-assignment',
+  'is-my-deposit-protected-freehold-ontario',
+  'development-charges-levies-cap',
+];
+const byId = new Map(faq.map((e) => [e.id, e]));
+const heroFaq = HERO_FAQ.map((s) => byId.get(s)).filter((e) => e != null);
+
+const homeFaqSchema = heroFaq.map((e) => ({
+  question: e!.data.question,
+  answer: e!.data.shortAnswer,
+}));
 ---
 
 <Base
-  title="New Home GST/HST Rebate Checker — Ontario Pre-Construction | The Precon Market"
-  description="Find out in two minutes if you qualify for up to $130,000 in new home GST/HST rebates on your Ontario pre-construction purchase. Built by a licensed broker."
+  title="The Precon Market — Ontario pre-construction low-rise"
+  description={SITE.description}
+  kicker={['Ontario', 'Detached · Towns · Semis', `Rev ${LAST_UPDATED}`]}
+  isHome
+  faq={homeFaqSchema}
 >
-  <!-- Title block. Reads as drawing metadata, doubles as a freshness marker. -->
-  <div class="border-b border-rule bg-paper-pure/60">
-    <div
-      class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-6 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-rule-dark uppercase sm:px-6"
-    >
-      <span>Ontario</span>
-      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
-      <span>Pre-construction</span>
-      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
-      <span>GST-HST relief</span>
-      <span aria-hidden="true" class="hidden sm:inline text-rule">/</span>
-      <span>Rev {LAST_UPDATED}</span>
-    </div>
-  </div>
-
   <div class="mx-auto max-w-[1100px] px-4 sm:px-6">
-    <!-- DOM order is the mobile order: headline, then the tool. Desktop
-         re-places these into two columns so the checker is never pushed
-         below the fold on a phone. -->
-    <div class="grid gap-8 pt-8 lg:grid-cols-12 lg:gap-x-12 lg:gap-y-8 lg:pt-14">
-      <div class="lg:col-span-5 lg:col-start-1 lg:row-start-1">
-        <p class="section-label">— 01 / Eligibility check</p>
-        <h1 class="mt-4 text-[1.95rem] leading-[1.1] font-semibold sm:text-[2.5rem]">
-          Find out if you qualify for up to{' '}
-          <span class="figure whitespace-nowrap text-accent">$130,000</span>{' '}
-          in new home tax rebates.
+    <!-- HERO -->
+    <section class="grid gap-8 pt-10 lg:grid-cols-12 lg:gap-x-12 lg:pt-16">
+      <div class="lg:col-span-7">
+        <p class="section-label">— 01 / Ontario low-rise</p>
+        <h1 class="mt-4 max-w-[24ch] text-[2.1rem] leading-[1.08] font-semibold sm:text-[2.9rem]">
+          New freehold homes, bought with someone on your side.
         </h1>
-        <p class="mt-4 max-w-[46ch] text-[15px] leading-relaxed text-ink/75">
-          Two new rebate programs took effect this year. Most buyers are still working from last year's numbers, and
-          on a typical GTA condo the difference runs into six figures.
+        <p class="lede mt-6 max-w-[58ch]">
+          Independent buyer representation and project search for Ontario pre-construction
+          low-rise — detached homes, townhomes and semis. No condos. The builder budgets the
+          commission whether or not you bring a broker, so representation costs you nothing and
+          the price does not drop if you walk in alone.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/vip" class="btn text-sm">Register for VIP access</a>
+          <a href="/book" class="btn-secondary text-sm">Book a call</a>
+        </div>
+        <p class="mt-4 text-[13px] text-ink/55">
+          Or start with the{' '}
+          <a href="/hst-rebate/checker" class="text-accent underline underline-offset-2">
+            rebate checker
+          </a>{' '}
+          — about two minutes, no email required.
         </p>
       </div>
 
-      <div class="lg:col-span-7 lg:col-start-6 lg:row-span-2 lg:row-start-1">
-        <Checker client:load />
-        <p class="mt-3 font-mono text-[11px] leading-relaxed text-ink/45">
-          Rebate rules current as of {LAST_UPDATED}. Programs are time-limited and subject to change.
-        </p>
-      </div>
-
-      <!-- Credential block, set like a drawing stamp. -->
-      <div class="lg:col-span-5 lg:col-start-1 lg:row-start-2 lg:self-start">
-        <div class="tick-corners border border-rule bg-paper-pure/70 p-4">
-          <p class="section-label">— Prepared by</p>
-          <p class="mt-2 text-sm font-medium text-ink">Jordan Buttarazzi, Broker</p>
-          <p class="text-sm text-ink/70">Valery Real Estate Inc., Brokerage</p>
-          <p class="figure mt-2 text-[11px] text-ink/50">RECO #5009855 · (647) 371-1367</p>
+      <!-- The urgent fact, set like a drawing note. -->
+      <div class="lg:col-span-5">
+        <div class="tick-corners border border-rule bg-accent-tint/60 p-5">
+          <p class="section-label">— Why now</p>
+          <p class="figure mt-2 text-3xl text-honey">$130,000</p>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/80">
+            Combined federal and Ontario HST relief currently available on a qualifying new home.
+            The Ontario portion — up to $80,000, with
+            <span class="text-ink"> no first-time buyer test</span> — requires an agreement signed
+            before <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>.
+          </p>
+          <p class="mt-3 text-[13px] leading-relaxed text-ink/65">
+            It runs on the signing date, not the closing date. Outside the window you fall back to
+            $24,000.
+          </p>
+          <a
+            href="/hst-rebate"
+            class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
+          >
+            How the programs work →
+          </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Where the number comes from, drawn rather than listed. -->
-    <section aria-labelledby="bands-heading" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">— 02 / Relief by price</p>
-      <h2 id="bands-heading" class="mt-3 max-w-[28ch] text-2xl font-semibold">
-        What you can actually claim, and where it stops.
+    <!-- WHAT THIS IS -->
+    <section aria-labelledby="service" class="mt-20 border-t border-rule-dark pt-8">
+      <p class="section-label">— 02 / The service</p>
+      <h2 id="service" class="mt-3 max-w-[30ch] text-2xl font-semibold">
+        Two things: finding it, and not getting hurt buying it.
       </h2>
-      <p class="mt-4 max-w-[68ch] text-[15px] leading-relaxed text-ink/80">
-        Relief comes from two directions at once, and they behave differently as price climbs. The federal rebate is
-        the one everybody talks about, but it's restricted to first-time buyers and it's gone by $1.5 million. The
-        Ontario enhanced rebate is the bigger of the two, and it is <span class="text-ink">not</span> limited to
-        first-time buyers. That surprises almost everyone, including plenty of agents.
-      </p>
-
-      <RebateBands />
-
-      <p class="mt-6 max-w-[68ch] border-l-2 border-accent pl-4 text-[15px] leading-relaxed text-ink/80">
-        The two don't simply add to $180,000. Ontario's 5% top-up is reduced by whatever federal rebate you claim,
-        which is what pins realistic combined relief around <span class="figure">$130,000</span>. Where you land in
-        these bands depends on your agreement date, not your closing date, and the windows are narrow.
-      </p>
-    </section>
-
-    <!-- Depth signal, written as prose rather than another checklist. -->
-    <section aria-labelledby="reads-heading" class="mt-20 border-t border-rule pt-8 pb-4">
-      <div class="grid gap-8 lg:grid-cols-12">
-        <div class="lg:col-span-4">
-          <p class="section-label">— 03 / Beyond the number</p>
-          <h2 id="reads-heading" class="mt-3 text-2xl font-semibold">The estimate is the easy part.</h2>
+      <div class="mt-7 grid gap-4 lg:grid-cols-2">
+        <div class="card p-5 sm:p-6">
+          <p class="section-label">— Search</p>
+          <h3 class="mt-2 text-[17px] font-semibold">Access to what's actually releasing</h3>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
+            Builders release low-rise in phases, and the best lots go before the sales centre opens
+            to the public. You get opening price lists, lot availability and deposit structures —
+            plus an honest view of which releases are not worth your time.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-[13px] text-ink/70">
+            <li>First choice of lot, which is the decision you cannot revisit</li>
+            <li>The opening price list, before phase-to-phase increases</li>
+            <li>The builder's delivery record and date reliability</li>
+          </ul>
+          <a href="/vip" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
+            Register for access →
+          </a>
         </div>
-        <div class="space-y-4 text-[15px] leading-relaxed text-ink/80 lg:col-span-8">
-          <p>
-            Almost every builder agreement prices the unit "inclusive of HST" and assigns the rebate to the builder at
-            closing. That's normal. What buyers miss is the consequence: CRA holds <span class="text-ink">you</span>
-            {' '}responsible for the eligibility, and if it fails, you repay the rebate the builder already took credit
-            for. A rebate credited on your statement of adjustments is not a rebate you've kept.
+        <div class="card p-5 sm:p-6">
+          <p class="section-label">— Buying</p>
+          <h3 class="mt-2 text-[17px] font-semibold">Representation through a firm agreement</h3>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
+            Freehold pre-construction binds you the moment it is accepted — no cooling-off period,
+            no financing condition. Every protection you get has to be in place before you sign,
+            which means the useful work happens early.
           </p>
-          <p>
-            The traps cluster in predictable places. A buyer who has never owned anything loses first-time status
-            because they lived in a home their partner owned. An agreement amended in April 2026 gets deemed back to
-            its original date and falls out of the enhanced window. A unit bought to rent moves onto an entirely
-            different path where the HST is paid in full at closing and clawed back from CRA months later, which is a
-            cash problem long before it's a tax problem.
-          </p>
-          <p>
-            The checker flags which of these apply to you. Reading the actual clause in your actual agreement is the
-            part that needs a person, and that's the part I do.
-          </p>
-          <p class="pt-2">
-            <a
-              href="/book?source=home-depth"
-              class="inline-flex min-h-12 items-center border border-accent px-6 font-medium text-accent hover:bg-accent-tint"
-            >
-              Have your agreement reviewed
-            </a>
-          </p>
+          <ul class="mt-4 space-y-1.5 text-[13px] text-ink/70">
+            <li>The HST clause, read before you sign it</li>
+            <li>A cap on development levies — the most valuable amendment</li>
+            <li>Your full cash requirement: deposits, closing and fit-out</li>
+          </ul>
+          <a href="/book" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
+            Book a call →
+          </a>
         </div>
       </div>
     </section>
+
+    <!-- PROJECTS / CITIES, when populated -->
+    {
+      projects.length > 0 && (
+        <section aria-labelledby="projects" class="mt-20 border-t border-rule-dark pt-8">
+          <p class="section-label">— 03 / Projects</p>
+          <h2 id="projects" class="mt-3 text-2xl font-semibold">Hand-picked low-rise communities</h2>
+          <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.slice(0, 6).map((p) => (
+              <li class="card p-5">
+                <p class="section-label">— {p.data.city}</p>
+                <h3 class="mt-2 text-[16px] font-semibold leading-snug">
+                  <a href={`/projects/${p.id}`} class="hover:text-accent">
+                    {p.data.name}
+                  </a>
+                </h3>
+                <p class="mt-1.5 text-[13px] text-ink/65">{p.data.builder.join(', ')}</p>
+                <p class="mt-2 text-[13px] leading-relaxed text-ink/70">{p.data.shortAnswer}</p>
+              </li>
+            ))}
+          </ul>
+          <a href="/projects" class="mt-5 inline-block text-[13px] text-accent underline underline-offset-2">
+            All projects →
+          </a>
+        </section>
+      )
+    }
+
+    {
+      cities.length > 0 && (
+        <section aria-labelledby="cities" class="mt-20 border-t border-rule-dark pt-8">
+          <p class="section-label">— Where</p>
+          <h2 id="cities" class="mt-3 text-2xl font-semibold">New low-rise by city</h2>
+          <ul class="mt-6 flex flex-wrap gap-2">
+            {cities.map((c) => (
+              <li>
+                <a
+                  href={`/new-homes/${c.id}`}
+                  class="inline-block border border-rule bg-paper-pure px-3 py-1.5 text-[13px] text-ink/80 hover:border-honey hover:bg-accent-tint"
+                >
+                  {c.data.city}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <!-- THE EXPENSIVE QUESTIONS -->
+    <section aria-labelledby="questions" class="mt-20 border-t border-rule-dark pt-8">
+      <p class="section-label">— {projects.length > 0 ? '04' : '03'} / The expensive questions</p>
+      <h2 id="questions" class="mt-3 max-w-[32ch] text-2xl font-semibold">
+        Six things that cost low-rise buyers the most money
+      </h2>
+      <p class="mt-4 max-w-[66ch] text-[15px] leading-relaxed text-ink/80">
+        Each of these has a short answer and a six-figure consequence if you get it wrong. All
+        {' '}{faq.length} questions on the site cite their sources.
+      </p>
+
+      <ul class="mt-7 grid gap-4 sm:grid-cols-2">
+        {
+          heroFaq.map((item, i) => (
+            <li class="card flex flex-col p-5">
+              <p class="section-label">— {String(i + 1).padStart(2, '0')}</p>
+              <h3 class="mt-2 text-[15px] font-semibold leading-snug">
+                <a href={`/faq/${item!.id}`} class="hover:text-accent">
+                  {item!.data.question}
+                </a>
+              </h3>
+              <p class="mt-2 grow text-[13px] leading-relaxed text-ink/70">
+                {item!.data.shortAnswer}
+              </p>
+              <a
+                href={`/faq/${item!.id}`}
+                class="mt-3 text-[13px] text-accent underline underline-offset-2"
+              >
+                Full answer →
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <a href="/faq" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
+        All {faq.length} questions →
+      </a>
+    </section>
+
+    <!-- GUIDES -->
+    <section aria-labelledby="guides" class="mt-20 border-t border-rule-dark pt-8">
+      <p class="section-label">— Guides</p>
+      <h2 id="guides" class="mt-3 text-2xl font-semibold">Start here</h2>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+        {
+          topGuides.map((g) => (
+            <li class="card p-5">
+              <p class="section-label">
+                — Guide{g.data.readMinutes && <span class="ml-2">{g.data.readMinutes} min</span>}
+              </p>
+              <h3 class="mt-2 text-[16px] font-semibold leading-snug">
+                <a href={`/guides/${g.id}`} class="hover:text-accent">
+                  {g.data.title}
+                </a>
+              </h3>
+              <p class="mt-2 text-[13px] leading-relaxed text-ink/70">{g.data.shortAnswer}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <a href="/guides" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
+        All {guides.length} guides →
+      </a>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="mt-20 border-t border-rule pt-8">
+      <div class="grid gap-6 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <p class="section-label">— Prepared by</p>
+          <div class="tick-corners mt-3 border border-rule bg-paper-pure/70 p-4">
+            <p class="text-[15px] font-semibold text-ink">{BROKER.brokerage}</p>
+            <p class="text-[15px] text-ink/80">{BROKER.name}, {BROKER.title}</p>
+            <p class="figure mt-2 text-[11px] text-ink/55">
+              RECO #{BROKER.reco} ·{' '}
+              <a href={BROKER.phoneHref} class="text-accent">{BROKER.phone}</a>
+            </p>
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <p class="text-[15px] leading-relaxed text-ink/80">
+            Low-rise only, and Ontario only. Most pre-construction advice is written about
+            condominiums because that is where the marketing budgets are — but freehold buyers face
+            a firmer contract, thinner deposit protection and higher closing costs on a larger
+            purchase. Those are the things worth knowing about, so that is what this site covers.
+          </p>
+          <a href="/about" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
+            More about Jordan →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <Cta variant="vip" />
+    <Disclaimer />
   </div>
 </Base>

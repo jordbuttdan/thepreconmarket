@@ -1,0 +1,103 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Sources from '../../components/Sources.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { CATEGORY_META } from '../../content.config';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const entries = await getCollection('faq');
+  return entries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, all: entries },
+  }));
+};
+
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const category = CATEGORY_META[d.category];
+
+// Resolve explicit `related` slugs, then top up from the same category so
+// every page has somewhere to go next. Hub-and-spoke, enforced in code.
+const bySlug = new Map(all.map((e) => [e.id, e]));
+const explicit = d.related.map((s) => bySlug.get(s)).filter((e) => e != null);
+const fallback = all
+  .filter((e) => e.data.category === d.category && e.id !== entry.id && !d.related.includes(e.id))
+  .sort((a, b) => a.data.order - b.data.order);
+const related = [...explicit, ...fallback].slice(0, 5);
+---
+
+<Base
+  title={d.title ? `${d.title} — Ontario pre-construction` : d.question}
+  description={d.description ?? d.shortAnswer}
+  kicker={['Ontario', category.label]}
+  updated={d.updated}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'FAQ', href: '/faq' },
+    { name: d.title ?? d.question, href: `/faq/${entry.id}` },
+  ]}
+  faq={[{ question: d.question, answer: d.shortAnswer }]}
+  article={{
+    headline: d.question,
+    description: d.shortAnswer,
+    dateModified: d.updated,
+  }}
+>
+  <div class="mx-auto grid max-w-[1100px] gap-10 px-4 pt-6 sm:px-6 lg:grid-cols-12 lg:gap-x-12">
+    <article class="lg:col-span-8">
+      <p class="section-label">— {category.label}</p>
+      <h1 class="mt-3 text-[1.75rem] font-semibold sm:text-[2.15rem]">{d.question}</h1>
+
+      <!-- The answer-first block. Self-contained, quotable, and the first
+           prose on the page — this is what AI search engines cite. -->
+      <p class="lede mt-6">{d.shortAnswer}</p>
+
+      <div class="prose-precon mt-8">
+        <Content />
+      </div>
+
+      <Sources sources={d.sources} />
+      <Cta />
+      <Disclaimer />
+    </article>
+
+    <aside class="lg:col-span-4">
+      <div class="sticky top-6">
+        <p class="section-label">— Related questions</p>
+        <ul class="mt-3 space-y-0">
+          {
+            related.map((r) => (
+              <li class="border-b border-rule/60">
+                <a
+                  href={`/faq/${r.id}`}
+                  class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                >
+                  <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                  <span>{r.data.question}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="mt-8 border border-rule bg-accent-tint/40 p-4">
+          <p class="section-label">— Rebate checker</p>
+          <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+            Estimate your federal and Ontario rebates in about two minutes.
+          </p>
+          <a href="/hst-rebate/checker" class="btn mt-3 w-full text-[13px]">Check eligibility</a>
+        </div>
+
+        <p class="mt-6 text-[13px]">
+          <a href="/faq" class="text-accent underline underline-offset-2">
+            ← All {all.length} questions
+          </a>
+        </p>
+      </div>
+    </aside>
+  </div>
+</Base>

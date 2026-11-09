@@ -1,0 +1,38 @@
+---
+/**
+ * The standing "not advice" block. Appears on every content page that touches
+ * tax or contract rules, which is most of them.
+ *
+ * This is not boilerplate for its own sake: the site owner is a licensed
+ * broker, not a lawyer or accountant, and the content explains published
+ * rules rather than advising on them. Saying so plainly is both the honest
+ * framing and the one that makes the page trustworthy enough to cite.
+ */
+import { DISCLAIMER_SHORT } from '../config/site';
+
+interface Props {
+  variant?: 'full' | 'compact';
+}
+const { variant = 'full' } = Astro.props;
+---
+
+{
+  variant === 'compact' ? (
+    <p class="mt-6 border-t border-rule pt-4 text-xs leading-relaxed text-ink/55">
+      {DISCLAIMER_SHORT}
+    </p>
+  ) : (
+    <aside class="mt-10 border border-rule bg-accent-tint/50 p-4 sm:p-5">
+      <p class="section-label">— Not advice</p>
+      <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+        {DISCLAIMER_SHORT} Jordan Buttarazzi is a licensed real estate Broker, not a lawyer or
+        accountant. Where a question turns on the law or on your tax position, take it to the
+        appropriate professional —{' '}
+        <a href="/disclaimer" class="text-accent underline underline-offset-2">
+          read the full disclaimer
+        </a>
+        .
+      </p>
+    </aside>
+  )
+}

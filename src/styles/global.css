@@ -1,19 +1,30 @@
 @import 'tailwindcss';
 
 /* ---------------------------------------------------------------------------
-   Design tokens — architectural drafting aesthetic.
-   One accent colour. No gradients. No drop shadows beyond card elevation.
+   Design tokens — architectural drafting aesthetic, honey/ink colourway.
+
+   COLOUR RULE (important, do not break):
+   - `honey` (#C8941F) is DECORATIVE ONLY. It carries hairlines, washes,
+     section labels and large dollar figures. It must never be used as a text
+     colour for body copy or for small text on white — it fails WCAG AA.
+   - `accent` (#8A6A1F) is the deep brass used where gold must carry text:
+     links, inline emphasis. 5.9:1 on white — passes AA.
+   - CTAs are INK fill with white text. Gold never carries button text.
 --------------------------------------------------------------------------- */
 @theme {
-  --color-ink: #14161a; /* near-black, primary text */
-  --color-paper: #f7f6f3; /* warm off-white background */
+  --color-ink: #14161a; /* near-black — primary text AND all buttons */
+  --color-paper: #fffdf7; /* warm near-white page background */
   --color-paper-pure: #ffffff; /* cards, elevated surfaces */
-  --color-rule: #d8d4cc; /* hairline borders, grid lines */
-  --color-rule-dark: #a8a29a; /* emphasized rules */
-  --color-accent: #1f5c74; /* deep architectural teal — links, CTAs, active states */
-  --color-accent-tint: #e8f0f3; /* accent wash for highlighted panels */
+
+  --color-honey: #c8941f; /* DECORATIVE: rules, figures, labels, accents */
+  --color-accent: #8a6a1f; /* deep brass — safe for link/text use (AA) */
+  --color-accent-tint: #fdf3dc; /* honey wash for highlighted panels */
+
+  --color-rule: #e8e0ce; /* warm hairline borders, grid lines */
+  --color-rule-dark: #b5a479; /* emphasized rules, annotation labels */
+
   --color-positive: #2f6b4f; /* eligible / good news */
-  --color-caution: #8a5a1f; /* warnings, deadlines — warm, not alarming red */
+  --color-caution: #9a4a18; /* warnings, deadlines — warm, not alarming red */
 
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
@@ -29,16 +40,17 @@ html {
   font-family: var(--font-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 /* Drafting-paper texture: fine minor grid with a heavier major grid over it,
    the way gridded vellum reads. Never above 4% opacity. */
 body {
   background-image:
-    linear-gradient(to right, rgb(20 22 26 / 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 22 26 / 0.04) 1px, transparent 1px),
-    linear-gradient(to right, rgb(20 22 26 / 0.02) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 22 26 / 0.02) 1px, transparent 1px);
+    linear-gradient(to right, rgb(20 22 26 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 22 26 / 0.035) 1px, transparent 1px),
+    linear-gradient(to right, rgb(20 22 26 / 0.018) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 22 26 / 0.018) 1px, transparent 1px);
   background-size:
     96px 96px,
     96px 96px,
@@ -72,8 +84,44 @@ h3 {
   box-shadow: 0 1px 2px rgb(20 22 26 / 0.04);
 }
 
-/* Utility: thin corner ticks, like registration marks. Apply to a relatively
-   positioned element containing an element with class `corner-ticks`. */
+/* Utility: primary call to action. INK fill, white text — never gold. */
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding-inline: 1.25rem;
+  background-color: var(--color-ink);
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid var(--color-ink);
+  transition: background-color 120ms ease;
+}
+.btn:hover {
+  background-color: #000;
+}
+
+/* Utility: secondary call to action — outlined, ink text, honey on hover. */
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding-inline: 1.25rem;
+  background-color: transparent;
+  color: var(--color-ink);
+  font-weight: 500;
+  border: 1px solid var(--color-rule-dark);
+  transition:
+    border-color 120ms ease,
+    background-color 120ms ease;
+}
+.btn-secondary:hover {
+  border-color: var(--color-honey);
+  background-color: var(--color-accent-tint);
+}
+
+/* Utility: thin corner ticks, like registration marks. */
 @utility tick-corners {
   position: relative;
 }
@@ -88,24 +136,132 @@ h3 {
 .tick-corners::before {
   top: -1px;
   left: -1px;
-  border-top: 1px solid var(--color-rule-dark);
-  border-left: 1px solid var(--color-rule-dark);
+  border-top: 1px solid var(--color-honey);
+  border-left: 1px solid var(--color-honey);
 }
 .tick-corners::after {
   bottom: -1px;
   right: -1px;
-  border-bottom: 1px solid var(--color-rule-dark);
-  border-right: 1px solid var(--color-rule-dark);
+  border-bottom: 1px solid var(--color-honey);
+  border-right: 1px solid var(--color-honey);
 }
 
-/* All dollar figures render in mono. */
+/* All dollar figures render in mono with tabular numerals. */
 @utility figure {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
+}
+
+/* Utility: the answer-first lede paragraph on FAQ and guide pages. This is
+   the block AI search engines quote, so it is visually distinct and always
+   the first prose on the page. */
+@utility lede {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+  border-left: 2px solid var(--color-honey);
+  padding-left: 1rem;
+}
+
+/* Long-form prose. Used on FAQ and guide bodies rendered from Markdown. */
+@utility prose-precon {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--color-ink) 85%, transparent);
+}
+.prose-precon > * + * {
+  margin-top: 1rem;
+}
+.prose-precon h2 {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.prose-precon h3 {
+  margin-top: 1.75rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.prose-precon a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-precon a:hover {
+  color: var(--color-ink);
+}
+.prose-precon strong {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.prose-precon ul,
+.prose-precon ol {
+  padding-left: 1.25rem;
+}
+.prose-precon ul {
+  list-style: none;
+}
+.prose-precon ul > li {
+  position: relative;
+  padding-left: 0.25rem;
+}
+.prose-precon ul > li::before {
+  content: '';
+  position: absolute;
+  left: -0.9rem;
+  top: 0.65em;
+  width: 6px;
+  height: 1px;
+  background-color: var(--color-honey);
+}
+.prose-precon ol {
+  list-style: decimal;
+}
+.prose-precon li + li {
+  margin-top: 0.4rem;
+}
+.prose-precon blockquote {
+  border-left: 2px solid var(--color-rule-dark);
+  padding-left: 1rem;
+  color: color-mix(in srgb, var(--color-ink) 70%, transparent);
+}
+.prose-precon table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.prose-precon th,
+.prose-precon td {
+  border: 1px solid var(--color-rule);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+.prose-precon th {
+  background-color: var(--color-accent-tint);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.prose-precon code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-accent-tint);
+  padding: 0.1em 0.35em;
 }
 
 /* Focus visibility for keyboard navigation. */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

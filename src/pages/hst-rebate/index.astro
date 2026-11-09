@@ -1,0 +1,294 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import RebateBands from '../../components/RebateBands.astro';
+import Cta from '../../components/Cta.astro';
+import Sources from '../../components/Sources.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { LAST_UPDATED, ON_ENHR, FTHB_GST, ON_STANDARD } from '../../lib/rebateRules';
+
+const faq = await getCollection('faq');
+const rebateFaq = faq
+  .filter((e) => e.data.category === 'hst-rebates')
+  .sort((a, b) => a.data.order - b.data.order);
+
+const guides = await getCollection('guides');
+const rebateGuides = guides.filter((g) =>
+  ['hst-rebate-guide-ontario-new-home', 'first-time-buyer-guide-new-home-ontario', 'move-up-buyer-guide-pre-construction', 'investor-guide-pre-construction-ontario'].includes(g.id),
+);
+
+const updated = new Date(LAST_UPDATED);
+
+// The hub carries FAQPage schema for the whole rebate cluster.
+const faqSchema = rebateFaq.map((e) => ({
+  question: e.data.question,
+  answer: e.data.shortAnswer,
+}));
+
+const sources = [
+  {
+    label: 'CRA — Ontario enhanced new housing rebate (Notice 346)',
+    url: 'https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html',
+  },
+  {
+    label: 'CRA — Ontario enhanced new housing rebate',
+    url: 'https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/housing-rebates/ontario-enhanced-new-housing.html',
+  },
+  {
+    label: 'CRA — GST/HST new housing rebate',
+    url: 'https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/new-housing-rebate.html',
+  },
+  {
+    label: 'PwC — GST relief for first-time home buyers',
+    url: 'https://www.pwc.com/ca/en/services/tax/publications/tax-insights/gst-relief-first-time-home-buyers-2025.html',
+  },
+];
+---
+
+<Base
+  title="Ontario new home HST & GST rebates — up to $130,000"
+  description="How the Ontario Enhanced New Housing Rebate ($80,000), the federal First-Time Home Buyers' GST Rebate ($50,000) and the Ontario 5% top-up work together on a new Ontario home. Deadlines, price bands and eligibility traps."
+  kicker={['Ontario', 'HST & GST relief', `Rev ${LAST_UPDATED}`]}
+  updated={updated}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'HST rebate', href: '/hst-rebate' }]}
+  faq={faqSchema}
+  article={{
+    headline: 'Ontario new home HST and GST rebates',
+    description:
+      'The three overlapping programs offering up to roughly $130,000 of relief on a new Ontario home, their price bands and their deadlines.',
+    dateModified: updated,
+  }}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— 01 / HST &amp; GST relief</p>
+    <h1 class="mt-4 max-w-[30ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      Up to <span class="figure whitespace-nowrap text-honey">$130,000</span> in new home tax rebates
+    </h1>
+
+    <p class="lede mt-6 max-w-[64ch]">
+      Three programs currently overlap on a new Ontario home: the federal first-time buyer GST
+      rebate of up to $50,000, the Ontario Enhanced New Housing Rebate of up to $80,000 — which has
+      no first-time buyer test — and an Ontario 5% top-up of up to $50,000 reduced by any federal
+      rebate claimed. Combined relief reaches roughly $130,000.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/hst-rebate/checker" class="btn text-sm">Check your eligibility</a>
+      <a href="/guides/hst-rebate-guide-ontario-new-home" class="btn-secondary text-sm">
+        Read the full guide
+      </a>
+    </div>
+
+    <!-- The three programs, as a reference table rather than prose. -->
+    <section aria-labelledby="programs" class="mt-16 border-t border-rule-dark pt-8">
+      <p class="section-label">— 02 / The three programs</p>
+      <h2 id="programs" class="mt-3 text-2xl font-semibold">What each one pays</h2>
+
+      <div class="mt-6 grid gap-4 lg:grid-cols-3">
+        <div class="tick-corners card p-5">
+          <p class="section-label">— Federal</p>
+          <h3 class="mt-2 text-[16px] font-semibold leading-snug">
+            First-Time Home Buyers' GST Rebate
+          </h3>
+          <p class="figure mt-3 text-2xl text-honey">
+            ${FTHB_GST.MAX_REBATE.toLocaleString('en-CA')}
+          </p>
+          <ul class="mt-3 space-y-1 text-[13px] text-ink/70">
+            <li>Full 5% federal GST</li>
+            <li>Full rebate to $1,000,000</li>
+            <li>Zero at $1,500,000</li>
+            <li class="text-ink">First-time buyers only</li>
+            <li>Signed {FTHB_GST.WINDOW_OPENS} → before 2031</li>
+          </ul>
+          <a
+            href="/faq/first-time-home-buyers-gst-rebate"
+            class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
+          >
+            How it works →
+          </a>
+        </div>
+
+        <div class="tick-corners card p-5">
+          <p class="section-label">— Ontario</p>
+          <h3 class="mt-2 text-[16px] font-semibold leading-snug">
+            Enhanced New Housing Rebate
+          </h3>
+          <p class="figure mt-3 text-2xl text-honey">
+            ${ON_ENHR.MAX_REBATE.toLocaleString('en-CA')}
+          </p>
+          <ul class="mt-3 space-y-1 text-[13px] text-ink/70">
+            <li>Full 8% provincial HST</li>
+            <li>Flat $80,000 from $1M–$1.5M</li>
+            <li>Partial to $1,850,000</li>
+            <li class="text-ink">No first-time buyer test</li>
+            <li>Signed {ON_ENHR.WINDOW_OPENS} → {ON_ENHR.WINDOW_CLOSES}</li>
+          </ul>
+          <a
+            href="/faq/ontario-enhanced-new-housing-rebate"
+            class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
+          >
+            How it works →
+          </a>
+        </div>
+
+        <div class="tick-corners card p-5">
+          <p class="section-label">— Ontario</p>
+          <h3 class="mt-2 text-[16px] font-semibold leading-snug">
+            New home affordability payment
+          </h3>
+          <p class="figure mt-3 text-2xl text-honey">$50,000</p>
+          <ul class="mt-3 space-y-1 text-[13px] text-ink/70">
+            <li>Equivalent to the 5% federal part</li>
+            <li>Requires receiving the ENHR</li>
+            <li class="text-ink">Reduced by any federal rebate</li>
+            <li>Mainly helps non-first-time buyers</li>
+            <li>No separate application</li>
+          </ul>
+          <a
+            href="/faq/ontario-new-home-affordability-payment"
+            class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
+          >
+            How it works →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Relief by price band, drawn. -->
+    <section aria-labelledby="bands-heading" class="mt-16 border-t border-rule-dark pt-8">
+      <p class="section-label">— 03 / Relief by price</p>
+      <h2 id="bands-heading" class="mt-3 max-w-[30ch] text-2xl font-semibold">
+        What you can claim, and where it stops
+      </h2>
+      <p class="mt-4 max-w-[68ch] text-[15px] leading-relaxed text-ink/80">
+        Relief comes from two directions at once and they behave differently as price climbs. The
+        federal rebate is the one everybody talks about, but it is restricted to first-time buyers
+        and gone by $1.5 million. The Ontario enhanced rebate is the larger of the two and is
+        <span class="text-ink">not</span> limited to first-time buyers. That surprises almost
+        everyone.
+      </p>
+
+      <RebateBands />
+
+      <p class="mt-6 max-w-[68ch] border-l-2 border-honey pl-4 text-[15px] leading-relaxed text-ink/80">
+        The two do not simply add to $180,000. Ontario's 5% top-up is reduced by whatever federal
+        rebate you claim, which is what pins realistic combined relief around
+        <span class="figure">$130,000</span>. Where you land depends on your
+        <span class="text-ink">agreement date</span>, not your closing date.
+      </p>
+    </section>
+
+    <!-- The deadline, given its own block because it is the urgent fact. -->
+    <section class="mt-16 border border-caution/30 bg-accent-tint/60 p-5 sm:p-7">
+      <p class="section-label">— Deadline</p>
+      <h2 class="mt-2 text-xl font-semibold">
+        The Ontario rebate window closes {ON_ENHR.WINDOW_CLOSES}
+      </h2>
+      <p class="mt-3 max-w-[66ch] text-[15px] leading-relaxed text-ink/80">
+        The ENHR requires an agreement of purchase and sale signed between
+        {' '}{ON_ENHR.WINDOW_OPENS} and {ON_ENHR.WINDOW_CLOSES}. It runs on the
+        <span class="text-ink"> signing date, not the closing date</span> — so a home bought in
+        February 2027 that closes in 2030 still qualifies, and one bought in May 2027 does not.
+        Outside the window you fall back to the standard Ontario rebate of
+        {' '}<span class="figure">${ON_STANDARD.MAX_REBATE.toLocaleString('en-CA')}</span>. On a
+        $1.2 million home that is a difference of roughly
+        {' '}<span class="figure">$56,000</span> in provincial relief alone.
+      </p>
+      <a
+        href="/faq/hst-rebate-deadline-march-2027"
+        class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
+      >
+        More on the deadline →
+      </a>
+    </section>
+
+    <!-- The traps. This is the highest-value content on the site. -->
+    <section aria-labelledby="traps" class="mt-16 border-t border-rule-dark pt-8">
+      <p class="section-label">— 04 / Where buyers lose it</p>
+      <h2 id="traps" class="mt-3 text-2xl font-semibold">The four traps</h2>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2">
+        {
+          [
+            {
+              n: '01',
+              h: 'The spousal test',
+              b: 'You are disqualified federally if you lived in a home your spouse owned in the last five calendar years — even if you have never owned anything yourself.',
+              href: '/faq/spouse-owned-home-first-time-buyer',
+            },
+            {
+              n: '02',
+              h: 'The builder has your rebate',
+              b: 'Nearly every agreement assigns the rebate to the builder. If you turn out not to qualify, they bill you the full amount on closing day — up to $80,000 in certified funds.',
+              href: '/faq/builder-keeps-hst-rebate-assignment',
+            },
+            {
+              n: '03',
+              h: 'Renting it out',
+              b: 'Both enhanced rebates require owner occupancy. Change your mind and you pay the HST at closing and claim the rental rebate yourself, months later.',
+              href: '/faq/hst-rebate-rental-investment-property',
+            },
+            {
+              n: '04',
+              h: 'The price cliffs',
+              b: 'Zero federally at $1,500,000; no ENHR at $1,850,000. Lot premiums and upgrades can push you across a cliff for less than the rebate you lose.',
+              href: '/faq/hst-rebate-over-1-5-million',
+            },
+          ].map((t) => (
+            <div class="card p-5">
+              <p class="section-label">— {t.n}</p>
+              <h3 class="mt-2 text-[16px] font-semibold">{t.h}</h3>
+              <p class="mt-2 text-[14px] leading-relaxed text-ink/75">{t.b}</p>
+              <a href={t.href} class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2">
+                Read more →
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Cluster links: every rebate question and guide. -->
+    <section aria-labelledby="all-questions" class="mt-16 border-t border-rule-dark pt-8">
+      <p class="section-label">— 05 / Everything on rebates</p>
+      <h2 id="all-questions" class="mt-3 text-2xl font-semibold">
+        All {rebateFaq.length} rebate questions
+      </h2>
+      <ul class="mt-5 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+        {
+          rebateFaq.map((item) => (
+            <li class="border-b border-rule/60">
+              <a
+                href={`/faq/${item.id}`}
+                class="flex items-baseline gap-2 py-2.5 text-[14px] leading-snug text-ink/85 hover:text-accent"
+              >
+                <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                <span>{item.data.question}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="section-label mt-10">— Related guides</p>
+      <ul class="mt-3 grid gap-3 sm:grid-cols-2">
+        {
+          rebateGuides.map((g) => (
+            <li class="card p-4">
+              <a href={`/guides/${g.id}`} class="text-[15px] font-medium hover:text-accent">
+                {g.data.title}
+              </a>
+              <p class="mt-1.5 text-[13px] leading-relaxed text-ink/70">{g.data.shortAnswer}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <Sources sources={sources} />
+    <Cta
+      heading="Want this checked against your actual agreement?"
+      body="An estimate tells you the band you are in. Your agreement decides whether you keep it. That part needs a person reading the clause."
+    />
+    <Disclaimer />
+  </div>
+</Base>
