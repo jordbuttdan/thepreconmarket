@@ -1,0 +1,127 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { ON_ENHR } from '../../lib/rebateRules';
+
+const cities = await getCollection('cities');
+const projects = await getCollection('projects');
+
+const countFor = (city: string) =>
+  projects.filter((p) => p.data.city.toLowerCase() === city.toLowerCase()).length;
+
+// Group by region, keeping cities with active supply first within each.
+const REGION_ORDER = [
+  'City of Toronto',
+  'York Region',
+  'Peel Region',
+  'Peel Region (Caledon)',
+  'Halton Region',
+  'Durham Region',
+  'Simcoe County',
+  'Dufferin County',
+  'Hamilton',
+  'Niagara Region',
+  'Region of Waterloo',
+  'Wellington County',
+];
+
+const byRegion = new Map<string, typeof cities>();
+for (const c of cities) {
+  const list = byRegion.get(c.data.region) ?? [];
+  list.push(c);
+  byRegion.set(c.data.region, list);
+}
+const regions = [...byRegion.entries()]
+  .sort((a, b) => {
+    const ai = REGION_ORDER.indexOf(a[0]);
+    const bi = REGION_ORDER.indexOf(b[0]);
+    return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+  })
+  .map(([region, list]) => [
+    region,
+    list.sort((x, y) => x.data.order - y.data.order || x.data.city.localeCompare(y.data.city)),
+  ] as const);
+
+const fmtK = (n?: number) => (n == null ? null : '$' + Math.round(n / 1000) + 'k');
+const active = cities.filter((c) => c.data.priceFrom != null).length;
+const latest = new Date(
+  cities.map((c) => c.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0),
+);
+---
+
+<Base
+  title="New low-rise home communities by city — Ontario"
+  description={`New freehold detached homes, townhomes and semis across ${cities.length} Ontario cities. Local price ranges, active builders, and what the HST rebates are worth at each market's price points.`}
+  kicker={['Ontario', 'Low-rise', `${cities.length} cities`]}
+  updated={latest}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'New homes', href: '/new-homes' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— New homes by city</p>
+    <h1 class="mt-4 max-w-[26ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      New freehold low-rise across Ontario
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      Detached homes, townhomes and semis in {cities.length} cities, {active} of them with active
+      new-build supply. Each page covers what is actually being built, which builders are working
+      there, the local price band, and — the part that changes most between markets — what the
+      HST rebates are worth at those prices.
+    </p>
+
+    <div class="mt-6 border border-rule bg-accent-tint/50 p-4">
+      <p class="section-label">— Why the city matters for your rebate</p>
+      <p class="mt-2 max-w-[70ch] text-[14px] leading-relaxed text-ink/80">
+        A $600,000 townhome in Whitby receives the <span class="text-ink">full 8%</span> Ontario
+        rebate plus the full federal rebate. A $1.9M detached home in King Township receives
+        {' '}<span class="figure">$24,000</span> and nothing federally. Same programs, completely
+        different outcomes — and the Ontario window closes
+        {' '}<span class="figure">{ON_ENHR.WINDOW_CLOSES}</span> on the signing date.
+        {' '}<a href="/hst-rebate" class="text-accent underline underline-offset-2">How the rebates work</a>.
+      </p>
+    </div>
+
+    {
+      regions.map(([region, list]) => (
+        <section class="mt-12">
+          <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+            <h2 class="text-lg font-semibold">{region}</h2>
+            <span class="figure text-[11px] text-ink/45">{list.length}</span>
+          </div>
+          <ul class="mt-4 grid gap-x-8 sm:grid-cols-2">
+            {list.map((c) => {
+              const n = countFor(c.data.city);
+              return (
+                <li class="border-b border-rule/60">
+                  <a
+                    href={`/new-homes/${c.id}`}
+                    class="flex items-baseline gap-3 py-2.5 hover:text-accent"
+                  >
+                    <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey" />
+                    <span class="text-[14px] text-ink/85">{c.data.city}</span>
+                    <span class="figure ml-auto shrink-0 text-[12px] text-ink/55">
+                      {c.data.priceFrom
+                        ? `${fmtK(c.data.priceFrom)}–${fmtK(c.data.priceTo)}`
+                        : '—'}
+                    </span>
+                    {n > 0 && (
+                      <span class="figure shrink-0 text-[11px] text-honey">{n}</span>
+                    )}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))
+    }
+
+    <Cta
+      variant="vip"
+      heading="Not sure which market fits your budget?"
+      body="The same budget buys very different homes in Vaughan, Whitby and Kitchener — and lands you in different rebate bands. Tell me the number and I'll tell you where it goes furthest."
+    />
+    <Disclaimer />
+  </div>
+</Base>

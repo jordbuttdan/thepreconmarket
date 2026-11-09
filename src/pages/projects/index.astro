@@ -1,0 +1,123 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import Cta from '../../components/Cta.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { ON_ENHR } from '../../lib/rebateRules';
+
+const all = await getCollection('projects');
+const featured = all
+  .filter((p) => p.data.tier === 'featured')
+  .sort((a, b) => a.data.order - b.data.order);
+const catalogue = all
+  .filter((p) => p.data.tier === 'catalogue')
+  .sort((a, b) => a.data.city.localeCompare(b.data.city) || a.data.name.localeCompare(b.data.name));
+
+// Group the catalogue by city so it reads as a reference rather than a dump.
+const byCity = new Map<string, typeof catalogue>();
+for (const p of catalogue) {
+  const list = byCity.get(p.data.city) ?? [];
+  list.push(p);
+  byCity.set(p.data.city, list);
+}
+const catalogueCities = [...byCity.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+const latest = all.length
+  ? new Date(all.map((p) => p.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0))
+  : undefined;
+---
+
+<Base
+  title="New low-rise projects in Ontario — detached, towns & semis"
+  description="Hand-picked new freehold low-rise communities across the GTA and surrounding Ontario markets: detached homes, townhomes and semis. Current and upcoming launches, plus a catalogue of earlier projects."
+  kicker={['Ontario', 'Detached · Towns · Semis', `${featured.length} featured`]}
+  updated={latest}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— Projects</p>
+    <h1 class="mt-4 max-w-[26ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      New freehold low-rise, current and upcoming
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      Freehold detached homes, townhomes and semis across Ontario. The featured communities below
+      are 2026 and upcoming launches — the ones where lot selection, opening pricing and the
+      Ontario rebate window are still live. Earlier projects are listed in the catalogue for
+      reference.
+    </p>
+
+    <div class="mt-6 border border-rule bg-accent-tint/50 p-4">
+      <p class="text-[14px] leading-relaxed text-ink/80">
+        <span class="section-label">— Why timing matters</span>
+        <span class="mt-2 block">
+          The Ontario Enhanced New Housing Rebate of up to <span class="figure">$80,000</span>
+          {' '}requires an agreement signed before <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>,
+          and it has no first-time buyer test. It runs on the signing date, not the closing date —
+          so which phase you buy into matters as much as which community.
+          {' '}<a href="/hst-rebate" class="text-accent underline underline-offset-2">How the rebates work</a>.
+        </span>
+      </p>
+    </div>
+
+    {
+      featured.length > 0 ? (
+        <section class="mt-12">
+          <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+            <h2 class="text-lg font-semibold">Featured communities</h2>
+            <span class="figure text-[11px] text-ink/45">{featured.length}</span>
+          </div>
+          <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {featured.map((p) => (
+              <li class="contents">
+                <ProjectCard project={p} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : (
+        <p class="mt-12 border border-dashed border-rule p-6 text-[14px] text-ink/60">
+          Featured communities are being added. In the meantime,{' '}
+          <a href="/vip" class="text-accent underline underline-offset-2">
+            register for access
+          </a>{' '}
+          and I'll send what's releasing that matches what you're looking for.
+        </p>
+      )
+    }
+
+    {
+      catalogueCities.length > 0 && (
+        <section class="mt-16">
+          <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+            <h2 class="text-lg font-semibold">Project catalogue</h2>
+            <span class="figure text-[11px] text-ink/45">{catalogue.length}</span>
+          </div>
+          <p class="mt-2 max-w-[62ch] text-[14px] text-ink/70">
+            Earlier and sold-out low-rise communities, for reference. Many of these resell, and
+            some later phases still come available — ask if one interests you.
+          </p>
+          <div class="mt-6 space-y-8">
+            {catalogueCities.map(([city, items]) => (
+              <div>
+                <h3 class="section-label">— {city}</h3>
+                <div class="mt-2">
+                  {items.map((p) => (
+                    <ProjectCard project={p} compact />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <Cta
+      variant="vip"
+      heading="Looking for something not listed here?"
+      body="Most low-rise releases never get advertised publicly. Tell me the city, home type and budget and I'll send what's actually coming."
+    />
+    <Disclaimer />
+  </div>
+</Base>

@@ -101,7 +101,10 @@ const cities = defineCollection({
  */
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
-  schema: z.object({
+  // `image()` gives Astro the local asset so it can emit optimised, responsive
+  // derivatives. Source images are self-hosted under src/assets/projects/ —
+  // never hotlinked from a third-party CDN.
+  schema: ({ image }) => z.object({
     name: z.string(),
     /** Red Bricks id, for traceability when refreshing the snapshot. */
     redBricksId: z.string().optional(),
@@ -125,8 +128,24 @@ const projects = defineCollection({
     depositStructure: z.array(z.string()).default([]),
     incentives: z.array(z.string()).default([]),
     highlights: z.array(z.string()).default([]),
+    /**
+     * Two-tier coverage. `featured` gets a full page with original copy and
+     * imagery — reserved for 2026 and upcoming launches we can actually
+     * service. `catalogue` gets a compact listing for long-tail search.
+     */
+    tier: z.enum(['featured', 'catalogue']).default('catalogue'),
     /** Self-hosted only. Never hotlinked from a third-party CDN. */
-    heroImage: z.string().optional(),
+    heroImage: image().optional(),
+    heroAlt: z.string().optional(),
+    gallery: z
+      .array(z.object({ src: image(), alt: z.string() }))
+      .default([]),
+    /** Lot widths offered, in feet. Low-rise buyers shop on this. */
+    lotWidths: z.array(z.number()).default([]),
+    floorPlanCount: z.number().optional(),
+    bedBreakdown: z.string().optional(),
+    walkScore: z.number().optional(),
+    transitScore: z.number().optional(),
     lat: z.number().optional(),
     lng: z.number().optional(),
     relatedFaq: z.array(z.string()).default([]),

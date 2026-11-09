@@ -1,0 +1,236 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import VipForm from '../../components/VipForm';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { GHL } from '../../config/ghl';
+import { BROKER } from '../../config/site';
+
+/**
+ * Only `featured` projects get their own page. Catalogue entries are listed on
+ * /projects and on their city page instead — a page per sold-out 2019 project
+ * would be thin content and would drag the domain rather than help it.
+ */
+export const getStaticPaths: GetStaticPaths = async () => {
+  const projects = await getCollection('projects');
+  const faq = await getCollection('faq');
+  return projects
+    .filter((p) => p.data.tier === 'featured')
+    .map((entry) => ({
+      params: { slug: entry.id },
+      props: { entry, allFaq: faq },
+    }));
+};
+
+const { entry, allFaq } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const faqBySlug = new Map(allFaq.map((e) => [e.id, e]));
+const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != null);
+
+const citySlug = d.city.toLowerCase().replace(/\s+/g, '-');
+const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'));
+const priceLabel =
+  d.priceFrom != null
+    ? d.priceTo != null
+      ? `${fmt(d.priceFrom)} – ${fmt(d.priceTo)}`
+      : `From ${fmt(d.priceFrom)}`
+    : 'TBA';
+
+const specs: { k: string; v: string }[] = [
+  { k: 'Builder', v: d.builder.join(', ') },
+  { k: 'Location', v: d.intersection ?? `${d.neighbourhood ?? ''} ${d.city}`.trim() },
+  { k: 'City', v: d.city },
+  { k: 'Ownership', v: d.ownership },
+  { k: 'Home types', v: d.homeTypes.join(', ') },
+  { k: 'Status', v: d.salesStatus },
+  ...(d.launchDate ? [{ k: 'Launch', v: d.launchDate }] : []),
+  { k: 'Price', v: priceLabel },
+  ...(d.sizeFrom
+    ? [{ k: 'Size', v: `${d.sizeFrom.toLocaleString('en-CA')} – ${d.sizeTo?.toLocaleString('en-CA')} sq ft` }]
+    : []),
+  ...(d.lotWidths.length ? [{ k: 'Lot widths', v: d.lotWidths.join(', ') + ' ft' }] : []),
+  ...(d.floorPlanCount ? [{ k: 'Floor plans', v: String(d.floorPlanCount) }] : []),
+  ...(d.bedBreakdown ? [{ k: 'Bedrooms', v: d.bedBreakdown }] : []),
+  ...(d.occupancy ? [{ k: 'Occupancy', v: d.occupancy }] : []),
+  ...(d.walkScore != null ? [{ k: 'Walk / Transit', v: `${d.walkScore} / ${d.transitScore}` }] : []),
+];
+---
+
+<Base
+  title={`${d.name} — ${d.city} ${d.homeTypes.includes('detached') ? 'detached homes' : 'townhomes'}`}
+  description={d.description ?? d.shortAnswer}
+  kicker={[d.city, d.ownership, d.salesStatus]}
+  updated={d.updated}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Projects', href: '/projects' },
+    { name: d.name, href: `/projects/${entry.id}` },
+  ]}
+  article={{
+    headline: `${d.name}, ${d.city}`,
+    description: d.shortAnswer,
+    dateModified: d.updated,
+  }}
+  place={{
+    name: d.name,
+    city: d.city,
+    intersection: d.intersection,
+    lat: d.lat,
+    lng: d.lng,
+    priceFrom: d.priceFrom,
+    priceTo: d.priceTo,
+  }}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-6 sm:px-6">
+    {
+      d.heroImage && (
+        <figure class="tick-corners border border-rule">
+          <Image
+            src={d.heroImage}
+            alt={d.heroAlt ?? `${d.name} in ${d.city}`}
+            widths={[640, 960, 1400]}
+            sizes="(min-width: 1100px) 1068px, 100vw"
+            loading="eager"
+            class="block h-auto w-full"
+          />
+        </figure>
+      )
+    }
+
+    <div class="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-x-12">
+      <article class="lg:col-span-8">
+        <p class="section-label">— {d.neighbourhood ? `${d.neighbourhood}, ` : ''}{d.city}</p>
+        <h1 class="mt-3 text-[2rem] font-semibold sm:text-[2.5rem]">{d.name}</h1>
+        <p class="mt-2 text-[15px] text-ink/65">{d.builder.join(' · ')}</p>
+
+        <p class="lede mt-6">{d.shortAnswer}</p>
+
+        {
+          d.highlights.length > 0 && (
+            <ul class="mt-8 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+              {d.highlights.map((h) => (
+                <li class="flex items-baseline gap-2 border-b border-rule/60 py-2 text-[14px] text-ink/80">
+                  <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+
+        <div class="prose-precon mt-10">
+          <Content />
+        </div>
+
+        {
+          d.gallery.length > 0 && (
+            <section class="mt-12">
+              <p class="section-label">— Renderings</p>
+              <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                {d.gallery.map((g) => (
+                  <figure class="border border-rule">
+                    <Image
+                      src={g.src}
+                      alt={g.alt}
+                      widths={[480, 800]}
+                      sizes="(min-width: 640px) 50vw, 100vw"
+                      loading="lazy"
+                      class="block h-auto w-full"
+                    />
+                  </figure>
+                ))}
+              </div>
+              <p class="mt-2 font-mono text-[11px] text-ink/45">
+                Renderings are the builder's and are subject to change. Not a representation.
+              </p>
+            </section>
+          )
+        }
+
+        <Disclaimer />
+      </article>
+
+      <aside class="lg:col-span-4">
+        <div class="sticky top-6 space-y-8">
+          <!-- Spec table, set like a drawing title block. -->
+          <div class="card p-5">
+            <p class="section-label">— Project data</p>
+            <dl class="mt-3 divide-y divide-rule/70 text-[13px]">
+              {
+                specs.map((s) => (
+                  <div class="flex gap-3 py-2">
+                    <dt class="w-28 shrink-0 text-ink/55">{s.k}</dt>
+                    <dd class="text-ink/90">{s.v}</dd>
+                  </div>
+                ))
+              }
+            </dl>
+            {
+              d.lat != null && d.lng != null && (
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${d.lat}%2C${d.lng}`}
+                  rel="nofollow noopener"
+                  target="_blank"
+                  class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2"
+                >
+                  View on map →
+                </a>
+              )
+            }
+          </div>
+
+          <!-- Registration is the conversion point on a project page. -->
+          <div class="tick-corners border border-rule bg-accent-tint/50 p-5">
+            <p class="section-label">— Register</p>
+            <h2 class="mt-2 text-[17px] font-semibold">Floor plans &amp; pricing</h2>
+            <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+              Builder price lists, floor plans and deposit structures go to registered buyers.
+              Register and I'll send what's released for {d.name} as it comes out.
+            </p>
+            <div class="mt-4">
+              <VipForm webhookUrl={GHL.vipWebhookUrl} project={entry.id} city={citySlug} compact client:visible />
+            </div>
+          </div>
+
+          {
+            relatedFaq.length > 0 && (
+              <div>
+                <p class="section-label">— Before you sign</p>
+                <ul class="mt-3">
+                  {relatedFaq.map((r) => (
+                    <li class="border-b border-rule/60">
+                      <a
+                        href={`/faq/${r.id}`}
+                        class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                      >
+                        <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                        <span>{r.data.question}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
+
+          <div class="border border-rule p-4">
+            <p class="section-label">— Talk it through</p>
+            <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+              Lot selection, builder comparison and the agreement, before you commit.
+            </p>
+            <a href="/book" class="btn mt-3 w-full text-[13px]">Book a call</a>
+            <p class="mt-3 text-center">
+              <a href={BROKER.phoneHref} class="figure text-[13px] text-accent underline underline-offset-2">
+                {BROKER.phone}
+              </a>
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>

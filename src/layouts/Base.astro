@@ -60,10 +60,13 @@ const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || path.startsWith(href + '/');
 
+// Dates are authored as plain YYYY-MM-DD, which parses as UTC midnight.
+// Formatting in local time would render them a day early west of Greenwich.
 const dateFmt = new Intl.DateTimeFormat('en-CA', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  timeZone: 'UTC',
 });
 ---
 

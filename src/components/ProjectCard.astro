@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+  /** Catalogue rows are compact and do not link out to a page. */
+  compact?: boolean;
+}
+const { project, compact } = Astro.props;
+const d = project.data;
+
+const fmt = (n?: number) => (n == null ? null : '$' + Math.round(n / 1000) + 'k');
+const price =
+  d.priceFrom != null
+    ? d.priceTo != null
+      ? `${fmt(d.priceFrom)} – ${fmt(d.priceTo)}`
+      : `From ${fmt(d.priceFrom)}`
+    : 'Price TBA';
+const linked = d.tier === 'featured';
+const href = `/projects/${project.id}`;
+---
+
+{
+  compact ? (
+    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-rule/60 py-2.5 text-[13px]">
+      <span class="font-medium text-ink/90">
+        {linked ? (
+          <a href={href} class="hover:text-accent">
+            {d.name}
+          </a>
+        ) : (
+          d.name
+        )}
+      </span>
+      <span class="text-ink/50">{d.builder.join(', ')}</span>
+      <span class="figure ml-auto shrink-0 text-ink/65">{price}</span>
+      <span class="shrink-0 font-mono text-[10px] tracking-[0.06em] text-rule-dark uppercase">
+        {d.salesStatus}
+      </span>
+    </div>
+  ) : (
+    <article class="card flex flex-col overflow-hidden">
+      {d.heroImage && (
+        <a href={href} class="block">
+          <Image
+            src={d.heroImage}
+            alt={d.heroAlt ?? `${d.name} in ${d.city}`}
+            widths={[400, 700]}
+            sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, 100vw"
+            loading="lazy"
+            class="block aspect-[16/10] h-auto w-full object-cover"
+          />
+        </a>
+      )}
+      <div class="flex grow flex-col p-5">
+        <p class="section-label">
+          — {d.neighbourhood ? `${d.neighbourhood}, ` : ''}
+          {d.city}
+        </p>
+        <h3 class="mt-2 text-[17px] font-semibold leading-snug">
+          <a href={href} class="hover:text-accent">
+            {d.name}
+          </a>
+        </h3>
+        <p class="mt-1 text-[13px] text-ink/60">{d.builder.join(' · ')}</p>
+        <p class="mt-2 grow text-[13px] leading-relaxed text-ink/75">{d.shortAnswer}</p>
+        <div class="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1 border-t border-rule pt-3">
+          <span class="figure text-[13px] text-ink">{price}</span>
+          <span class="ml-auto font-mono text-[10px] tracking-[0.06em] text-rule-dark uppercase">
+            {d.salesStatus}
+          </span>
+        </div>
+      </div>
+    </article>
+  )
+}
