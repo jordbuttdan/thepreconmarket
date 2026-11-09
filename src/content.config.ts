@@ -149,6 +149,19 @@ const projects = defineCollection({
     lat: z.number().optional(),
     lng: z.number().optional(),
     relatedFaq: z.array(z.string()).default([]),
+    /**
+     * Per-project Q&A, rendered on the page AND emitted as FAQPage schema.
+     *
+     * This is the highest-leverage field on a project page for AI search: when
+     * someone asks an assistant "tell me about <project>", this is the block
+     * that gets quoted. Answers must be self-contained and factual — a model
+     * lifting one sentence should still be correct without the surrounding
+     * page. Aim for six, covering ownership, deposit, occupancy, rebate
+     * eligibility, builder and home types.
+     */
+    projectFaq: z
+      .array(z.object({ q: z.string(), a: z.string() }))
+      .default([]),
     updated: z.coerce.date(),
     order: z.number().default(100),
   }),

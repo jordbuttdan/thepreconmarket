@@ -49,6 +49,57 @@ highlights:
   - Bungalow, two-storey and three-storey designs
   - 175 floor plans from 1,468 to 3,623 sq ft
   - Parks and pathways within the community plan
+projectFaq:
+  - q: Is Bridgelands freehold or condo?
+    a: >-
+      Bridgelands is a freehold community. Buyers own the land and the building
+      outright, with no condominium corporation and no standard monthly
+      maintenance fee. Master-planned communities of this type often include a
+      POTL arrangement for private laneways and shared blocks, which carries a
+      small monthly common-elements fee — confirm whether your specific lot is
+      tied to one.
+  - q: Who is building Bridgelands?
+    a: >-
+      Three builders are releasing into the community at the same time: Arista
+      Homes, DECO Homes and OPUS Homes. Each brings its own models, price list,
+      specification level and deposit structure, so the three are worth
+      comparing directly against one another.
+  - q: When does Bridgelands launch?
+    a: >-
+      Bridgelands launches on November 10, 2026. Registration ahead of a launch
+      matters because lots are allocated in order and the best ones go first —
+      and most builders require a buyer's broker to be registered at or before
+      the first sales office visit for representation to be recognised.
+  - q: What home types are available at Bridgelands?
+    a: >-
+      Freehold detached homes on 26, 32, 38 and 42 foot lots, in bungalow,
+      two-storey and three-storey designs with one-car and two-car garages, plus
+      townhomes in rear-lane, laneway and back-to-back formats. There are 175
+      floor plans ranging from 1,468 to 3,623 square feet.
+  - q: How much do homes at Bridgelands cost?
+    a: >-
+      Pricing has not been released and is TBA as of November 9, 2026. Builder
+      price lists are typically issued to registered buyers shortly before a
+      launch. Comparable new freehold product in Woodbridge and Kleinburg has
+      recently ranged from roughly $700,000 for towns to over $2,000,000 for
+      larger detached homes.
+  - q: Does Bridgelands qualify for the Ontario HST rebate?
+    a: >-
+      A purchase at Bridgelands can qualify, because the launch falls inside the
+      Ontario Enhanced New Housing Rebate window for agreements signed between
+      April 1, 2026 and March 31, 2027. The rebate pays up to $80,000 of the
+      provincial HST and has no first-time buyer test, but it requires the home
+      to be the primary residence of the buyer or a relation. Eligibility is
+      determined by CRA on your own circumstances.
+  - q: Where is Bridgelands located?
+    a: >-
+      Bridgelands is at Weston Road and Teston Road in Woodbridge, Vaughan, in
+      the northwest of the city near the Kleinburg edge. The location has a Walk
+      Score of 25 and a Transit Score of 19, so it is car-dependent at launch.
+depositStructure:
+  - Deposit structure TBA — released with the price list
+incentives:
+  - Launch incentives TBA — confirm what is offered in writing before signing
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - hst-rebate-deadline-march-2027
