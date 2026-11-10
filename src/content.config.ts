@@ -167,7 +167,35 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { faq, guides, cities, projects };
+/**
+ * Downloadable buyer tools — checklists and worksheets.
+ *
+ * Deliberately NOT gated. The content is public and indexable; the lead
+ * capture offers a PDF copy by email instead. Hiding the content behind a
+ * form would also hide it from search crawlers and AI assistants, which is
+ * the opposite of what these pages are for.
+ */
+const resources = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/resources' }),
+  schema: z.object({
+    title: z.string(),
+    question: z.string().optional(),
+    shortAnswer: z.string(),
+    description: z.string().optional(),
+    /** What the emailed PDF is called, for the capture form. */
+    downloadName: z.string(),
+    /** Grouped checklist content. */
+    sections: z
+      .array(z.object({ heading: z.string(), items: z.array(z.string()) }))
+      .default([]),
+    sources: z.array(sourceSchema).default([]),
+    relatedFaq: z.array(z.string()).default([]),
+    updated: z.coerce.date(),
+    order: z.number().default(100),
+  }),
+});
+
+export const collections = { faq, guides, cities, projects, resources };
 
 export { FAQ_CATEGORIES };
 

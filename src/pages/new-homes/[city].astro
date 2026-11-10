@@ -156,7 +156,7 @@ const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'))
               Opening price lists, lot availability and deposit structures, before public opening.
             </p>
             <div class="mt-4">
-              <VipForm webhookUrl={GHL.vipWebhookUrl} city={entry.id} compact client:visible />
+              <VipForm webhookUrl={GHL.vipWebhookUrl} city={entry.id} compact client:idle />
             </div>
           </div>
 

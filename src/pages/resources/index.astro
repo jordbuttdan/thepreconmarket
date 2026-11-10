@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cta from '../../components/Cta.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+const resources = (await getCollection('resources')).sort((a, b) => a.data.order - b.data.order);
+const latest = new Date(
+  resources.map((r) => r.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0),
+);
+---
+
+<Base
+  title="Free buyer tools & checklists — Ontario pre-construction"
+  description="Free checklists and worksheets for Ontario pre-construction buyers: agreement review, pre-delivery inspection, HST rebate eligibility and closing costs. Read them here or get the PDF by email."
+  kicker={['Ontario', 'Low-rise', `${resources.length} tools`]}
+  updated={latest}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Resources', href: '/resources' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">— Buyer tools</p>
+    <h1 class="mt-4 max-w-[26ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      Checklists worth having in your hand
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      Four tools for the moments that actually matter: before you sign, at the walkthrough, when
+      you are working out your rebate position, and when you are budgeting for closing. All of them
+      are free and readable in full on this site — the PDF is just the printable version.
+    </p>
+
+    <ul class="mt-10 grid gap-5 sm:grid-cols-2">
+      {
+        resources.map((r, i) => (
+          <li class="tick-corners card flex flex-col p-5 sm:p-6">
+            <p class="section-label">
+              — {String(i + 1).padStart(2, '0')} / {r.data.sections.length} sections
+            </p>
+            <h2 class="mt-3 text-[18px] font-semibold leading-snug">
+              <a href={`/resources/${r.id}`} class="hover:text-accent">
+                {r.data.title}
+              </a>
+            </h2>
+            <p class="mt-2 grow text-[14px] leading-relaxed text-ink/75">{r.data.shortAnswer}</p>
+            <p class="mt-4">
+              <a
+                href={`/resources/${r.id}`}
+                class="text-[13px] text-accent underline underline-offset-2"
+              >
+                Open the checklist →
+              </a>
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+
+    <Cta
+      heading="Want these applied to your actual purchase?"
+      body="A checklist tells you what to look for. Bring me the agreement and I'll tell you what it says."
+    />
+    <Disclaimer />
+  </div>
+</Base>

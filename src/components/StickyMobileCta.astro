@@ -1,0 +1,30 @@
+---
+/**
+ * Persistent bottom CTA bar on small screens only.
+ *
+ * Most of this traffic is phones, where the header CTA scrolls away on pages
+ * that run to several thousand words. Hidden on the pages where it would be
+ * redundant or in the way (the forms it points at, and the checker).
+ */
+const path = Astro.url.pathname;
+const HIDE_ON = ['/vip', '/book', '/hst-rebate/checker', '/results'];
+const hidden = HIDE_ON.some((p) => path === p || path === p + '/');
+---
+
+{
+  !hidden && (
+    <div
+      class="fixed inset-x-0 bottom-0 z-40 border-t border-rule bg-paper/95 backdrop-blur lg:hidden"
+      style="padding-bottom: env(safe-area-inset-bottom)"
+    >
+      <div class="flex items-stretch gap-2 p-2">
+        <a href="/vip" class="btn-secondary flex-1 bg-paper-pure text-[13px]">
+          VIP access
+        </a>
+        <a href="/book" class="btn flex-1 text-[13px]">
+          Book a call
+        </a>
+      </div>
+    </div>
+  )
+}

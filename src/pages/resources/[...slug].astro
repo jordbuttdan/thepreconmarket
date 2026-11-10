@@ -1,0 +1,148 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import VipForm from '../../components/VipForm';
+import Sources from '../../components/Sources.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { GHL } from '../../config/ghl';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const resources = await getCollection('resources');
+  const faq = await getCollection('faq');
+  return resources.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, allFaq: faq, all: resources },
+  }));
+};
+
+const { entry, allFaq, all } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+
+const faqBySlug = new Map(allFaq.map((e) => [e.id, e]));
+const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != null);
+const others = all.filter((r) => r.id !== entry.id).sort((a, b) => a.data.order - b.data.order);
+const itemCount = d.sections.reduce((n, s) => n + s.items.length, 0);
+---
+
+<Base
+  title={d.title}
+  description={d.description ?? d.shortAnswer}
+  kicker={['Ontario', 'Buyer tool', `${itemCount} checks`]}
+  updated={d.updated}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Resources', href: '/resources' },
+    { name: d.title, href: `/resources/${entry.id}` },
+  ]}
+  faq={d.question ? [{ question: d.question, answer: d.shortAnswer }] : undefined}
+  article={{ headline: d.title, description: d.shortAnswer, dateModified: d.updated }}
+>
+  <div class="mx-auto grid max-w-[1100px] gap-10 px-4 pt-6 sm:px-6 lg:grid-cols-12 lg:gap-x-12">
+    <article class="lg:col-span-8">
+      <p class="section-label">— Buyer tool</p>
+      <h1 class="mt-3 text-[1.85rem] font-semibold sm:text-[2.3rem]">{d.title}</h1>
+      <p class="lede mt-6">{d.shortAnswer}</p>
+
+      <div class="prose-precon mt-8">
+        <Content />
+      </div>
+
+      <!-- The checklist itself. Public and indexable: gating it would hide it
+           from the crawlers and assistants these pages exist to reach. -->
+      <section class="mt-12">
+        <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+          <h2 class="text-lg font-semibold">The checklist</h2>
+          <span class="figure text-[11px] text-ink/45">{itemCount} items</span>
+        </div>
+
+        {
+          d.sections.map((sec, si) => (
+            <div class="mt-7 break-inside-avoid">
+              <p class="section-label">
+                — {String(si + 1).padStart(2, '0')} / {sec.heading}
+              </p>
+              <ul class="mt-3">
+                {sec.items.map((item) => (
+                  <li class="flex items-start gap-3 border-b border-rule/60 py-2.5">
+                    <span
+                      aria-hidden="true"
+                      class="mt-[0.15em] h-4 w-4 shrink-0 border border-rule-dark"
+                    />
+                    <span class="text-[14px] leading-snug text-ink/85">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </section>
+
+      <Sources sources={d.sources} />
+      <Disclaimer />
+    </article>
+
+    <aside class="lg:col-span-4">
+      <div class="sticky top-6 space-y-8">
+        <div class="tick-corners border border-rule bg-accent-tint/50 p-5">
+          <p class="section-label">— Printable copy</p>
+          <h2 class="mt-2 text-[17px] font-semibold">Get the {d.downloadName}</h2>
+          <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+            The full checklist is on this page already — this just emails you the printable PDF so
+            you can take it to a sales centre or your lawyer.
+          </p>
+          <div class="mt-4">
+            <VipForm
+              webhookUrl={GHL.vipWebhookUrl}
+              resource={entry.id}
+              submitLabel="Email me the PDF"
+              compact
+              client:idle
+            />
+          </div>
+        </div>
+
+        {
+          relatedFaq.length > 0 && (
+            <div>
+              <p class="section-label">— Related answers</p>
+              <ul class="mt-3">
+                {relatedFaq.map((r) => (
+                  <li class="border-b border-rule/60">
+                    <a
+                      href={`/faq/${r.id}`}
+                      class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                    >
+                      <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                      <span>{r.data.question}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+
+        <div>
+          <p class="section-label">— Other tools</p>
+          <ul class="mt-3">
+            {
+              others.map((r) => (
+                <li class="border-b border-rule/60">
+                  <a
+                    href={`/resources/${r.id}`}
+                    class="flex items-baseline gap-2 py-2.5 text-[13px] leading-snug text-ink/80 hover:text-accent"
+                  >
+                    <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                    <span>{r.data.title}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+</Base>

@@ -22,20 +22,39 @@ export interface VipFormProps {
   project?: string;
   /** City slug, when the form sits on a city page. */
   city?: string;
+  /** Resource slug, when the form is a checklist download capture. */
+  resource?: string;
+  /** Overrides the submit button label. */
+  submitLabel?: string;
   /** Compact variant for sidebars. */
   compact?: boolean;
 }
 
 type Status = 'idle' | 'sending' | 'done' | 'error';
 
-export default function VipForm({ webhookUrl, project, city, compact }: VipFormProps) {
+export default function VipForm({
+  webhookUrl,
+  project,
+  city,
+  resource,
+  submitLabel,
+  compact,
+}: VipFormProps) {
   const [status, setStatus] = useState<Status>('idle');
   const mountedAt = useRef<number>(Date.now());
   const [sourcePage, setSourcePage] = useState('');
+  // Until React has hydrated, onSubmit is not attached. A submit at that
+  // point would fall through to the browser's native handling, which on a
+  // static site means a GET to the same URL with every field in the query
+  // string — broken, and it would put the visitor's email and phone into
+  // their history and any outbound referrer. The button stays disabled until
+  // this flips, and method="post" below is the second line of defence.
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
     mountedAt.current = Date.now();
     setSourcePage(window.location.pathname + window.location.search);
+    setHydrated(true);
   }, []);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -56,9 +75,10 @@ export default function VipForm({ webhookUrl, project, city, compact }: VipFormP
 
     setStatus('sending');
 
-    const tags = ['vip-register'];
+    const tags = [resource ? 'resource-download' : 'vip-register'];
     if (project) tags.push(`project:${project}`);
     if (city) tags.push(`city:${city}`);
+    if (resource) tags.push(`resource:${resource}`);
 
     const payload = {
       firstName: String(data.get('firstName') ?? '').trim(),
@@ -71,6 +91,7 @@ export default function VipForm({ webhookUrl, project, city, compact }: VipFormP
       notes: String(data.get('notes') ?? '').trim(),
       project: project ?? '',
       city: city ?? '',
+      resource: resource ?? '',
       sourcePage,
       source: 'thepreconmarket.ca',
       tags,
@@ -110,11 +131,14 @@ export default function VipForm({ webhookUrl, project, city, compact }: VipFormP
   if (status === 'done') {
     return (
       <div className="tick-corners border border-rule bg-accent-tint/60 p-5 sm:p-6">
-        <p className="section-label">— Registered</p>
-        <h3 className="mt-2 text-lg font-semibold">You're on the list.</h3>
+        <p className="section-label">— {resource ? 'Sent' : 'Registered'}</p>
+        <h3 className="mt-2 text-lg font-semibold">
+          {resource ? 'Check your inbox.' : "You're on the list."}
+        </h3>
         <p className="mt-2 text-[14px] leading-relaxed text-ink/75">
-          You'll hear from Jordan directly — usually the same day — with what's releasing, what the
-          deposit structure looks like, and whether it's worth your time.
+          {resource
+            ? "The PDF is on its way. The full checklist is on this page too, so you can work through it right now without waiting."
+            : "You'll hear from Jordan directly — usually the same day — with what's releasing, what the deposit structure looks like, and whether it's worth your time."}
         </p>
         <a href="/book" className="btn mt-4 text-sm">
           Book a call now instead
@@ -128,7 +152,7 @@ export default function VipForm({ webhookUrl, project, city, compact }: VipFormP
   const label = 'block text-[13px] font-medium text-ink/80';
 
   return (
-    <form onSubmit={onSubmit} noValidate={false} className="space-y-4">
+    <form onSubmit={onSubmit} method="post" noValidate={false} className="space-y-4">
       <div className={compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2'}>
         <div>
           <label className={label} htmlFor="vip-first">
@@ -248,8 +272,12 @@ export default function VipForm({ webhookUrl, project, city, compact }: VipFormP
         <input id="vip-company" name="company" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
-      <button type="submit" className="btn w-full text-sm" disabled={status === 'sending'}>
-        {status === 'sending' ? 'Registering…' : 'Register for VIP access'}
+      <button
+        type="submit"
+        className="btn w-full text-sm disabled:cursor-not-allowed disabled:opacity-60"
+        disabled={!hydrated || status === 'sending'}
+      >
+        {status === 'sending' ? 'Sending…' : (submitLabel ?? 'Register for VIP access')}
       </button>
 
       {status === 'error' && (

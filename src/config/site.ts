@@ -50,9 +50,11 @@ Not intended to solicit buyers or sellers currently under contract with another 
 
 /** Primary nav. Order reflects the funnel, not the sitemap. */
 export const NAV = [
+  { href: '/how-it-works', label: 'How it works' },
   { href: '/new-homes', label: 'New homes' },
   { href: '/hst-rebate', label: 'HST rebate' },
   { href: '/guides', label: 'Guides' },
+  { href: '/resources', label: 'Resources' },
   { href: '/faq', label: 'FAQ' },
   { href: '/about', label: 'About' },
 ] as const;

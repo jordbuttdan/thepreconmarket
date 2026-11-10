@@ -5,6 +5,7 @@ import '@fontsource/jetbrains-mono/500.css';
 import '../styles/global.css';
 import { SITE, BROKER, FOOTER_LINE, NAV } from '../config/site';
 import Schema from '../components/seo/Schema.astro';
+import StickyMobileCta from '../components/StickyMobileCta.astro';
 
 interface Breadcrumb {
   name: string;
@@ -248,12 +249,16 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
       <slot />
     </main>
 
-    <footer class="mt-20 border-t border-rule bg-paper">
+    <StickyMobileCta />
+
+    <!-- pb-24 on mobile keeps the sticky CTA from covering footer content. -->
+    <footer class="mt-20 border-t border-rule bg-paper pb-24 lg:pb-0">
       <div class="mx-auto max-w-[1100px] px-4 py-10 sm:px-6">
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p class="section-label">— Browse</p>
             <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
+              <li><a href="/how-it-works" class="hover:text-accent">How it works</a></li>
               <li><a href="/new-homes" class="hover:text-accent">New home communities</a></li>
               <li><a href="/projects" class="hover:text-accent">All projects</a></li>
               <li><a href="/vip" class="hover:text-accent">Register for VIP access</a></li>
@@ -266,6 +271,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
               <li><a href="/hst-rebate" class="hover:text-accent">HST &amp; GST rebates</a></li>
               <li><a href="/hst-rebate/checker" class="hover:text-accent">Rebate checker</a></li>
               <li><a href="/guides" class="hover:text-accent">Buyer guides</a></li>
+              <li><a href="/resources" class="hover:text-accent">Free checklists</a></li>
               <li><a href="/faq" class="hover:text-accent">Questions &amp; answers</a></li>
             </ul>
           </div>

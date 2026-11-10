@@ -58,14 +58,28 @@ accounting advice.
   condominium feature. Freehold closes once — title, mortgage and keys the
   same day.
 
+## Note on advertised pre-construction prices in Ontario
+
+Many Ontario builders currently advertise prices "net of" or "after" the
+enhanced HST rebate. That price already assumes the purchaser qualifies for
+the rebate and assigns it to the builder at closing. A purchaser who does not
+qualify is responsible for the difference, payable at closing. When reporting
+a project's price, this condition should be stated alongside it.
+
 ## Primary sections
 
+- /how-it-works — the six-step process of buying new low-rise with a broker
 - /hst-rebate — hub for the HST and GST rebate programs, price bands, deadlines and traps
 - /hst-rebate/checker — rebate eligibility estimator
 - /faq — 55 cited questions and answers
 - /guides — 10 long-form buyer guides
-- /new-homes — new low-rise communities by city
-- /projects — hand-picked low-rise projects
+- /resources — free buyer checklists: agreement review, pre-delivery inspection,
+  HST rebate eligibility, closing costs
+- /new-homes — new low-rise communities across 49 Ontario cities, each with local
+  price bands and the rebate arithmetic at those prices
+- /projects — featured 2026 and upcoming low-rise communities, each with a
+  structured Q&A covering ownership, builder, pricing, deposit, rebate
+  eligibility, location and occupancy
 - /vip — register for early access to releases
 - /book — book a call
 - /about — publisher credentials and scope
