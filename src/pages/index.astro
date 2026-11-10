@@ -1,32 +1,58 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import Cta from '../components/Cta.astro';
-import Disclaimer from '../components/Disclaimer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 import { SITE, BROKER } from '../config/site';
 import { LAST_UPDATED, ON_ENHR } from '../lib/rebateRules';
 
 const faq = await getCollection('faq');
 const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
 const cities = (await getCollection('cities')).sort((a, b) => a.data.order - b.data.order);
-const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
 const resources = (await getCollection('resources')).sort((a, b) => a.data.order - b.data.order);
+const allProjects = await getCollection('projects');
 
-const topGuides = guides.slice(0, 4);
+const byId = new Map(allProjects.map((p) => [p.id, p]));
+// Curated for geographic and price spread rather than whatever sorts first.
+const SHOWCASE = [
+  'bridgelands',
+  'five-oaks-oakville',
+  'jefferson-reserve',
+  'northgate-trails',
+  'founders-walk',
+  'brooklin-towns-2',
+];
+const showcase = SHOWCASE.map((s) => byId.get(s)).filter((p) => p != null);
+const hero = byId.get('bridgelands');
 
-// The questions most worth surfacing on the home page: the ones where being
-// wrong is expensive.
+const activeCities = cities.filter((c) => c.data.priceFrom != null);
+
+const BENEFITS = [
+  {
+    n: '01',
+    h: 'Project access',
+    b: 'Discover upcoming releases and new opportunities, with builder price lists and floor plans the day they come out.',
+  },
+  {
+    n: '02',
+    h: 'Expert guidance',
+    b: 'Compare projects, pricing, incentives and timelines, including the fine print that decides what you actually pay.',
+  },
+  {
+    n: '03',
+    h: 'Buyer representation',
+    b: 'Have an experienced broker in your corner, from first enquiry through paperwork, PDI and possession.',
+  },
+];
+
 const HERO_FAQ = [
   'cooling-off-period-freehold-ontario',
   'do-i-have-to-be-first-time-buyer-ontario-rebate',
   'spouse-owned-home-first-time-buyer',
   'builder-keeps-hst-rebate-assignment',
-  'is-my-deposit-protected-freehold-ontario',
-  'development-charges-levies-cap',
 ];
-const byId = new Map(faq.map((e) => [e.id, e]));
-const heroFaq = HERO_FAQ.map((s) => byId.get(s)).filter((e) => e != null);
-
+const faqById = new Map(faq.map((e) => [e.id, e]));
+const heroFaq = HERO_FAQ.map((s) => faqById.get(s)).filter((e) => e != null);
 const homeFaqSchema = heroFaq.map((e) => ({
   question: e!.data.question,
   answer: e!.data.shortAnswer,
@@ -34,269 +60,248 @@ const homeFaqSchema = heroFaq.map((e) => ({
 ---
 
 <Base
-  title="The Precon Market, Ontario pre-construction low-rise"
+  title="The Precon Market"
   description={SITE.description}
-  kicker={['Ontario', 'Detached · Towns · Semis', `Rev ${LAST_UPDATED}`]}
   isHome
   faq={homeFaqSchema}
 >
-  <div class="mx-auto max-w-[1100px] px-4 sm:px-6">
-    <!-- HERO -->
-    <section class="grid gap-8 pt-10 lg:grid-cols-12 lg:gap-x-12 lg:pt-16">
+  <!-- ========================= HERO ========================= -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-14 pb-4 sm:px-6 lg:pt-20">
+    <div class="grid items-end gap-10 lg:grid-cols-12 lg:gap-x-12">
       <div class="lg:col-span-7">
-        <p class="section-label">01 / Ontario low-rise</p>
-        <h1 class="mt-4 max-w-[24ch] text-[2.1rem] leading-[1.08] font-semibold sm:text-[2.9rem]">
-          New freehold homes, bought with someone on your side.
+        <p class="section-label">Ontario pre-construction</p>
+        <h1
+          class="mt-5 text-[2.6rem] leading-[0.98] font-semibold tracking-[-0.03em] sm:text-[3.6rem] lg:text-[4.1rem]"
+        >
+          Get in early.<br />Buy with confidence.
         </h1>
-        <p class="lede mt-6 max-w-[58ch]">
-          Independent buyer representation and project search for Ontario pre-construction
-          low-rise, detached homes, townhomes and semis. No condos. The builder budgets the
-          commission whether or not you bring a broker, so representation costs you nothing and
-          the price does not drop if you walk in alone.
+        <p class="mt-7 max-w-[54ch] text-[17px] leading-[1.7] text-ink/80">
+          Discover new construction projects across the GTA, explore upcoming releases, and work
+          with a broker who represents your interests, not the builder's.
         </p>
-        <div class="mt-7 flex flex-wrap gap-3">
-          <a href="/vip" class="btn text-sm">Register for VIP access</a>
-          <a href="/book" class="btn-secondary text-sm">Book a call</a>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="/projects" class="btn px-6 text-sm">Explore pre-con projects</a>
+          <a href="/how-it-works" class="btn-secondary px-6 text-sm">How it works</a>
         </div>
-        <p class="mt-4 text-[13px] text-ink/55">
-          Or start with the{' '}
-          <a href="/hst-rebate/checker" class="text-accent underline underline-offset-2">
-            rebate checker
-          </a>{' '}
-          about two minutes, no email required.
-        </p>
       </div>
 
-      <!-- The urgent fact, set like a drawing note. -->
-      <div class="lg:col-span-5">
-        <div class="tick-corners border border-rule bg-accent-tint/60 p-5">
+      <!-- Featured release. Labelled, not decoration. -->
+      {
+        hero?.data.heroImage && (
+          <div class="lg:col-span-5">
+            <a href={`/projects/${hero.id}`} class="group block">
+              <figure class="tick-corners overflow-hidden border border-rule">
+                <Image
+                  src={hero.data.heroImage}
+                  alt={hero.data.heroAlt ?? hero.data.name}
+                  widths={[520, 800]}
+                  sizes="(min-width: 1024px) 440px, 100vw"
+                  loading="eager"
+                  class="block aspect-[4/3] h-auto w-full object-cover"
+                />
+              </figure>
+              <div class="mt-3 flex items-baseline gap-3">
+                <p class="section-label">Now launching</p>
+                <span class="ml-auto font-mono text-[11px] text-ink/50">
+                  {hero.data.city}
+                </span>
+              </div>
+              <p class="mt-1 text-[17px] font-semibold group-hover:text-accent">
+                {hero.data.name}
+              </p>
+              <p class="mt-0.5 text-[13px] text-ink/60">{hero.data.builder.join(' · ')}</p>
+            </a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <!-- ===================== THREE BENEFITS ===================== -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-16 sm:px-6">
+    <ul class="grid gap-x-10 gap-y-8 border-t border-rule pt-10 sm:grid-cols-3">
+      {
+        BENEFITS.map((b) => (
+          <li>
+            <p class="section-label">{b.n}</p>
+            <h2 class="mt-2 text-[19px] font-semibold">{b.h}</h2>
+            <p class="mt-2 text-[15px] leading-relaxed text-ink/75">{b.b}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- ============ WHY WORK WITH US (full-bleed ink) ============ -->
+  <section class="mt-20 bg-ink text-white">
+    <div class="mx-auto max-w-[1100px] px-4 py-16 sm:px-6 lg:py-20">
+      <p class="font-mono text-[11px] tracking-[0.08em] text-white/45 uppercase">
+        Why work with us
+      </p>
+      <h2
+        class="mt-5 max-w-[20ch] text-[2.1rem] leading-[1.05] font-semibold tracking-[-0.02em] sm:text-[2.9rem]"
+      >
+        Builders have their sales teams.<br class="hidden sm:block" /> You have us.
+      </h2>
+      <div class="mt-8 grid gap-8 lg:grid-cols-12 lg:gap-x-12">
+        <p class="text-[17px] leading-[1.75] text-white/75 lg:col-span-7">
+          Builders work with real estate brokers to connect with qualified buyers. We help you
+          explore their projects, compare your options, understand the fine print, and make
+          informed decisions.
+        </p>
+        <p
+          class="border-l-2 border-honey pl-5 text-[17px] leading-[1.6] font-medium text-white lg:col-span-5"
+        >
+          Their job is to sell the project. Our job is to help you decide if it's right for you.
+        </p>
+      </div>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a
+          href="/vip"
+          class="inline-flex min-h-12 items-center justify-center border border-white bg-white px-6 text-sm font-medium text-ink transition-colors hover:bg-white/90"
+        >
+          Register for access
+        </a>
+        <a
+          href="/book"
+          class="inline-flex min-h-12 items-center justify-center border border-white/30 px-6 text-sm font-medium text-white transition-colors hover:border-white"
+        >
+          Book a call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECT SHOWCASE ===================== -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="flex flex-wrap items-end justify-between gap-4 border-b border-rule-dark pb-3">
+      <div>
+        <p class="section-label">Featured</p>
+        <h2 class="mt-2 text-2xl font-semibold">New low-rise across the GTA</h2>
+      </div>
+      <a href="/projects" class="text-[13px] text-accent underline underline-offset-2">
+        All {allProjects.length} projects
+      </a>
+    </div>
+    <p class="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-ink/75">
+      Freehold detached homes, townhomes and semis. No condos. Every project page covers the
+      deposit structure, the incentives, and whether the advertised price already assumes an HST
+      rebate you may not qualify for.
+    </p>
+    <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        showcase.map((p) => (
+          <li class="contents">
+            <ProjectCard project={p!} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- ======================= THE REBATE ======================= -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="tick-corners border border-rule bg-accent-tint/60 p-6 sm:p-10">
+      <div class="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
+        <div class="lg:col-span-5">
           <p class="section-label">Why now</p>
-          <p class="figure mt-2 text-3xl text-accent">$130,000</p>
-          <p class="mt-2 text-[14px] leading-relaxed text-ink/80">
+          <p class="figure mt-3 text-[2.75rem] leading-none text-accent sm:text-[3.25rem]">
+            $130,000
+          </p>
+          <p class="mt-3 text-[15px] leading-relaxed text-ink/80">
             Combined federal and Ontario HST relief currently available on a qualifying new home.
-            The Ontario portion, up to $80,000, with
-            <span class="text-ink"> no first-time buyer test</span>, requires an agreement signed
-            before <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>.
           </p>
-          <p class="mt-3 text-[13px] leading-relaxed text-ink/65">
-            It runs on the signing date, not the closing date. Outside the window you fall back to
-            $24,000.
+        </div>
+        <div class="lg:col-span-7">
+          <p class="text-[16px] leading-[1.75] text-ink/85">
+            The Ontario portion is up to $80,000 and has
+            <span class="font-medium text-ink">no first-time buyer test</span>, which a lot of
+            move-up buyers do not realise. It requires an agreement signed before
+            <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>, and it runs on the signing date,
+            not the closing date.
           </p>
-          <a
-            href="/hst-rebate"
-            class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2"
-          >
-            How the programs work →
-          </a>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="/hst-rebate/checker" class="btn px-5 text-sm">Check your eligibility</a>
+            <a href="/hst-rebate" class="btn-secondary bg-paper-pure px-5 text-sm">
+              How the rebates work
+            </a>
+          </div>
+          <p class="mt-4 font-mono text-[11px] text-ink/50">
+            Rules current as of {LAST_UPDATED}. Estimate only, not tax advice.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- HOW IT WORKS, the three steps, before anything else. -->
-    <section aria-labelledby="process" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">02 / How it works</p>
-      <h2 id="process" class="mt-3 max-w-[30ch] text-2xl font-semibold">
-        Three things, in this order.
+  <!-- ===================== THE HARD QUESTIONS ===================== -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="border-b border-rule-dark pb-3">
+      <p class="section-label">Know before you sign</p>
+      <h2 class="mt-2 max-w-[28ch] text-2xl font-semibold">
+        The questions that cost buyers the most money
       </h2>
-      <ol class="mt-7 grid gap-5 sm:grid-cols-3">
-        {
-          [
-            {
-              n: '01',
-              h: 'Register first',
-              b: 'Before your first sales centre visit, most builders will not recognise representation added afterward, and the commission is budgeted either way.',
-            },
-            {
-              n: '02',
-              h: 'Know your number',
-              b: 'What you can carry when the home closes years from now, what the rebates are worth to you, and what closing actually costs beyond the deposit.',
-            },
-            {
-              n: '03',
-              h: 'Read before you sign',
-              b: 'Freehold has no cooling-off period. The lot, the levy cap and the HST clause are decided in the hour before you sign, not after.',
-            },
-          ].map((s) => (
-            <li class="tick-corners border border-rule bg-paper-pure p-5">
-              <p class="section-label">{s.n}</p>
-              <h3 class="mt-2 text-[16px] font-semibold">{s.h}</h3>
-              <p class="mt-2 text-[14px] leading-relaxed text-ink/75">{s.b}</p>
-            </li>
-          ))
-        }
-      </ol>
-      <a href="/how-it-works" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
-        The full process →
-      </a>
-    </section>
-
-    <!-- WHAT THIS IS -->
-    <section aria-labelledby="service" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">03 / The service</p>
-      <h2 id="service" class="mt-3 max-w-[30ch] text-2xl font-semibold">
-        Two things: finding it, and not getting hurt buying it.
-      </h2>
-      <div class="mt-7 grid gap-4 lg:grid-cols-2">
-        <div class="card p-5 sm:p-6">
-          <p class="section-label">Search</p>
-          <h3 class="mt-2 text-[17px] font-semibold">Access to what's actually releasing</h3>
-          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
-            Builders release low-rise in phases, and the best lots go before the sales centre opens
-            to the public. You get opening price lists, lot availability and deposit structures,
-            plus an honest view of which releases are not worth your time.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-[13px] text-ink/70">
-            <li>First choice of lot, which is the decision you cannot revisit</li>
-            <li>The opening price list, before phase-to-phase increases</li>
-            <li>The builder's delivery record and date reliability</li>
-          </ul>
-          <a href="/vip" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
-            Register for access →
-          </a>
-        </div>
-        <div class="card p-5 sm:p-6">
-          <p class="section-label">Buying</p>
-          <h3 class="mt-2 text-[17px] font-semibold">Representation through a firm agreement</h3>
-          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
-            Freehold pre-construction binds you the moment it is accepted, no cooling-off period,
-            no financing condition. Every protection you get has to be in place before you sign,
-            which means the useful work happens early.
-          </p>
-          <ul class="mt-4 space-y-1.5 text-[13px] text-ink/70">
-            <li>The HST clause, read before you sign it</li>
-            <li>A cap on development levies, the most valuable amendment</li>
-            <li>Your full cash requirement: deposits, closing and fit-out</li>
-          </ul>
-          <a href="/book" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
-            Book a call →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS / CITIES, when populated -->
-    {
-      projects.length > 0 && (
-        <section aria-labelledby="projects" class="mt-20 border-t border-rule-dark pt-8">
-          <p class="section-label">04 / Projects</p>
-          <h2 id="projects" class="mt-3 text-2xl font-semibold">Hand-picked low-rise communities</h2>
-          <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {projects.slice(0, 6).map((p) => (
-              <li class="card p-5">
-                <p class="section-label">{p.data.city}</p>
-                <h3 class="mt-2 text-[16px] font-semibold leading-snug">
-                  <a href={`/projects/${p.id}`} class="hover:text-accent">
-                    {p.data.name}
-                  </a>
-                </h3>
-                <p class="mt-1.5 text-[13px] text-ink/65">{p.data.builder.join(', ')}</p>
-                <p class="mt-2 text-[13px] leading-relaxed text-ink/70">{p.data.shortAnswer}</p>
-              </li>
-            ))}
-          </ul>
-          <a href="/projects" class="mt-5 inline-block text-[13px] text-accent underline underline-offset-2">
-            All projects →
-          </a>
-        </section>
-      )
-    }
-
-    {
-      cities.length > 0 && (
-        <section aria-labelledby="cities" class="mt-20 border-t border-rule-dark pt-8">
-          <p class="section-label">Where</p>
-          <h2 id="cities" class="mt-3 text-2xl font-semibold">New low-rise by city</h2>
-          <ul class="mt-6 flex flex-wrap gap-2">
-            {cities.map((c) => (
-              <li>
-                <a
-                  href={`/new-homes/${c.id}`}
-                  class="inline-block border border-rule bg-paper-pure px-3 py-1.5 text-[13px] text-ink/80 hover:border-honey hover:bg-accent-tint"
-                >
-                  {c.data.city}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
-
-    <!-- THE EXPENSIVE QUESTIONS -->
-    <section aria-labelledby="questions" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">{projects.length > 0 ? '05' : '04'} / The expensive questions</p>
-      <h2 id="questions" class="mt-3 max-w-[32ch] text-2xl font-semibold">
-        Six things that cost low-rise buyers the most money
-      </h2>
-      <p class="mt-4 max-w-[66ch] text-[15px] leading-relaxed text-ink/80">
-        Each of these has a short answer and a six-figure consequence if you get it wrong. All
-        {' '}{faq.length} questions on the site cite their sources.
-      </p>
-
-      <ul class="mt-7 grid gap-4 sm:grid-cols-2">
-        {
-          heroFaq.map((item, i) => (
-            <li class="card flex flex-col p-5">
-              <p class="section-label">{String(i + 1).padStart(2, '0')}</p>
-              <h3 class="mt-2 text-[15px] font-semibold leading-snug">
-                <a href={`/faq/${item!.id}`} class="hover:text-accent">
-                  {item!.data.question}
-                </a>
-              </h3>
-              <p class="mt-2 grow text-[13px] leading-relaxed text-ink/70">
-                {item!.data.shortAnswer}
-              </p>
-              <a
-                href={`/faq/${item!.id}`}
-                class="mt-3 text-[13px] text-accent underline underline-offset-2"
-              >
-                Full answer →
+    </div>
+    <ul class="mt-8 grid gap-x-10 gap-y-7 sm:grid-cols-2">
+      {
+        heroFaq.map((item, i) => (
+          <li>
+            <p class="section-label">{String(i + 1).padStart(2, '0')}</p>
+            <h3 class="mt-1.5 text-[16px] font-semibold leading-snug">
+              <a href={`/faq/${item!.id}`} class="hover:text-accent">
+                {item!.data.question}
               </a>
-            </li>
-          ))
-        }
-      </ul>
+            </h3>
+            <p class="mt-2 text-[14px] leading-relaxed text-ink/70">{item!.data.shortAnswer}</p>
+          </li>
+        ))
+      }
+    </ul>
+    <a href="/faq" class="mt-8 inline-block text-[13px] text-accent underline underline-offset-2">
+      All {faq.length} questions
+    </a>
+  </section>
 
-      <a href="/faq" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
-        All {faq.length} questions →
-      </a>
-    </section>
+  <!-- ===================== BROWSE BY CITY ===================== -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="border-b border-rule-dark pb-3">
+      <p class="section-label">Where</p>
+      <h2 class="mt-2 text-2xl font-semibold">Browse by city</h2>
+    </div>
+    <ul class="mt-6 flex flex-wrap gap-2">
+      {
+        activeCities.map((c) => (
+          <li>
+            <a
+              href={`/new-homes/${c.id}`}
+              class="inline-block border border-rule bg-paper-pure px-3 py-1.5 text-[13px] text-ink/80 transition-colors hover:border-honey hover:bg-accent-tint"
+            >
+              {c.data.city}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <a href="/new-homes" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
+      All {cities.length} cities
+    </a>
+  </section>
 
-    <!-- GUIDES -->
-    <section aria-labelledby="guides" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">Guides</p>
-      <h2 id="guides" class="mt-3 text-2xl font-semibold">Start here</h2>
-      <ul class="mt-6 grid gap-4 sm:grid-cols-2">
-        {
-          topGuides.map((g) => (
-            <li class="card p-5">
-              <p class="section-label">
-                Guide{g.data.readMinutes && <span class="ml-2">{g.data.readMinutes} min</span>}
-              </p>
-              <h3 class="mt-2 text-[16px] font-semibold leading-snug">
-                <a href={`/guides/${g.id}`} class="hover:text-accent">
-                  {g.data.title}
-                </a>
-              </h3>
-              <p class="mt-2 text-[13px] leading-relaxed text-ink/70">{g.data.shortAnswer}</p>
-            </li>
-          ))
-        }
-      </ul>
-      <a href="/guides" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
-        All {guides.length} guides →
-      </a>
-    </section>
-
-    <!-- RESOURCES -->
-    <section aria-labelledby="tools" class="mt-20 border-t border-rule-dark pt-8">
-      <p class="section-label">Free tools</p>
-      <h2 id="tools" class="mt-3 text-2xl font-semibold">Checklists worth having in your hand</h2>
-      <p class="mt-3 max-w-[64ch] text-[15px] leading-relaxed text-ink/80">
-        For the moments that actually matter, before you sign, at the walkthrough, and when you
-        are budgeting for closing. Free, and readable in full on the site.
-      </p>
-      <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+  <!-- ======================== FREE TOOLS ======================== -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
+      <div class="lg:col-span-4">
+        <p class="section-label">Free tools</p>
+        <h2 class="mt-2 text-2xl font-semibold">Checklists worth having in your hand</h2>
+        <p class="mt-3 text-[15px] leading-relaxed text-ink/75">
+          For the moments that matter: before you sign, at the walkthrough, and when you are
+          budgeting for closing.
+        </p>
+        <a href="/resources" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
+          All {resources.length} tools
+        </a>
+      </div>
+      <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-8">
         {
           resources.map((r) => (
             <li class="card p-4">
@@ -308,37 +313,43 @@ const homeFaqSchema = heroFaq.map((e) => ({
           ))
         }
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- CREDENTIALS -->
-    <section class="mt-20 border-t border-rule pt-8">
-      <div class="grid gap-6 lg:grid-cols-12">
-        <div class="lg:col-span-5">
-          <p class="section-label">Prepared by</p>
-          <div class="tick-corners mt-3 border border-rule bg-paper-pure/70 p-4">
-            <p class="text-[15px] font-semibold text-ink">{BROKER.brokerage}</p>
-            <p class="text-[15px] text-ink/80">{BROKER.name}, {BROKER.title}</p>
-            <p class="figure mt-2 text-[11px] text-ink/55">
-              RECO #{BROKER.reco} ·{' '}
-              <a href={BROKER.phoneHref} class="text-accent">{BROKER.phone}</a>
-            </p>
-          </div>
-        </div>
-        <div class="lg:col-span-7">
-          <p class="text-[15px] leading-relaxed text-ink/80">
-            Low-rise only, and Ontario only. Most pre-construction advice is written about
-            condominiums because that is where the marketing budgets are, but freehold buyers face
-            a firmer contract, thinner deposit protection and higher closing costs on a larger
-            purchase. Those are the things worth knowing about, so that is what this site covers.
-          </p>
-          <a href="/about" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
-            More about Jordan →
+  <!-- ========================= CLOSE ========================= -->
+  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+    <div class="grid gap-8 border-t border-rule-dark pt-10 lg:grid-cols-12 lg:gap-x-12">
+      <div class="lg:col-span-7">
+        <h2 class="max-w-[22ch] text-[1.75rem] leading-tight font-semibold">
+          Thinking about a new build? Start with a conversation.
+        </h2>
+        <p class="mt-4 max-w-[58ch] text-[16px] leading-[1.75] text-ink/80">
+          Twenty minutes, no obligation. Bring your agreement if you have one, or your questions if
+          you do not. If pre-construction is the wrong move for you right now, you will hear that
+          too.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="/vip" class="btn px-6 text-sm">Register for access</a>
+          <a href="/book" class="btn-secondary px-6 text-sm">Book a call</a>
+          <a href={BROKER.phoneHref} class="figure text-sm text-accent underline underline-offset-2">
+            {BROKER.phone}
           </a>
         </div>
       </div>
-    </section>
-
-    <Cta variant="vip" />
-    <Disclaimer />
-  </div>
+      <div class="lg:col-span-5">
+        <div class="tick-corners border border-rule bg-paper-pure/70 p-5">
+          <p class="section-label">Prepared by</p>
+          <p class="mt-3 text-[15px] font-semibold text-ink">{BROKER.brokerage}</p>
+          <p class="text-[15px] text-ink/80">{BROKER.name}, {BROKER.title}</p>
+          <p class="figure mt-2 text-[11px] text-ink/55">RECO #{BROKER.reco}</p>
+          <p class="mt-4 border-t border-rule pt-4 text-[13px] leading-relaxed text-ink/65">
+            Freehold low-rise only, across the GTA. Detached homes, townhomes and semis.
+          </p>
+          <a href="/about" class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2">
+            More about Jordan
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </Base>
