@@ -41,7 +41,7 @@ const href = `/projects/${project.id}`;
     </div>
   ) : (
     <article class="card flex flex-col overflow-hidden">
-      {d.heroImage && (
+      {d.heroImage ? (
         <a href={href} class="block">
           <Image
             src={d.heroImage}
@@ -51,6 +51,19 @@ const href = `/projects/${project.id}`;
             loading="lazy"
             class="block aspect-[16/10] h-auto w-full object-cover"
           />
+        </a>
+      ) : (
+        /* Not every project has a builder rendering available. A drawn panel
+           keeps the grid even and reads as intentional rather than broken. */
+        <a
+          href={href}
+          class="flex aspect-[16/10] items-center justify-center border-b border-rule bg-accent-tint/50"
+          aria-hidden="true"
+          tabindex="-1"
+        >
+          <span class="font-mono text-[11px] tracking-[0.08em] text-label uppercase">
+            {d.city}
+          </span>
         </a>
       )}
       <div class="flex grow flex-col p-5">
