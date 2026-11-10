@@ -46,7 +46,7 @@ incentives:
 projectFaq:
   - q: "Is Elements Towns freehold or condo?"
     a: >-
-      Elements Towns is freehold — buyers own the land and the building outright. The community
+      Elements Towns is freehold, buyers own the land and the building outright. The community
       includes a POTL or common-elements fee for shared areas; the amount is listed in the project
       data on this page.
   - q: "Who is building Elements Towns?"
@@ -86,7 +86,7 @@ relatedFaq:
 order: 20
 updated: 2026-11-09
 ---
-**Double-car rear-lane garages** on a townhome at this price are unusual — most towns at $670,000 offer a single garage with tandem driveway. If you own two cars, that difference matters more day to day than most finishes.
+**Double-car rear-lane garages** on a townhome at this price are unusual, most towns at $670,000 offer a single garage with tandem driveway. If you own two cars, that difference matters more day to day than most finishes.
 
 ## Pricing and your rebate position
 
@@ -99,7 +99,7 @@ Listed prices run **$669,900 to $729,900** across 3 floor plans. Here is what th
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, the price assumes you qualify, and a buyer who does not is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-At the entry end, $669,900 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $669,900 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -107,7 +107,7 @@ At the entry end, $669,900 sits **below $1,000,000** — the full 8% Ontario reb
 - $20,000 at 30, 90 and 180 days
 - $70,000 total
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -120,19 +120,19 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 Elements Towns is at **Bronte Street South & Britannia Road** in South Milton, Milton. Walk Score 11, Transit Score 24.
 
-That is a car-dependent location, which is normal for new low-rise — the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
+That is a car-dependent location, which is normal for new low-rise, the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
 
 ## Before you sign at Elements Towns
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Elements Towns go to registered buyers — [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Elements Towns go to registered buyers, [register for access](/vip) and I'll send what is released.
 

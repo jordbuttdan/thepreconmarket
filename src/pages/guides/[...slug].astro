@@ -45,7 +45,7 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
 >
   <div class="mx-auto grid max-w-[1100px] gap-10 px-4 pt-6 sm:px-6 lg:grid-cols-12 lg:gap-x-12">
     <article class="lg:col-span-8">
-      <p class="section-label">— Guide</p>
+      <p class="section-label">Guide</p>
       <h1 class="mt-3 text-[1.85rem] font-semibold sm:text-[2.3rem]">{d.title}</h1>
       {d.question && <p class="mt-3 text-[15px] text-ink/60">{d.question}</p>}
 
@@ -66,7 +66,7 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
         {
           relatedFaq.length > 0 && (
             <div>
-              <p class="section-label">— Related questions</p>
+              <p class="section-label">Related questions</p>
               <ul class="mt-3">
                 {relatedFaq.map((r) => (
                   <li class="border-b border-rule/60">
@@ -87,7 +87,7 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
         {
           relatedGuides.length > 0 && (
             <div>
-              <p class="section-label">— More guides</p>
+              <p class="section-label">More guides</p>
               <ul class="mt-3">
                 {relatedGuides.map((r) => (
                   <li class="border-b border-rule/60">
@@ -106,7 +106,7 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
         }
 
         <div class="border border-rule bg-accent-tint/40 p-4">
-          <p class="section-label">— Rebate checker</p>
+          <p class="section-label">Rebate checker</p>
           <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
             Estimate your federal and Ontario rebates in about two minutes.
           </p>

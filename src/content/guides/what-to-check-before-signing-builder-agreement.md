@@ -10,7 +10,7 @@ order: 3
 readMinutes: 9
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
   - label: Real Estate Council of Ontario
     url: https://www.reco.on.ca/
@@ -26,19 +26,19 @@ related:
   - pre-construction-closing-cost-guide-ontario
 ---
 
-A builder's agreement runs 40 to 80 pages, is drafted entirely by the builder's lawyers, and on a freehold home binds you the moment it is accepted — [there is no cooling-off period](/faq/cooling-off-period-freehold-ontario).
+A builder's agreement runs 40 to 80 pages, is drafted entirely by the builder's lawyers, and on a freehold home binds you the moment it is accepted, [there is no cooling-off period](/faq/cooling-off-period-freehold-ontario).
 
 Use this as a checklist with your lawyer **before** signing. Afterward it is just an inventory of what you agreed to.
 
 ## The money
 
-**☐ Deposit schedule — amounts and exact dates.** Write them on a calendar. Each one is a contractual obligation and missing one is a default. [Typical structures](/faq/typical-deposit-structure-pre-construction-ontario).
+**☐ Deposit schedule, amounts and exact dates.** Write them on a calendar. Each one is a contractual obligation and missing one is a default. [Typical structures](/faq/typical-deposit-structure-pre-construction-ontario).
 
 **☐ Where each instalment comes from.** Money you hold, not money you expect from a sale, a bonus or an unconfirmed gift.
 
 **☐ Does your deposit exceed Tarion's protection?** Freehold protection is 10% of price up to **$100,000** (or $60,000 at or below $600,000). A 20% deposit on a $1.2M home leaves roughly $140,000 uninsured. [Important](/faq/is-my-deposit-protected-freehold-ontario).
 
-**☐ The HST clause.** Is the price stated HST-inclusive? What rebate amount is assumed? What exactly are you indemnifying the builder against? This is routinely the largest contingent number in the agreement — up to $80,000. [Why](/faq/builder-keeps-hst-rebate-assignment).
+**☐ The HST clause.** Is the price stated HST-inclusive? What rebate amount is assumed? What exactly are you indemnifying the builder against? This is routinely the largest contingent number in the agreement, up to $80,000. [Why](/faq/builder-keeps-hst-rebate-assignment).
 
 **☐ Are development charges and levies capped?** If not, ask. This is the most valuable amendment available. [Why this one](/faq/development-charges-levies-cap).
 
@@ -54,15 +54,15 @@ Use this as a checklist with your lawyer **before** signing. Afterward it is jus
 
 ## The control clauses
 
-**☐ Substitution rights.** The builder's ability to substitute materials and finishes of "equal or better quality" — their judgment.
+**☐ Substitution rights.** The builder's ability to substitute materials and finishes of "equal or better quality", their judgment.
 
 **☐ Grading, sodding and driveway timing.** Usually deferred past closing. [Expect a season or two](/faq/grading-sodding-driveway-timeline).
 
-**☐ Assignment rights.** Most low-rise agreements restrict or prohibit assignment. **Ask for the right at signing** — it is the main exit if your circumstances change, costs the builder little now, and is nearly impossible to obtain later. [More](/faq/assignment-sale-freehold-low-rise).
+**☐ Assignment rights.** Most low-rise agreements restrict or prohibit assignment. **Ask for the right at signing**. It is the main exit if your circumstances change, costs the builder little now, and is nearly impossible to obtain later. [More](/faq/assignment-sale-freehold-low-rise).
 
 **☐ Termination rights.** On what grounds may the builder terminate? Some clauses are drafted broadly.
 
-**☐ Is there a POTL?** If the agreement mentions a parcel of tied land or a common elements condominium corporation, flag it to your lawyer **immediately** — a rescission right may be engaged, and if it exists it is measured in days. [POTLs](/faq/potl-common-elements-condo-fees).
+**☐ Is there a POTL?** If the agreement mentions a parcel of tied land or a common elements condominium corporation, flag it to your lawyer **immediately**, a rescission right may be engaged, and if it exists it is measured in days. [POTLs](/faq/potl-common-elements-condo-fees).
 
 ## The schedules at the back
 

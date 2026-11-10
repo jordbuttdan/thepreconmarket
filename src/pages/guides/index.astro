@@ -16,7 +16,7 @@ const latest = guides.map((g) => g.data.updated.getTime()).reduce((a, b) => Math
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Guides', href: '/guides' }]}
 >
   <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
-    <p class="section-label">— Buyer guides</p>
+    <p class="section-label">Buyer guides</p>
     <h1 class="mt-4 max-w-[28ch] text-[2rem] font-semibold sm:text-[2.6rem]">
       How to buy new low-rise in Ontario, properly
     </h1>
@@ -32,7 +32,7 @@ const latest = guides.map((g) => g.data.updated.getTime()).reduce((a, b) => Math
         guides.map((g, i) => (
           <li class="tick-corners card flex flex-col p-5">
             <p class="section-label">
-              — {String(i + 1).padStart(2, '0')}
+              {String(i + 1).padStart(2, '0')}
               {g.data.readMinutes && <span class="ml-2">{g.data.readMinutes} min</span>}
             </p>
             <h2 class="mt-3 text-[17px] font-semibold leading-snug">

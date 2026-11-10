@@ -213,7 +213,7 @@ export default function Checker() {
               When did you sign?
             </label>
             <p className="mt-1 text-sm text-ink/60">
-              The signing date determines which rebate windows apply — and whether a rescission period is still open.
+              The signing date determines which rebate windows apply, and whether a rescission period is still open.
             </p>
             <input
               id="signing-date"
@@ -254,11 +254,11 @@ export default function Checker() {
 
         {step === 'resaleExit' && (
           <div>
-            <p className="section-label">— Result</p>
+            <p className="section-label">Result</p>
             <h2 className="mt-3 text-lg font-semibold">These rebates don't apply to resale homes.</h2>
             <p className="mt-3 text-[15px] text-ink/80">
               The GST/HST new housing rebates apply to newly built or substantially renovated homes only. A resale
-              purchase doesn't qualify — no rebate paperwork, nothing to claim.
+              purchase doesn't qualify, no rebate paperwork, nothing to claim.
             </p>
             <p className="mt-3 text-[15px] text-ink/80">
               If you're weighing resale against pre-construction, that trade-off is worth a conversation.
@@ -315,11 +315,11 @@ export default function Checker() {
             <legend className="text-lg font-semibold">Will you live in the home?</legend>
             <div className="mt-4 space-y-2">
               <Option
-                label="Yes — it'll be my primary residence"
+                label="Yes, it'll be my primary residence"
                 sublabel="Or an immediate family member's"
                 onSelect={() => advance({ occupancy: 'primary' })}
               />
-              <Option label="No — I plan to rent it out" onSelect={() => advance({ occupancy: 'rental' })} />
+              <Option label="No, I plan to rent it out" onSelect={() => advance({ occupancy: 'rental' })} />
               <Option label="Not sure yet" onSelect={() => advance({ occupancy: 'not-sure' })} />
             </div>
           </fieldset>
@@ -346,8 +346,8 @@ export default function Checker() {
             </legend>
             <div className="mt-4 space-y-2">
               <Option label="No" onSelect={() => advance({ spouseOwned: 'no' })} />
-              <Option label="Yes — and I lived in it" onSelect={() => advance({ spouseOwned: 'yes-lived-in' })} />
-              <Option label="Yes — but I never lived in it" onSelect={() => advance({ spouseOwned: 'yes-not-lived-in' })} />
+              <Option label="Yes, and I lived in it" onSelect={() => advance({ spouseOwned: 'yes-lived-in' })} />
+              <Option label="Yes, but I never lived in it" onSelect={() => advance({ spouseOwned: 'yes-not-lived-in' })} />
               <Option label="I don't have a spouse or partner" onSelect={() => advance({ spouseOwned: 'no-partner' })} />
             </div>
           </fieldset>
@@ -358,7 +358,7 @@ export default function Checker() {
             <legend className="text-lg font-semibold">Does your agreement assign the rebate to the builder?</legend>
             <p className="mt-2 text-sm text-ink/60">
               Most builder agreements state the price is "inclusive of HST" and require you to assign the rebate to the
-              builder at closing. If you're not sure, that's the most common answer — and worth checking before you
+              builder at closing. If you're not sure, that's the most common answer, and worth checking before you
               close.
             </p>
             <div className="mt-4 space-y-2">
@@ -393,7 +393,7 @@ export default function Checker() {
             </select>
             {draft.provinceCode !== 'ON' && (
               <p className="mt-2 border-l-2 border-caution pl-3 text-sm text-caution">
-                Outside Ontario, the provincial portion differs — only the federal rebate is modelled here.
+                Outside Ontario, the provincial portion differs, only the federal rebate is modelled here.
               </p>
             )}
             <button

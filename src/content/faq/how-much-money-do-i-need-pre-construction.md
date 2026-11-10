@@ -2,7 +2,7 @@
 question: How much money do I actually need to buy pre-construction?
 title: How much cash you need
 shortAnswer: >-
-  Budget the deposit — commonly 10% to 20% over the first year or two — plus closing
+  Budget the deposit, commonly 10% to 20% over the first year or two, plus closing
   costs of roughly 2% to 4% of the price for land transfer tax, levies, adjustments and
   legal fees. On a $1.1 million freehold home, that is often $110,000 in deposits and a
   further $30,000 to $45,000 at closing.
@@ -10,9 +10,9 @@ category: deposits-and-financing
 order: 5
 updated: 2026-11-09
 sources:
-  - label: Toronto — Municipal Land Transfer Tax rebate opportunities
+  - label: Toronto, Municipal Land Transfer Tax rebate opportunities
     url: https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rebate-opportunities/
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - typical-deposit-structure-pre-construction-ontario
@@ -46,7 +46,7 @@ Outside Toronto, a realistic all-in closing figure on this home is roughly **$30
 
 **An uncapped levy clause.** Development charges rising between signing and a closing four years out, passed through with no ceiling. Get a cap. [More](/faq/development-charges-levies-cap).
 
-**A failed HST rebate.** If your price was quoted [net of HST rebate](/faq/price-net-of-hst-rebate-meaning) and you turn out not to qualify — because you are [renting it out](/faq/hst-rebate-rental-investment-property), or the [spousal test](/faq/spouse-owned-home-first-time-buyer) catches you — the builder bills the rebate amount at closing. On this home that is up to **$80,000**, due on the day.
+**A failed HST rebate.** If your price was quoted [net of HST rebate](/faq/price-net-of-hst-rebate-meaning) and you turn out not to qualify, because you are [renting it out](/faq/hst-rebate-rental-investment-property), or the [spousal test](/faq/spouse-owned-home-first-time-buyer) catches you, the builder bills the rebate amount at closing. On this home that is up to **$80,000**, due on the day.
 
 ## And the one nobody budgets
 
@@ -54,6 +54,6 @@ Outside Toronto, a realistic all-in closing figure on this home is roughly **$30
 
 ## A working rule
 
-For a $1.1M freehold home outside Toronto, plan on roughly **$110,000 in deposits** and **$35,000 to $45,000 at closing** — around $150,000 total, excluding any rebate or appraisal surprise. Hold a reserve beyond that.
+For a $1.1M freehold home outside Toronto, plan on roughly **$110,000 in deposits** and **$35,000 to $45,000 at closing**, around $150,000 total, excluding any rebate or appraisal surprise. Hold a reserve beyond that.
 
 If that number is uncomfortable, the answer is a less expensive home, not a tighter budget. The people who get hurt here are the ones with no margin. [Let's build the actual number for your purchase](/book).

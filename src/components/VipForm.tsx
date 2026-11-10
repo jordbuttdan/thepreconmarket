@@ -9,8 +9,8 @@ import { useEffect, useRef, useState } from 'react';
  * which is acceptable because an inbound webhook only accepts data.
  *
  * Spam defences, since there is no server to validate:
- *   1. A honeypot field hidden from humans but filled by naive bots.
- *   2. A submit-time trap — anything submitted under MIN_FILL_MS is a bot.
+ * 1. A honeypot field hidden from humans but filled by naive bots.
+ * 2. A submit-time trap, anything submitted under MIN_FILL_MS is a bot.
  * Both fail silently and report success, so a bot learns nothing.
  */
 
@@ -46,7 +46,7 @@ export default function VipForm({
   // Until React has hydrated, onSubmit is not attached. A submit at that
   // point would fall through to the browser's native handling, which on a
   // static site means a GET to the same URL with every field in the query
-  // string — broken, and it would put the visitor's email and phone into
+  // string, broken, and it would put the visitor's email and phone into
   // their history and any outbound referrer. The button stays disabled until
   // this flips, and method="post" below is the second line of defence.
   const [hydrated, setHydrated] = useState(false);
@@ -118,7 +118,7 @@ export default function VipForm({
   if (!webhookUrl) {
     return (
       <div className="border border-dashed border-caution/60 bg-accent-tint/40 p-5">
-        <p className="section-label">— Placeholder</p>
+        <p className="section-label">Placeholder</p>
         <p className="mt-2 text-[13px] leading-relaxed text-ink/75">
           <strong className="font-semibold">GHL webhook not configured.</strong> Set{' '}
           <code className="font-mono text-[12px]">PUBLIC_GHL_VIP_WEBHOOK_URL</code> in your
@@ -131,14 +131,14 @@ export default function VipForm({
   if (status === 'done') {
     return (
       <div className="tick-corners border border-rule bg-accent-tint/60 p-5 sm:p-6">
-        <p className="section-label">— {resource ? 'Sent' : 'Registered'}</p>
+        <p className="section-label">{resource ? 'Sent' : 'Registered'}</p>
         <h3 className="mt-2 text-lg font-semibold">
           {resource ? 'Check your inbox.' : "You're on the list."}
         </h3>
         <p className="mt-2 text-[14px] leading-relaxed text-ink/75">
           {resource
             ? "The PDF is on its way. The full checklist is on this page too, so you can work through it right now without waiting."
-            : "You'll hear from Jordan directly — usually the same day — with what's releasing, what the deposit structure looks like, and whether it's worth your time."}
+            : "You'll hear from Jordan directly, usually the same day, with what's releasing, what the deposit structure looks like, and whether it's worth your time."}
         </p>
         <a href="/book" className="btn mt-4 text-sm">
           Book a call now instead

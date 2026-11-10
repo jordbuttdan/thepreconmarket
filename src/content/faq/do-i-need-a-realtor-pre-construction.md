@@ -4,7 +4,7 @@ title: Do you need a realtor?
 shortAnswer: >-
   You are not required to have one, but the builder budgets a co-operating commission
   whether or not you bring representation. If you walk in unrepresented, the builder
-  keeps it — the price does not drop. Having your own broker costs you nothing and
+  keeps it, the price does not drop. Having your own broker costs you nothing and
   gives you someone whose duty is to you.
 category: buying-process
 order: 1
@@ -25,7 +25,7 @@ You are not required to. The question is whether it is to your advantage, and th
 
 Builders set prices with a **co-operating brokerage commission** built into their sales budget. That budget exists whether or not you arrive with a broker.
 
-If you walk into the sales centre alone, the builder does not reduce the price by the commission they did not pay. They keep it. Unrepresented buyers do not get a discount — they get the same price with nobody on their side. [More on the economics](/faq/does-it-cost-more-to-use-a-realtor-precon).
+If you walk into the sales centre alone, the builder does not reduce the price by the commission they did not pay. They keep it. Unrepresented buyers do not get a discount, they get the same price with nobody on their side. [More on the economics](/faq/does-it-cost-more-to-use-a-realtor-precon).
 
 ## Who the sales representative works for
 
@@ -39,12 +39,12 @@ The person at the sales centre is pleasant, knowledgeable and working **for the 
 
 ## What your own broker should actually do
 
-Not open doors — there are no doors. The useful work is:
+Not open doors. There are no doors. The useful work is:
 
 - **Market context.** What comparable homes in comparable communities are actually selling for, and whether this price is reasonable.
 - **Builder intelligence.** Delivery record, date reliability, quality of finishing, how they handle warranty items.
 - **Phase timing.** When the next release is, how pricing has moved between phases, and whether waiting is sensible.
-- **Reading the agreement commercially** alongside your lawyer's legal review — the deposit schedule, the HST clause, the levy cap, assignment rights. [What is in it](/faq/what-is-in-agreement-of-purchase-and-sale-precon).
+- **Reading the agreement commercially** alongside your lawyer's legal review, the deposit schedule, the HST clause, the levy cap, assignment rights. [What is in it](/faq/what-is-in-agreement-of-purchase-and-sale-precon).
 - **Knowing which amendments are achievable** at this project, this quarter. [More](/faq/builder-amendments-pre-construction).
 - **Lot selection.** Which lots are genuinely better and which premiums are worth paying. [More](/faq/lot-premiums-explained).
 
@@ -56,6 +56,6 @@ If you are planning to visit sales centres, sort this out beforehand. It costs n
 
 ## What a broker is not
 
-Not a lawyer, not an accountant. A broker should tell you to get the agreement reviewed and your tax position confirmed — and should not pretend to do either themselves. [Lawyer review](/faq/lawyer-review-agreement-pre-construction).
+Not a lawyer, not an accountant. A broker should tell you to get the agreement reviewed and your tax position confirmed, and should not pretend to do either themselves. [Lawyer review](/faq/lawyer-review-agreement-pre-construction).
 
 [Register for representation before your first sales centre visit](/vip).

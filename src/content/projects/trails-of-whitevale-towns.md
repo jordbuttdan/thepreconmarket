@@ -13,7 +13,7 @@ ownership: Freehold
 salesStatus: "Under Construction / Developer Selling & Platinum Access"
 launchDate: "2026-09-23"
 shortAnswer: >-
-  Trails of Whitevale — Towns is freehold 17 and 20 foot townhomes in Whitevale, Pickering, from
+  Trails of Whitevale, Towns is freehold 17 and 20 foot townhomes in Whitevale, Pickering, from
   $659,990 and already under construction. Built by Sundial Homes, it offers freehold townhome homes
   from 1,450 to 2,901 sq ft, priced $659,990 to $851,990. Launched 2026-09-23.
 priceFrom: 659990
@@ -45,14 +45,14 @@ incentives:
 projectFaq:
   - q: "Is Trails of Whitevale \u2014 Towns freehold or condo?"
     a: >-
-      Trails of Whitevale — Towns is freehold — buyers own the land and the building outright. There
+      Trails of Whitevale, Towns is freehold, buyers own the land and the building outright. There
       is no condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Trails of Whitevale \u2014 Towns?"
     a: >-
-      Trails of Whitevale — Towns is being built by Sundial Homes, in Pickering's Whitevale area.
+      Trails of Whitevale, Towns is being built by Sundial Homes, in Pickering's Whitevale area.
   - q: "How much do homes at Trails of Whitevale \u2014 Towns cost?"
     a: >-
-      Listed prices at Trails of Whitevale — Towns range from $659,990 to $851,990 across 12 floor
+      Listed prices at Trails of Whitevale, Towns range from $659,990 to $851,990 across 12 floor
       plans, covering 1,450 to 2,901 sq ft. Lot premiums, elevation upgrades and optional layouts
       are quoted separately and are not included in the base price.
   - q: "What is the deposit structure at Trails of Whitevale \u2014 Towns?"
@@ -61,14 +61,14 @@ projectFaq:
       120 days; $20,000 at 150 days. Deposit terms are set by the builder and change between phases.
   - q: "Does Trails of Whitevale \u2014 Towns qualify for the Ontario HST rebate?"
     a: >-
-      Trails of Whitevale — Towns can qualify. The Ontario Enhanced New Housing Rebate applies to
+      Trails of Whitevale, Towns can qualify. The Ontario Enhanced New Housing Rebate applies to
       agreements signed between April 1, 2026 and March 31, 2027, pays up to $80,000 of the
       provincial HST and has no first-time buyer test. At $659,990 the Ontario rebate is worth about
       $52,799, and a first-time buyer could add roughly $32,999 federally. The home must be the
       primary residence of the buyer or a relation, and eligibility is determined by CRA.
   - q: "Where is Trails of Whitevale \u2014 Towns located?"
     a: >-
-      Trails of Whitevale — Towns is at Whitevale Road & Whites Road in Whitevale, Pickering,
+      Trails of Whitevale, Towns is at Whitevale Road & Whites Road in Whitevale, Pickering,
       Ontario. The location has a Walk Score of 9 and a Transit Score of 0.
 relatedFaq:
   - cooling-off-period-freehold-ontario
@@ -92,7 +92,7 @@ Listed prices run **$659,990 to $851,990** across 12 floor plans. Here is what t
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, the price assumes you qualify, and a buyer who does not is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-At the entry end, $659,990 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $659,990 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -101,7 +101,7 @@ At the entry end, $659,990 sits **below $1,000,000** — the full 8% Ontario reb
 - $15,000 at 90 and 120 days
 - $20,000 at 150 days
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -112,21 +112,21 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 ## Location
 
-Trails of Whitevale — Towns is at **Whitevale Road & Whites Road** in Whitevale, Pickering. Walk Score 9, Transit Score 0.
+Trails of Whitevale, Towns is at **Whitevale Road & Whites Road** in Whitevale, Pickering. Walk Score 9, Transit Score 0.
 
-That is a car-dependent location, which is normal for new low-rise — the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
+That is a car-dependent location, which is normal for new low-rise, the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
 
-## Before you sign at Trails of Whitevale — Towns
+## Before you sign at Trails of Whitevale, Towns
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Trails of Whitevale — Towns go to registered buyers — [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Trails of Whitevale, Towns go to registered buyers, [register for access](/vip) and I'll send what is released.
 

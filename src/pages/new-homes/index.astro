@@ -52,31 +52,31 @@ const latest = new Date(
 ---
 
 <Base
-  title="New low-rise home communities by city — Ontario"
+  title="New low-rise home communities by city, Ontario"
   description={`New freehold detached homes, townhomes and semis across ${cities.length} Ontario cities. Local price ranges, active builders, and what the HST rebates are worth at each market's price points.`}
   kicker={['Ontario', 'Low-rise', `${cities.length} cities`]}
   updated={latest}
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'New homes', href: '/new-homes' }]}
 >
   <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
-    <p class="section-label">— New homes by city</p>
+    <p class="section-label">New homes by city</p>
     <h1 class="mt-4 max-w-[26ch] text-[2rem] font-semibold sm:text-[2.6rem]">
       New freehold low-rise across Ontario
     </h1>
     <p class="lede mt-6 max-w-[62ch]">
       Detached homes, townhomes and semis in {cities.length} cities, {active} of them with active
       new-build supply. Each page covers what is actually being built, which builders are working
-      there, the local price band, and — the part that changes most between markets — what the
+      there, the local price band, and, the part that changes most between markets, what the
       HST rebates are worth at those prices.
     </p>
 
     <div class="mt-6 border border-rule bg-accent-tint/50 p-4">
-      <p class="section-label">— Why the city matters for your rebate</p>
+      <p class="section-label">Why the city matters for your rebate</p>
       <p class="mt-2 max-w-[70ch] text-[14px] leading-relaxed text-ink/80">
         A $600,000 townhome in Whitby receives the <span class="text-ink">full 8%</span> Ontario
         rebate plus the full federal rebate. A $1.9M detached home in King Township receives
         {' '}<span class="figure">$24,000</span> and nothing federally. Same programs, completely
-        different outcomes — and the Ontario window closes
+        different outcomes, and the Ontario window closes
         {' '}<span class="figure">{ON_ENHR.WINDOW_CLOSES}</span> on the signing date.
         {' '}<a href="/hst-rebate" class="text-accent underline underline-offset-2">How the rebates work</a>.
       </p>
@@ -120,7 +120,7 @@ const latest = new Date(
     <Cta
       variant="vip"
       heading="Not sure which market fits your budget?"
-      body="The same budget buys very different homes in Vaughan, Whitby and Kitchener — and lands you in different rebate bands. Tell me the number and I'll tell you where it goes furthest."
+      body="The same budget buys very different homes in Vaughan, Whitby and Kitchener, and lands you in different rebate bands. Tell me the number and I'll tell you where it goes furthest."
     />
     <Disclaimer />
   </div>

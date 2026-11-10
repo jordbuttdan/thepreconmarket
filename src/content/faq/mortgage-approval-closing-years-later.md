@@ -3,13 +3,13 @@ question: Will my mortgage still be approved when the home closes years later?
 title: Mortgage approval at closing
 shortAnswer: >-
   Not guaranteed. Your mortgage is underwritten in the months before closing, on the
-  rates, rules, income and appraised value that exist then — not when you signed. If
+  rates, rules, income and appraised value that exist then, not when you signed. If
   the home appraises below your purchase price, you must cover the shortfall in cash.
 category: deposits-and-financing
 order: 4
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - mortgage-pre-approval-pre-construction
@@ -34,7 +34,7 @@ Roughly three to six months before your closing date, a lender underwrites the d
 
 This is the one that hurts most, because it is outside your control entirely.
 
-Lenders lend against the **lesser of purchase price and appraised value**. If you agreed to $1,200,000 in 2026 and the home appraises at $1,100,000 at closing, the lender's 80% is calculated on $1,100,000 — $880,000, not $960,000.
+Lenders lend against the **lesser of purchase price and appraised value**. If you agreed to $1,200,000 in 2026 and the home appraises at $1,100,000 at closing, the lender's 80% is calculated on $1,100,000, $880,000, not $960,000.
 
 That $80,000 difference is **yours to fund in cash, at closing**, on top of everything else. Your deposit does not stretch to cover it.
 
@@ -60,6 +60,6 @@ Worth repeating, because the combination is what causes real damage:
 
 **Review with your lender annually.** Problems found early have solutions. Problems found at closing have consequences.
 
-**Understand your [HST position](/faq/builder-keeps-hst-rebate-assignment)** — a failed rebate assignment adds up to $80,000 to closing-day cash.
+**Understand your [HST position](/faq/builder-keeps-hst-rebate-assignment)**, a failed rebate assignment adds up to $80,000 to closing-day cash.
 
 None of this is a reason to avoid pre-construction. It is a reason to buy with margin, which is a different thing from buying cheap. [Let's stress-test it properly](/book).

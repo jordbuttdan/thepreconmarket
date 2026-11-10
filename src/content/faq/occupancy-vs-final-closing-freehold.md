@@ -4,7 +4,7 @@ title: Interim occupancy and freehold
 shortAnswer: >-
   No. Interim occupancy and occupancy fees are a condominium feature, caused by the time
   between a building being habitable and the corporation being registered. On a freehold
-  home there is a single closing — you take title and possession on the same day.
+  home there is a single closing, you take title and possession on the same day.
 category: closing-and-occupancy
 order: 7
 updated: 2026-11-09
@@ -18,7 +18,7 @@ related:
   - adjustments-on-closing-new-build
 ---
 
-No — and this is one of the genuine financial advantages of buying low-rise rather than a condominium.
+No, and this is one of the genuine financial advantages of buying low-rise rather than a condominium.
 
 ## What interim occupancy is, and why condos have it
 
@@ -26,7 +26,7 @@ A new condominium building becomes habitable floor by floor, but **title cannot 
 
 That creates a gap. The condo buyer is allowed to move in and occupy the unit during it, but does not own anything yet. During **interim occupancy** they pay the builder a monthly **occupancy fee** roughly comprising notional interest on the unpaid purchase price, estimated taxes and estimated common expenses.
 
-That money is not a mortgage payment and builds no equity. It is often described as "phantom rent," and on a downtown condo the gap can run many months — occasionally more than a year — at $2,500 to $4,000 a month.
+That money is not a mortgage payment and builds no equity. It is often described as "phantom rent," and on a downtown condo the gap can run many months, occasionally more than a year, at $2,500 to $4,000 a month.
 
 ## Why freehold does not have it
 
@@ -42,7 +42,7 @@ It also simplifies the whole end of the transaction: one date to plan around, on
 
 ## The one freehold wrinkle
 
-If your freehold home sits on a **POTL** tied to a common elements condominium corporation, there is a monthly fee for the shared elements — private road, visitor parking, snow clearing on common areas. That is an ongoing maintenance fee, **not** an occupancy fee, and it is usually modest. [More on POTLs](/faq/potl-common-elements-condo-fees).
+If your freehold home sits on a **POTL** tied to a common elements condominium corporation, there is a monthly fee for the shared elements, private road, visitor parking, snow clearing on common areas. That is an ongoing maintenance fee, **not** an occupancy fee, and it is usually modest. [More on POTLs](/faq/potl-common-elements-condo-fees).
 
 ## What you do pay at closing
 

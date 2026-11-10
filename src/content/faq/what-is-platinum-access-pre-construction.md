@@ -23,20 +23,20 @@ Builders do not release a new low-rise community all at once, and they do not st
 
 ## The usual sequence
 
-1. **Friends and family / builder's own list** — the earliest allocation, often to prior purchasers and trades.
-2. **Platinum brokerage allocation** — released to selected brokerages with a track record at that builder.
-3. **VIP / broker release** — wider brokerage access.
-4. **Public opening** — the sales centre opens to anyone.
+1. **Friends and family / builder's own list**, the earliest allocation, often to prior purchasers and trades.
+2. **Platinum brokerage allocation**, released to selected brokerages with a track record at that builder.
+3. **VIP / broker release**, wider brokerage access.
+4. **Public opening**, the sales centre opens to anyone.
 
 By the time a community opens publicly, the best lots in the first phase are frequently gone, and the price list may already have been revised upward.
 
 ## What platinum access gets you
 
-**First choice of lot and model.** On low-rise this is the real prize. A pie-shaped lot backing onto a park, a corner with a wider frontage, a walkout basement grade — these are finite, and they are chosen in order. The home you want on the lot you want is only available while both exist.
+**First choice of lot and model.** On low-rise this is the real prize. A pie-shaped lot backing onto a park, a corner with a wider frontage, a walkout basement grade. These are finite, and they are chosen in order. The home you want on the lot you want is only available while both exist.
 
 **The opening price list.** Builders commonly raise prices between phases as a community sells through. Buying at the first release is buying at the lowest price the community will see.
 
-**Occasionally better terms** — deposit structure, décor allowance, or a [levy cap](/faq/development-charges-levies-cap) offered at launch that is withdrawn later.
+**Occasionally better terms**, deposit structure, décor allowance, or a [levy cap](/faq/development-charges-levies-cap) offered at launch that is withdrawn later.
 
 **Time to decide, relatively.** Platinum releases are busy but not usually the scrum of a public opening weekend.
 
@@ -46,7 +46,7 @@ Honesty is worth more than hype here:
 
 - **It is not automatically a better deal.** A first-phase platinum price in a weak community can still be worse value than a later phase in a strong one.
 - **It is not a guaranteed allocation.** On genuinely hot releases, demand exceeds the platinum allocation too.
-- **It does not mean the agreement is better.** The [standard agreement](/faq/what-is-in-agreement-of-purchase-and-sale-precon) is the same, and still needs [legal review before signing](/faq/lawyer-review-agreement-pre-construction) — there is no cooling-off period on freehold.
+- **It does not mean the agreement is better.** The [standard agreement](/faq/what-is-in-agreement-of-purchase-and-sale-precon) is the same, and still needs [legal review before signing](/faq/lawyer-review-agreement-pre-construction). There is no cooling-off period on freehold.
 - **"Platinum" is partly marketing.** Many brokerages advertise platinum access to everything. Access to a release is not the same as influence with the builder.
 
 ## How to actually use it

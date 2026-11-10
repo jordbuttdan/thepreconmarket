@@ -10,9 +10,9 @@ downloadName: Agreement Review Checklist
 order: 1
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
 relatedFaq:
   - cooling-off-period-freehold-ontario
@@ -22,13 +22,13 @@ relatedFaq:
 sections:
   - heading: The money
     items:
-      - Deposit schedule — every amount and every exact date, written on a calendar
-      - Where each instalment comes from — money you hold, not money you expect
+      - Deposit schedule, every amount and every exact date, written on a calendar
+      - Where each instalment comes from, money you hold, not money you expect
       - Whether your deposit exceeds Tarion's protection (10% of price, max $100,000 on freehold)
       - Is the price stated inclusive of HST, and what rebate amount is assumed?
-      - The HST indemnity — exactly what you owe if you turn out not to qualify
+      - The HST indemnity, exactly what you owe if you turn out not to qualify
       - Are development charges, levies and imposts capped? At what figure?
-      - What the cap actually covers — levies only, or connections, meters and Tarion enrolment too?
+      - What the cap actually covers, levies only, or connections, meters and Tarion enrolment too?
       - The full list of closing adjustments the builder may charge
   - heading: The dates
     items:
@@ -38,14 +38,14 @@ sections:
       - What happens to your deposit if the builder terminates?
   - heading: What the builder controls
     items:
-      - Substitution rights — materials and finishes of "equal or better quality"
+      - Substitution rights, materials and finishes of "equal or better quality"
       - Grading, sodding and driveway timing, and what is deferred past closing
-      - Assignment rights — permitted, prohibited, or consent plus a fee?
+      - Assignment rights, permitted, prohibited, or consent plus a fee?
       - Termination rights, and how broadly they are drafted
       - Is there a POTL or common elements condominium corporation? Flag this to your lawyer immediately
   - heading: The schedules at the back
     items:
-      - The specifications — what is actually included, not what the model home shows
+      - The specifications, what is actually included, not what the model home shows
       - Are appliances included? Which ones, what grade?
       - Is central air included or an upgrade?
       - Is the hot water tank owned or rented?
@@ -55,11 +55,11 @@ sections:
   - heading: Not in the agreement, but check anyway
     items:
       - The builder's delivery record and reliability on closing dates
-      - Whether a lawyer experienced in new construction has read it — before you sign
+      - Whether a lawyer experienced in new construction has read it, before you sign
       - Your own HST rebate eligibility, confirmed in writing by an accountant
 ---
 
-Use this before you sign, not after. On a freehold home in Ontario there is **no cooling-off period** — the agreement binds the moment the builder accepts it, so a review afterward only tells you what you are already stuck with.
+Use this before you sign, not after. On a freehold home in Ontario there is **no cooling-off period**, the agreement binds the moment the builder accepts it, so a review afterward only tells you what you are already stuck with.
 
 Print it, take it to your lawyer, and work down the list together.
 

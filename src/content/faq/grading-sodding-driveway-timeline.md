@@ -10,7 +10,7 @@ category: low-rise-specifics
 order: 6
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - pre-delivery-inspection-pdi
@@ -29,7 +29,7 @@ You will very likely move into a house with a dirt yard and a gravel driveway. T
 
 **Sod and asphalt are seasonal.** Neither goes down in winter. A December closing means spring at the earliest, and if the block is not ready by then, the following season.
 
-**Driveways are often paved base-first**, with the top coat applied a year or more later once settling has occurred — which is better practice, not a shortcut.
+**Driveways are often paved base-first**, with the top coat applied a year or more later once settling has occurred, which is better practice, not a shortcut.
 
 ## Realistic timelines
 
@@ -49,15 +49,15 @@ Two things to do: **keep the receipt**, and **diarise a reminder**. These refund
 **Do not alter the grading.** Not a garden bed against the foundation, not a patio, not regrading a low spot, not a fence that interrupts a swale. Altering grading before final approval can:
 
 - Void the grading portion of your [Tarion coverage](/faq/tarion-warranty-coverage-new-home).
-- Make you responsible for drainage problems — including a neighbour's.
+- Make you responsible for drainage problems, including a neighbour's.
 - Cause the municipality to refuse sign-off and the builder to withhold your deposit.
 
 Wait for approval. Then landscape.
 
 ## Record it at the PDI
 
-At the [pre-delivery inspection](/faq/pre-delivery-inspection-pdi), **write down the state of the exterior** — no sod, gravel driveway, rough grade, no walkway. Photograph it. That establishes what was outstanding at handover, which is exactly what the form is for.
+At the [pre-delivery inspection](/faq/pre-delivery-inspection-pdi), **write down the state of the exterior**, no sod, gravel driveway, rough grade, no walkway. Photograph it. That establishes what was outstanding at handover, which is exactly what the form is for.
 
 ## Living with it
 
-Budget for the gap. You may want interim gravel or mulch, a temporary walkway, and a plan for mud by the back door. Plan your landscaping, fencing and deck for **after** final grading approval — building before it is how people lose both a deposit and a warranty claim.
+Budget for the gap. You may want interim gravel or mulch, a temporary walkway, and a plan for mud by the back door. Plan your landscaping, fencing and deck for **after** final grading approval, building before it is how people lose both a deposit and a warranty claim.

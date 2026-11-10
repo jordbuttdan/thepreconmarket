@@ -3,13 +3,13 @@ question: Do I need a mortgage pre-approval to buy pre-construction?
 title: Pre-approval requirements
 shortAnswer: >-
   Builders usually require a mortgage pre-qualification letter within days of signing.
-  It satisfies the builder, not you — it is not a financing condition and gives you no
+  It satisfies the builder, not you. It is not a financing condition and gives you no
   right to exit. Final approval happens close to your actual closing, years later.
 category: deposits-and-financing
 order: 3
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - mortgage-approval-closing-years-later
@@ -18,7 +18,7 @@ related:
   - deposit-lost-if-cannot-close
 ---
 
-Yes, you will almost certainly be asked for one — and it is important to understand what it does and does not do.
+Yes, you will almost certainly be asked for one, and it is important to understand what it does and does not do.
 
 ## What the builder wants
 
@@ -45,7 +45,7 @@ Every one of those can change before a low-rise home closes three or four years 
 
 ## How to use it well anyway
 
-**Qualify at a stress-tested, conservative number** — not the maximum a lender will write today. You are buying the right to borrow at an unknown rate, so leave real headroom.
+**Qualify at a stress-tested, conservative number**, not the maximum a lender will write today. You are buying the right to borrow at an unknown rate, so leave real headroom.
 
 **Use a broker who does pre-construction.** The useful questions are about closing years out, not about the best rate this week.
 
@@ -55,6 +55,6 @@ Every one of those can change before a low-rise home closes three or four years 
 
 ## A note on who to trust
 
-The sales centre will often introduce an in-house or preferred lender. There is nothing wrong with that, and sometimes the terms are good. But their pre-approval exists to satisfy the builder's file. Having your own lender or broker — one with no relationship to the seller — assess whether this purchase is genuinely fundable for you is a different exercise, and worth doing.
+The sales centre will often introduce an in-house or preferred lender. There is nothing wrong with that, and sometimes the terms are good. But their pre-approval exists to satisfy the builder's file. Having your own lender or broker, one with no relationship to the seller, assess whether this purchase is genuinely fundable for you is a different exercise, and worth doing.
 
 [Let's work out what you can actually carry](/book).

@@ -10,9 +10,9 @@ category: closing-and-occupancy
 order: 2
 updated: 2026-11-09
 sources:
-  - label: Ontario — Land transfer tax
+  - label: Ontario, Land transfer tax
     url: https://www.ontario.ca/document/land-transfer-tax
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - land-transfer-tax-new-home-ontario
@@ -44,9 +44,9 @@ Realistic total outside Toronto: **$30,000 to $45,000**. Inside Toronto, add rou
 
 ## The two that can run away from you
 
-**Development charges.** Municipal charges rise, and a standard builder clause passes increases through to you with no ceiling. On a closing three or four years out this is a genuinely open-ended item. [Negotiate a cap](/faq/development-charges-levies-cap) — it is the single most valuable amendment to ask for.
+**Development charges.** Municipal charges rise, and a standard builder clause passes increases through to you with no ceiling. On a closing three or four years out this is a genuinely open-ended item. [Negotiate a cap](/faq/development-charges-levies-cap). It is the single most valuable amendment to ask for.
 
-**A failed HST rebate.** If your price was [net of HST rebate](/faq/price-net-of-hst-rebate-meaning) and you do not qualify, the builder bills the rebate amount at closing — up to **$80,000**. This dwarfs every other line above. [Confirm your eligibility](/hst-rebate/checker) long before closing.
+**A failed HST rebate.** If your price was [net of HST rebate](/faq/price-net-of-hst-rebate-meaning) and you do not qualify, the builder bills the rebate amount at closing, up to **$80,000**. This dwarfs every other line above. [Confirm your eligibility](/hst-rebate/checker) long before closing.
 
 ## Not a closing cost, but due at the same time
 
@@ -54,7 +54,7 @@ Realistic total outside Toronto: **$30,000 to $45,000**. Inside Toronto, add rou
 
 ## What your lawyer will tell you, and when
 
-You receive a **statement of adjustments** shortly before closing itemising all of it. "Shortly" is often a week or two — which is not enough time to raise money, which is why this needs budgeting years earlier. [More on adjustments](/faq/adjustments-on-closing-new-build).
+You receive a **statement of adjustments** shortly before closing itemising all of it. "Shortly" is often a week or two, which is not enough time to raise money, which is why this needs budgeting years earlier. [More on adjustments](/faq/adjustments-on-closing-new-build).
 
 Ask your lawyer for an **estimate** of the statement several months out. Most will provide one, and it converts a nasty surprise into a plan.
 

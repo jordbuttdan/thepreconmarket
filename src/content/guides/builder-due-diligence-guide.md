@@ -10,7 +10,7 @@ order: 10
 readMinutes: 8
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
   - label: Home Construction Regulatory Authority
     url: https://www.hcraontario.ca/
@@ -42,12 +42,12 @@ You are giving a builder a six-figure deposit and three or four years to deliver
 
 **1. The Ontario Builder Directory.** Maintained in connection with Ontario's new home regulatory framework (HCRA and Tarion). Look up the builder and check their licence status, how many homes they have built, and their record of warranty claims and conciliations. A builder with many homes and few conciliations is a different proposition from one with the reverse.
 
-**2. Visit a community they delivered three to five years ago.** Not the current sales centre — a finished neighbourhood. How does it look once the marketing has stopped? Are the streetscapes holding up? Is the landscaping finished? Does it feel cared for?
+**2. Visit a community they delivered three to five years ago.** Not the current sales centre, a finished neighbourhood. How does it look once the marketing has stopped? Are the streetscapes holding up? Is the landscaping finished? Does it feel cared for?
 
 **3. Talk to owners.** The most useful research available and almost nobody does it. Knock on a door, or find the community's residents' group online. Ask:
 
 - Did you close on time, or how late?
-- How was the pre-delivery inspection handled — were items fixed?
+- How was the pre-delivery inspection handled, were items fixed?
 - How long did grading, sod and the driveway take?
 - Did warranty items get dealt with, or did you have to escalate?
 - Would you buy from them again?
@@ -76,7 +76,7 @@ That last question gets you more than any brochure.
 - Repeated rebranding
 - Local brokers who hesitate when asked about them
 
-Note: a numbered or newly incorporated entity is normal in development — projects are commonly built in single-purpose companies. The question is who stands behind it and what *they* have delivered.
+Note: a numbered or newly incorporated entity is normal in development, projects are commonly built in single-purpose companies. The question is who stands behind it and what *they* have delivered.
 
 ## The practical shortcut
 
@@ -84,6 +84,6 @@ Prefer a **later phase of a community already being built by a builder with loca
 
 ## What you cannot get from the internet
 
-Which builders are currently reliable on dates, which have slowed down, which handle warranty well, and which are flexible on [amendments](/faq/builder-amendments-pre-construction) this quarter. That is current, local, and changes — and it is a large part of what representation is actually for.
+Which builders are currently reliable on dates, which have slowed down, which handle warranty well, and which are flexible on [amendments](/faq/builder-amendments-pre-construction) this quarter. That is current, local, and changes, and it is a large part of what representation is actually for.
 
 [Ask me about the builder before you buy from them](/book).

@@ -1,7 +1,7 @@
 ---
 /**
  * The standard end-of-content call to action. Every terminal state on the
- * site offers a next step — that was true of the original checker build and
+ * site offers a next step. That was true of the original checker build and
  * it stays true here.
  */
 import { BROKER } from '../config/site';
@@ -15,13 +15,13 @@ interface Props {
 
 const {
   heading = 'Buying new low-rise in Ontario?',
-  body = 'Independent representation, at no cost to you — the builder budgets the commission whether or not you bring your own broker.',
+  body = 'Independent representation, at no cost to you, the builder budgets the commission whether or not you bring your own broker.',
   variant = 'call',
 } = Astro.props;
 ---
 
 <aside class="tick-corners mt-12 border border-rule bg-paper-pure p-5 sm:p-7">
-  <p class="section-label">— Next step</p>
+  <p class="section-label">Next step</p>
   <h2 class="mt-3 text-xl font-semibold">{heading}</h2>
   <p class="mt-2 max-w-[56ch] text-[15px] leading-relaxed text-ink/75">{body}</p>
   <div class="mt-5 flex flex-wrap items-center gap-3">

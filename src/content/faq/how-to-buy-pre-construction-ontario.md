@@ -10,7 +10,7 @@ category: buying-process
 order: 4
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
   - label: Real Estate Council of Ontario
     url: https://www.reco.on.ca/
@@ -29,7 +29,7 @@ The process is more compressed at the front and longer at the back than most buy
 
 **Get pre-qualified** and confirm your deposit funds are liquid. [Deposits](/faq/typical-deposit-structure-pre-construction-ontario).
 
-**Decide your priorities in advance** — lot orientation, frontage, basement grade, model, must-haves. Releases move fast and you choose in order.
+**Decide your priorities in advance**, lot orientation, frontage, basement grade, model, must-haves. Releases move fast and you choose in order.
 
 **Identify a real estate lawyer** experienced in new construction, and tell them you may need a same-day review.
 
@@ -41,13 +41,13 @@ The process is more compressed at the front and longer at the back than most buy
 
 **Signing.** You sign the agreement and provide the first deposit as a **bank draft or certified cheque**, usually on the spot.
 
-This is the irreversible moment. On freehold there is **[no cooling-off period](/faq/cooling-off-period-freehold-ontario)** — once accepted, you are bound. Which is why the lawyer review belongs *before* this step. [More](/faq/lawyer-review-agreement-pre-construction).
+This is the irreversible moment. On freehold there is **[no cooling-off period](/faq/cooling-off-period-freehold-ontario)**, once accepted, you are bound. Which is why the lawyer review belongs *before* this step. [More](/faq/lawyer-review-agreement-pre-construction).
 
 ## The first year
 
 - **Deposit instalments** on the contractual dates. Missing one is a default.
 - **Mortgage pre-qualification letter** to the builder, often within 15 to 30 days.
-- **Confirm Tarion registration** — freehold buyers are expected to register within 45 days of signing, and it affects your deposit protection. Call Tarion; do not assume. [More](/faq/is-my-deposit-protected-freehold-ontario).
+- **Confirm Tarion registration**, freehold buyers are expected to register within 45 days of signing, and it affects your deposit protection. Call Tarion; do not assume. [More](/faq/is-my-deposit-protected-freehold-ontario).
 - **Décor appointment.** You select finishes and order upgrades, paid separately. [Are upgrades worth it](/faq/builder-upgrades-worth-it).
 
 ## The build
@@ -60,9 +60,9 @@ Through this period: keep your lender updated annually, avoid new debt, and leav
 
 - **Firm closing date** eventually replaces the tentative ones.
 - **Final mortgage approval** is underwritten three to six months out, on current rates and the home's appraised value.
-- **Pre-delivery inspection** — your walkthrough and the warranty baseline. Allow two to three hours. [Do it properly](/faq/pre-delivery-inspection-pdi).
+- **Pre-delivery inspection**, your walkthrough and the warranty baseline. Allow two to three hours. [Do it properly](/faq/pre-delivery-inspection-pdi).
 - **Statement of adjustments** arrives, often only a week or two before closing. [What's on it](/faq/adjustments-on-closing-new-build).
-- **Closing.** Title transfers, mortgage funds, keys. One closing on freehold — [no interim occupancy](/faq/occupancy-vs-final-closing-freehold).
+- **Closing.** Title transfers, mortgage funds, keys. One closing on freehold, [no interim occupancy](/faq/occupancy-vs-final-closing-freehold).
 
 ## After closing
 

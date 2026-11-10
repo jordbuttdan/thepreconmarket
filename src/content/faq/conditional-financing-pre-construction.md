@@ -10,7 +10,7 @@ category: contracts-and-cooling-off
 order: 8
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - mortgage-approval-closing-years-later
@@ -19,7 +19,7 @@ related:
   - cooling-off-period-freehold-ontario
 ---
 
-Usually not — and understanding why reframes how you should approach the whole purchase.
+Usually not, and understanding why reframes how you should approach the whole purchase.
 
 ## Why builders refuse
 
@@ -53,7 +53,7 @@ Since the contract will not protect you, the protection has to be financial:
 1. **Qualify conservatively.** Model the purchase at a materially higher rate than today's, because you are buying the right to borrow at an unknown future rate.
 2. **Do not count on income growth** to make it work.
 3. **Keep the deposit schedule fundable** from money you actually have, not money you expect.
-4. **Budget the [closing costs](/faq/closing-costs-new-construction-ontario)** — land transfer tax, levies, adjustments — on top of the deposit. They are commonly tens of thousands.
+4. **Budget the [closing costs](/faq/closing-costs-new-construction-ontario)**, land transfer tax, levies, adjustments, on top of the deposit. They are commonly tens of thousands.
 5. **Know your [HST position](/faq/builder-keeps-hst-rebate-assignment)**, because a failed rebate is a closing-day bill.
 6. **Keep the lender relationship alive** through the build, and revisit annually.
 

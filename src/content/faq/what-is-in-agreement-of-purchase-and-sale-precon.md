@@ -10,7 +10,7 @@ category: contracts-and-cooling-off
 order: 5
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - lawyer-review-agreement-pre-construction
@@ -24,7 +24,7 @@ Resale agreements in Ontario run to a handful of pages on a standard form. A bui
 ## The commercial terms
 
 - **Purchase price**, and whether it is stated inclusive of HST.
-- **Deposit schedule** — usually several instalments over 12 to 24 months, with specific dates. [Typical structures](/faq/typical-deposit-structure-pre-construction-ontario).
+- **Deposit schedule**, usually several instalments over 12 to 24 months, with specific dates. [Typical structures](/faq/typical-deposit-structure-pre-construction-ontario).
 - **The lot and model**, including elevation, and any lot premium.
 - **Closing date**, usually described as a first tentative date with the builder's right to extend.
 
@@ -40,7 +40,7 @@ Resale agreements in Ontario run to a handful of pages on a standard form. A bui
 
 **Extension rights.** How many times, and by how long, the builder may move your closing date, and what notice is required. Low-rise closings move routinely.
 
-**Substitution rights.** The builder's ability to substitute materials, finishes, fixtures and sometimes elevations for items of "equal or better quality" — a judgment they make.
+**Substitution rights.** The builder's ability to substitute materials, finishes, fixtures and sometimes elevations for items of "equal or better quality", a judgment they make.
 
 **Grading, driveway and sodding timing.** Often expressly deferred past closing, subject to season and municipal approval. [What to expect](/faq/grading-sodding-driveway-timeline).
 

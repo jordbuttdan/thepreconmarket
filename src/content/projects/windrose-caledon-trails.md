@@ -48,7 +48,7 @@ incentives:
 projectFaq:
   - q: "Is Windrose at Caledon Trails freehold or condo?"
     a: >-
-      Windrose at Caledon Trails is freehold — buyers own the land and the building outright. There
+      Windrose at Caledon Trails is freehold, buyers own the land and the building outright. There
       is no condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Windrose at Caledon Trails?"
     a: >-
@@ -90,7 +90,7 @@ relatedFaq:
 order: 20
 updated: 2026-11-09
 ---
-A **finished basement as a standard inclusion** is rare and worth real money — commonly a $40,000 to $70,000 upgrade elsewhere. Weigh that against the deposit, which is heavy: **$145,000 across 180 days**, far front-loaded compared to most communities here.
+A **finished basement as a standard inclusion** is rare and worth real money, commonly a $40,000 to $70,000 upgrade elsewhere. Weigh that against the deposit, which is heavy: **$145,000 across 180 days**, far front-loaded compared to most communities here.
 
 ## Pricing and your rebate position
 
@@ -101,9 +101,9 @@ Listed prices run **$699,900 to $1,373,900** across 35 floor plans. Here is what
 | Ontario ENHR (no first-time buyer test) | **$55,992** | **$80,000** |
 | Federal rebate (first-time buyers only) | **$34,995** | **$12,610** |
 
-**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate** — that is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $55,992. This is not unusual and it is not a trick — but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
+**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate**. That is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $55,992. This is not unusual and it is not a trick, but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-At the entry end, $699,900 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $699,900 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -111,7 +111,7 @@ At the entry end, $699,900 sits **below $1,000,000** — the full 8% Ontario reb
 - $40,000 at 60, 120 and 180 days
 - $145,000 total
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -125,19 +125,19 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 Windrose at Caledon Trails is at **McLaughlin Road & Mayfield Road** in Mayfield West, Caledon. Walk Score 27, Transit Score 0.
 
-That is a car-dependent location, which is normal for new low-rise — the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
+That is a car-dependent location, which is normal for new low-rise, the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
 
 ## Before you sign at Windrose at Caledon Trails
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Windrose at Caledon Trails go to registered buyers — [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Windrose at Caledon Trails go to registered buyers, [register for access](/vip) and I'll send what is released.
 

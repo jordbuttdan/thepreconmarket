@@ -19,7 +19,7 @@ related:
   - lawyer-review-agreement-pre-construction
 ---
 
-It comes down to which statute governs the purchase — not to price, risk or fairness.
+It comes down to which statute governs the purchase, not to price, risk or fairness.
 
 ## The condominium side
 
@@ -31,7 +31,7 @@ The right exists to make the disclosure meaningful.
 
 ## The freehold side
 
-A freehold home — detached, semi, or freehold townhome — is not a condominium. There is no declarant, no disclosure statement, no condominium corporation, and the Condominium Act does not apply.
+A freehold home, detached, semi, or freehold townhome, is not a condominium. There is no declarant, no disclosure statement, no condominium corporation, and the Condominium Act does not apply.
 
 So there is no disclosure obligation of that kind, and correspondingly no rescission right. Your protection comes from a different place: the agreement itself, Tarion's new home warranty regime, and whatever your lawyer negotiates.
 
@@ -43,7 +43,7 @@ It is simply the law as it stands, and the practical consequence for you is spec
 
 ## What freehold buyers get instead
 
-Not nothing — but different things, and none of them is a right to change your mind:
+Not nothing, but different things, and none of them is a right to change your mind:
 
 - **Tarion deposit protection**, subject to limits that may be lower than your deposit. [Check this](/faq/is-my-deposit-protected-freehold-ontario).
 - **Tarion delayed closing compensation** if the builder misses dates. [More](/faq/closing-delays-pre-construction-ontario).
@@ -54,4 +54,4 @@ That last one is the only one that lets you out, and it only exists if someone p
 
 ## The practical difference
 
-A condo buyer can sign on Saturday and have a lawyer review it on Monday. A freehold buyer cannot. [Reverse the order](/faq/lawyer-review-agreement-pre-construction) — lawyer first, signature second.
+A condo buyer can sign on Saturday and have a lawyer review it on Monday. A freehold buyer cannot. [Reverse the order](/faq/lawyer-review-agreement-pre-construction), lawyer first, signature second.

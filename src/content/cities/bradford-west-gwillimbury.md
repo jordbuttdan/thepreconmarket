@@ -24,7 +24,7 @@ order: 10
 ---
 ## What's being built in Bradford West Gwillimbury
 
-Bradford is the first Simcoe market north of the York Region line and prices reflect that — higher than Barrie, lower than East Gwillimbury. Supply is moderate and skews detached, with Bond Head a distinct and quieter sub-market to the west.
+Bradford is the first Simcoe market north of the York Region line and prices reflect that, higher than Barrie, lower than East Gwillimbury. Supply is moderate and skews detached, with Bond Head a distinct and quieter sub-market to the west.
 
 Communities that have launched or are actively selling here include:
 
@@ -33,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - Bond Head Towns (Sundance)
 - Holland Haus Towns (GCL)
 
-Availability changes week to week and the best lots in any phase go early — [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Bradford West Gwillimbury:** Great Gulf, Bayview Wellington Homes, Sundance Homes, GCL Builds.
 
@@ -48,18 +48,18 @@ New low-rise here currently runs roughly **$864,000 to $1,483,000**, and that ba
 | Ontario ENHR (no first-time buyer test) | **$69,120** | **$80,000** |
 | Federal rebate (first-time buyers only) | **$43,200** | **$1,700** |
 
-At the entry end, a home at $864,000 sits **below $1,000,000**, which means the **full 8%** Ontario rebate — $69,120 — plus the full 5% federal rebate for a first-time buyer. This is the most favourable band in the whole structure.
+At the entry end, a home at $864,000 sits **below $1,000,000**, which means the **full 8%** Ontario rebate, $69,120, plus the full 5% federal rebate for a first-time buyer. This is the most favourable band in the whole structure.
 
 The band here straddles **$1,000,000**, which is where the structure changes: above it the Ontario rebate stops growing and sits flat at **$80,000**, while the federal rebate begins tapering toward zero at $1,500,000. Two buyers in the same community can be in different places.
 
-If you have **owned a home before**, note that the Ontario rebate still applies to you — it has no first-time buyer test, and move-up buyers routinely assume otherwise and claim nothing. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
+If you have **owned a home before**, note that the Ontario rebate still applies to you, it has no first-time buyer test, and move-up buyers routinely assume otherwise and claim nothing. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
 
 
 These are illustrative maximums at the ends of the local range, not a quote. [Run your own numbers](/hst-rebate/checker).
 
 ## Land transfer tax
 
-Bradford West Gwillimbury is outside the City of Toronto, so you pay **Ontario land transfer tax only** — no second municipal tax. On a $1,100,000 home that is about **$18,475**, against roughly $37,000 for the same home inside Toronto. First-time buyers can claim up to **$4,000** back.
+Bradford West Gwillimbury is outside the City of Toronto, so you pay **Ontario land transfer tax only**, no second municipal tax. On a $1,100,000 home that is about **$18,475**, against roughly $37,000 for the same home inside Toronto. First-time buyers can claim up to **$4,000** back.
 
 It is payable in cash on closing and cannot be financed, so it belongs in your budget from the start alongside [levies and adjustments](/guides/pre-construction-closing-cost-guide-ontario). [Full rates](/faq/land-transfer-tax-new-home-ontario).
 
@@ -67,7 +67,7 @@ It is payable in cash on closing and cannot be financed, so it belongs in your b
 
 Bradford GO on the Barrie line, Highway 400 and the long-debated Bradford Bypass.
 
-Worth being honest with yourself about this. New low-rise communities are car-dependent at launch almost without exception — the retail, transit and services that make an area convenient arrive years after the homes do, and sometimes differently than the plan showed.
+Worth being honest with yourself about this. New low-rise communities are car-dependent at launch almost without exception, the retail, transit and services that make an area convenient arrive years after the homes do, and sometimes differently than the plan showed.
 
 ## Before you sign anything in Bradford West Gwillimbury
 
@@ -76,8 +76,8 @@ Freehold purchases in Ontario have **no cooling-off period**. The ten-day rescis
 So the protection has to be in place beforehand:
 
 - **Have a lawyer read the agreement before you sign**, not after. [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Ask for a cap on development charges and levies** — the most valuable amendment available on a closing years out. [Why](/faq/development-charges-levies-cap)
+- **Ask for a cap on development charges and levies**, the most valuable amendment available on a closing years out. [Why](/faq/development-charges-levies-cap)
 - **Confirm your rebate eligibility** rather than assuming it. If your price is quoted net of the rebate and you do not qualify, the builder bills you at closing. [How that works](/faq/builder-keeps-hst-rebate-assignment)
-- **Check your deposit against Tarion's limits** — freehold protection caps at 10% of price up to $100,000. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario)
+- **Check your deposit against Tarion's limits**, freehold protection caps at 10% of price up to $100,000. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario)
 - **Register for representation before your first sales centre visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 

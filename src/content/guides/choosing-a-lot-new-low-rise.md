@@ -2,7 +2,7 @@
 title: How to choose a lot in a new low-rise community
 question: How do I choose the right lot in a new subdivision?
 shortAnswer: >-
-  Prioritise permanent advantages that cannot be added later — a walkout basement,
+  Prioritise permanent advantages that cannot be added later, a walkout basement,
   protected land behind you, genuinely wider frontage. Avoid paying premiums for small
   size differences or for a park that is only drawn on a plan. Check the grading and
   what is actually zoned behind the lot.
@@ -34,7 +34,7 @@ Ask for the **plan of subdivision**, not the marketing site plan. The marketing 
 
 Then ask, specifically:
 
-- **What is behind this lot?** Not what it looks like now — what is *zoned*. "Backing onto green space" sometimes means backing onto a block zoned for future medium density.
+- **What is behind this lot?** Not what it looks like now, what is *zoned*. "Backing onto green space" sometimes means backing onto a block zoned for future medium density.
 - **Is the park built, funded and in the plan,** or aspirational?
 - **Where do the future phases go,** and what types of homes?
 - **Where is the stormwater management pond,** and what is its setback?
@@ -48,7 +48,7 @@ Then ask, specifically:
 
 **Meaningfully wider frontage.** 36 to 42 feet changes the house that fits on the lot. The difference is in the floor plan, not just the grass.
 
-**A quiet position** — interior street, away from the collector, not backing a pond or a visitor lot.
+**A quiet position**, interior street, away from the collector, not backing a pond or a visitor lot.
 
 ## What usually is not
 
@@ -66,7 +66,7 @@ Then ask, specifically:
 
 Grading is engineered across the whole block, and your lot's grade determines whether you can have a walkout, how many steps to your back door, and where water goes.
 
-Ask for the **lot grading plan**. Look for: a rear yard that slopes away from the house, whether a swale crosses your lot, how many risers to the rear door, and whether a retaining wall is involved — and if so, whose it is to maintain.
+Ask for the **lot grading plan**. Look for: a rear yard that slopes away from the house, whether a swale crosses your lot, how many risers to the rear door, and whether a retaining wall is involved, and if so, whose it is to maintain.
 
 And know that [sod, final grading and the driveway come after you move in](/faq/grading-sodding-driveway-timeline), sometimes a season or two later. Do not landscape before final approval; it can cost you both your deposit and your grading warranty.
 
@@ -74,9 +74,9 @@ And know that [sod, final grading and the driveway come after you move in](/faq/
 
 Lot premiums add to your purchase price, and your price sets your rebate band.
 
-A $1,450,000 base price with a $60,000 ravine premium is a **$1,510,000** purchase — across the **$1,500,000 federal cliff**, where the first-time buyer GST rebate becomes **zero**. The premium can cost more than it costs. [The cliffs](/faq/hst-rebate-over-1-5-million).
+A $1,450,000 base price with a $60,000 ravine premium is a **$1,510,000** purchase, across the **$1,500,000 federal cliff**, where the first-time buyer GST rebate becomes **zero**. The premium can cost more than it costs. [The cliffs](/faq/hst-rebate-over-1-5-million).
 
-Exactly how premiums count toward consideration depends on your agreement's documentation — a question for your lawyer and accountant. But ask it **before** you select the lot.
+Exactly how premiums count toward consideration depends on your agreement's documentation, a question for your lawyer and accountant. But ask it **before** you select the lot.
 
 ## Be ready when the release happens
 

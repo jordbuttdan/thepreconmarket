@@ -10,7 +10,7 @@ category: hst-rebates
 order: 16
 updated: 2026-11-09
 sources:
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
 related:
   - hst-rebate-deadline-march-2027
@@ -35,14 +35,14 @@ An assignor who wants out of a 2024 agreement has an obvious incentive to let yo
 
 ## What to verify before you commit
 
-- **The date on the original agreement** with the builder — not the date on the assignment.
+- **The date on the original agreement** with the builder, not the date on the assignment.
 - **Whether the builder consents** to the assignment at all. Most low-rise agreements restrict assignment, and some prohibit it outright. [More on freehold assignments](/faq/assignment-sale-freehold-low-rise).
 - **What rebate, if any, the price assumes.** Get it in writing.
 - **Who bears the risk** if the rebate turns out not to be available.
 
 ## The HST on the assignment fee itself
 
-Separately — and this surprises people — the assignment transaction can have its own GST/HST consequences on the amount paid above the original price. How that is treated depends on the structure and on whether the assignor was building or buying for personal use. It is a genuine tax question with real money in it.
+Separately, and this surprises people, the assignment transaction can have its own GST/HST consequences on the amount paid above the original price. How that is treated depends on the structure and on whether the assignor was building or buying for personal use. It is a genuine tax question with real money in it.
 
 Assignments are the one corner of pre-construction where going in without a lawyer and an accountant reviewing the specific documents is close to reckless. The paperwork is three-cornered, the rebate position is unclear by default, and the tax treatment is not intuitive.
 

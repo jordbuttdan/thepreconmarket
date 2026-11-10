@@ -10,9 +10,9 @@ category: hst-rebates
 order: 11
 updated: 2026-11-09
 sources:
-  - label: CRA — GST/HST new residential rental property rebate
+  - label: CRA, GST/HST new residential rental property rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/new-residential-rental-property-rebate.html
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
 related:
   - new-residential-rental-property-rebate
@@ -21,7 +21,7 @@ related:
   - price-net-of-hst-rebate-meaning
 ---
 
-No — and this is the single largest cash-flow surprise in Ontario pre-construction. It catches investors every single year.
+No, and this is the single largest cash-flow surprise in Ontario pre-construction. It catches investors every single year.
 
 ## Why the owner-occupied rebates do not apply
 
@@ -51,4 +51,4 @@ It is a real rebate and investors do receive it. But note the sequence: you **pa
 
 **Not budgeting for it.** Plenty of investors have had to scramble for an extra $60,000–$80,000 in the last three weeks before closing because nobody told them this. If you are buying to rent, build the gross HST into your cash-to-close from day one.
 
-If your plan is somewhere between the two — you might live in it, you might rent it — that ambiguity is worth resolving before you sign, not at closing. [Let's talk it through](/book).
+If your plan is somewhere between the two, you might live in it, you might rent it, that ambiguity is worth resolving before you sign, not at closing. [Let's talk it through](/book).

@@ -31,7 +31,7 @@ const related = [...explicit, ...fallback].slice(0, 5);
 ---
 
 <Base
-  title={d.title ? `${d.title} — Ontario pre-construction` : d.question}
+  title={d.title ? `${d.title}, Ontario pre-construction` : d.question}
   description={d.description ?? d.shortAnswer}
   kicker={['Ontario', category.label]}
   updated={d.updated}
@@ -49,11 +49,11 @@ const related = [...explicit, ...fallback].slice(0, 5);
 >
   <div class="mx-auto grid max-w-[1100px] gap-10 px-4 pt-6 sm:px-6 lg:grid-cols-12 lg:gap-x-12">
     <article class="lg:col-span-8">
-      <p class="section-label">— {category.label}</p>
+      <p class="section-label">{category.label}</p>
       <h1 class="mt-3 text-[1.75rem] font-semibold sm:text-[2.15rem]">{d.question}</h1>
 
       <!-- The answer-first block. Self-contained, quotable, and the first
-           prose on the page — this is what AI search engines cite. -->
+           prose on the page. This is what AI search engines cite. -->
       <p class="lede mt-6">{d.shortAnswer}</p>
 
       <div class="prose-precon mt-8">
@@ -67,7 +67,7 @@ const related = [...explicit, ...fallback].slice(0, 5);
 
     <aside class="lg:col-span-4">
       <div class="sticky top-6">
-        <p class="section-label">— Related questions</p>
+        <p class="section-label">Related questions</p>
         <ul class="mt-3 space-y-0">
           {
             related.map((r) => (
@@ -85,7 +85,7 @@ const related = [...explicit, ...fallback].slice(0, 5);
         </ul>
 
         <div class="mt-8 border border-rule bg-accent-tint/40 p-4">
-          <p class="section-label">— Rebate checker</p>
+          <p class="section-label">Rebate checker</p>
           <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
             Estimate your federal and Ontario rebates in about two minutes.
           </p>

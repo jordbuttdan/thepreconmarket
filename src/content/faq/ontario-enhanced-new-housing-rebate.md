@@ -10,9 +10,9 @@ category: hst-rebates
 order: 2
 updated: 2026-11-09
 sources:
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
-  - label: CRA — Ontario enhanced new housing rebate
+  - label: CRA, Ontario enhanced new housing rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/housing-rebates/ontario-enhanced-new-housing.html
 related:
   - hst-rebate-deadline-march-2027
@@ -32,7 +32,7 @@ CRA publishes the rebate as bands rather than a formula:
 | Up to $1,000,000 | Full 8% of the price |
 | $1,000,000 – $1,500,000 | Flat $80,000 |
 | $1,500,000 – $1,850,000 | Partial, sliding down |
-| $1,850,000 and above | None — only the standard $24,000 rebate |
+| $1,850,000 and above | None, only the standard $24,000 rebate |
 
 The flat band is the quietly generous part. A $1,000,000 home and a $1,499,000 home both receive $80,000.
 
@@ -54,6 +54,6 @@ Notably absent from that list: any requirement to be a first-time buyer. If you 
 
 ## Anti-avoidance you should know about
 
-Two rules catch people out. On an **assignment purchase**, both the original agreement and the assignment agreement generally need to fall inside the window. And an agreement **re-dated** to move it into the window is deemed to have been signed before it — you cannot paper your way in.
+Two rules catch people out. On an **assignment purchase**, both the original agreement and the assignment agreement generally need to fall inside the window. And an agreement **re-dated** to move it into the window is deemed to have been signed before it. You cannot paper your way in.
 
 If your agreement was signed close to either edge of the window, that date is worth confirming with your lawyer before you rely on an $80,000 figure. [Check your situation](/hst-rebate/checker).

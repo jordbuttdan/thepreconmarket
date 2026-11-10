@@ -10,11 +10,11 @@ downloadName: HST Rebate Eligibility Checklist
 order: 3
 updated: 2026-11-09
 sources:
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
-  - label: PwC — GST relief for first-time home buyers
+  - label: PwC, GST relief for first-time home buyers
     url: https://www.pwc.com/ca/en/services/tax/publications/tax-insights/gst-relief-first-time-home-buyers-2025.html
-  - label: CRA — GST/HST new housing rebate
+  - label: CRA, GST/HST new housing rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/new-housing-rebate.html
 relatedFaq:
   - spouse-owned-home-first-time-buyer
@@ -24,7 +24,7 @@ relatedFaq:
 sections:
   - heading: 1. Is the home eligible?
     items:
-      - Newly built or substantially renovated — resale homes do not qualify
+      - Newly built or substantially renovated, resale homes do not qualify
       - Bought as an individual, not through a corporation
       - You or a qualifying relation will be the FIRST occupant
       - It will be your primary place of residence, not a rental or a second home
@@ -40,20 +40,20 @@ sections:
       - At least 18, and a Canadian citizen or permanent resident
       - You have not LIVED IN a home you owned in the current year or the four preceding calendar years
       - Your spouse or common-law partner has not lived in a home THEY owned in that window
-      - "The trap: if you lived in a home your partner owned, you are disqualified — even if you have never owned anything"
+      - "The trap: if you lived in a home your partner owned, you are disqualified, even if you have never owned anything"
       - Ownership alone is not the disqualifier. Occupation of an owned home is
   - heading: 4. What your agreement does with the rebate
     items:
       - Is the purchase price stated inclusive of HST?
       - Does the agreement require you to assign the rebate to the builder?
       - What rebate amount is the builder assuming? Get the figure in writing
-      - What is the indemnity if you do not qualify — and when is it payable?
+      - What is the indemnity if you do not qualify, and when is it payable?
       - Is the Ontario affordability top-up consent included in the paperwork?
   - heading: 5. Before you close
     items:
       - Eligibility confirmed in writing by your accountant, not assumed
       - Your lawyer has identified the exact rebate clause and the indemnity
-      - You have budgeted the worst case — the price WITHOUT the rebate
+      - You have budgeted the worst case, the price WITHOUT the rebate
       - The rebate forms you sign at closing match your actual circumstances
 ---
 
@@ -67,7 +67,7 @@ So someone who has never owned anything, but who lives in their partner's condo,
 
 ## Why failing is worse than missing out
 
-If your price was quoted net of the rebate and you turn out not to qualify, you do not simply lose a benefit — the builder bills you the amount they had credited, **at closing, in certified funds**. Up to $80,000 provincially and $50,000 federally.
+If your price was quoted net of the rebate and you turn out not to qualify, you do not simply lose a benefit, the builder bills you the amount they had credited, **at closing, in certified funds**. Up to $80,000 provincially and $50,000 federally.
 
 That is why "I think I qualify" is not good enough. Get it in writing before you waive anything.
 

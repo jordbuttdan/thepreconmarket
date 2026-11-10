@@ -1,46 +1,38 @@
 ---
 import Base from '../layouts/Base.astro';
 import Cta from '../components/Cta.astro';
-import Disclaimer from '../components/Disclaimer.astro';
 import { BROKER } from '../config/site';
-import { ON_ENHR } from '../lib/rebateRules';
 
 const STEPS = [
   {
     n: '01',
-    h: 'Register before you visit anything',
-    b: "Most builders require your broker to be registered at or before your first sales centre visit for representation to be recognised. Walk in alone and you usually cannot add it afterward — and the builder keeps the co-operating commission they had already budgeted. This step costs nothing and is irreversible in the wrong direction.",
-    link: { href: '/faq/does-it-cost-more-to-use-a-realtor-precon', label: 'Why representation is free to you' },
+    h: 'You register',
+    b: 'Takes a minute. You tell me home type, budget and area.',
   },
   {
     n: '02',
-    h: 'Work out what you can actually carry',
-    b: "Not the maximum a lender will write today. Pre-construction closes two to four years out, and your mortgage is underwritten at that point on rates, rules and an appraised value nobody can predict. We model the deposit schedule, the closing costs and the fit-out, then stress-test it.",
-    link: { href: '/faq/mortgage-approval-closing-years-later', label: 'Why financing is the real risk' },
+    h: 'You get access',
+    b: 'Every active and upcoming low-rise release, with the builder price lists, floor plans, deposit structures and lot availability. Not a filtered list. All of it.',
   },
   {
     n: '03',
-    h: 'Confirm your rebate position',
-    b: "Up to about $130,000 is on the table, and most builders advertise prices already net of it. If you do not qualify, that money becomes a bill on closing day. We establish where you stand before you are anywhere near a signature — including the spousal test, which disqualifies more buyers than anything else.",
-    link: { href: '/hst-rebate/checker', label: 'Run the rebate checker' },
+    h: 'We shortlist',
+    b: 'I tell you which ones are worth your time, which builders hit their dates, and which lots are worth the premium.',
   },
   {
     n: '04',
-    h: 'Get early access and pick the lot',
-    b: "Builders release in phases and allocate lots in order. You get the opening price list, the real availability, and an honest read on the builder's delivery record. Then you choose — and on low-rise the lot is the one decision you can never revisit.",
-    link: { href: '/guides/choosing-a-lot-new-low-rise', label: 'How to choose a lot' },
+    h: 'We do the paperwork',
+    b: 'I secure your lot on release day. Your lawyer reviews the agreement before you sign. I push for the amendments that matter, starting with a cap on development levies.',
   },
   {
     n: '05',
-    h: 'Have the agreement read before you sign',
-    b: "There is no cooling-off period on freehold in Ontario. The agreement binds the moment the builder accepts it. A lawyer reads it first, we read it commercially alongside them, and we ask for the amendments that are actually achievable at that project this quarter — starting with a cap on development levies.",
-    link: { href: '/faq/cooling-off-period-freehold-ontario', label: 'No cooling-off period — read this' },
+    h: 'I stay on it through the build',
+    b: 'Deposit dates, Tarion registration, your décor appointment, and the closing date when it moves. Which it will.',
   },
   {
     n: '06',
-    h: 'Stay in it through the build',
-    b: "Confirm Tarion registration in the first weeks. Keep your borrowing capacity intact. Buy the rough-ins at the décor appointment and skip the markup on finishes. Then do the pre-delivery inspection properly — two to three hours with your specifications in hand, because that form is your warranty baseline.",
-    link: { href: '/faq/pre-delivery-inspection-pdi', label: 'How to do the PDI properly' },
+    h: 'PDI and possession',
+    b: 'I walk the pre-delivery inspection with you so nothing gets missed, then see you through to keys.',
   },
 ];
 
@@ -48,139 +40,97 @@ const faqSchema = [
   {
     question: 'How does buying pre-construction with a broker work?',
     answer:
-      'You register with a broker before your first sales centre visit, establish your budget and HST rebate position, get early access to a release, choose a lot and model, have a lawyer review the agreement before signing because freehold has no cooling-off period, then pay deposits over 12 to 24 months and close two to four years later after a pre-delivery inspection.',
+      'You register with a broker, who gives you access to builder price lists, floor plans and deposit structures across active and upcoming releases. The broker shortlists projects, secures your lot on release day, coordinates the agreement review with your lawyer, tracks deposits and dates through the build, and attends the pre-delivery inspection before possession.',
   },
   {
     question: 'What does a pre-construction broker cost the buyer?',
     answer:
-      'Nothing. The builder budgets a co-operating brokerage commission into the price whether or not you bring representation. If you buy unrepresented the builder keeps that amount — the price does not drop.',
+      'Nothing. The builder budgets a co-operating brokerage commission into the price whether or not you bring representation. If you buy unrepresented the builder keeps that amount and the price does not drop.',
   },
 ];
 ---
 
 <Base
-  title="How buying pre-construction works"
-  description="The six steps of buying new freehold low-rise in Ontario with a broker: registration, budget, HST rebate position, lot selection, agreement review and closing. Representation costs the buyer nothing."
-  kicker={['Ontario', 'Low-rise', 'The process']}
+  title="How it works"
+  description="Register once and get access to every active and upcoming low-rise release in the GTA: builder price lists, floor plans and deposit structures. Then representation from first enquiry through paperwork, PDI and possession, at no cost to you."
+  kicker={['Ontario', 'Low-rise', 'The service']}
+  width="narrow"
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'How it works', href: '/how-it-works' }]}
   faq={faqSchema}
 >
-  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
-    <p class="section-label">— The process</p>
-    <h1 class="mt-4 max-w-[24ch] text-[2rem] font-semibold sm:text-[2.7rem]">
-      This isn't a listing site. It's how you buy without getting hurt.
+  <div class="mx-auto max-w-[820px] px-4 pt-10 sm:px-6">
+    <p class="section-label">The service</p>
+    <h1 class="mt-4 text-[2.1rem] leading-[1.1] font-semibold sm:text-[2.8rem]">
+      Register once. See everything.
     </h1>
-    <p class="lede mt-6 max-w-[62ch]">
-      Pre-construction is sold with urgency and bought with incomplete information. The agreement
-      is firm on signing, there is no cooling-off period on freehold, and the financing happens
-      years later. Everything that protects you has to be in place before you sign — which is what
-      the six steps below are for.
+    <p class="lede mt-7">
+      The moment you register, you get the builder price lists, floor plans, deposit structures and
+      lot availability for every active and upcoming low-rise release in the GTA. Then I take you
+      from that first enquiry through to the keys.
     </p>
 
-    <div class="mt-6 flex flex-wrap gap-3">
-      <a href="/vip" class="btn text-sm">Register for VIP access</a>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/vip" class="btn text-sm">Register for access</a>
       <a href="/book" class="btn-secondary text-sm">Book a call</a>
     </div>
 
-    <!-- The six steps, set as a drawing sequence. -->
-    <ol class="mt-14 space-y-0">
+    <!-- The journey, stated as plainly as possible. -->
+    <ol class="mt-16 space-y-0">
       {
         STEPS.map((s, i) => (
           <li
             class:list={[
-              'grid gap-4 border-t border-rule py-7 lg:grid-cols-12 lg:gap-x-10',
+              'grid gap-x-8 gap-y-2 border-t border-rule py-6 sm:grid-cols-12',
               i === STEPS.length - 1 && 'border-b',
             ]}
           >
-            <div class="lg:col-span-4">
-              <p class="section-label">— {s.n}</p>
-              <h2 class="mt-2 text-[19px] font-semibold leading-snug">{s.h}</h2>
+            <div class="sm:col-span-4">
+              <p class="section-label">{s.n}</p>
+              <h2 class="mt-1.5 text-[18px] font-semibold">{s.h}</h2>
             </div>
-            <div class="lg:col-span-8">
-              <p class="text-[15px] leading-relaxed text-ink/80">{s.b}</p>
-              <a
-                href={s.link.href}
-                class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2"
-              >
-                {s.link.label} →
-              </a>
-            </div>
+            <p class="text-[15px] leading-relaxed text-ink/75 sm:col-span-8">{s.b}</p>
           </li>
         ))
       }
     </ol>
 
-    <!-- The commercial argument, stated plainly. -->
-    <section class="mt-16 grid gap-6 lg:grid-cols-12">
-      <div class="lg:col-span-5">
-        <p class="section-label">— What it costs you</p>
-        <h2 class="mt-3 text-2xl font-semibold">Nothing.</h2>
-      </div>
-      <div class="lg:col-span-7">
-        <p class="text-[15px] leading-relaxed text-ink/80">
-          Builders set prices with a co-operating brokerage commission already inside them. That
-          budget exists whether or not you bring a broker. If you walk into a sales centre alone,
-          the builder does not reduce the price by the commission they did not pay — they keep it.
-        </p>
-        <p class="mt-3 text-[15px] leading-relaxed text-ink/80">
-          So the real choice is not "pay for representation or save money." It is "same price, with
-          someone whose obligation is to you, or same price without." Put that way it is not much
-          of a choice — but it only holds if you register before your first visit.
-        </p>
-        <a
-          href="/faq/do-i-need-a-realtor-pre-construction"
-          class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2"
-        >
-          The full argument →
-        </a>
-      </div>
+    <section class="mt-16">
+      <h2 class="text-2xl font-semibold">What it costs you</h2>
+      <p class="mt-4 text-[16px] leading-[1.75] text-ink/85">
+        Nothing. Builders budget a co-operating commission into the price whether or not you bring
+        a broker. Walk in alone and they keep it. The price does not drop.
+      </p>
+      <p class="mt-4 text-[16px] leading-[1.75] text-ink/85">
+        One catch worth knowing: most builders require your broker to be registered at or before
+        your first sales centre visit. Visit unrepresented and you usually cannot add it
+        afterwards. So register before you go.
+      </p>
     </section>
 
-    <!-- Timing: the thing that is actually urgent. -->
-    <section class="tick-corners mt-14 border border-rule bg-accent-tint/60 p-5 sm:p-7">
-      <p class="section-label">— Timing</p>
-      <h2 class="mt-2 text-xl font-semibold">
-        The Ontario rebate window closes {ON_ENHR.WINDOW_CLOSES}
-      </h2>
-      <p class="mt-3 max-w-[66ch] text-[15px] leading-relaxed text-ink/80">
-        Up to <span class="figure">$80,000</span> of provincial HST relief, with no first-time
-        buyer test, on agreements signed before that date — and it runs on the
-        <span class="text-ink"> signing date, not the closing date</span>. For low-rise that is
-        tighter than it sounds, because you cannot sign for a lot in a phase that has not been
-        released yet, and phases release on the builder's schedule rather than yours.
+    <section class="mt-14 border border-rule bg-accent-tint/50 p-6 sm:p-7">
+      <h2 class="text-xl font-semibold">Why timing matters right now</h2>
+      <p class="mt-3 text-[15px] leading-relaxed text-ink/80">
+        Up to $80,000 of Ontario HST relief, with no first-time buyer test, applies to agreements
+        signed before 31 March 2027. It runs on the signing date, not the closing date, and you
+        cannot sign for a lot in a phase that has not been released yet.
       </p>
       <a href="/hst-rebate" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
-        How the rebates work →
+        How the rebates work
       </a>
     </section>
 
     <section class="mt-14 border-t border-rule pt-8">
-      <div class="grid gap-6 lg:grid-cols-12">
-        <div class="lg:col-span-5">
-          <p class="section-label">— Who you're working with</p>
-          <div class="tick-corners mt-3 border border-rule bg-paper-pure/70 p-4">
-            <p class="text-[15px] font-semibold text-ink">{BROKER.brokerage}</p>
-            <p class="text-[15px] text-ink/80">{BROKER.name}, {BROKER.title}</p>
-            <p class="figure mt-2 text-[11px] text-ink/55">
-              RECO #{BROKER.reco} ·{' '}
-              <a href={BROKER.phoneHref} class="text-accent">{BROKER.phone}</a>
-            </p>
-          </div>
-        </div>
-        <div class="lg:col-span-7">
-          <p class="text-[15px] leading-relaxed text-ink/80">
-            Low-rise only — freehold detached, townhomes and semis, across the GTA and the
-            surrounding Ontario markets. Not condos. If the honest answer is that pre-construction
-            is the wrong move for you right now, you will hear that too.
-          </p>
-          <a href="/about" class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2">
-            More about Jordan →
-          </a>
-        </div>
-      </div>
+      <h2 class="text-xl font-semibold">Who you are working with</h2>
+      <p class="mt-3 text-[15px] leading-relaxed text-ink/80">
+        {BROKER.name}, {BROKER.title} at {BROKER.brokerage}, RECO #{BROKER.reco}. Freehold low-rise
+        only, across the GTA. If pre-construction is the wrong move for you right now, you will
+        hear that too.
+      </p>
+      <a href="/about" class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2">
+        More about Jordan
+      </a>
     </section>
 
-    <Cta variant="vip" />
-    <Disclaimer />
+    <Cta variant="vip" heading="Ready to see what's releasing?" body="Register and I'll send the current price lists and what's coming next." />
   </div>
 </Base>

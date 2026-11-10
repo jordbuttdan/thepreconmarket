@@ -50,15 +50,11 @@ html {
    the way gridded vellum reads. Never above 4% opacity. */
 body {
   background-image:
-    linear-gradient(to right, rgb(20 22 26 / 0.035) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 22 26 / 0.035) 1px, transparent 1px),
-    linear-gradient(to right, rgb(20 22 26 / 0.018) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(20 22 26 / 0.018) 1px, transparent 1px);
+    linear-gradient(to right, rgb(20 22 26 / 0.022) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(20 22 26 / 0.022) 1px, transparent 1px);
   background-size:
-    96px 96px,
-    96px 96px,
-    16px 16px,
-    16px 16px;
+    128px 128px,
+    128px 128px;
   min-height: 100dvh;
 }
 
@@ -159,8 +155,8 @@ h3 {
    the block AI search engines quote, so it is visually distinct and always
    the first prose on the page. */
 @utility lede {
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  font-size: 1.125rem;
+  line-height: 1.7;
   color: var(--color-ink);
   border-left: 2px solid var(--color-honey);
   padding-left: 1rem;
@@ -168,21 +164,21 @@ h3 {
 
 /* Long-form prose. Used on FAQ and guide bodies rendered from Markdown. */
 @utility prose-precon {
-  font-size: 0.9375rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   color: color-mix(in srgb, var(--color-ink) 85%, transparent);
 }
 .prose-precon > * + * {
-  margin-top: 1rem;
+  margin-top: 1.15rem;
 }
 .prose-precon h2 {
-  margin-top: 2.5rem;
+  margin-top: 3.25rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-ink);
 }
 .prose-precon h3 {
-  margin-top: 1.75rem;
+  margin-top: 2.25rem;
   font-size: 1.0625rem;
   font-weight: 600;
   color: var(--color-ink);

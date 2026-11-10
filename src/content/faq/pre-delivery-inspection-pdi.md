@@ -10,7 +10,7 @@ category: closing-and-occupancy
 order: 6
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - tarion-warranty-coverage-new-home
@@ -44,17 +44,17 @@ Damage or missing items **recorded** on the form are the builder's responsibilit
 ## What to check
 
 - **Every outlet, switch, and light fixture.**
-- **Every tap, drain and toilet** — run them, check pressure and for leaks under sinks.
-- **Furnace, HVAC, hot water tank, HRV** — on, running, and the models matching your paperwork.
-- **Windows and doors** — open, close, lock, latch. Check screens.
-- **Floors** — scratches, lifting, hollow spots, squeaks.
-- **Walls and ceilings** — drywall seams, nail pops, paint coverage.
-- **Cabinets and counters** — doors aligned, chips, scratches, the specified finishes.
-- **Appliances** — present, correct models, functioning.
-- **Basement** — moisture, cracks, floor drain, sump.
-- **Exterior** — brick and siding, caulking, soffits, downspouts, garage door operation.
-- **Grading, sodding and driveway** — note what is **not** done. Much of this is legitimately deferred, but record the state. [Timelines](/faq/grading-sodding-driveway-timeline).
-- **Upgrades** — every single one you paid for, individually confirmed.
+- **Every tap, drain and toilet**, run them, check pressure and for leaks under sinks.
+- **Furnace, HVAC, hot water tank, HRV**, on, running, and the models matching your paperwork.
+- **Windows and doors**, open, close, lock, latch. Check screens.
+- **Floors**, scratches, lifting, hollow spots, squeaks.
+- **Walls and ceilings**, drywall seams, nail pops, paint coverage.
+- **Cabinets and counters**, doors aligned, chips, scratches, the specified finishes.
+- **Appliances**, present, correct models, functioning.
+- **Basement**, moisture, cracks, floor drain, sump.
+- **Exterior**, brick and siding, caulking, soffits, downspouts, garage door operation.
+- **Grading, sodding and driveway**, note what is **not** done. Much of this is legitimately deferred, but record the state. [Timelines](/faq/grading-sodding-driveway-timeline).
+- **Upgrades**, every single one you paid for, individually confirmed.
 
 ## Rules for the form
 

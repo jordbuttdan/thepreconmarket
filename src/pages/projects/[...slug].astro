@@ -10,7 +10,7 @@ import { BROKER } from '../../config/site';
 
 /**
  * Only `featured` projects get their own page. Catalogue entries are listed on
- * /projects and on their city page instead — a page per sold-out 2019 project
+ * /projects and on their city page instead, a page per sold-out 2019 project
  * would be thin content and would drag the domain rather than help it.
  */
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -61,7 +61,7 @@ const specs: { k: string; v: string }[] = [
 ---
 
 <Base
-  title={`${d.name} — ${d.city} ${d.homeTypes.includes('detached') ? 'detached homes' : 'townhomes'}`}
+  title={`${d.name}, ${d.city} ${d.homeTypes.includes('detached') ? 'detached homes' : 'townhomes'}`}
   description={d.description ?? d.shortAnswer}
   kicker={[d.city, d.ownership, d.salesStatus]}
   updated={d.updated}
@@ -104,7 +104,7 @@ const specs: { k: string; v: string }[] = [
 
     <div class="mt-8 grid gap-10 lg:grid-cols-12 lg:gap-x-12">
       <article class="lg:col-span-8">
-        <p class="section-label">— {d.neighbourhood ? `${d.neighbourhood}, ` : ''}{d.city}</p>
+        <p class="section-label">{d.neighbourhood ? `${d.neighbourhood}, ` : ''}{d.city}</p>
         <h1 class="mt-3 text-[2rem] font-semibold sm:text-[2.5rem]">{d.name}</h1>
         <p class="mt-2 text-[15px] text-ink/65">{d.builder.join(' · ')}</p>
 
@@ -132,7 +132,7 @@ const specs: { k: string; v: string }[] = [
             <section class="mt-12 grid gap-4 sm:grid-cols-2">
               {d.depositStructure.length > 0 && (
                 <div class="card p-5">
-                  <p class="section-label">— Deposit structure</p>
+                  <p class="section-label">Deposit structure</p>
                   <ul class="mt-3 space-y-1.5 text-[13px] text-ink/80">
                     {d.depositStructure.map((x) => (
                       <li class="flex items-baseline gap-2">
@@ -149,7 +149,7 @@ const specs: { k: string; v: string }[] = [
               )}
               {d.incentives.length > 0 && (
                 <div class="card p-5">
-                  <p class="section-label">— Current incentives</p>
+                  <p class="section-label">Current incentives</p>
                   <ul class="mt-3 space-y-1.5 text-[13px] text-ink/80">
                     {d.incentives.map((x) => (
                       <li class="flex items-baseline gap-2">
@@ -174,7 +174,7 @@ const specs: { k: string; v: string }[] = [
                JS interaction is weaker for both crawlers and AI assistants. */
             <section class="mt-12">
               <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
-                <h2 class="text-lg font-semibold">{d.name} — common questions</h2>
+                <h2 class="text-lg font-semibold">{d.name}, common questions</h2>
                 <span class="figure text-[11px] text-ink/45">{d.projectFaq.length}</span>
               </div>
               <dl class="mt-5 space-y-5">
@@ -192,7 +192,7 @@ const specs: { k: string; v: string }[] = [
         {
           d.gallery.length > 0 && (
             <section class="mt-12">
-              <p class="section-label">— Renderings</p>
+              <p class="section-label">Renderings</p>
               <div class="mt-4 grid gap-4 sm:grid-cols-2">
                 {d.gallery.map((g) => (
                   <figure class="border border-rule">
@@ -221,7 +221,7 @@ const specs: { k: string; v: string }[] = [
         <div class="sticky top-6 space-y-8">
           <!-- Spec table, set like a drawing title block. -->
           <div class="card p-5">
-            <p class="section-label">— Project data</p>
+            <p class="section-label">Project data</p>
             <dl class="mt-3 divide-y divide-rule/70 text-[13px]">
               {
                 specs.map((s) => (
@@ -248,7 +248,7 @@ const specs: { k: string; v: string }[] = [
 
           <!-- Registration is the conversion point on a project page. -->
           <div class="tick-corners border border-rule bg-accent-tint/50 p-5">
-            <p class="section-label">— Register</p>
+            <p class="section-label">Register</p>
             <h2 class="mt-2 text-[17px] font-semibold">Floor plans &amp; pricing</h2>
             <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
               Builder price lists, floor plans and deposit structures go to registered buyers.
@@ -262,7 +262,7 @@ const specs: { k: string; v: string }[] = [
           {
             relatedFaq.length > 0 && (
               <div>
-                <p class="section-label">— Before you sign</p>
+                <p class="section-label">Before you sign</p>
                 <ul class="mt-3">
                   {relatedFaq.map((r) => (
                     <li class="border-b border-rule/60">
@@ -281,7 +281,7 @@ const specs: { k: string; v: string }[] = [
           }
 
           <div class="border border-rule p-4">
-            <p class="section-label">— Talk it through</p>
+            <p class="section-label">Talk it through</p>
             <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
               Lot selection, builder comparison and the agreement, before you commit.
             </p>

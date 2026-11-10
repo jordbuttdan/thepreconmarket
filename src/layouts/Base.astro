@@ -40,6 +40,11 @@ interface Props {
   };
   /** Set true on thin utility pages that should not be indexed. */
   noindex?: boolean;
+  /**
+   * Content measure. 'narrow' is for single-column reading pages; the kicker
+   * and breadcrumb strips match it so nothing sits out of alignment.
+   */
+  width?: 'wide' | 'narrow';
 }
 
 const {
@@ -53,7 +58,10 @@ const {
   article,
   place,
   noindex,
+  width = 'wide',
 } = Astro.props;
+
+const measure = width === 'narrow' ? 'max-w-[820px]' : 'max-w-[1100px]';
 
 const year = new Date().getFullYear();
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
@@ -135,13 +143,8 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
 
     <header class="border-b border-rule bg-paper/95 backdrop-blur">
       <div class="mx-auto flex max-w-[1100px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a href="/" class="group shrink-0">
-          <span class="block font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
-            The Precon Market
-          </span>
-          <span class="mt-0.5 block font-mono text-[10px] tracking-[0.06em] text-label uppercase">
-            Low-rise · Ontario
-          </span>
+        <a href="/" class="shrink-0 font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
+          The Precon Market
         </a>
 
         <nav aria-label="Main" class="flex items-center gap-4 sm:gap-6">
@@ -199,7 +202,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     {
       (kicker?.length || updated) && (
         <div class="border-b border-rule bg-paper-pure/60">
-          <div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-5 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-label uppercase sm:px-6">
+          <div class:list={['mx-auto flex flex-wrap items-center gap-x-5 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-label uppercase sm:px-6', measure]}>
             {kicker?.map((k, i) => (
               <>
                 {i > 0 && (
@@ -222,7 +225,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
 
     {
       breadcrumbs?.length && (
-        <nav aria-label="Breadcrumb" class="mx-auto max-w-[1100px] px-4 pt-4 sm:px-6">
+        <nav aria-label="Breadcrumb" class:list={['mx-auto px-4 pt-4 sm:px-6', measure]}>
           <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] text-ink/55">
             {breadcrumbs.map((b, i) => (
               <li class="flex items-center gap-2">
@@ -256,7 +259,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
       <div class="mx-auto max-w-[1100px] px-4 py-10 sm:px-6">
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p class="section-label">— Browse</p>
+            <p class="section-label">Browse</p>
             <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
               <li><a href="/how-it-works" class="hover:text-accent">How it works</a></li>
               <li><a href="/new-homes" class="hover:text-accent">New home communities</a></li>
@@ -266,7 +269,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
             </ul>
           </div>
           <div>
-            <p class="section-label">— Learn</p>
+            <p class="section-label">Learn</p>
             <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
               <li><a href="/hst-rebate" class="hover:text-accent">HST &amp; GST rebates</a></li>
               <li><a href="/hst-rebate/checker" class="hover:text-accent">Rebate checker</a></li>
@@ -276,7 +279,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
             </ul>
           </div>
           <div>
-            <p class="section-label">— Contact</p>
+            <p class="section-label">Contact</p>
             <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
               <li>
                 <a href={BROKER.phoneHref} class="figure hover:text-accent">{BROKER.phone}</a>
@@ -287,7 +290,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
             </ul>
           </div>
           <div>
-            <p class="section-label">— Registered brokerage</p>
+            <p class="section-label">Registered brokerage</p>
             <!-- RECO: brokerage name at least as prominent as the individual's. -->
             <p class="mt-3 text-sm leading-relaxed text-ink">
               <span class="block font-medium">{BROKER.brokerage}</span>

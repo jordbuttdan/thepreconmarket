@@ -9,7 +9,7 @@ category: deposits-and-financing
 order: 2
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - typical-deposit-structure-pre-construction-ontario
@@ -18,7 +18,7 @@ related:
   - tarion-warranty-coverage-new-home
 ---
 
-Partly — and the gap between "protected" and "fully protected" is where low-rise buyers are most exposed without realising it.
+Partly, and the gap between "protected" and "fully protected" is where low-rise buyers are most exposed without realising it.
 
 ## The limits
 
@@ -41,7 +41,7 @@ A $1,200,000 detached home where the builder requires a 20% deposit:
 
 That $140,000 depends entirely on the builder's solvency and on your agreement. If the builder fails, it is an unsecured claim.
 
-Even at a standard 10% deposit on the same home — $120,000 — protection caps at $100,000, leaving $20,000 uncovered.
+Even at a standard 10% deposit on the same home, $120,000, protection caps at $100,000, leaving $20,000 uncovered.
 
 ## This is different from condos
 
@@ -49,7 +49,7 @@ Condominium deposits get trust protections under the Condominium Act in addition
 
 ## The 45-day registration requirement
 
-Freehold purchasers are expected to **register the purchase with Tarion within 45 days of signing**, and missing that window is described as reducing deposit protection — potentially to a prorated share of a limited fund rather than the full amount.
+Freehold purchasers are expected to **register the purchase with Tarion within 45 days of signing**, and missing that window is described as reducing deposit protection, potentially to a prorated share of a limited fund rather than the full amount.
 
 Reporting on exactly when this requirement took effect has been inconsistent, so do not rely on a date from any website, this one included. Within a week or two of signing, **call Tarion and confirm your purchase is registered**, and ask your lawyer to confirm it too. Do not assume the builder did it.
 

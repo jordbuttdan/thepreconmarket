@@ -9,9 +9,9 @@ category: closing-and-occupancy
 order: 1
 updated: 2026-11-09
 sources:
-  - label: Toronto — Municipal Land Transfer Tax rebate opportunities
+  - label: Toronto, Municipal Land Transfer Tax rebate opportunities
     url: https://www.toronto.ca/services-payments/property-taxes-utilities/municipal-land-transfer-tax-mltt/municipal-land-transfer-tax-mltt-rebate-opportunities/
-  - label: Ontario — Land transfer tax
+  - label: Ontario, Land transfer tax
     url: https://www.ontario.ca/document/land-transfer-tax
 related:
   - closing-costs-new-construction-ontario
@@ -50,9 +50,9 @@ Marginal rates on residential property:
 
 ## If the home is in Toronto
 
-The City of Toronto levies its own municipal land transfer tax **in addition**, calculated on broadly similar bands for homes in this range. The practical effect is that your land transfer tax roughly doubles — on a $1,100,000 home, from about $18,475 to roughly **$37,000**.
+The City of Toronto levies its own municipal land transfer tax **in addition**, calculated on broadly similar bands for homes in this range. The practical effect is that your land transfer tax roughly doubles, on a $1,100,000 home, from about $18,475 to roughly **$37,000**.
 
-Most new low-rise in the GTA is outside Toronto — Vaughan, Markham, Brampton, Caledon, Oakville, Milton, Pickering, Whitby — so one tax, not two. It is a real and underappreciated cost advantage of buying low-rise in the 905.
+Most new low-rise in the GTA is outside Toronto, Vaughan, Markham, Brampton, Caledon, Oakville, Milton, Pickering, Whitby, so one tax, not two. It is a real and underappreciated cost advantage of buying low-rise in the 905.
 
 ## First-time buyer rebates
 
@@ -62,10 +62,10 @@ If you qualify as a first-time buyer:
 - **Toronto:** up to **$4,475** on the municipal tax.
 - Both can be claimed, for up to **$8,475** in Toronto.
 
-These are claimed by your lawyer at closing, so you never front the money — but confirm your lawyer has applied them.
+These are claimed by your lawyer at closing, so you never front the money, but confirm your lawyer has applied them.
 
 Note that the first-time buyer test here is **not identical** to the test for the [federal GST rebate](/faq/first-time-home-buyers-gst-rebate). You can qualify for one and not the other. Ask your lawyer about each separately rather than assuming one answer covers both.
 
 ## Budgeting for it
 
-Land transfer tax is unavoidable, non-financeable and due on closing day. It belongs in your cash plan from the start, alongside [levies, adjustments and legal fees](/faq/closing-costs-new-construction-ontario) — not as an afterthought.
+Land transfer tax is unavoidable, non-financeable and due on closing day. It belongs in your cash plan from the start, alongside [levies, adjustments and legal fees](/faq/closing-costs-new-construction-ontario), not as an afterthought.

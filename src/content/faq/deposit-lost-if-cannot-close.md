@@ -9,7 +9,7 @@ category: deposits-and-financing
 order: 6
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - mortgage-approval-closing-years-later
@@ -26,7 +26,7 @@ If you cannot complete the purchase, you have breached a binding agreement. The 
 
 **You forfeit your deposit.** On a $1.1M home at 10%, that is $110,000.
 
-**The builder may pursue further damages.** If they resell the home for less than you agreed to pay, the shortfall can be claimed from you — along with carrying costs, remarketing costs and legal fees. In a falling market, the claim can substantially exceed the deposit.
+**The builder may pursue further damages.** If they resell the home for less than you agreed to pay, the shortfall can be claimed from you, along with carrying costs, remarketing costs and legal fees. In a falling market, the claim can substantially exceed the deposit.
 
 **Tarion does not help you.** Deposit protection covers *builder* failure to deliver. It does not cover a buyer who cannot close. This is a common and costly misunderstanding.
 
@@ -36,7 +36,7 @@ Rarely recklessness. Usually a combination:
 
 - Rates rose and the qualifying amount fell.
 - [The home appraised below the purchase price](/faq/mortgage-approval-closing-years-later) and the gap had to be cash.
-- Income changed — job loss, self-employment, leave, illness.
+- Income changed, job loss, self-employment, leave, illness.
 - The existing home did not sell, or sold for less.
 - An [HST rebate failed](/faq/builder-keeps-hst-rebate-assignment) and added up to $80,000 to closing-day cash.
 - Several of the above at once.
@@ -47,7 +47,7 @@ The single most important thing: **act early.** Options exist eighteen months ou
 
 1. **Get a real estate lawyer involved now.** Before you miss a deposit, before you tell the builder anything.
 2. **Explore [assignment](/faq/assignment-sale-freehold-low-rise)** where your agreement permits it. Selling your position, even at a loss, is usually far better than defaulting.
-3. **Ask about a mutual release.** Builders sometimes agree, particularly if they can resell the lot higher. It may cost you part of the deposit — still better than a judgment.
+3. **Ask about a mutual release.** Builders sometimes agree, particularly if they can resell the lot higher. It may cost you part of the deposit, still better than a judgment.
 4. **Re-examine the financing.** A different lender, a co-signer, a larger down payment, a longer amortisation, an extension request.
 5. **Do not simply stop paying deposits.** That accelerates the default and removes your leverage.
 

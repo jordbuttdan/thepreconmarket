@@ -10,9 +10,9 @@ order: 8
 readMinutes: 9
 updated: 2026-11-09
 sources:
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
-  - label: CRA — Ontario enhanced new housing rebate
+  - label: CRA, Ontario enhanced new housing rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/housing-rebates/ontario-enhanced-new-housing.html
 relatedFaq:
   - do-i-have-to-be-first-time-buyer-ontario-rebate
@@ -26,15 +26,15 @@ related:
   - freehold-low-rise-buyer-guide
 ---
 
-If you already own a home and you are buying new low-rise, you are probably eligible for considerably more relief than you think — and you have one logistical problem first-time buyers do not.
+If you already own a home and you are buying new low-rise, you are probably eligible for considerably more relief than you think, and you have one logistical problem first-time buyers do not.
 
 ## You are not excluded
 
 The most common misconception in the Ontario market is that the current programs are first-time buyer relief. The large one is not.
 
-**Ontario Enhanced New Housing Rebate — up to $80,000. No first-time buyer test.** It follows the conditions of the existing Ontario new housing rebate, which has never had one. Individual buyer, primary residence for you or a relation, first occupant, agreement signed in the window. That is it. [Read this](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
+**Ontario Enhanced New Housing Rebate, up to $80,000. No first-time buyer test.** It follows the conditions of the existing Ontario new housing rebate, which has never had one. Individual buyer, primary residence for you or a relation, first occupant, agreement signed in the window. That is it. [Read this](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
 
-**Ontario 5% top-up — up to $50,000.** Available to buyers who receive the ENHR, reduced by any federal rebate claimed. Since you claim **no** federal rebate, there is nothing to offset — so you receive it close to in full. [More](/faq/ontario-new-home-affordability-payment).
+**Ontario 5% top-up, up to $50,000.** Available to buyers who receive the ENHR, reduced by any federal rebate claimed. Since you claim **no** federal rebate, there is nothing to offset, so you receive it close to in full. [More](/faq/ontario-new-home-affordability-payment).
 
 ## Run the comparison
 
@@ -53,7 +53,7 @@ The one thing you lose is the top end: the federal rebate's $50,000 maximum is l
 
 ## The deadline is your problem more than theirs
 
-The ENHR requires an agreement signed between **April 1, 2026 and March 31, 2027** — the signing date, not the closing date. [The deadline](/faq/hst-rebate-deadline-march-2027).
+The ENHR requires an agreement signed between **April 1, 2026 and March 31, 2027**, the signing date, not the closing date. [The deadline](/faq/hst-rebate-deadline-march-2027).
 
 Roughly sixteen months remain. For you that is tighter than it looks, because move-up buyers generally need to be confident about selling before committing, and that instinct causes delay. On a $1.2M home, signing inside the window versus outside is about **$56,000** in provincial relief. [Why](/faq/hst-rebate-24000-standard).
 
@@ -71,13 +71,13 @@ Three options, all with costs:
 
 **Sell conditional on the new closing.** Cleanest logistically, narrows your buyer pool and usually your price.
 
-The useful signal: there is generally a point — often once the pre-delivery inspection is scheduled — where the builder's date firms up enough to sell against. Knowing when that is for a specific builder is experience, not a rule.
+The useful signal: there is generally a point, often once the pre-delivery inspection is scheduled, where the builder's date firms up enough to sell against. Knowing when that is for a specific builder is experience, not a rule.
 
 ## What to do
 
 1. **Confirm your ENHR eligibility.** You are probably eligible. Verify, do not assume either way.
 2. **Get a current valuation** of your existing home, and model the sale conservatively.
-3. **Talk to your lender about bridging early** — a year out, not in the final month.
+3. **Talk to your lender about bridging early**, a year out, not in the final month.
 4. **Model the purchase at a stressed rate**, and do not rely on your existing home selling at the top of its range.
 5. **Watch the March 31, 2027 window** if the ENHR is material to your budget.
 6. **Ask about the builder's date reliability** before choosing between communities. It directly determines how safely you can sell. [Due diligence](/guides/builder-due-diligence-guide).

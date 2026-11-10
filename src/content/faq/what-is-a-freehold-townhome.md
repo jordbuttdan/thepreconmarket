@@ -4,7 +4,7 @@ title: What is a freehold townhome
 shortAnswer: >-
   A freehold townhome is an attached house where you own the land and the building
   outright, with no condominium corporation and no monthly maintenance fee. You are
-  responsible for your own roof, windows and exterior — unlike a condo townhome, where
+  responsible for your own roof, windows and exterior, unlike a condo townhome, where
   the corporation handles them.
 category: low-rise-specifics
 order: 1
@@ -32,9 +32,9 @@ The flip side: everything is yours to maintain. The roof, the windows, the sidin
 | | Freehold town | Condo town |
 | --- | --- | --- |
 | You own | Land + building | A unit; corporation owns the structure |
-| Monthly fee | None (unless POTL) | Yes — often $200–$500+ |
+| Monthly fee | None (unless POTL) | Yes, often $200–$500+ |
 | Exterior maintenance | **Yours** | Corporation's |
-| Reserve fund | None — you save yourself | Corporation holds one |
+| Reserve fund | None, you save yourself | Corporation holds one |
 | Rules on exterior changes | Minimal | Declaration and rules apply |
 | Cooling-off period when buying new | **None** | 10 days |
 | Interim occupancy | None | Often months of fees |
@@ -44,16 +44,16 @@ Two rows there are worth real money. A condo townhome new build comes with a [10
 
 ## The POTL wrinkle
 
-Many newer freehold townhome communities are **POTL** — parcel of tied land. You own your home freehold, but it is tied to a small common elements condominium corporation that maintains shared private roads, visitor parking or a park block.
+Many newer freehold townhome communities are **POTL**, parcel of tied land. You own your home freehold, but it is tied to a small common elements condominium corporation that maintains shared private roads, visitor parking or a park block.
 
 So you pay a modest monthly fee after all, typically much smaller than a full condo fee. It is not a sign of something wrong; it is how municipalities now handle private shared infrastructure. [More on POTLs](/faq/potl-common-elements-condo-fees).
 
 ## Types you will see in new low-rise
 
-- **Traditional / street towns** — front door to the street, garage at the front, private backyard.
-- **Rear-lane towns** — front door to the street, garage off a lane behind. Better streetscape, usually a smaller yard.
-- **Back-to-back towns** — attached at the rear as well as the sides. No backyard, lowest price point in the freehold range.
-- **Laneway towns** — variations on rear-lane, often stacked over a garage.
+- **Traditional / street towns**, front door to the street, garage at the front, private backyard.
+- **Rear-lane towns**, front door to the street, garage off a lane behind. Better streetscape, usually a smaller yard.
+- **Back-to-back towns**, attached at the rear as well as the sides. No backyard, lowest price point in the freehold range.
+- **Laneway towns**, variations on rear-lane, often stacked over a garage.
 
 Price generally runs back-to-back < laneway < rear-lane < traditional, and so does resale appeal. A back-to-back town with no yard is the most affordable way into freehold ownership and the hardest of the four to resell. Worth knowing before you choose on price alone.
 

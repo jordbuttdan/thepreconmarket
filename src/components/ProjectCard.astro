@@ -55,7 +55,7 @@ const href = `/projects/${project.id}`;
       )}
       <div class="flex grow flex-col p-5">
         <p class="section-label">
-          — {d.neighbourhood ? `${d.neighbourhood}, ` : ''}
+          {d.neighbourhood ? `${d.neighbourhood}, ` : ''}
           {d.city}
         </p>
         <h3 class="mt-2 text-[17px] font-semibold leading-snug">

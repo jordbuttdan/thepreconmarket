@@ -9,7 +9,7 @@ category: hst-rebates
 order: 12
 updated: 2026-11-09
 sources:
-  - label: CRA — GST/HST new residential rental property rebate
+  - label: CRA, GST/HST new residential rental property rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/new-residential-rental-property-rebate.html
 related:
   - hst-rebate-rental-investment-property
@@ -18,7 +18,7 @@ related:
   - builder-keeps-hst-rebate-assignment
 ---
 
-The NRRP rebate exists because landlords also pay HST on a new home, and the policy intent is not to tax rental housing out of existence. It is the investor's equivalent of the new housing rebate — with a very different process.
+The NRRP rebate exists because landlords also pay HST on a new home, and the policy intent is not to tax rental housing out of existence. It is the investor's equivalent of the new housing rebate, with a very different process.
 
 ## How it differs from the owner-occupied rebates
 
@@ -29,11 +29,11 @@ The NRRP rebate exists because landlords also pay HST on a new home, and the pol
 | Cash needed at closing | Lower | **Full HST amount** |
 | Key evidence | Primary residence intent | **Signed lease, min. one year** |
 
-That middle row is the one that matters. The owner-occupied rebates reduce what you bring to closing. The NRRP does not — you fund the HST yourself and recover it later.
+That middle row is the one that matters. The owner-occupied rebates reduce what you bring to closing. The NRRP does not, you fund the HST yourself and recover it later.
 
 ## What you need to qualify
 
-In broad terms: you bought a new or substantially renovated residential unit, you are not eligible for the owner-occupied rebate, and you lease the unit to a tenant for residential use under a lease of at least one year. The first use of the property has to be as someone's place of residence — a short-term rental generally will not do it.
+In broad terms: you bought a new or substantially renovated residential unit, you are not eligible for the owner-occupied rebate, and you lease the unit to a tenant for residential use under a lease of at least one year. The first use of the property has to be as someone's place of residence, a short-term rental generally will not do it.
 
 You file the claim with CRA using the NRRP forms, supported by your statement of adjustments and the lease.
 

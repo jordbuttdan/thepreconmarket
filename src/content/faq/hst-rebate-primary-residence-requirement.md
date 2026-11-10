@@ -10,9 +10,9 @@ category: hst-rebates
 order: 17
 updated: 2026-11-09
 sources:
-  - label: CRA — Ontario enhanced new housing rebate (Notice 346)
+  - label: CRA, Ontario enhanced new housing rebate (Notice 346)
     url: https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/notice346/ontario-enhanced-new-housing-rebate.html
-  - label: CRA — GST/HST new housing rebate
+  - label: CRA, GST/HST new housing rebate
     url: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/new-housing-rebate.html
 related:
   - hst-rebate-rental-investment-property
@@ -21,7 +21,7 @@ related:
   - spouse-owned-home-first-time-buyer
 ---
 
-Yes — and it is the condition most often treated as a formality when it is actually the load-bearing one.
+Yes, and it is the condition most often treated as a formality when it is actually the load-bearing one.
 
 ## What is required
 
@@ -31,13 +31,13 @@ Two separate tests, both of which have to hold.
 
 ## "Primary place of residence"
 
-This means the home where you ordinarily live — the address on your identification, where your mail goes, where you actually sleep most nights. It is not satisfied by intending to use it sometimes, by keeping it available, or by staying there occasionally while living mainly somewhere else.
+This means the home where you ordinarily live, the address on your identification, where your mail goes, where you actually sleep most nights. It is not satisfied by intending to use it sometimes, by keeping it available, or by staying there occasionally while living mainly somewhere else.
 
 CRA looks at intention **at the time you signed**, and at what actually happened afterward. Both matter. A genuine change of circumstances is different from a plan that was never real.
 
 ## "A relation"
 
-The rebate survives if a qualifying relation lives there instead of you — a parent buying for a child, for instance. "Relation" has a specific meaning in the legislation, and it is narrower than "family friend." If your plan involves someone other than you occupying the home, confirm that person qualifies **before** you sign the rebate forms.
+The rebate survives if a qualifying relation lives there instead of you, a parent buying for a child, for instance. "Relation" has a specific meaning in the legislation, and it is narrower than "family friend." If your plan involves someone other than you occupying the home, confirm that person qualifies **before** you sign the rebate forms.
 
 ## "First occupant"
 
@@ -50,9 +50,9 @@ This is the real-world version of the question. You bought intending to live the
 The consequences are immediate and financial:
 
 - You are no longer eligible for the owner-occupied rebates.
-- The builder's assignment fails, and they [bill you the rebate amount at closing](/faq/builder-keeps-hst-rebate-assignment) — up to $80,000 provincially.
+- The builder's assignment fails, and they [bill you the rebate amount at closing](/faq/builder-keeps-hst-rebate-assignment), up to $80,000 provincially.
 - You can claim the [NRRP rebate](/faq/new-residential-rental-property-rebate) instead, but you pay first and recover months later.
 
-What you must not do is sign the occupancy declaration anyway. Those forms are sworn. Tell your lawyer the truth and deal with the consequence — it is a cash-flow problem, which is survivable. The alternative is a misrepresentation problem, which is not.
+What you must not do is sign the occupancy declaration anyway. Those forms are sworn. Tell your lawyer the truth and deal with the consequence. It is a cash-flow problem, which is survivable. The alternative is a misrepresentation problem, which is not.
 
 If your plans have shifted and you are not sure where that leaves you, [let's work out the actual numbers](/book).

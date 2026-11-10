@@ -10,9 +10,9 @@ category: closing-and-occupancy
 order: 4
 updated: 2026-11-09
 sources:
-  - label: Tarion — freehold coverage for closing dates and delays
+  - label: Tarion, freehold coverage for closing dates and delays
     url: https://www.tarion.com/homeowners/freehold-contract-coverage-closing-dates-delays
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - bridge-financing-pre-construction
@@ -33,7 +33,7 @@ The notice requirements are specific and the timing matters. The practical point
 
 Where the builder fails to meet its obligations under the statutory scheme, Tarion's delayed closing compensation can cover:
 
-- **Living expenses** — meals and accommodation — at a fixed **$150 per day** of delay.
+- **Living expenses**, meals and accommodation, at a fixed **$150 per day** of delay.
 - Other prescribed costs such as moving and storage.
 - To a **maximum of $7,500 in total**.
 
@@ -55,7 +55,7 @@ And note the ceiling honestly: **$7,500 does not make you whole** for a six-mont
 
 **Read the extension provisions before signing** so you know how far the date can legitimately move.
 
-**Do not sell your existing home to a date tied to a tentative builder date.** Wait until the date firms up — commonly around the time the pre-delivery inspection is scheduled.
+**Do not sell your existing home to a date tied to a tentative builder date.** Wait until the date firms up, commonly around the time the pre-delivery inspection is scheduled.
 
 **Avoid committing to a hard move-out** until you have a firm closing date in writing.
 
@@ -65,6 +65,6 @@ And note the ceiling honestly: **$7,500 does not make you whole** for a six-mont
 
 ## The thing worth knowing in advance
 
-Builders differ enormously in how reliably they hit dates, and that record is not on any price list. It is one of the more useful things to know before choosing between two comparable communities — and one of the main reasons to ask someone who has closed homes with that builder before.
+Builders differ enormously in how reliably they hit dates, and that record is not on any price list. It is one of the more useful things to know before choosing between two comparable communities, and one of the main reasons to ask someone who has closed homes with that builder before.
 
 [Ask me about the builder before you buy](/book).

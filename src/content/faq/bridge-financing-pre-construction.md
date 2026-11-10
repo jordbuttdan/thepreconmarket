@@ -9,7 +9,7 @@ category: deposits-and-financing
 order: 7
 updated: 2026-11-09
 sources:
-  - label: Tarion — coverage before you close
+  - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
 related:
   - closing-delays-pre-construction-ontario
@@ -32,11 +32,11 @@ That means you cannot confidently sell your existing home for a date matched to 
 
 This is the practical problem for most low-rise buyers, who are usually selling something:
 
-- **Sell early, firm** — you have certainty on funds, but may need interim housing and two moves if the build slips.
-- **Sell late, near the builder's date** — you avoid interim housing, but you are selling under time pressure, which costs money, and you may need bridge financing.
-- **Sell conditional on the new closing** — cleanest, but narrows your buyer pool and usually your price.
+- **Sell early, firm**, you have certainty on funds, but may need interim housing and two moves if the build slips.
+- **Sell late, near the builder's date**, you avoid interim housing, but you are selling under time pressure, which costs money, and you may need bridge financing.
+- **Sell conditional on the new closing**, cleanest, but narrows your buyer pool and usually your price.
 
-There is no free answer. The right one depends on your equity, your tolerance and how reliable the builder's dates have historically been — which is a genuinely useful thing to know about a builder before you buy from them.
+There is no free answer. The right one depends on your equity, your tolerance and how reliable the builder's dates have historically been, which is a genuinely useful thing to know about a builder before you buy from them.
 
 ## What lenders will want
 
@@ -51,10 +51,10 @@ Expect a higher interest rate than your mortgage plus an administration fee. On 
 
 **Raise it early.** Talk to your lender about bridging **before** you list, ideally a year out. Discovering your lender will not bridge a tentative builder date in the final month is a bad discovery.
 
-**Track the builder's dates.** As construction progresses the date firms up. There is usually a point — often after the pre-delivery inspection is scheduled — where selling becomes much safer.
+**Track the builder's dates.** As construction progresses the date firms up. There is usually a point, often after the pre-delivery inspection is scheduled, where selling becomes much safer.
 
 **Hold a contingency.** Delays are normal. Budget for the possibility of a few months of carrying both, or of interim housing and storage.
 
 **Read the extension clause** in your agreement so you know how far the date can legitimately move.
 
-For a move-up buyer, sequencing the sale against a moving builder date is the hardest logistical part of the whole purchase — and the part where getting it wrong is most expensive. [Let's plan the sequence](/book).
+For a move-up buyer, sequencing the sale against a moving builder date is the hardest logistical part of the whole purchase, and the part where getting it wrong is most expensive. [Let's plan the sequence](/book).
