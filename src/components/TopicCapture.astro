@@ -1,0 +1,71 @@
+---
+/**
+ * End-of-article capture for FAQ and guide pages.
+ *
+ * These are the pages people arrive on from search and AI answers, mid
+ * research, and a "book a call" link is too large an ask at that point. The
+ * offer here is the checklist that matches what they were just reading, for
+ * an email address. The checklist itself stays public on /resources; this
+ * sends the printable copy.
+ */
+import LeadForm from './LeadForm.astro';
+import { GHL } from '../config/ghl';
+
+interface Props {
+  /** FAQ category, or 'guide'. Picks the matching checklist. */
+  category: string;
+  /** Slug of the page, sent as a `topic:` tag. */
+  topic: string;
+}
+const { category, topic } = Astro.props;
+
+const OFFERS: Record<string, { slug: string; name: string; line: string }> = {
+  'hst-rebates': {
+    slug: 'hst-rebate-eligibility-checklist',
+    name: 'HST rebate eligibility checklist',
+    line: 'The questions that decide whether you keep the rebate, on one page to take to your lawyer.',
+  },
+  'closing-and-occupancy': {
+    slug: 'closing-cost-worksheet',
+    name: 'closing cost worksheet',
+    line: 'Every line that shows up on closing day, so the number is not a surprise.',
+  },
+  'deposits-and-financing': {
+    slug: 'closing-cost-worksheet',
+    name: 'closing cost worksheet',
+    line: 'Deposits, levies, land transfer tax and adjustments in one place, so you can budget the cash.',
+  },
+  'low-rise-specifics': {
+    slug: 'pre-delivery-inspection-checklist',
+    name: 'pre-delivery inspection checklist',
+    line: 'What to check, room by room, before you take the keys.',
+  },
+};
+const offer = OFFERS[category] ?? {
+  slug: 'pre-construction-agreement-checklist',
+  name: 'agreement review checklist',
+  line: 'The clauses worth reading twice before you sign, and what to ask for.',
+};
+---
+
+<aside class="tick-corners mt-12 border border-rule-dark bg-accent-tint/60 p-5 sm:p-7">
+  <div class="grid gap-6 sm:grid-cols-2 sm:gap-x-10">
+    <div>
+      <p class="section-label">Free checklist</p>
+      <h2 class="mt-2 text-xl font-semibold">Get the {offer.name}</h2>
+      <p class="mt-2 text-[14px] leading-relaxed text-ink/75">{offer.line}</p>
+      <p class="mt-3 text-[13px] text-ink/65">
+        Prefer to talk it through?
+        <a href="/book" class="text-accent underline underline-offset-2">Book a call</a>.
+      </p>
+    </div>
+    <LeadForm
+      webhookUrl={GHL.vipWebhookUrl}
+      fields="email"
+      resource={offer.slug}
+      topic={topic}
+      submitLabel="Email it to me"
+      doneBody="It is on its way. You can also read it now on the Resources page."
+    />
+  </div>
+</aside>

@@ -86,15 +86,3 @@ Confirm with the builder whether the advertised prices are quoted net of the HST
 ## Location
 
 Southbay at River's Edge is at **Sunnidale Road South & Sun Valley Avenue** in River's Edge, Wasaga Beach.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Southbay at River's Edge
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

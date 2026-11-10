@@ -16,7 +16,7 @@ export default defineConfig({
       // the sitemap so crawl budget goes to the indexable answers.
       // /results is rendered client-side from checker state — a crawler sees
       // an empty shell, so it must not be advertised in the sitemap.
-      filter: (page) => !['/privacy', '/results', '/thank-you'].some((p) => page.includes(p)),
+      filter: (page) => !['/privacy', '/results', '/thank-you', '/404'].some((p) => page.includes(p)),
       changefreq: 'weekly',
       lastmod: new Date(),
     }),

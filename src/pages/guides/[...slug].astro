@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import Cta from '../../components/Cta.astro';
+import TopicCapture from '../../components/TopicCapture.astro';
 import Sources from '../../components/Sources.astro';
 import Disclaimer from '../../components/Disclaimer.astro';
 
@@ -56,7 +56,7 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
       </div>
 
       <Sources sources={d.sources} />
-      <Cta />
+      <TopicCapture category="guide" topic={entry.id} />
       <Disclaimer />
     </article>
 

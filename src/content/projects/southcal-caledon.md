@@ -117,37 +117,6 @@ Note what the top of that band does. DECO's largest plans sit close to **$1,500,
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, a buyer who does not qualify is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-## Deposit
-
-- Arista: $20,000 on signing, $20,000 at 30 and 60 days, $10,000 at 90, 120 and 180 days
-- OPUS townhomes: $20,000 on signing, $15,000 at 30, 90 and 150 days, $10,000 at 180 and 210 days
-- DECO detached: $30,000 on signing, $30,000 at 30 days, $20,000 at 90, 120, 180 and 210 days, $140,000 in total
-
-Each date is a contractual obligation, not a guideline. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Decor credits (all three builders)
-- Free appliances (all three builders)
-- Free assignment (all three builders)
-- Free air conditioning (Arista and DECO)
-- $0 development charges (OPUS and DECO)
-- DECO's phase 2 package adds $20,000 in decor on detached, $10,000 plus a five-piece appliance voucher on towns, an owned hot water tank and a smart home package
-
-Incentives change without notice, and a promise not written into an amendment does not exist. [How amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 SouthCal is at **Highway 410 & Hurontario Street** in Southfields, Caledon.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at SouthCal
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

@@ -1,0 +1,204 @@
+---
+/**
+ * Lead form. Plain HTML plus one small script, no framework.
+ *
+ * Step one asks only for what is needed to reply: name, email, phone (or
+ * email alone, for alerts and checklist requests). The qualifying questions,
+ * home type, budget and timeline, are asked on the confirmation screen, after
+ * the lead already exists, and arrive as a second post tagged `lead-details`.
+ *
+ * Posts straight to a GoHighLevel inbound webhook from the browser, so the
+ * build stays static with no server and no API key anywhere. Spam defences
+ * are a honeypot and a submit-time trap; both report success so a bot learns
+ * nothing. The button stays disabled until the script has attached, and the
+ * form is method="post", so a submit can never fall through to a GET with
+ * the visitor's details in the URL.
+ */
+import { slugify } from '../lib/leadTags';
+
+interface Props {
+  webhookUrl: string;
+  /** 'contact' asks name, email, phone. 'email' asks email only. */
+  fields?: 'contact' | 'email';
+  project?: string;
+  projectName?: string;
+  builders?: string[];
+  projectStatus?: string;
+  city?: string;
+  resource?: string;
+  /** FAQ or guide slug the form sits on. */
+  topic?: string;
+  /** Primary tag. Defaults by context. */
+  intent?: 'vip-register' | 'resource-download' | 'launch-alert' | 'topic-request';
+  submitLabel?: string;
+  /** Stack fields in one column, for narrow containers. */
+  compact?: boolean;
+  /** Confirmation heading and body. Sensible defaults by context. */
+  doneHeading?: string;
+  doneBody?: string;
+}
+
+const {
+  webhookUrl,
+  fields = 'contact',
+  project,
+  projectName,
+  builders = [],
+  projectStatus,
+  city,
+  resource,
+  topic,
+  intent = resource ? 'resource-download' : 'vip-register',
+  submitLabel,
+  compact = false,
+  doneHeading,
+  doneBody,
+} = Astro.props;
+
+const uid = Math.random().toString(36).slice(2, 8);
+
+const tags: string[] = [intent];
+if (project) tags.push(`project:${project}`);
+if (city) tags.push(`city:${city}`);
+if (resource) tags.push(`resource:${resource}`);
+if (topic) tags.push(`topic:${topic}`);
+for (const b of builders) tags.push(`builder:${slugify(b)}`);
+if (projectStatus) tags.push(`status:${projectStatus}`);
+
+const builderList =
+  builders.length === 0
+    ? ''
+    : builders.length === 1
+      ? builders[0]
+      : `${builders.slice(0, -1).join(', ')} and ${builders[builders.length - 1]}`;
+
+const heading =
+  doneHeading ??
+  (resource
+    ? 'Check your inbox.'
+    : projectName
+      ? `You're registered for ${projectName}.`
+      : "You're on the list.");
+const body =
+  doneBody ??
+  (resource
+    ? 'It is on its way. The full checklist is on this page too, so you can start now.'
+    : projectName
+      ? `You'll get the ${builderList || 'builder'} price list${builders.length > 1 ? 's' : ''} and floor plans as they're released, plus a note from Jordan on how the release looks.`
+      : "You'll hear from Jordan directly, usually the same day.");
+
+const config = JSON.stringify({
+  webhookUrl,
+  tags,
+  project: project ?? '',
+  projectName: projectName ?? '',
+  city: city ?? '',
+  resource: resource ?? '',
+  topic: topic ?? '',
+});
+
+const field =
+  'mt-1.5 block w-full min-h-12 border border-rule bg-paper-pure px-3 text-[15px] text-ink placeholder:text-ink/35 focus:border-honey focus:outline-none';
+const label = 'block text-[13px] font-medium text-ink/80';
+const two = compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2';
+---
+
+{
+  !webhookUrl ? (
+    <div class="border border-dashed border-caution/60 bg-accent-tint/40 p-5">
+      <p class="section-label">Placeholder</p>
+      <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+        <strong class="font-semibold">GHL webhook not configured.</strong> Set
+        <code class="font-mono text-[12px]">PUBLIC_GHL_VIP_WEBHOOK_URL</code> to activate this
+        form ({fields === 'email' ? 'email only' : 'name, email, phone'}).
+      </p>
+    </div>
+  ) : (
+    <div data-lead-form data-config={config}>
+      <form method="post" class="space-y-4" data-step="contact">
+        {fields === 'contact' && (
+          <div>
+            <label class={label} for={`lf-name-${uid}`}>Name</label>
+            <input class={field} id={`lf-name-${uid}`} name="name" type="text" autocomplete="name" required />
+          </div>
+        )}
+        <div class={fields === 'contact' ? two : ''}>
+          <div>
+            <label class={label} for={`lf-email-${uid}`}>Email</label>
+            <input class={field} id={`lf-email-${uid}`} name="email" type="email" autocomplete="email" required />
+          </div>
+          {fields === 'contact' && (
+            <div>
+              <label class={label} for={`lf-phone-${uid}`}>Phone</label>
+              <input class={field} id={`lf-phone-${uid}`} name="phone" type="tel" autocomplete="tel" required />
+            </div>
+          )}
+        </div>
+        <div aria-hidden="true" class="absolute left-[-9999px] h-0 w-0 overflow-hidden">
+          <label for={`lf-company-${uid}`}>Company</label>
+          <input id={`lf-company-${uid}`} name="company" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+        <button type="submit" class="btn w-full text-sm disabled:cursor-not-allowed disabled:opacity-60" disabled>
+          {submitLabel ?? 'Register for VIP access'}
+        </button>
+        <p data-error hidden role="alert" class="text-[13px] text-caution">
+          Something went wrong sending that. Please{' '}<a href="/book" class="underline underline-offset-2">book a call</a> instead.
+        </p>
+        <p class="text-[12px] leading-relaxed text-ink/55">
+          No spam. You'll hear from Jordan directly. Read the{' '}
+          <a href="/privacy" class="text-accent underline underline-offset-2">privacy policy</a>.
+        </p>
+        <noscript>
+          <p class="text-[13px] text-caution">This form needs JavaScript. You can <a href="/book" class="underline">book a call</a> instead.</p>
+        </noscript>
+      </form>
+
+      <div data-step="done" hidden class="tick-corners border border-rule bg-accent-tint/60 p-5 sm:p-6">
+        <p class="section-label">{resource ? 'Sent' : 'Registered'}</p>
+        <h3 class="mt-2 text-lg font-semibold">{heading}</h3>
+        <p class="mt-2 text-[14px] leading-relaxed text-ink/75">{body}</p>
+
+        {fields === 'contact' && (
+          <form method="post" data-step="details" class="mt-5 border-t border-rule pt-5">
+            <p class="text-[13px] font-medium text-ink/80">
+              Optional: three quick answers so I send you the right releases.
+            </p>
+            <div class={`mt-3 ${compact ? 'space-y-3' : 'grid gap-3 sm:grid-cols-3'}`}>
+              <select class={field} name="homeType" aria-label="Home type">
+                <option value="">Home type</option>
+                <option value="detached">Detached</option>
+                <option value="semi">Semi-detached</option>
+                <option value="townhome">Townhome</option>
+                <option value="any-lowrise">Any low-rise</option>
+              </select>
+              <select class={field} name="budget" aria-label="Budget">
+                <option value="">Budget</option>
+                <option value="under-800k">Under $800k</option>
+                <option value="800k-1m">$800k to $1M</option>
+                <option value="1m-1.3m">$1M to $1.3M</option>
+                <option value="1.3m-1.6m">$1.3M to $1.6M</option>
+                <option value="over-1.6m">Over $1.6M</option>
+              </select>
+              <select class={field} name="timeline" aria-label="Timeline">
+                <option value="">Timeline</option>
+                <option value="asap">Ready now</option>
+                <option value="3-6-months">3 to 6 months</option>
+                <option value="6-12-months">6 to 12 months</option>
+                <option value="researching">Just researching</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-secondary mt-3 text-sm">Send these too</button>
+            <p data-details-done hidden class="mt-3 text-[13px] text-positive">Got it, thank you.</p>
+          </form>
+        )}
+        <a href="/book" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
+          Or book a call now
+        </a>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  import '../scripts/lead-form';
+</script>

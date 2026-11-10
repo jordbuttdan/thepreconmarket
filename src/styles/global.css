@@ -11,6 +11,14 @@
      must carry text: links, inline emphasis, and large figures.
    - CTAs are INK fill with white text. Gold never carries button text.
 --------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2-variations');
+}
+
 @theme {
   --color-ink: #14161a; /* near-black — primary text AND all buttons */
   --color-paper: #fffdf7; /* warm near-white page background */

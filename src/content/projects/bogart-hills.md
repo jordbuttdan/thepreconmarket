@@ -98,35 +98,6 @@ Listed prices run **$719,900 to $897,900** across 15 floor plans. Assuming you q
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, a buyer who does not qualify is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-## Deposit
-
-- $10,000 on signing
-- $15,000 at 30, 60, 90 and 120 days
-- Balance to 10% at 150 days
-
-Each date is a contractual obligation, not a guideline. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Free air conditioning
-- Free appliances
-- Free maintenance fees
-- Reduced development charges
-
-Incentives change without notice, and a promise not written into an amendment does not exist. [How amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 The Bogart Hills is at **16860 & 16920 Leslie Street** in Leslie Street, Newmarket.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at The Bogart Hills
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

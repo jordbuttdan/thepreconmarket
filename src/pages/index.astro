@@ -97,11 +97,12 @@ const homeFaqSchema = heroFaq.map((e) => ({
                   widths={[500, 1000, 1500]}
                   sizes="(min-width: 1024px) 440px, 100vw"
                   loading="eager"
+                  fetchpriority="high"
                   class="block aspect-[16/10] h-auto w-full object-cover"
                 />
               </figure>
               <div class="mt-3 flex items-baseline gap-3">
-                <p class="section-label">Now launching</p>
+                <p class="section-label">{hero.data.priceFrom != null ? 'Now selling' : 'Launching soon'}</p>
                 <span class="ml-auto font-mono text-[11px] text-ink/50">
                   {hero.data.city}
                 </span>

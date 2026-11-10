@@ -30,18 +30,13 @@ The [Ontario Enhanced New Housing Rebate](/faq/ontario-enhanced-new-housing-reba
 
 The Ontario window closes **March 31, 2027**, and it is the signing date that counts, not the closing date. [The deadline](/faq/hst-rebate-deadline-march-2027).
 
-
 ## Land transfer tax
 
-Fergus is outside the City of Toronto, so you pay **Ontario land transfer tax only**, no second municipal tax. On a $1,100,000 home that is about **$18,475**, against roughly $37,000 for the same home inside Toronto. First-time buyers can claim up to **$4,000** back.
-
-It is payable in cash on closing and cannot be financed, so it belongs in your budget from the start alongside [levies and adjustments](/guides/pre-construction-closing-cost-guide-ontario). [Full rates](/faq/land-transfer-tax-new-home-ontario).
+Fergus is outside the City of Toronto, so you pay Ontario land transfer tax only, with no second municipal tax. [Rates and the first-time buyer refund](/faq/land-transfer-tax-new-home-ontario).
 
 ## Getting around
 
 Highway 6 to Guelph and the 401, no rail service.
-
-Worth being honest with yourself about this. New low-rise communities are car-dependent at launch almost without exception, the retail, transit and services that make an area convenient arrive years after the homes do, and sometimes differently than the plan showed.
 
 ## Where to look instead
 
@@ -50,4 +45,3 @@ If Fergus is where you want to be, it is worth watching, sites do come forward. 
 - [Guelph](/new-homes/guelph), strong supply, roughly $484,000 to $660,000
 
 Tell me what you are actually looking for and I will flag anything that comes up here. [Register for access](/vip).
-

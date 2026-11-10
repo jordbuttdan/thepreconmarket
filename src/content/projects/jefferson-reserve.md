@@ -99,35 +99,6 @@ Listed prices run **$1,169,990 to $1,344,990** across 10 floor plans. Here is wh
 
 **Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate**, that is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $80,000. This is not unusual and it is not a trick, but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-## Deposit
-
-- Semi-detached: $25,000 on signing, then $25,000 at 30, 90 and 150 days ($100,000)
-- Detached: $25,000 on signing, then $25,000 at 30, 90, 120 and 180 days ($125,000)
-
-Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Five-piece kitchen and laundry appliance package
-- Design centre credit
-- Smart-home package with thermostat, smart lock, light switches, flood sensors, hub and video intercom
-
-Incentives are withdrawn and changed without notice, and **a promise that is not written into an amendment does not exist**. Get every item on this list into your paperwork before you sign. [How builder amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 Jefferson Reserve Homes is at **363 Jefferson Side Road** in Jefferson, Richmond Hill.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Jefferson Reserve Homes
-
-Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
-
-So the review has to happen first:
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

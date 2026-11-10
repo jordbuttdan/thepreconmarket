@@ -100,37 +100,6 @@ Listed prices run **$699,990 to $977,990** across 26 floor plans. Here is what t
 
 At the entry end, $699,990 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
-## Deposit
-
-- $20,000 on signing
-- $10,000 at 60, 90, 120, 150, 180 and 210 days
-- $80,000 total
-
-Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Free air conditioning
-- Free appliances
-- Two years of free POTL fees
-- Reduced development charges
-
-Incentives are withdrawn and changed without notice, and **a promise that is not written into an amendment does not exist**. Get every item on this list into your paperwork before you sign. [How builder amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 Collection on 27 is at **Highway 27 & Major Mackenzie Drive** in Woodbridge, Vaughan.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Collection on 27
-
-Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
-
-So the review has to happen first:
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

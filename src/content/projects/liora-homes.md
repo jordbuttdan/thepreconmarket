@@ -100,37 +100,6 @@ Listed prices run **$589,900 to $889,900** across 35 floor plans. Assuming you q
 
 **Read the price list carefully.** The advertised prices are stated net of the enhanced HST rebate, meaning they assume you qualify and assign the rebate to the vendor at closing. If you do not qualify, or the rebate is reduced, you are responsible for the difference at closing in certified funds. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-## Deposit
-
-- $10,000 on signing
-- $5,000 a month from 30 through 300 days
-- Three further structures by product
-
-Each date is a contractual obligation, not a guideline. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Finished basement on Brianna models
-- Five appliances
-- 9-foot main floor ceilings and smooth ceilings
-- 3-piece basement rough-in
-- Development charges capped at $10,000
-- Free assignment
-
-Incentives change without notice, and a promise not written into an amendment does not exist. [How amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 Liora Homes is at **Church Street & Woodbine Avenue** in Keswick, Georgina.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Liora Homes
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

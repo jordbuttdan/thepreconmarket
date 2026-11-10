@@ -1,0 +1,107 @@
+---
+/**
+ * What is launching and what just launched.
+ *
+ * Built from the project collection at build time, so it is never hand
+ * maintained: a project with no price yet is "upcoming", and one whose launch
+ * date falls in the last 60 days is "just released". It goes stale only as
+ * fast as the project data does, which is what the refresh process is for.
+ */
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Disclaimer from '../components/Disclaimer.astro';
+import { GHL } from '../config/ghl';
+
+const all = (await getCollection('projects')).filter((p) => p.data.tier === 'featured');
+const now = Date.now();
+const DAY = 86_400_000;
+const launched = (p: (typeof all)[number]) => {
+  const t = Date.parse(p.data.launchDate ?? '');
+  return Number.isNaN(t) ? null : t;
+};
+
+const upcoming = all.filter((p) => p.data.priceFrom == null);
+const recent = all
+  .filter((p) => p.data.priceFrom != null && launched(p) != null && now - launched(p)! <= 60 * DAY)
+  .sort((a, b) => launched(b)! - launched(a)!);
+
+const month = new Intl.DateTimeFormat('en-CA', { month: 'long', year: 'numeric' }).format(new Date());
+const latest = new Date(Math.max(...all.map((p) => p.data.updated.getTime())));
+
+const faq = [
+  {
+    question: `What new low-rise communities are launching in the GTA in ${month}?`,
+    answer: upcoming.length
+      ? `Upcoming freehold low-rise releases tracked as of ${month}: ${upcoming.map((p) => `${p.data.name} in ${p.data.city} (${p.data.builder.join(', ')})`).join('; ')}. Pricing has not been released for these yet.`
+      : `No unreleased freehold low-rise communities are being tracked as of ${month}.`,
+  },
+  {
+    question: 'Which new freehold communities launched most recently in Ontario?',
+    answer: `Launched in the last 60 days: ${recent.slice(0, 12).map((p) => `${p.data.name} in ${p.data.city}, from $${p.data.priceFrom!.toLocaleString('en-CA')}`).join('; ')}.`,
+  },
+];
+---
+
+<Base
+  title={`New home launches, ${month}`}
+  description={`Freehold detached homes, townhomes and semis launching soon or released in the last 60 days across the GTA and southern Ontario, updated ${month}.`}
+  updated={latest}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Launching', href: '/launching' }]}
+  faq={faq}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">{month}</p>
+    <h1 class="mt-4 max-w-[24ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      What's launching, and what just did
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      {upcoming.length} freehold low-rise {upcoming.length === 1 ? 'community is' : 'communities are'}
+      coming up with pricing still to be released, and {recent.length} launched in the last 60 days.
+    </p>
+
+    <section class="mt-12">
+      <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+        <h2 class="text-lg font-semibold">Launching soon</h2>
+        <span class="figure text-[11px] text-ink/45">{upcoming.length}</span>
+      </div>
+      <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {upcoming.map((p) => <li class="flex"><ProjectCard project={p} /></li>)}
+      </ul>
+    </section>
+
+    <section class="tick-corners mt-12 border border-rule-dark bg-accent-tint/60 p-6 sm:p-8">
+      <div class="grid gap-6 sm:grid-cols-2 sm:gap-x-10">
+        <div>
+          <p class="section-label">Launch alerts</p>
+          <h2 class="mt-2 text-xl font-semibold">One email when something new is released</h2>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
+            Pricing, floor plans and deposit structure for each new low-rise release, once the
+            builder puts them out.
+          </p>
+        </div>
+        <LeadForm
+          webhookUrl={GHL.vipWebhookUrl}
+          fields="email"
+          intent="launch-alert"
+          submitLabel="Email me new launches"
+          doneHeading="You're on the launch list."
+          doneBody="You will get an email when a new low-rise release comes out."
+        />
+      </div>
+    </section>
+
+    <section class="mt-14">
+      <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+        <h2 class="text-lg font-semibold">Released in the last 60 days</h2>
+        <span class="figure text-[11px] text-ink/45">{recent.length}</span>
+      </div>
+      <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {recent.map((p) => <li class="flex"><ProjectCard project={p} /></li>)}
+      </ul>
+    </section>
+
+    <Disclaimer />
+  </div>
+</Base>

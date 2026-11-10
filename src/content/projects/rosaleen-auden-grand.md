@@ -105,38 +105,6 @@ Listed prices run **$1,198,800 to $1,268,800** across 5 floor plans. Assuming yo
 
 **Read the price list carefully.** The advertised prices are stated net of the enhanced HST rebate, meaning they assume you qualify and assign the rebate to the vendor at closing. If you do not qualify, or the rebate is reduced, you are responsible for the difference at closing in certified funds. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-## Deposit
-
-- $15,000 on signing
-- $15,000 at 30, 60, 90, 120, 150 and 180 days
-- Balance to 10% at 210 days
-
-Each date is a contractual obligation, not a guideline. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
-## Current incentives
-
-- Finished basement
-- Two years free POTL fees
-- Free optional additional bedroom
-- Kitchen appliances and air conditioning
-- One year of overnight security patrol
-- Appraised value protection program
-- Development charges capped at $8,000
-
-Incentives change without notice, and a promise not written into an amendment does not exist. [How amendments work](/faq/builder-amendments-pre-construction).
-
 ## Location
 
 Rosaleen Collection at Auden Grand is at **Elgin Mills Road East & Bayview Avenue** in Devonsleigh, Richmond Hill.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Rosaleen Collection at Auden Grand
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

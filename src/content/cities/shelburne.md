@@ -29,18 +29,13 @@ The [Ontario Enhanced New Housing Rebate](/faq/ontario-enhanced-new-housing-reba
 
 The Ontario window closes **March 31, 2027**, and it is the signing date that counts, not the closing date. [The deadline](/faq/hst-rebate-deadline-march-2027).
 
-
 ## Land transfer tax
 
-Shelburne is outside the City of Toronto, so you pay **Ontario land transfer tax only**, no second municipal tax. On a $1,100,000 home that is about **$18,475**, against roughly $37,000 for the same home inside Toronto. First-time buyers can claim up to **$4,000** back.
-
-It is payable in cash on closing and cannot be financed, so it belongs in your budget from the start alongside [levies and adjustments](/guides/pre-construction-closing-cost-guide-ontario). [Full rates](/faq/land-transfer-tax-new-home-ontario).
+Shelburne is outside the City of Toronto, so you pay Ontario land transfer tax only, with no second municipal tax. [Rates and the first-time buyer refund](/faq/land-transfer-tax-new-home-ontario).
 
 ## Getting around
 
 Highways 10 and 89, a long drive to the GTA and no rail service.
-
-Worth being honest with yourself about this. New low-rise communities are car-dependent at launch almost without exception, the retail, transit and services that make an area convenient arrive years after the homes do, and sometimes differently than the plan showed.
 
 ## Where to look instead
 
@@ -49,4 +44,3 @@ If Shelburne is where you want to be, it is worth watching, sites do come forwar
 - [Orangeville](/new-homes/orangeville), thin supply, roughly $724,000 to $1,400,000
 
 Tell me what you are actually looking for and I will flag anything that comes up here. [Register for access](/vip).
-

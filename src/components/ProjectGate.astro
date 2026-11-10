@@ -14,7 +14,7 @@
  * once and reused, because "175 floor plans across three builders" converts
  * and "register for more information" does not.
  */
-import VipForm from './VipForm';
+import LeadForm from './LeadForm.astro';
 import { statusTag } from '../lib/leadTags';
 
 interface Props {
@@ -65,7 +65,7 @@ if (floorPlanCount && sizeFrom && sizeTo) {
 items.push(
   released
     ? 'The lot-by-lot price list, including the premiums that are not in the starting price'
-    : 'The opening price list the day it is set, before the public release',
+    : 'The opening price list once the builder releases it',
 );
 
 if (builders.length > 1) {
@@ -78,7 +78,7 @@ if (lotWidths.length) {
 
 items.push(
   hasDeposit
-    ? 'Release and allocation dates ahead of the public launch'
+    ? 'Release dates as the builder confirms them'
     : 'The deposit structure and allocation dates as soon as the builder publishes them',
 );
 ---
@@ -107,22 +107,24 @@ items.push(
         ))
       }
       <li class="pt-2 text-[13px] leading-relaxed text-ink/60">
-        Registering costs nothing and commits you to nothing. The builder pays the commission
-        whether you are represented or not, so there is no version of this where using a broker
-        makes the home more expensive.
+        Registering commits you to nothing. You get the material and a straight read on it.
       </li>
     </ul>
 
     <div class="lg:col-span-7">
-      <VipForm
+      {/* Before pricing exists the ask is smaller: an email, for one alert. */}
+      <LeadForm
         webhookUrl={webhookUrl}
+        fields={released ? 'contact' : 'email'}
+        intent={released ? 'vip-register' : 'launch-alert'}
         project={slug}
         projectName={name}
         builders={builders}
         projectStatus={statusTag(salesStatus)}
         city={citySlug}
-        submitLabel={`Register for ${name}`}
-        client:idle
+        submitLabel={released ? `Register for ${name}` : `Email me when ${name} launches`}
+        doneHeading={released ? undefined : `You're on the ${name} launch list.`}
+        doneBody={released ? undefined : 'You will get one email the day pricing and floor plans are released, and nothing before then.'}
       />
     </div>
   </div>

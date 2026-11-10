@@ -190,7 +190,7 @@ This is not a prediction about these builders, all three are long-established. I
 
 Lots are allocated in order and the best ones went first, so at this stage preparation is most of the advantage:
 
-- **Register for representation.** Most builders require your broker to be registered **at or before your first visit** for it to count. The builder budgets the commission either way, walk in alone and they simply keep it. [Why this matters](/faq/do-i-need-a-realtor-pre-construction).
+- **Register for representation.** Most builders require your broker to be registered **at or before your first visit** for it to count. [Why this matters](/faq/do-i-need-a-realtor-pre-construction).
 - **Have your deposit draft ready.** The first instalment is normally a bank draft on signing, at the sales office.
 - **Decide your lot priorities in writing**, width, orientation, walkout grade, what is behind it. You choose in minutes, not days. [How to choose a lot](/guides/choosing-a-lot-new-low-rise).
 - **Brief a real estate lawyer** so a same-day agreement review is a phone call. There is **no cooling-off period on freehold in Ontario**, the agreement binds on acceptance. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).

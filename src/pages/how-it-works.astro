@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import Cta from '../components/Cta.astro';
-import { BROKER } from '../config/site';
 
 const STEPS = [
   {
@@ -11,18 +10,18 @@ const STEPS = [
   },
   {
     n: '02',
-    h: 'You get access',
-    b: 'Every active and upcoming low-rise release, with the builder price lists, floor plans, deposit structures and lot availability. Not a filtered list. All of it.',
+    h: 'You get the details',
+    b: 'Builder price lists, floor plans and deposit structures for the releases that fit what you asked for, as builders make them available.',
   },
   {
     n: '03',
     h: 'We shortlist',
-    b: 'I tell you which ones are worth your time, which builders hit their dates, and which lots are worth the premium.',
+    b: 'We go through the options together: how the projects compare, what each builder is like to deal with, and what the fine print means for what you actually pay.',
   },
   {
     n: '04',
     h: 'We do the paperwork',
-    b: 'I secure your lot on release day. Your lawyer reviews the agreement before you sign. I push for the amendments that matter, starting with a cap on development levies.',
+    b: 'I help you through lot selection and the agreement. Your lawyer reviews it before you sign, and I ask for the amendments that matter, starting with a cap on development levies.',
   },
   {
     n: '05',
@@ -32,7 +31,7 @@ const STEPS = [
   {
     n: '06',
     h: 'PDI and possession',
-    b: 'I walk the pre-delivery inspection with you so nothing gets missed, then see you through to keys.',
+    b: 'I walk the pre-delivery inspection with you, then see you through to keys.',
   },
 ];
 
@@ -40,19 +39,19 @@ const faqSchema = [
   {
     question: 'How does buying pre-construction with a broker work?',
     answer:
-      'You register with a broker, who gives you access to builder price lists, floor plans and deposit structures across active and upcoming releases. The broker shortlists projects, secures your lot on release day, coordinates the agreement review with your lawyer, tracks deposits and dates through the build, and attends the pre-delivery inspection before possession.',
+      'You register with a broker, who shares builder price lists, floor plans and deposit structures for releases that fit what you are looking for. The broker helps you compare projects, guides you through lot selection and the agreement alongside your lawyer, tracks deposits and dates through the build, and attends the pre-delivery inspection before possession.',
   },
   {
-    question: 'What does a pre-construction broker cost the buyer?',
+    question: 'When should I register with a broker for a pre-construction purchase?',
     answer:
-      'Nothing. The builder budgets a co-operating brokerage commission into the price whether or not you bring representation. If you buy unrepresented the builder keeps that amount and the price does not drop.',
+      'Before your first sales centre visit. Most builders require a buyer\'s broker to be registered at or before the first visit for representation to be recognised, and it usually cannot be added afterwards.',
   },
 ];
 ---
 
 <Base
   title="How it works"
-  description="Register once and get access to every active and upcoming low-rise release in the GTA: builder price lists, floor plans and deposit structures. Then representation from first enquiry through paperwork, PDI and possession, at no cost to you."
+  description="Register once for builder price lists, floor plans and deposit structures on new low-rise releases across the GTA, then guidance from first enquiry through paperwork, PDI and possession."
   width="narrow"
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'How it works', href: '/how-it-works' }]}
   faq={faqSchema}
@@ -60,12 +59,12 @@ const faqSchema = [
   <div class="mx-auto max-w-[820px] px-4 pt-10 sm:px-6">
     <p class="section-label">The service</p>
     <h1 class="mt-4 text-[2.1rem] leading-[1.1] font-semibold sm:text-[2.8rem]">
-      Register once. See everything.
+      Register once. Get guided the whole way.
     </h1>
     <p class="lede mt-7">
-      The moment you register, you get the builder price lists, floor plans, deposit structures and
-      lot availability for every active and upcoming low-rise release in the GTA. Then I take you
-      from that first enquiry through to the keys.
+      Register and I send you the builder price lists, floor plans and deposit structures for the
+      low-rise releases that fit what you are looking for. Then I help you from that first enquiry
+      through to the keys.
     </p>
 
     <div class="mt-8 flex flex-wrap gap-3">
@@ -94,15 +93,10 @@ const faqSchema = [
     </ol>
 
     <section class="mt-16">
-      <h2 class="text-2xl font-semibold">What it costs you</h2>
+      <h2 class="text-2xl font-semibold">One thing to do first</h2>
       <p class="mt-4 text-[16px] leading-[1.75] text-ink/85">
-        Nothing. Builders budget a co-operating commission into the price whether or not you bring
-        a broker. Walk in alone and they keep it. The price does not drop.
-      </p>
-      <p class="mt-4 text-[16px] leading-[1.75] text-ink/85">
-        One catch worth knowing: most builders require your broker to be registered at or before
-        your first sales centre visit. Visit unrepresented and you usually cannot add it
-        afterwards. So register before you go.
+        Register before you visit a sales centre. Most builders only recognise your broker if they
+        are registered at or before your first visit, and it usually cannot be added afterwards.
       </p>
     </section>
 
@@ -115,18 +109,6 @@ const faqSchema = [
       </p>
       <a href="/hst-rebate" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
         How the rebates work
-      </a>
-    </section>
-
-    <section class="mt-14 border-t border-rule pt-8">
-      <h2 class="text-xl font-semibold">Who you are working with</h2>
-      <p class="mt-3 text-[15px] leading-relaxed text-ink/80">
-        {BROKER.name}, {BROKER.title} at {BROKER.brokerage}, RECO #{BROKER.reco}. Freehold low-rise
-        only, across the GTA. If pre-construction is the wrong move for you right now, you will
-        hear that too.
-      </p>
-      <a href="/about" class="mt-3 inline-block text-[13px] text-accent underline underline-offset-2">
-        More about Jordan
       </a>
     </section>
 

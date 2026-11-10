@@ -3,7 +3,7 @@ question: What is platinum or VIP access in pre-construction?
 title: Platinum and VIP access
 shortAnswer: >-
   Platinum access is the earliest sales allocation a builder releases, distributed
-  through selected brokerages before public opening. It typically means first choice of
+  through selected brokerages before public opening. It typically means an earlier choice of
   lots and models, the opening price list, and sometimes better incentives or deposit
   terms than the public release.
 category: buying-process
@@ -32,7 +32,7 @@ By the time a community opens publicly, the best lots in the first phase are fre
 
 ## What platinum access gets you
 
-**First choice of lot and model.** On low-rise this is the real prize. A pie-shaped lot backing onto a park, a corner with a wider frontage, a walkout basement grade. These are finite, and they are chosen in order. The home you want on the lot you want is only available while both exist.
+**An earlier choice of lot and model.** On low-rise this is the real prize. A pie-shaped lot backing onto a park, a corner with a wider frontage, a walkout basement grade. These are finite, and they are chosen in order. The home you want on the lot you want is only available while both exist.
 
 **The opening price list.** Builders commonly raise prices between phases as a community sells through. Buying at the first release is buying at the lowest price the community will see.
 

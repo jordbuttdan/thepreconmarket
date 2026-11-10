@@ -10,18 +10,7 @@ const all = await getCollection('projects');
 const featured = all
   .filter((p) => p.data.tier === 'featured')
   .sort((a, b) => a.data.order - b.data.order);
-const catalogue = all
-  .filter((p) => p.data.tier === 'catalogue')
-  .sort((a, b) => a.data.city.localeCompare(b.data.city) || a.data.name.localeCompare(b.data.name));
-
-// Group the catalogue by city so it reads as a reference rather than a dump.
-const byCity = new Map<string, typeof catalogue>();
-for (const p of catalogue) {
-  const list = byCity.get(p.data.city) ?? [];
-  list.push(p);
-  byCity.set(p.data.city, list);
-}
-const catalogueCities = [...byCity.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+const cityNames = [...new Set(featured.map((p) => p.data.city))].sort();
 
 const latest = all.length
   ? new Date(all.map((p) => p.data.updated.getTime()).reduce((a, b) => Math.max(a, b), 0))
@@ -30,7 +19,7 @@ const latest = all.length
 
 <Base
   title="New low-rise projects in Ontario, detached, towns & semis"
-  description="Hand-picked new freehold low-rise communities across the GTA and surrounding Ontario markets: detached homes, townhomes and semis. Current and upcoming launches, plus a catalogue of earlier projects."
+  description="Hand-picked new freehold low-rise communities across the GTA and surrounding Ontario markets: detached homes, townhomes and semis. Current and upcoming launches, filterable by city, home type and budget."
   updated={latest}
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Projects', href: '/projects' }]}
 >
@@ -40,10 +29,8 @@ const latest = all.length
       New freehold low-rise, current and upcoming
     </h1>
     <p class="lede mt-6 max-w-[62ch]">
-      Freehold detached homes, townhomes and semis across Ontario. The featured communities below
-      are 2026 and upcoming launches, the ones where lot selection, opening pricing and the
-      Ontario rebate window are still live. Earlier projects are listed in the catalogue for
-      reference.
+      Freehold detached homes, townhomes and semis across Ontario, recently launched and
+      upcoming. Filter by city, home type and budget.
     </p>
 
     <div class="mt-6 border border-rule bg-accent-tint/50 p-4">
@@ -59,64 +46,111 @@ const latest = all.length
       </p>
     </div>
 
-    {
-      featured.length > 0 ? (
-        <section class="mt-12">
-          <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
-            <h2 class="text-lg font-semibold">Featured communities</h2>
-            <span class="figure text-[11px] text-ink/45">{featured.length}</span>
-          </div>
-          <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((p) => (
-              <li class="contents">
-                <ProjectCard project={p} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : (
-        <p class="mt-12 border border-dashed border-rule p-6 text-[14px] text-ink/60">
-          Featured communities are being added. In the meantime,{' '}
-          <a href="/vip" class="text-accent underline underline-offset-2">
-            register for access
-          </a>{' '}
-          and I'll send what's releasing that matches what you're looking for.
+    <section class="mt-12">
+      <form
+        id="project-filters"
+        class="grid gap-3 border-y border-rule-dark py-4 sm:grid-cols-4"
+        onsubmit="return false"
+      >
+        <label class="block text-[12px] font-medium text-ink/70">
+          City
+          <select name="city" class="mt-1 block min-h-11 w-full border border-rule bg-paper-pure px-2 text-[14px]">
+            <option value="">All cities</option>
+            {cityNames.map((c) => <option value={c}>{c}</option>)}
+          </select>
+        </label>
+        <label class="block text-[12px] font-medium text-ink/70">
+          Home type
+          <select name="type" class="mt-1 block min-h-11 w-full border border-rule bg-paper-pure px-2 text-[14px]">
+            <option value="">Any type</option>
+            <option value="detached">Detached</option>
+            <option value="semi">Semi-detached</option>
+            <option value="townhome">Townhome</option>
+          </select>
+        </label>
+        <label class="block text-[12px] font-medium text-ink/70">
+          Starting under
+          <select name="max" class="mt-1 block min-h-11 w-full border border-rule bg-paper-pure px-2 text-[14px]">
+            <option value="">Any price</option>
+            <option value="700000">$700,000</option>
+            <option value="850000">$850,000</option>
+            <option value="1000000">$1,000,000</option>
+            <option value="1250000">$1,250,000</option>
+            <option value="1500000">$1,500,000</option>
+          </select>
+        </label>
+        <p class="self-end pb-2.5 text-[13px] text-ink/70">
+          <span id="project-count" class="figure font-medium text-ink">{featured.length}</span> communities
+          <button type="reset" class="ml-3 text-accent underline underline-offset-2">Clear</button>
         </p>
-      )
-    }
+      </form>
 
-    {
-      catalogueCities.length > 0 && (
-        <section class="mt-16">
-          <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
-            <h2 class="text-lg font-semibold">Project catalogue</h2>
-            <span class="figure text-[11px] text-ink/45">{catalogue.length}</span>
-          </div>
-          <p class="mt-2 max-w-[62ch] text-[14px] text-ink/70">
-            Earlier and sold-out low-rise communities, for reference. Many of these resell, and
-            some later phases still come available, ask if one interests you.
-          </p>
-          <div class="mt-6 space-y-8">
-            {catalogueCities.map(([city, items]) => (
-              <div>
-                <h3 class="section-label">{city}</h3>
-                <div class="mt-2">
-                  {items.map((p) => (
-                    <ProjectCard project={p} compact />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )
-    }
+      <ul id="project-grid" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {featured.map((p) => (
+          <li
+            class="flex"
+            data-city={p.data.city}
+            data-types={p.data.homeTypes.join(' ')}
+            data-price={p.data.priceFrom ?? ''}
+          >
+            <ProjectCard project={p} />
+          </li>
+        ))}
+      </ul>
+      <p id="project-empty" hidden class="mt-6 border border-dashed border-rule p-6 text-[14px] text-ink/70">
+        Nothing listed matches that yet.
+        <a href="/vip" class="text-accent underline underline-offset-2">Tell me what you are looking for</a>
+        and I will send you what comes up.
+      </p>
+    </section>
 
     <Cta
       variant="vip"
       heading="Looking for something not listed here?"
-      body="Most low-rise releases never get advertised publicly. Tell me the city, home type and budget and I'll send what's actually coming."
+      body="Tell me the city, home type and budget and I'll send you what is releasing that fits."
     />
     <Disclaimer />
   </div>
 </Base>
+
+<script>
+  const form = document.getElementById('project-filters') as HTMLFormElement | null;
+  const items = [...document.querySelectorAll<HTMLElement>('#project-grid > li')];
+  const count = document.getElementById('project-count');
+  const empty = document.getElementById('project-empty');
+  function apply() {
+    if (!form) return;
+    const f = new FormData(form);
+    const city = String(f.get('city') ?? '');
+    const type = String(f.get('type') ?? '');
+    const max = Number(f.get('max') ?? 0);
+    let shown = 0;
+    for (const li of items) {
+      const price = Number(li.dataset.price || 0);
+      const ok =
+        (!city || li.dataset.city === city) &&
+        (!type || (li.dataset.types ?? '').split(' ').includes(type)) &&
+        (!max || (price > 0 && price <= max));
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    if (count) count.textContent = String(shown);
+    if (empty) empty.hidden = shown > 0;
+    const q = new URLSearchParams();
+    if (city) q.set('city', city);
+    if (type) q.set('type', type);
+    if (max) q.set('max', String(max));
+    history.replaceState(null, '', q.size ? `?${q}` : location.pathname);
+  }
+  if (form) {
+    // Filters live in the URL so a filtered view can be shared or linked to.
+    const q = new URLSearchParams(location.search);
+    for (const k of ['city', 'type', 'max']) {
+      const el = form.elements.namedItem(k) as HTMLSelectElement | null;
+      if (el && q.get(k)) el.value = q.get(k)!;
+    }
+    form.addEventListener('change', apply);
+    form.addEventListener('reset', () => setTimeout(apply));
+    apply();
+  }
+</script>

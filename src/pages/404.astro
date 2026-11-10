@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page not found" description="That page does not exist." noindex>
+  <div class="mx-auto max-w-[820px] px-4 pt-16 sm:px-6">
+    <p class="section-label">404</p>
+    <h1 class="mt-4 text-[2.1rem] leading-[1.1] font-semibold sm:text-[2.6rem]">
+      That page isn't here.
+    </h1>
+    <p class="lede mt-6">
+      The project may have sold out, or the link may be out of date. These will get you back on
+      track.
+    </p>
+    <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+      <li><a href="/projects" class="btn w-full text-sm">Browse all projects</a></li>
+      <li><a href="/new-homes" class="btn-secondary w-full text-sm">Browse by city</a></li>
+      <li><a href="/faq" class="btn-secondary w-full text-sm">Questions &amp; answers</a></li>
+      <li><a href="/book" class="btn-secondary w-full text-sm">Book a call</a></li>
+    </ul>
+  </div>
+</Base>

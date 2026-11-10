@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import VipForm from '../../components/VipForm';
+import LeadForm from '../../components/LeadForm.astro';
 import Sources from '../../components/Sources.astro';
 import Disclaimer from '../../components/Disclaimer.astro';
 import { GHL } from '../../config/ghl';
@@ -92,12 +92,11 @@ const itemCount = d.sections.reduce((n, s) => n + s.items.length, 0);
             you can take it to a sales centre or your lawyer.
           </p>
           <div class="mt-4">
-            <VipForm
+            <LeadForm
               webhookUrl={GHL.vipWebhookUrl}
+              fields="email"
               resource={entry.id}
               submitLabel="Email me the PDF"
-              compact
-              client:idle
             />
           </div>
         </div>

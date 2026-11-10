@@ -89,27 +89,6 @@ Listed prices run **$1,174,990 to $2,518,490** across 16 floor plans. Assuming y
 
 The top of this range, $2,518,490, is at or above $1,500,000, where the federal first-time buyer rebate falls to zero. Lot premiums and upgrades count toward your price. [The price cliffs](/faq/hst-rebate-over-1-5-million).
 
-## Deposit
-
-- 32' detached: $15,000 on signing
-- $20,000 at 30 days
-- $35,000 at 60, 90, 120, 180 and 270 days
-- Two further structures by lot width
-
-Each date is a contractual obligation, not a guideline. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
-
 ## Location
 
 Meadowvale Brooks Homes is at **2636 Inlake Court** in Meadowvale, Mississauga.
-
-Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
-
-## Before you sign at Meadowvale Brooks Homes
-
-Freehold purchases in Ontario carry **no cooling-off period**. Once the builder accepts your agreement you are bound. [Read this first](/faq/cooling-off-period-freehold-ontario).
-
-- **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
-- **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
-- **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
-- **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)

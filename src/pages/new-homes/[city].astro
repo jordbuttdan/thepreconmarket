@@ -3,7 +3,7 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
-import VipForm from '../../components/VipForm';
+import LeadForm from '../../components/LeadForm.astro';
 import Cta from '../../components/Cta.astro';
 import Disclaimer from '../../components/Disclaimer.astro';
 import { GHL } from '../../config/ghl';
@@ -107,7 +107,7 @@ const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'))
         <Cta
           variant="vip"
           heading={`Looking in ${d.city}?`}
-          body="Most low-rise releases are allocated before the sales centre opens publicly. Tell me the home type and budget and I'll send what's actually coming."
+          body="Tell me the home type and budget and I'll send you what is releasing here, with the price lists and floor plans."
         />
         <Disclaimer />
       </article>
@@ -152,10 +152,10 @@ const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'))
             <p class="section-label">Register</p>
             <h2 class="mt-2 text-[17px] font-semibold">{d.city} releases</h2>
             <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
-              Opening price lists, lot availability and deposit structures, before public opening.
+              Price lists, floor plans and deposit structures for new releases here, as builders make them available.
             </p>
             <div class="mt-4">
-              <VipForm webhookUrl={GHL.vipWebhookUrl} city={entry.id} compact client:idle />
+              <LeadForm webhookUrl={GHL.vipWebhookUrl} city={entry.id} submitLabel={`Send me ${d.city} releases`} compact />
             </div>
           </div>
 
