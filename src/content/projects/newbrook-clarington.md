@@ -24,8 +24,6 @@ sizeTo: 3280
 lotWidths: [38]
 floorPlanCount: 22
 bedBreakdown: "3 bed x6 \u00b7 4 bed x14 \u00b7 6 bed x2"
-walkScore: 72
-transitScore: 0
 lat: 43.9318256
 lng: -78.5977316
 heroImage: ../../assets/projects/newbrook-clarington/hero.jpg
@@ -33,7 +31,6 @@ heroAlt: "Rendering of Newbrook in Clarington, Ontario"
 highlights:
   - "Freehold singles and towns in Newcastle"
   - "1,400 to 3,280 sq ft"
-  - "Walk Score 72, high for new low-rise"
   - "All 22 plans available"
   - "Entry pricing under $600,000"
 depositStructure:
@@ -71,8 +68,7 @@ projectFaq:
       relation, and CRA determines eligibility.
   - q: "Where is Newbrook located?"
     a: >-
-      Newbrook is at 879 North Street in Newcastle, Clarington, Ontario, with a Walk Score of 72 and
-      a Transit Score of 0.
+      Newbrook is at 879 North Street in Newcastle, Clarington, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -82,7 +78,7 @@ relatedFaq:
 order: 30
 updated: 2026-11-10
 ---
-Entry pricing at **$599,991** with a **Walk Score of 72** is an unusual combination. Almost everything at this price point is on greenfield land scoring in the teens, because that is what keeps it cheap. Newcastle's historic village core is already built, so the amenities are there now rather than promised for 2032.
+Entry pricing at **$599,991** is among the lowest of any community covered here, and Newcastle's historic village core is already built rather than planned, so the surrounding amenities exist today.
 
 ## Pricing and your rebate position
 
@@ -114,9 +110,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Newbrook is at **879 North Street** in Newcastle, Clarington. Walk Score 72, Transit Score 0.
+Newbrook is at **879 North Street** in Newcastle, Clarington.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Newbrook
 

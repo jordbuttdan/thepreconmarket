@@ -23,8 +23,6 @@ sizeFrom: 1793
 sizeTo: 2420
 floorPlanCount: 15
 bedBreakdown: "4 bed x15"
-walkScore: 42
-transitScore: 44
 lat: 43.5685953
 lng: -79.7799147
 heroImage: ../../assets/projects/the-nine-phase-6/hero.jpg
@@ -73,8 +71,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is The Nine Phase 6 located?"
     a: >-
-      The Nine Phase 6 is at 6578 Ninth Line in Ninth Line, Mississauga, Ontario, with a Walk Score
-      of 42 and a Transit Score of 44.
+      The Nine Phase 6 is at 6578 Ninth Line in Ninth Line, Mississauga, Ontario.
   - q: "When is occupancy at The Nine Phase 6?"
     a: >-
       Occupancy is listed for November–December 2027. Builder dates are tentative and commonly move;
@@ -130,9 +127,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Nine Phase 6 is at **6578 Ninth Line** in Ninth Line, Mississauga. Walk Score 42, Transit Score 44.
+The Nine Phase 6 is at **6578 Ninth Line** in Ninth Line, Mississauga.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Nine Phase 6
 

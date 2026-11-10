@@ -23,8 +23,6 @@ sizeTo: 3549
 lotWidths: [32]
 floorPlanCount: 16
 bedBreakdown: "3 bed x4 \u00b7 4 bed x12"
-walkScore: 67
-transitScore: 53
 lat: 43.5788897
 lng: -79.7413264
 heroImage: ../../assets/projects/meadowvale-brooks/hero.jpg
@@ -34,7 +32,6 @@ highlights:
   - "1,984 to 3,549 sq ft"
   - "All 16 plans currently available"
   - "Already under construction"
-  - "Walk Score 67, high for new detached"
 depositStructure:
   - "32' detached: $15,000 on signing"
   - "$20,000 at 30 days"
@@ -67,8 +64,7 @@ projectFaq:
       already net of that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Meadowvale Brooks Homes located?"
     a: >-
-      Meadowvale Brooks Homes is at 2636 Inlake Court in Meadowvale, Mississauga, Ontario, with a
-      Walk Score of 67 and a Transit Score of 53.
+      Meadowvale Brooks Homes is at 2636 Inlake Court in Meadowvale, Mississauga, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -104,9 +100,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Meadowvale Brooks Homes is at **2636 Inlake Court** in Meadowvale, Mississauga. Walk Score 67, Transit Score 53.
+Meadowvale Brooks Homes is at **2636 Inlake Court** in Meadowvale, Mississauga.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Meadowvale Brooks Homes
 

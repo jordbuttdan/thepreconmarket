@@ -23,8 +23,6 @@ sizeFrom: 1360
 sizeTo: 2979
 floorPlanCount: 15
 bedBreakdown: "3 bed x4 \u00b7 4 bed x9 \u00b7 5 bed x1 \u00b7 5.5 bed x1"
-walkScore: 36
-transitScore: 28
 lat: 43.9711128
 lng: -78.960417
 highlights:
@@ -63,8 +61,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Brooklin Trails located?"
     a: >-
-      Brooklin Trails is at Baldwin Street North & Columbus Road West in Brooklin, Whitby, Ontario,
-      with a Walk Score of 36 and a Transit Score of 28.
+      Brooklin Trails is at Baldwin Street North & Columbus Road West in Brooklin, Whitby, Ontario.
   - q: "When is occupancy at Brooklin Trails?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -109,9 +106,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Brooklin Trails is at **Baldwin Street North & Columbus Road West** in Brooklin, Whitby. Walk Score 36, Transit Score 28.
+Brooklin Trails is at **Baldwin Street North & Columbus Road West** in Brooklin, Whitby.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Brooklin Trails
 

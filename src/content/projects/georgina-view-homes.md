@@ -24,8 +24,6 @@ sizeTo: 4222
 lotWidths: [36, 40]
 floorPlanCount: 22
 bedBreakdown: "4 bed x7 \u00b7 4.5 bed x10 \u00b7 5 bed x1 \u00b7 5.5 bed x3"
-walkScore: 31
-transitScore: 15
 lat: 44.2482489
 lng: -79.4529366
 highlights:
@@ -65,8 +63,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Georgina View Homes located?"
     a: >-
-      Georgina View Homes is at 2 Church Street in Keswick, Georgina, Ontario, with a Walk Score of
-      31 and a Transit Score of 15.
+      Georgina View Homes is at 2 Church Street in Keswick, Georgina, Ontario.
   - q: "When is occupancy at Georgina View Homes?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -106,9 +103,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Georgina View Homes is at **2 Church Street** in Keswick, Georgina. Walk Score 31, Transit Score 15.
+Georgina View Homes is at **2 Church Street** in Keswick, Georgina.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Georgina View Homes
 

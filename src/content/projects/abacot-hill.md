@@ -24,8 +24,6 @@ sizeTo: 4194
 lotWidths: [33]
 floorPlanCount: 10
 bedBreakdown: "3 bed x4 \u00b7 4 bed x6"
-walkScore: 58
-transitScore: 52
 lat: 43.5410535
 lng: -79.6583384
 heroImage: ../../assets/projects/abacot-hill/hero.jpg
@@ -34,7 +32,6 @@ highlights:
   - "Freehold detached in established Sheridan Park"
   - "2,720 to 4,194 sq ft, the largest homes on this site"
   - "Nine of ten plans still available"
-  - "Walk Score 58 in a mature neighbourhood"
 depositStructure:
   - "33' Sherwood Collection: $30,000 on signing"
   - "$30,000 at 30 days"
@@ -72,8 +69,7 @@ projectFaq:
       net of that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Abacot Hill Homes located?"
     a: >-
-      Abacot Hill Homes is at 1720 Sherwood Forrest Circle in Sheridan Park, Mississauga, Ontario,
-      with a Walk Score of 58 and a Transit Score of 52.
+      Abacot Hill Homes is at 1720 Sherwood Forrest Circle in Sheridan Park, Mississauga, Ontario.
   - q: "When is occupancy at Abacot Hill Homes?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -126,9 +122,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Abacot Hill Homes is at **1720 Sherwood Forrest Circle** in Sheridan Park, Mississauga. Walk Score 58, Transit Score 52.
+Abacot Hill Homes is at **1720 Sherwood Forrest Circle** in Sheridan Park, Mississauga.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Abacot Hill Homes
 

@@ -24,8 +24,6 @@ sizeTo: 4379
 lotWidths: [41, 47]
 floorPlanCount: 22
 bedBreakdown: "4 bed x9 \u00b7 5 bed x13"
-walkScore: 9
-transitScore: 13
 lat: 43.857662
 lng: -79.5903849
 heroImage: ../../assets/projects/balmoral-estates-vaughan/hero.jpg
@@ -71,8 +69,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Balmoral Estates located?"
     a: >-
-      Balmoral Estates is at Pine Valley Drive & Teston Road in Pine Valley, Vaughan, Ontario, with
-      a Walk Score of 9 and a Transit Score of 13.
+      Balmoral Estates is at Pine Valley Drive & Teston Road in Pine Valley, Vaughan, Ontario.
   - q: "When is occupancy at Balmoral Estates?"
     a: >-
       Occupancy is listed for Spring 2028. Builder dates are tentative and commonly move; the
@@ -123,9 +120,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Balmoral Estates is at **Pine Valley Drive & Teston Road** in Pine Valley, Vaughan. Walk Score 9, Transit Score 13.
+Balmoral Estates is at **Pine Valley Drive & Teston Road** in Pine Valley, Vaughan.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Balmoral Estates
 

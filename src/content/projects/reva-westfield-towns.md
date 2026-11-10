@@ -22,8 +22,6 @@ sizeFrom: 1405
 sizeTo: 2190
 floorPlanCount: 8
 bedBreakdown: "2 bed x1 \u00b7 3 bed x6 \u00b7 4 bed x1"
-walkScore: 46
-transitScore: 50
 lat: 43.6273876
 lng: -79.7757854
 heroImage: ../../assets/projects/reva-westfield-towns/hero.jpg
@@ -67,7 +65,7 @@ projectFaq:
   - q: "Where is Reva Westfield Towns located?"
     a: >-
       Reva Westfield Towns is at Mississauga Road & Steeles Avenue West in Brampton Northwest,
-      Brampton, Ontario, with a Walk Score of 46 and a Transit Score of 50.
+      Brampton, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -110,9 +108,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Reva Westfield Towns is at **Mississauga Road & Steeles Avenue West** in Brampton Northwest, Brampton. Walk Score 46, Transit Score 50.
+Reva Westfield Towns is at **Mississauga Road & Steeles Avenue West** in Brampton Northwest, Brampton.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Reva Westfield Towns
 

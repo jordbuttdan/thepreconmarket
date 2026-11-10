@@ -24,8 +24,6 @@ sizeTo: 2550
 lotWidths: [21]
 floorPlanCount: 17
 bedBreakdown: "3 bed x4 \u00b7 4 bed x3 \u00b7 5 bed x5 \u00b7 6 bed x2"
-walkScore: 1
-transitScore: 0
 lat: 43.4218655
 lng: -79.9541176
 heroImage: ../../assets/projects/creekview-collective-ph2/hero.jpg
@@ -73,8 +71,7 @@ projectFaq:
       primary residence of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Creekview Collective Towns Phase 2 located?"
     a: >-
-      Creekview Collective Towns Phase 2 is at Derry Road & Fourth Line in Nelson, Milton, Ontario,
-      with a Walk Score of 1 and a Transit Score of 0.
+      Creekview Collective Towns Phase 2 is at Derry Road & Fourth Line in Nelson, Milton, Ontario.
   - q: "When is occupancy at Creekview Collective Towns Phase 2?"
     a: >-
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
@@ -129,9 +126,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Creekview Collective Towns Phase 2 is at **Derry Road & Fourth Line** in Nelson, Milton. Walk Score 1, Transit Score 0.
+Creekview Collective Towns Phase 2 is at **Derry Road & Fourth Line** in Nelson, Milton.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Creekview Collective Towns Phase 2
 

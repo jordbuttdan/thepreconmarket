@@ -23,8 +23,6 @@ sizeTo: 7102
 lotWidths: [41, 60]
 floorPlanCount: 9
 bedBreakdown: "4 bed x3 \u00b7 5 bed x6"
-walkScore: 56
-transitScore: 41
 lat: 43.7795
 lng: -79.7035
 highlights:
@@ -65,8 +63,7 @@ projectFaq:
       net of that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Royal Castlemore located?"
     a: >-
-      Royal Castlemore is at Castlemore Road & McVean Drive in Castlemore, Brampton, Ontario, with a
-      Walk Score of 56 and a Transit Score of 41.
+      Royal Castlemore is at Castlemore Road & McVean Drive in Castlemore, Brampton, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -109,9 +106,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Royal Castlemore is at **Castlemore Road & McVean Drive** in Castlemore, Brampton. Walk Score 56, Transit Score 41.
+Royal Castlemore is at **Castlemore Road & McVean Drive** in Castlemore, Brampton.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Royal Castlemore
 

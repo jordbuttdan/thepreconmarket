@@ -23,8 +23,6 @@ sizeFrom: 1610
 sizeTo: 2050
 floorPlanCount: 6
 bedBreakdown: "3 bed x6"
-walkScore: 15
-transitScore: 45
 lat: 43.9590419
 lng: -78.847334
 heroImage: ../../assets/projects/bellaro-at-palmetto/hero.png
@@ -72,7 +70,7 @@ projectFaq:
   - q: "Where is Bellaro at Palmetto located?"
     a: >-
       Bellaro at Palmetto is at Conlin Road East & Grandview Street North in North Oshawa, Oshawa,
-      Ontario, with a Walk Score of 15 and a Transit Score of 45.
+      Ontario.
   - q: "When is occupancy at Bellaro at Palmetto?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -119,9 +117,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Bellaro at Palmetto is at **Conlin Road East & Grandview Street North** in North Oshawa, Oshawa. Walk Score 15, Transit Score 45.
+Bellaro at Palmetto is at **Conlin Road East & Grandview Street North** in North Oshawa, Oshawa.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Bellaro at Palmetto
 

@@ -23,8 +23,6 @@ sizeFrom: 1475
 sizeTo: 2116
 floorPlanCount: 4
 bedBreakdown: "3 bed x4"
-walkScore: 64
-transitScore: 57
 lat: 43.3372
 lng: -79.80261
 heroImage: ../../assets/projects/ghent-collective/hero.jpg
@@ -32,7 +30,6 @@ heroAlt: "Rendering of The Ghent Collective in Burlington, Ontario"
 highlights:
   - "Boutique collection of four three-storey townhomes"
   - "1,475 to 2,116 sq ft"
-  - "Walk Score 64, Transit Score 57"
   - "$5,000 first deposit"
   - "Central Burlington"
 depositStructure:
@@ -69,8 +66,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is The Ghent Collective located?"
     a: >-
-      The Ghent Collective is at 2170 Ghent Avenue in Brant, Burlington, Ontario, with a Walk Score
-      of 64 and a Transit Score of 57.
+      The Ghent Collective is at 2170 Ghent Avenue in Brant, Burlington, Ontario.
   - q: "When is occupancy at The Ghent Collective?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -116,9 +112,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Ghent Collective is at **2170 Ghent Avenue** in Brant, Burlington. Walk Score 64, Transit Score 57.
+The Ghent Collective is at **2170 Ghent Avenue** in Brant, Burlington.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Ghent Collective
 

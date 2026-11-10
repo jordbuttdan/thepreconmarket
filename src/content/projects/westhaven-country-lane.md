@@ -23,8 +23,6 @@ sizeFrom: 1621
 sizeTo: 2003
 floorPlanCount: 6
 bedBreakdown: "3 bed x3 \u00b7 4 bed x3"
-walkScore: 10
-transitScore: 34
 lat: 43.9176
 lng: -78.9905
 heroImage: ../../assets/projects/westhaven-country-lane/hero.jpg
@@ -70,7 +68,7 @@ projectFaq:
   - q: "Where is WestHaven at Country Lane located?"
     a: >-
       WestHaven at Country Lane is at Country Lane & Taunton Road West in Country Lane, Whitby,
-      Ontario, with a Walk Score of 10 and a Transit Score of 34.
+      Ontario.
   - q: "When is occupancy at WestHaven at Country Lane?"
     a: >-
       Occupancy is listed for 2027–2028. Builder dates are tentative and commonly move; the binding
@@ -117,9 +115,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-WestHaven at Country Lane is at **Country Lane & Taunton Road West** in Country Lane, Whitby. Walk Score 10, Transit Score 34.
+WestHaven at Country Lane is at **Country Lane & Taunton Road West** in Country Lane, Whitby.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at WestHaven at Country Lane
 

@@ -23,8 +23,6 @@ sizeFrom: 1614
 sizeTo: 1855
 floorPlanCount: 4
 bedBreakdown: "3 bed x2 \u00b7 4 bed x2"
-walkScore: 0
-transitScore: 26
 lat: 43.9022143
 lng: -79.0971556
 heroImage: ../../assets/projects/modo-pickering/hero.png
@@ -64,8 +62,7 @@ projectFaq:
       rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is MODO located?"
     a: >-
-      MODO is at Brock Road & Whitevale Road in Seaton, Pickering, Ontario, with a Walk Score of 0
-      and a Transit Score of 26.
+      MODO is at Brock Road & Whitevale Road in Seaton, Pickering, Ontario.
   - q: "When is occupancy at MODO?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -105,9 +102,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-MODO is at **Brock Road & Whitevale Road** in Seaton, Pickering. Walk Score 0, Transit Score 26.
+MODO is at **Brock Road & Whitevale Road** in Seaton, Pickering.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at MODO
 

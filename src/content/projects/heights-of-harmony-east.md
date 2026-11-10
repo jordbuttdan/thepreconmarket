@@ -24,8 +24,6 @@ sizeTo: 2982
 lotWidths: [30, 32]
 floorPlanCount: 14
 bedBreakdown: "3 bed x7 \u00b7 3.5 bed x2 \u00b7 4 bed x1 \u00b7 4.5 bed x4"
-walkScore: 1
-transitScore: 23
 lat: 43.9688345
 lng: -78.8617482
 heroImage: ../../assets/projects/heights-of-harmony-east/hero.jpg
@@ -73,8 +71,7 @@ projectFaq:
       primary residence of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is The Heights of Harmony East located?"
     a: >-
-      The Heights of Harmony East is at 2443 Harmony Road North in North Oshawa, Oshawa, Ontario,
-      with a Walk Score of 1 and a Transit Score of 23.
+      The Heights of Harmony East is at 2443 Harmony Road North in North Oshawa, Oshawa, Ontario.
   - q: "When is occupancy at The Heights of Harmony East?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -122,9 +119,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Heights of Harmony East is at **2443 Harmony Road North** in North Oshawa, Oshawa. Walk Score 1, Transit Score 23.
+The Heights of Harmony East is at **2443 Harmony Road North** in North Oshawa, Oshawa.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Heights of Harmony East
 

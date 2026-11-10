@@ -24,15 +24,12 @@ sizeFrom: 2033
 sizeTo: 2314
 floorPlanCount: 3
 bedBreakdown: "4 bed x3"
-walkScore: 69
-transitScore: 41
 lat: 43.8936326
 lng: -79.4197167
 highlights:
   - "Freehold singles and towns"
   - "2,033 to 2,314 sq ft, all four-bedroom"
   - "Only three plans in the release"
-  - "Walk Score 69"
 depositStructure:
   - "$30,000 on signing"
   - "$30,000 at 60 days"
@@ -65,7 +62,7 @@ projectFaq:
   - q: "Where is Red Oaks on Bayview located?"
     a: >-
       Red Oaks on Bayview is at Bayview Avenue & Elgin Mills Road East in Devonsleigh, Richmond
-      Hill, Ontario, with a Walk Score of 69 and a Transit Score of 41.
+      Hill, Ontario.
   - q: "When is occupancy at Red Oaks on Bayview?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -105,9 +102,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Red Oaks on Bayview is at **Bayview Avenue & Elgin Mills Road East** in Devonsleigh, Richmond Hill. Walk Score 69, Transit Score 41.
+Red Oaks on Bayview is at **Bayview Avenue & Elgin Mills Road East** in Devonsleigh, Richmond Hill.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Red Oaks on Bayview
 

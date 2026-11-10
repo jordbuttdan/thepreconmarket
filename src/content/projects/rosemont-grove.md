@@ -24,8 +24,6 @@ sizeTo: 3540
 lotWidths: [38, 41]
 floorPlanCount: 9
 bedBreakdown: "4 bed x5 \u00b7 6 bed x4"
-walkScore: 12
-transitScore: 48
 lat: 43.617498
 lng: -79.7865824
 heroImage: ../../assets/projects/rosemont-grove/hero.jpg
@@ -73,7 +71,7 @@ projectFaq:
   - q: "Where is Rosemont Grove located?"
     a: >-
       Rosemont Grove is at Heritage Road & Steeles Avenue West in Brampton Northwest, Brampton,
-      Ontario, with a Walk Score of 12 and a Transit Score of 48.
+      Ontario.
   - q: "When is occupancy at Rosemont Grove?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -122,9 +120,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Rosemont Grove is at **Heritage Road & Steeles Avenue West** in Brampton Northwest, Brampton. Walk Score 12, Transit Score 48.
+Rosemont Grove is at **Heritage Road & Steeles Avenue West** in Brampton Northwest, Brampton.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Rosemont Grove
 

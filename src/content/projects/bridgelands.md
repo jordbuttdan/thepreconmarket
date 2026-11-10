@@ -27,8 +27,6 @@ sizeTo: 3623
 lotWidths: [26, 32, 38, 42]
 floorPlanCount: 175
 bedBreakdown: 2 bed ×3 · 3 bed ×45 · 4 bed ×127
-walkScore: 25
-transitScore: 19
 lat: 43.863062
 lng: -79.5647478
 heroImage: ../../assets/projects/bridgelands/detached-streetscape.jpg
@@ -93,9 +91,8 @@ projectFaq:
       determined by CRA on your own circumstances.
   - q: Where is Bridgelands located?
     a: >-
-      Bridgelands is at Weston Road and Teston Road in Woodbridge, Vaughan, in
-      the northwest of the city near the Kleinburg edge. The location has a Walk
-      Score of 25 and a Transit Score of 19, so it is car-dependent at launch.
+      Bridgelands is at Weston Road and Teston Road in Woodbridge, Vaughan, in the
+      northwest of the city near the Kleinburg edge, close to Highways 400 and 427.
 depositStructure:
   - Deposit structure TBA, released with the price list
 incentives:
@@ -128,7 +125,7 @@ Current inventory shows **175 floor plans** from **1,468 to 3,623 sq ft**, weigh
 
 Weston and Teston puts you in north Woodbridge, close to the Kleinburg edge, with Highway 400 and Highway 427 both reachable and Vaughan Mills and the VMC to the south.
 
-Be realistic about what that means day to day: the **Walk Score is 25 and the Transit Score is 19**. This is a car-dependent location at launch, as nearly all new low-rise is. The retail and services that make a community walkable arrive years after the homes do, and sometimes they arrive differently than the plan suggests. If you work downtown and do not want to drive to a GO station, weigh that honestly now rather than in 2030.
+Be realistic about what that means day to day. This is a car-dependent location at launch, as nearly all new low-rise is. The retail and services that make a community walkable arrive years after the homes do, and sometimes they arrive differently than the plan suggests. If you work downtown and do not want to drive to a GO station, weigh that honestly now rather than in 2030.
 
 ## The rebate position, and why the launch date matters
 

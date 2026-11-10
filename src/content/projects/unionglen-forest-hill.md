@@ -24,8 +24,6 @@ sizeFrom: 1870
 sizeTo: 3430
 floorPlanCount: 17
 bedBreakdown: "3 bed x6 \u00b7 3.5 bed x2 \u00b7 4 bed x7 \u00b7 5.5 bed x2"
-walkScore: 52
-transitScore: 48
 lat: 43.8976163
 lng: -79.3189158
 heroImage: ../../assets/projects/unionglen-forest-hill/hero.jpg
@@ -67,7 +65,7 @@ projectFaq:
   - q: "Where is Unionglen by Forest Hill Homes located?"
     a: >-
       Unionglen by Forest Hill Homes is at Kennedy Road & Major Mackenzie Drive East in Angus Glen,
-      Markham, Ontario, with a Walk Score of 52 and a Transit Score of 48.
+      Markham, Ontario.
   - q: "When is occupancy at Unionglen by Forest Hill Homes?"
     a: >-
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
@@ -112,9 +110,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Unionglen by Forest Hill Homes is at **Kennedy Road & Major Mackenzie Drive East** in Angus Glen, Markham. Walk Score 52, Transit Score 48.
+Unionglen by Forest Hill Homes is at **Kennedy Road & Major Mackenzie Drive East** in Angus Glen, Markham.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Unionglen by Forest Hill Homes
 

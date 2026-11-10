@@ -23,8 +23,6 @@ sizeTo: 3292
 lotWidths: [30, 40, 50]
 floorPlanCount: 11
 bedBreakdown: "3 bed x2 \u00b7 4 bed x7 \u00b7 5 bed x2"
-walkScore: 21
-transitScore: 48
 lat: 43.95679
 lng: -78.85719
 heroImage: ../../assets/projects/fields-of-harmony/hero.jpg
@@ -67,7 +65,7 @@ projectFaq:
   - q: "Where is Fields of Harmony located?"
     a: >-
       Fields of Harmony is at Harmony Road North & Conlin Road East in North Oshawa, Oshawa,
-      Ontario, with a Walk Score of 21 and a Transit Score of 48.
+      Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -101,9 +99,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Fields of Harmony is at **Harmony Road North & Conlin Road East** in North Oshawa, Oshawa. Walk Score 21, Transit Score 48.
+Fields of Harmony is at **Harmony Road North & Conlin Road East** in North Oshawa, Oshawa.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Fields of Harmony
 

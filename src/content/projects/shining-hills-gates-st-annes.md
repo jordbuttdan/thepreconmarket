@@ -23,8 +23,6 @@ sizeTo: 3431
 lotWidths: [40, 45]
 floorPlanCount: 7
 bedBreakdown: "4 bed x7"
-walkScore: 48
-transitScore: 38
 lat: 44.0179913
 lng: -79.471996
 heroImage: ../../assets/projects/shining-hills-gates-st-annes/hero.jpg
@@ -66,7 +64,7 @@ projectFaq:
   - q: "Where is Shining Hills, Gates of St. Anne's located?"
     a: >-
       Shining Hills, Gates of St. Anne's is at Yonge Street & St. John's Sideroad in Shining Hill,
-      Aurora, Ontario, with a Walk Score of 48 and a Transit Score of 38.
+      Aurora, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -101,9 +99,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Shining Hills, Gates of St. Anne's is at **Yonge Street & St. John's Sideroad** in Shining Hill, Aurora. Walk Score 48, Transit Score 38.
+Shining Hills, Gates of St. Anne's is at **Yonge Street & St. John's Sideroad** in Shining Hill, Aurora.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Shining Hills, Gates of St. Anne's
 

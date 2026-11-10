@@ -23,8 +23,6 @@ sizeTo: 2316
 lotWidths: [23]
 floorPlanCount: 18
 bedBreakdown: "4 bed x18"
-walkScore: 17
-transitScore: 36
 lat: 43.493799
 lng: -79.74858
 highlights:
@@ -60,8 +58,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Preserve North located?"
     a: >-
-      Preserve North is at Burnhamthorpe Road West & Sixth Line in Preserve, Oakville, Ontario, with
-      a Walk Score of 17 and a Transit Score of 36.
+      Preserve North is at Burnhamthorpe Road West & Sixth Line in Preserve, Oakville, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -96,9 +93,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Preserve North is at **Burnhamthorpe Road West & Sixth Line** in Preserve, Oakville. Walk Score 17, Transit Score 36.
+Preserve North is at **Burnhamthorpe Road West & Sixth Line** in Preserve, Oakville.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Preserve North
 

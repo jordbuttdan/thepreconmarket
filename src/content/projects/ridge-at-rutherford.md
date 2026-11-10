@@ -22,8 +22,6 @@ sizeFrom: 2475
 sizeTo: 2810
 floorPlanCount: 4
 bedBreakdown: "3 bed x3 \u00b7 4 bed x1"
-walkScore: 80
-transitScore: 38
 lat: 43.8431515
 lng: -79.492388
 heroImage: ../../assets/projects/ridge-at-rutherford/hero.jpg
@@ -31,7 +29,6 @@ heroAlt: "Rendering of The Ridge at Rutherford in Vaughan, Ontario"
 highlights:
   - "Freehold townhomes in established Vellore Village"
   - "2,475 to 2,810 sq ft, unusually large for towns"
-  - "Walk Score 80"
   - "Only four plans, two still available"
   - "Roughly $401 per sq ft"
 depositStructure:
@@ -68,7 +65,7 @@ projectFaq:
   - q: "Where is The Ridge at Rutherford located?"
     a: >-
       The Ridge at Rutherford is at Peter Rupert Avenue & Maple Valley Road in Vellore Village,
-      Vaughan, Ontario, with a Walk Score of 80 and a Transit Score of 38.
+      Vaughan, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -78,7 +75,7 @@ relatedFaq:
 order: 30
 updated: 2026-11-10
 ---
-Two numbers stand out. These towns start at **2,475 sq ft**, which is detached-home space in townhome form, and at roughly **$401 per square foot** they are among the best value per foot on this site. The Walk Score of 80 confirms this is established Vellore Village rather than a greenfield site. Only four plans exist and two are already gone.
+Two numbers stand out. These towns start at **2,475 sq ft**, which is detached-home space in townhome form, and at roughly **$401 per square foot** they are among the best value per foot on this site. Only four plans exist and two are already gone.
 
 ## Pricing and your rebate position
 
@@ -109,9 +106,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Ridge at Rutherford is at **Peter Rupert Avenue & Maple Valley Road** in Vellore Village, Vaughan. Walk Score 80, Transit Score 38.
+The Ridge at Rutherford is at **Peter Rupert Avenue & Maple Valley Road** in Vellore Village, Vaughan.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Ridge at Rutherford
 

@@ -25,8 +25,6 @@ sizeTo: 3857
 lotWidths: [20, 38, 45]
 floorPlanCount: 17
 bedBreakdown: "3 bed x4 \u00b7 4 bed x10 \u00b7 5 bed x3"
-walkScore: 0
-transitScore: 17
 lat: 43.9468628
 lng: -79.4086325
 heroImage: ../../assets/projects/oakridge-meadows/hero.jpg
@@ -72,8 +70,7 @@ projectFaq:
       net of that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Oakridge Meadows located?"
     a: >-
-      Oakridge Meadows is at 10 William Logan Drive in Oak Ridges, Richmond Hill, Ontario, with a
-      Walk Score of 0 and a Transit Score of 17.
+      Oakridge Meadows is at 10 William Logan Drive in Oak Ridges, Richmond Hill, Ontario.
   - q: "When is occupancy at Oakridge Meadows?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -120,9 +117,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Oakridge Meadows is at **10 William Logan Drive** in Oak Ridges, Richmond Hill. Walk Score 0, Transit Score 17.
+Oakridge Meadows is at **10 William Logan Drive** in Oak Ridges, Richmond Hill.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Oakridge Meadows
 

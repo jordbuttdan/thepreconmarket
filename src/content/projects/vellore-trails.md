@@ -22,8 +22,6 @@ sizeFrom: 1590
 sizeTo: 2475
 floorPlanCount: 16
 bedBreakdown: "3 bed x13 \u00b7 4 bed x3"
-walkScore: 89
-transitScore: 38
 lat: 43.8389
 lng: -79.5519
 heroImage: ../../assets/projects/vellore-trails/hero.jpg
@@ -32,7 +30,6 @@ highlights:
   - "Three-storey urban and street townhomes"
   - "1,590 to 2,475 sq ft"
   - "All 16 plans available"
-  - "Walk Score 89, by far the highest of any project here"
 depositStructure:
   - "Phase 2 street towns: $20,000 on signing then $20,000 at 30, 60, 90, 120 and 150 days ($120,000)"
   - "Phase 2 urban towns: $90,000 total"
@@ -64,8 +61,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Vellore Trails located?"
     a: >-
-      Vellore Trails is at Weston Road & Comdel Boulevard in Vellore Village, Vaughan, Ontario, with
-      a Walk Score of 89 and a Transit Score of 38.
+      Vellore Trails is at Weston Road & Comdel Boulevard in Vellore Village, Vaughan, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -75,7 +71,7 @@ relatedFaq:
 order: 30
 updated: 2026-11-10
 ---
-The headline number here is not the price, it is the **Walk Score of 89**. Almost every new low-rise community in this market scores between 1 and 30, because they are built on greenfield land where the shops and services arrive years later. 89 means this is infill in an established part of Vellore Village, with the amenities already there. For a buyer who does not want to spend four years driving to everything, that is worth more than most incentive packages.
+This is **infill in an established part of Vellore Village** rather than a greenfield site, which is unusual for new freehold low-rise and means the surrounding amenities already exist rather than arriving in a decade. Three-storey urban and street townhomes, all 16 plans currently available.
 
 ## Pricing and your rebate position
 
@@ -98,9 +94,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Vellore Trails is at **Weston Road & Comdel Boulevard** in Vellore Village, Vaughan. Walk Score 89, Transit Score 38.
+Vellore Trails is at **Weston Road & Comdel Boulevard** in Vellore Village, Vaughan.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Vellore Trails
 

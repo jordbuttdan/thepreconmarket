@@ -23,8 +23,6 @@ sizeFrom: 1675
 sizeTo: 3180
 floorPlanCount: 27
 bedBreakdown: "2 bed x2 \u00b7 3 bed x15 \u00b7 4 bed x9 \u00b7 4.5 bed x1"
-walkScore: 12
-transitScore: 44
 lat: 43.4955039
 lng: -79.7114328
 heroImage: ../../assets/projects/oakpointe-joshua-creek-ph2/hero.jpg
@@ -69,7 +67,7 @@ projectFaq:
   - q: "Where is Oakpointe in Upper Joshua Creek Phase 2 located?"
     a: >-
       Oakpointe in Upper Joshua Creek Phase 2 is at 1019 Dundas Street East in Rural Oakville,
-      Oakville, Ontario, with a Walk Score of 12 and a Transit Score of 44.
+      Oakville, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -114,9 +112,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Oakpointe in Upper Joshua Creek Phase 2 is at **1019 Dundas Street East** in Rural Oakville, Oakville. Walk Score 12, Transit Score 44.
+Oakpointe in Upper Joshua Creek Phase 2 is at **1019 Dundas Street East** in Rural Oakville, Oakville.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Oakpointe in Upper Joshua Creek Phase 2
 

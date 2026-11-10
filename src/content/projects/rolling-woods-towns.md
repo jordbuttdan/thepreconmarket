@@ -23,8 +23,6 @@ sizeFrom: 1325
 sizeTo: 1971
 floorPlanCount: 11
 bedBreakdown: "3 bed x4 \u00b7 4 bed x4 \u00b7 4.5 bed x2 \u00b7 5 bed x1"
-walkScore: 48
-transitScore: 60
 lat: 43.6424829
 lng: -79.7427384
 heroImage: ../../assets/projects/rolling-woods-towns/hero.jpg
@@ -32,7 +30,6 @@ heroAlt: "Rendering of Rolling Woods Towns in Brampton, Ontario"
 highlights:
   - "Three-storey village townhomes with private garages and balconies"
   - "1,325 to 1,971 sq ft"
-  - "Transit Score 60, the highest of any project here"
   - "EV charger rough-in and smart doorbell pre-wiring standard"
   - "All 11 plans available"
 depositStructure:
@@ -68,8 +65,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Rolling Woods Towns located?"
     a: >-
-      Rolling Woods Towns is at 150 Rollingwood Drive in Downtown Brampton, Brampton, Ontario, with
-      a Walk Score of 48 and a Transit Score of 60.
+      Rolling Woods Towns is at 150 Rollingwood Drive in Downtown Brampton, Brampton, Ontario.
   - q: "When is occupancy at Rolling Woods Towns?"
     a: >-
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
@@ -118,9 +114,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Rolling Woods Towns is at **150 Rollingwood Drive** in Downtown Brampton, Brampton. Walk Score 48, Transit Score 60.
+Rolling Woods Towns is at **150 Rollingwood Drive** in Downtown Brampton, Brampton.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Rolling Woods Towns
 

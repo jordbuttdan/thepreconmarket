@@ -25,8 +25,6 @@ sizeFrom: 1408
 sizeTo: 3160
 floorPlanCount: 40
 bedBreakdown: "3 to 5 bedrooms across two builders"
-walkScore: 28
-transitScore: 0
 lat: 43.7423651
 lng: -79.8367324
 heroImage: ../../assets/projects/southcal-caledon/hero.jpg
@@ -72,8 +70,7 @@ projectFaq:
       relation, and CRA determines eligibility.
   - q: "Where is SouthCal located?"
     a: >-
-      SouthCal is at Highway 410 & Hurontario Street in Southfields, Caledon, Ontario, with a Walk
-      Score of 28 and a Transit Score of 0.
+      SouthCal is at Highway 410 & Hurontario Street in Southfields, Caledon, Ontario.
   - q: "When is occupancy at SouthCal?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -130,9 +127,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-SouthCal is at **Highway 410 & Hurontario Street** in Southfields, Caledon. Walk Score 28, Transit Score 0.
+SouthCal is at **Highway 410 & Hurontario Street** in Southfields, Caledon.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at SouthCal
 

@@ -23,8 +23,6 @@ sizeFrom: 2200
 sizeTo: 2330
 floorPlanCount: 9
 bedBreakdown: "3 bed x9"
-walkScore: 33
-transitScore: 29
 lat: 44.0196784
 lng: -79.4206579
 highlights:
@@ -66,8 +64,7 @@ projectFaq:
       relation, and CRA determines eligibility.
   - q: "Where is Avella located?"
     a: >-
-      Avella is at Leslie Street & Addison Hall Circle in Bayview Northeast, Aurora, Ontario, with a
-      Walk Score of 33 and a Transit Score of 29.
+      Avella is at Leslie Street & Addison Hall Circle in Bayview Northeast, Aurora, Ontario.
   - q: "When is occupancy at Avella?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -113,9 +110,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Avella is at **Leslie Street & Addison Hall Circle** in Bayview Northeast, Aurora. Walk Score 33, Transit Score 29.
+Avella is at **Leslie Street & Addison Hall Circle** in Bayview Northeast, Aurora.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Avella
 

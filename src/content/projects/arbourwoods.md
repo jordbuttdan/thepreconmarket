@@ -24,15 +24,12 @@ sizeFrom: 1623
 sizeTo: 1998
 floorPlanCount: 6
 bedBreakdown: "3 bed x3 \u00b7 4 bed x3"
-walkScore: 61
-transitScore: 45
 lat: 43.840861
 lng: -79.4922884
 highlights:
   - "Freehold singles and towns in Patterson"
   - "1,623 to 1,998 sq ft"
   - "Already under construction, 2027 occupancy"
-  - "Walk Score 61"
   - "Five of six plans available"
 depositStructure:
   - "$25,000 on signing"
@@ -63,8 +60,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Arbourwoods located?"
     a: >-
-      Arbourwoods is at Peter Rupert Avenue & Rutherford Road in Patterson, Vaughan, Ontario, with a
-      Walk Score of 61 and a Transit Score of 45.
+      Arbourwoods is at Peter Rupert Avenue & Rutherford Road in Patterson, Vaughan, Ontario.
   - q: "When is occupancy at Arbourwoods?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -103,9 +99,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Arbourwoods is at **Peter Rupert Avenue & Rutherford Road** in Patterson, Vaughan. Walk Score 61, Transit Score 45.
+Arbourwoods is at **Peter Rupert Avenue & Rutherford Road** in Patterson, Vaughan.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Arbourwoods
 

@@ -22,8 +22,6 @@ sizeFrom: 1963
 sizeTo: 2747
 floorPlanCount: 13
 bedBreakdown: "3 bed x3 \u00b7 4 bed x9 \u00b7 4.5 bed x1"
-walkScore: 21
-transitScore: 0
 lat: 43.9191277
 lng: -78.6014792
 heroImage: ../../assets/projects/gracefields-redux-3/hero.jpg
@@ -64,8 +62,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Gracefields Redux 3 located?"
     a: >-
-      Gracefields Redux 3 is at 116 Grady Drive in Newcastle, Clarington, Ontario, with a Walk Score
-      of 21 and a Transit Score of 0.
+      Gracefields Redux 3 is at 116 Grady Drive in Newcastle, Clarington, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -101,9 +98,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Gracefields Redux 3 is at **116 Grady Drive** in Newcastle, Clarington. Walk Score 21, Transit Score 0.
+Gracefields Redux 3 is at **116 Grady Drive** in Newcastle, Clarington.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Gracefields Redux 3
 

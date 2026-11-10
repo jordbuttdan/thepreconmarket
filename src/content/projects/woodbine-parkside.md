@@ -24,8 +24,6 @@ sizeFrom: 2003
 sizeTo: 3102
 floorPlanCount: 17
 bedBreakdown: "3 bed x11 \u00b7 4 bed x4 \u00b7 5 bed x2"
-walkScore: 53
-transitScore: 43
 lat: 43.8846999
 lng: -79.3740487
 heroImage: ../../assets/projects/woodbine-parkside/hero.jpg
@@ -68,8 +66,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Woodbine Parkside located?"
     a: >-
-      Woodbine Parkside is at 1954 Major MacKenzie Drive in Cathedraltown, Markham, Ontario, with a
-      Walk Score of 53 and a Transit Score of 43.
+      Woodbine Parkside is at 1954 Major MacKenzie Drive in Cathedraltown, Markham, Ontario.
   - q: "When is occupancy at Woodbine Parkside?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -120,9 +117,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Woodbine Parkside is at **1954 Major MacKenzie Drive** in Cathedraltown, Markham. Walk Score 53, Transit Score 43.
+Woodbine Parkside is at **1954 Major MacKenzie Drive** in Cathedraltown, Markham.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Woodbine Parkside
 

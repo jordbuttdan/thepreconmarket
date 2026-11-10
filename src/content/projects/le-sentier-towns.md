@@ -23,8 +23,6 @@ sizeFrom: 1711
 sizeTo: 2262
 floorPlanCount: 8
 bedBreakdown: "3 bed x8"
-walkScore: 87
-transitScore: 52
 lat: 43.8895816
 lng: -79.441604
 heroImage: ../../assets/projects/le-sentier-towns/hero.jpeg
@@ -32,7 +30,6 @@ heroAlt: "Rendering of Le Sentier Towns in Richmond Hill, Ontario"
 highlights:
   - "Rear-lane and traditional townhomes on Yonge Street"
   - "1,711 to 2,262 sq ft"
-  - "Walk Score 87, second highest on this site"
   - "POTL $99 per month"
   - "All eight plans available"
 depositStructure:
@@ -70,7 +67,7 @@ projectFaq:
   - q: "Where is Le Sentier Towns located?"
     a: >-
       Le Sentier Towns is at Elgin Mills Road East & Yonge Street in Westbrook, Richmond Hill,
-      Ontario, with a Walk Score of 87 and a Transit Score of 52.
+      Ontario.
   - q: "When is occupancy at Le Sentier Towns?"
     a: >-
       Occupancy is listed for March 2028. Builder dates are tentative and commonly move; the binding
@@ -117,9 +114,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Le Sentier Towns is at **Elgin Mills Road East & Yonge Street** in Westbrook, Richmond Hill. Walk Score 87, Transit Score 52.
+Le Sentier Towns is at **Elgin Mills Road East & Yonge Street** in Westbrook, Richmond Hill.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Le Sentier Towns
 

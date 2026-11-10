@@ -23,8 +23,6 @@ sizeFrom: 1556
 sizeTo: 2150
 floorPlanCount: 14
 bedBreakdown: "3 bed x14"
-walkScore: 12
-transitScore: 42
 lat: 43.9051433
 lng: -79.2407438
 heroImage: ../../assets/projects/townhomes-of-little-rouge/hero.jpg
@@ -66,7 +64,7 @@ projectFaq:
   - q: "Where is Townhomes of Little Rouge located?"
     a: >-
       Townhomes of Little Rouge is at Donald Cousens Parkway & Ninth Line in Box Grove, Markham,
-      Ontario, with a Walk Score of 12 and a Transit Score of 42.
+      Ontario.
   - q: "When is occupancy at Townhomes of Little Rouge?"
     a: >-
       Occupancy is listed for 2026. Builder dates are tentative and commonly move; the binding dates
@@ -111,9 +109,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Townhomes of Little Rouge is at **Donald Cousens Parkway & Ninth Line** in Box Grove, Markham. Walk Score 12, Transit Score 42.
+Townhomes of Little Rouge is at **Donald Cousens Parkway & Ninth Line** in Box Grove, Markham.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Townhomes of Little Rouge
 

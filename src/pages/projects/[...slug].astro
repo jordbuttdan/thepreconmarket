@@ -56,7 +56,6 @@ const specs: { k: string; v: string }[] = [
   ...(d.floorPlanCount ? [{ k: 'Floor plans', v: String(d.floorPlanCount) }] : []),
   ...(d.bedBreakdown ? [{ k: 'Bedrooms', v: d.bedBreakdown }] : []),
   ...(d.occupancy ? [{ k: 'Occupancy', v: d.occupancy }] : []),
-  ...(d.walkScore != null ? [{ k: 'Walk / Transit', v: `${d.walkScore} / ${d.transitScore}` }] : []),
 ];
 ---
 

@@ -26,8 +26,6 @@ sizeTo: 3305
 lotWidths: [33, 36]
 floorPlanCount: 35
 bedBreakdown: "3 bed x28 \u00b7 4 bed x5 \u00b7 plus 1 and 2 bed designs"
-walkScore: 30
-transitScore: 10
 lat: 44.2479186
 lng: -79.4521742
 heroImage: ../../assets/projects/liora-homes/hero.jpg
@@ -75,8 +73,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Liora Homes located?"
     a: >-
-      Liora Homes is at Church Street & Woodbine Avenue in Keswick, Georgina, Ontario, with a Walk
-      Score of 30 and a Transit Score of 10.
+      Liora Homes is at Church Street & Woodbine Avenue in Keswick, Georgina, Ontario.
   - q: "When is occupancy at Liora Homes?"
     a: >-
       Occupancy is listed for Fall 2027 to Spring 2028. Builder dates are tentative and commonly
@@ -124,9 +121,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Liora Homes is at **Church Street & Woodbine Avenue** in Keswick, Georgina. Walk Score 30, Transit Score 10.
+Liora Homes is at **Church Street & Woodbine Avenue** in Keswick, Georgina.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Liora Homes
 

@@ -25,8 +25,6 @@ sizeTo: 3040
 lotWidths: [20, 30, 38]
 floorPlanCount: 24
 bedBreakdown: "3 bed x6 \u00b7 4 bed x16 \u00b7 5 bed x2"
-walkScore: 25
-transitScore: 20
 lat: 43.863062
 lng: -79.5647478
 heroImage: ../../assets/projects/weston-woods/hero.jpg
@@ -73,8 +71,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Weston Woods located?"
     a: >-
-      Weston Woods is at Weston Road & Teston Road in Kleinburg, Vaughan, Ontario, with a Walk Score
-      of 25 and a Transit Score of 20.
+      Weston Woods is at Weston Road & Teston Road in Kleinburg, Vaughan, Ontario.
   - q: "When is occupancy at Weston Woods?"
     a: >-
       Occupancy is listed for Spring 2028. Builder dates are tentative and commonly move; the
@@ -123,9 +120,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Weston Woods is at **Weston Road & Teston Road** in Kleinburg, Vaughan. Walk Score 25, Transit Score 20.
+Weston Woods is at **Weston Road & Teston Road** in Kleinburg, Vaughan.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Weston Woods
 

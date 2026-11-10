@@ -23,8 +23,6 @@ sizeFrom: 1444
 sizeTo: 2729
 floorPlanCount: 17
 bedBreakdown: "3 bed \u00d76 \u00b7 4 bed \u00d711"
-walkScore: 19
-transitScore: 27
 lat: 43.9686
 lng: -78.9626
 heroImage: ../../assets/projects/ashburn-hills/hero.jpg
@@ -49,7 +47,7 @@ incentives:
 projectFaq:
   - q: "Is Ashburn Hills freehold or condo?"
     a: >-
-      Ashburn Hills is freehold, buyers own the land and the building outright. There is no
+      Ashburn Hills is freehold — buyers own the land and the building outright. There is no
       condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Ashburn Hills?"
     a: >-
@@ -62,7 +60,7 @@ projectFaq:
   - q: "What is the deposit structure at Ashburn Hills?"
     a: >-
       The published schedule is: $20,000 on signing; $20,000 at 60 days; $15,000 at 90 and 120 days;
-      $70,000 total, among the lightest on this site. Deposit terms are set by the builder and
+      $70,000 total — among the lightest on this site. Deposit terms are set by the builder and
       change between phases.
   - q: "Does Ashburn Hills qualify for the Ontario HST rebate?"
     a: >-
@@ -73,8 +71,7 @@ projectFaq:
       of the buyer or a relation, and eligibility is determined by CRA.
   - q: "Where is Ashburn Hills located?"
     a: >-
-      Ashburn Hills is at Ashburn Hills, Whitby in Brooklin, Whitby, Ontario. The location has a
-      Walk Score of 19 and a Transit Score of 27.
+      Ashburn Hills is at Ashburn Hills, Whitby in Brooklin, Whitby, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -84,7 +81,7 @@ relatedFaq:
 order: 20
 updated: 2026-11-09
 ---
-Two things stand out. The deposit totals **$70,000 over 120 days**, light for this price point, and fully paid inside four months. And **free assignment** is included, which is the escape hatch most buyers never think to negotiate. [Why assignment rights matter](/faq/assignment-sale-freehold-low-rise).
+Two things stand out. The deposit totals **$70,000 over 120 days** — light for this price point, and fully paid inside four months. And **free assignment** is included, which is the escape hatch most buyers never think to negotiate. [Why assignment rights matter](/faq/assignment-sale-freehold-low-rise).
 
 ## Pricing and your rebate position
 
@@ -97,16 +94,16 @@ Listed prices run **$700,876 to $1,043,990** across 17 floor plans. Here is what
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, the price assumes you qualify, and a buyer who does not is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-At the entry end, $700,876 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $700,876 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
 - $20,000 on signing
 - $20,000 at 60 days
 - $15,000 at 90 and 120 days
-- $70,000 total, among the lightest on this site
+- $70,000 total — among the lightest on this site
 
-Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -120,21 +117,21 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 ## Location
 
-Ashburn Hills is at **Ashburn Hills, Whitby** in Brooklin, Whitby. Walk Score 19, Transit Score 27.
+Ashburn Hills is at **Ashburn Hills, Whitby** in Brooklin, Whitby.
 
-That is a car-dependent location, which is normal for new low-rise, the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Ashburn Hills
 
-Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Ashburn Hills go to registered buyers, [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Ashburn Hills go to registered buyers — [register for access](/vip) and I'll send what is released.
 

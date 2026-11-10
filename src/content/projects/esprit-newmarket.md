@@ -22,8 +22,6 @@ sizeFrom: 1566
 sizeTo: 2402
 floorPlanCount: 7
 bedBreakdown: "3 bed x5 \u00b7 3.5 bed x2"
-walkScore: 66
-transitScore: 52
 lat: 44.0526584
 lng: -79.490852
 heroImage: ../../assets/projects/esprit-newmarket/hero.jpeg
@@ -67,7 +65,7 @@ projectFaq:
   - q: "Where is Esprit at Newmarket located?"
     a: >-
       Esprit at Newmarket is at William Booth Avenue & Davis Drive West in Davis Drive West,
-      Newmarket, Ontario, with a Walk Score of 66 and a Transit Score of 52.
+      Newmarket, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -106,9 +104,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Esprit at Newmarket is at **William Booth Avenue & Davis Drive West** in Davis Drive West, Newmarket. Walk Score 66, Transit Score 52.
+Esprit at Newmarket is at **William Booth Avenue & Davis Drive West** in Davis Drive West, Newmarket.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Esprit at Newmarket
 

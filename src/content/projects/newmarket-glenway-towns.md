@@ -23,8 +23,6 @@ sizeFrom: 1615
 sizeTo: 2103
 floorPlanCount: 13
 bedBreakdown: "3 bed x10 \u00b7 3.5 bed x1 \u00b7 4 bed x2"
-walkScore: 32
-transitScore: 25
 lat: 44.0453682
 lng: -79.5052444
 heroImage: ../../assets/projects/newmarket-glenway-towns/hero.webp
@@ -70,8 +68,7 @@ projectFaq:
       of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Newmarket Glenway Towns located?"
     a: >-
-      Newmarket Glenway Towns is at Bathurst Street & Sykes Road in Glenway, Newmarket, Ontario,
-      with a Walk Score of 32 and a Transit Score of 25.
+      Newmarket Glenway Towns is at Bathurst Street & Sykes Road in Glenway, Newmarket, Ontario.
   - q: "When is occupancy at Newmarket Glenway Towns?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -119,9 +116,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Newmarket Glenway Towns is at **Bathurst Street & Sykes Road** in Glenway, Newmarket. Walk Score 32, Transit Score 25.
+Newmarket Glenway Towns is at **Bathurst Street & Sykes Road** in Glenway, Newmarket.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Newmarket Glenway Towns
 

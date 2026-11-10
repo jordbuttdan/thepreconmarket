@@ -24,8 +24,6 @@ sizeTo: 3330
 lotWidths: [21]
 floorPlanCount: 5
 bedBreakdown: "3 bed x5, optional 4th"
-walkScore: 69
-transitScore: 41
 lat: 43.8936447
 lng: -79.4198857
 heroImage: ../../assets/projects/rosaleen-auden-grand/hero.webp
@@ -78,7 +76,7 @@ projectFaq:
   - q: "Where is Rosaleen Collection at Auden Grand located?"
     a: >-
       Rosaleen Collection at Auden Grand is at Elgin Mills Road East & Bayview Avenue in
-      Devonsleigh, Richmond Hill, Ontario, with a Walk Score of 69 and a Transit Score of 41.
+      Devonsleigh, Richmond Hill, Ontario.
   - q: "When is occupancy at Rosaleen Collection at Auden Grand?"
     a: >-
       Occupancy is listed for Fall 2027. Builder dates are tentative and commonly move; the binding
@@ -129,9 +127,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Rosaleen Collection at Auden Grand is at **Elgin Mills Road East & Bayview Avenue** in Devonsleigh, Richmond Hill. Walk Score 69, Transit Score 41.
+Rosaleen Collection at Auden Grand is at **Elgin Mills Road East & Bayview Avenue** in Devonsleigh, Richmond Hill.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Rosaleen Collection at Auden Grand
 

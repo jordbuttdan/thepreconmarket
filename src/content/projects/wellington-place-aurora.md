@@ -22,8 +22,6 @@ sizeFrom: 1707
 sizeTo: 2472
 floorPlanCount: 14
 bedBreakdown: "3 bed x1 \u00b7 3.5 bed x2 \u00b7 4 bed x10 \u00b7 4.5 bed x1"
-walkScore: 99
-transitScore: 96
 lat: 43.9989
 lng: -79.471
 heroImage: ../../assets/projects/wellington-place-aurora/hero.jpg
@@ -31,7 +29,6 @@ heroAlt: "Rendering of Wellington Place in Aurora, Ontario"
 highlights:
   - "Traditional two and three-storey townhomes"
   - "1,707 to 2,472 sq ft"
-  - "Walk Score 99 and Transit Score 96"
   - "Finished basement included"
   - "Only four of fourteen plans still available"
 depositStructure:
@@ -72,8 +69,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Wellington Place located?"
     a: >-
-      Wellington Place is at 200 Wellington Street West in King West, Aurora, Ontario, with a Walk
-      Score of 99 and a Transit Score of 96.
+      Wellington Place is at 200 Wellington Street West in King West, Aurora, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -83,9 +79,7 @@ relatedFaq:
 order: 30
 updated: 2026-11-10
 ---
-**Walk Score 99. Transit Score 96.** Those are downtown numbers, and they are without precedent among the communities covered on this site, where almost everything scores between 1 and 50 because it is built on greenfield land.
-
-This is genuinely walkable, genuinely transit-served new freehold low-rise, which barely exists. Only four of fourteen plans remain, which is not surprising.
+Arkfield's release here is traditional two and three-storey townhomes with a **finished basement included**, sodded rear yards and 9-foot ceilings on all three floors, plus development charges capped at $10,000. Only four of fourteen plans remain, so this is a late-phase opportunity rather than a fresh release.
 
 ## Pricing and your rebate position
 
@@ -120,9 +114,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Wellington Place is at **200 Wellington Street West** in King West, Aurora. Walk Score 99, Transit Score 96.
+Wellington Place is at **200 Wellington Street West** in King West, Aurora.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Wellington Place
 

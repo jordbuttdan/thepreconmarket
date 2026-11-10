@@ -26,8 +26,6 @@ sizeTo: 4873
 lotWidths: [40, 45]
 floorPlanCount: 57
 bedBreakdown: "3 to 6 bedrooms across three builders"
-walkScore: 19
-transitScore: 34
 lat: 43.7929414
 lng: -79.5952685
 heroImage: ../../assets/projects/the-valley-woodbridge/hero.jpg
@@ -72,8 +70,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is The Valley located?"
     a: >-
-      The Valley is at 300 Clarence Street in Woodbridge, Vaughan, Ontario, with a Walk Score of 19
-      and a Transit Score of 34.
+      The Valley is at 300 Clarence Street in Woodbridge, Vaughan, Ontario.
   - q: "When is occupancy at The Valley?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -131,9 +128,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Valley is at **300 Clarence Street** in Woodbridge, Vaughan. Walk Score 19, Transit Score 34.
+The Valley is at **300 Clarence Street** in Woodbridge, Vaughan.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Valley
 

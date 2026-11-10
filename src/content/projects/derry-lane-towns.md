@@ -26,8 +26,6 @@ sizeTo: 2274
 lotWidths: [30]
 floorPlanCount: 16
 bedBreakdown: "2 bed x1 \u00b7 3 bed x13 \u00b7 4 bed x2"
-walkScore: 73
-transitScore: 62
 lat: 43.6382548
 lng: -79.7146737
 heroImage: ../../assets/projects/derry-lane-towns/hero.jpg
@@ -35,7 +33,6 @@ heroAlt: "Rendering of Derry Lane Towns in Mississauga, Ontario"
 highlights:
   - "Back-to-back, street and rear-lane townhomes"
   - "Two semi-detached homes and two 30-foot detached"
-  - "Walk Score 73, the most walkable project on this site"
   - "All 16 plans currently available"
   - "9-foot main floor ceilings, quartz kitchen counters"
 depositStructure:
@@ -70,8 +67,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Derry Lane Towns located?"
     a: >-
-      Derry Lane Towns is at 376 & 390 Derry Road West in Derry Road West, Mississauga, Ontario,
-      with a Walk Score of 73 and a Transit Score of 62.
+      Derry Lane Towns is at 376 & 390 Derry Road West in Derry Road West, Mississauga, Ontario.
   - q: "When is occupancy at Derry Lane Towns?"
     a: >-
       Occupancy is listed for July 2028 (towns), Fall 2027 (semis and detached). Builder dates are
@@ -117,9 +113,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Derry Lane Towns is at **376 & 390 Derry Road West** in Derry Road West, Mississauga. Walk Score 73, Transit Score 62.
+Derry Lane Towns is at **376 & 390 Derry Road West** in Derry Road West, Mississauga.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Derry Lane Towns
 

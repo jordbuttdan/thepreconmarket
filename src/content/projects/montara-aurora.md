@@ -23,8 +23,6 @@ sizeFrom: 1900
 sizeTo: 2320
 floorPlanCount: 6
 bedBreakdown: "3 bed x6"
-walkScore: 50
-transitScore: 30
 lat: 44.0
 lng: -79.44
 heroImage: ../../assets/projects/montara-aurora/hero.jpg
@@ -71,8 +69,7 @@ projectFaq:
       relation, and CRA determines eligibility.
   - q: "Where is Montara located?"
     a: >-
-      Montara is at Leslie Street & Wellington Street East in Bayview Northeast, Aurora, Ontario,
-      with a Walk Score of 50 and a Transit Score of 30.
+      Montara is at Leslie Street & Wellington Street East in Bayview Northeast, Aurora, Ontario.
   - q: "When is occupancy at Montara?"
     a: >-
       Occupancy is listed for Fall 2027 to Spring 2028. Builder dates are tentative and commonly
@@ -120,9 +117,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Montara is at **Leslie Street & Wellington Street East** in Bayview Northeast, Aurora. Walk Score 50, Transit Score 30.
+Montara is at **Leslie Street & Wellington Street East** in Bayview Northeast, Aurora.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Montara
 

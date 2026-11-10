@@ -144,8 +144,6 @@ const projects = defineCollection({
     lotWidths: z.array(z.number()).default([]),
     floorPlanCount: z.number().optional(),
     bedBreakdown: z.string().optional(),
-    walkScore: z.number().optional(),
-    transitScore: z.number().optional(),
     lat: z.number().optional(),
     lng: z.number().optional(),
     relatedFaq: z.array(z.string()).default([]),

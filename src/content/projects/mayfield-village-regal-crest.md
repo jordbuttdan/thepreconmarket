@@ -23,8 +23,6 @@ sizeFrom: 2033
 sizeTo: 3143
 floorPlanCount: 14
 bedBreakdown: "3 bed x1 \u00b7 4 bed x4 \u00b7 5 bed x9"
-walkScore: 31
-transitScore: 42
 lat: 43.7632363
 lng: -79.7907562
 heroImage: ../../assets/projects/mayfield-village-regal-crest/hero.jpg
@@ -59,8 +57,7 @@ projectFaq:
       buyer or a relation, and CRA determines eligibility.
   - q: "Where is Mayfield Village located?"
     a: >-
-      Mayfield Village is at 4545 Mayfield Road in Brampton Northwest, Brampton, Ontario, with a
-      Walk Score of 31 and a Transit Score of 42.
+      Mayfield Village is at 4545 Mayfield Road in Brampton Northwest, Brampton, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -87,9 +84,9 @@ The top of this range, $1,666,900, is at or above $1,500,000, where the federal 
 
 ## Location
 
-Mayfield Village is at **4545 Mayfield Road** in Brampton Northwest, Brampton. Walk Score 31, Transit Score 42.
+Mayfield Village is at **4545 Mayfield Road** in Brampton Northwest, Brampton.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Mayfield Village
 

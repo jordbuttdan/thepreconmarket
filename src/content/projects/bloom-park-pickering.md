@@ -23,8 +23,6 @@ sizeTo: 3550
 lotWidths: [36, 43]
 floorPlanCount: 8
 bedBreakdown: "4 bed \u00d78"
-walkScore: 1
-transitScore: 23
 lat: 43.89297655175235
 lng: -79.12619465183737
 heroImage: ../../assets/projects/bloom-park-pickering/hero.jpg
@@ -47,7 +45,7 @@ incentives:
 projectFaq:
   - q: "Is Bloom Park freehold or condo?"
     a: >-
-      Bloom Park is freehold, buyers own the land and the building outright. There is no
+      Bloom Park is freehold — buyers own the land and the building outright. There is no
       condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Bloom Park?"
     a: >-
@@ -71,8 +69,7 @@ projectFaq:
       buyer or a relation, and eligibility is determined by CRA.
   - q: "Where is Bloom Park located?"
     a: >-
-      Bloom Park is at Burkholder Drive & Alexander Knox Road in Seaton, Pickering, Ontario. The
-      location has a Walk Score of 1 and a Transit Score of 23.
+      Bloom Park is at Burkholder Drive & Alexander Knox Road in Seaton, Pickering, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -82,7 +79,7 @@ relatedFaq:
 order: 20
 updated: 2026-11-09
 ---
-Every plan in this release is **four bedrooms** on 2,294 sq ft or more. This is a family-only product with no entry option. Note the Walk Score of 1: Seaton is a new greenfield community and the amenities are planned rather than built.
+Every plan in this release is **four bedrooms** on 2,294 sq ft or more, so this is a family-only product with no entry option. Seaton is a new greenfield community, which means the parks, retail and recreation complex nearby are planned rather than built. Worth walking the area to see what exists today.
 
 ## Pricing and your rebate position
 
@@ -100,7 +97,7 @@ Confirm with the builder whether the advertised prices are quoted net of the HST
 - 36' detached: $20,000 on signing, $20,000 at 30, 60 and 90 days, $10,000 at 150 and 180 days ($100,000)
 - 43' detached: $120,000 total
 
-Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -114,21 +111,21 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 ## Location
 
-Bloom Park is at **Burkholder Drive & Alexander Knox Road** in Seaton, Pickering. Walk Score 1, Transit Score 23.
+Bloom Park is at **Burkholder Drive & Alexander Knox Road** in Seaton, Pickering.
 
-That is a car-dependent location, which is normal for new low-rise, the retail and services that make an area convenient arrive years after the homes, and sometimes differently than the plan showed. Worth being honest with yourself about the daily reality rather than the rendering.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Bloom Park
 
-Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Bloom Park go to registered buyers, [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Bloom Park go to registered buyers — [register for access](/vip) and I'll send what is released.
 

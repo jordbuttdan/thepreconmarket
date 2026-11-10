@@ -24,8 +24,6 @@ sizeFrom: 1477
 sizeTo: 2186
 floorPlanCount: 15
 bedBreakdown: "2 bed x1 \u00b7 3 bed x14"
-walkScore: 70
-transitScore: 31
 lat: 44.049906
 lng: -79.4280736
 heroImage: ../../assets/projects/bogart-hills/hero.jpg
@@ -33,7 +31,6 @@ heroAlt: "Rendering of The Bogart Hills in Newmarket, Ontario"
 highlights:
   - "Back-to-back, traditional three-storey and rear-lane townhomes"
   - "1,477 to 2,186 sq ft"
-  - "Walk Score 70"
   - "9-foot ceilings on main and upper levels"
   - "All 15 plans available"
 depositStructure:
@@ -70,8 +67,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is The Bogart Hills located?"
     a: >-
-      The Bogart Hills is at 16860 & 16920 Leslie Street in Leslie Street, Newmarket, Ontario, with
-      a Walk Score of 70 and a Transit Score of 31.
+      The Bogart Hills is at 16860 & 16920 Leslie Street in Leslie Street, Newmarket, Ontario.
   - q: "When is occupancy at The Bogart Hills?"
     a: >-
       Occupancy is listed for Late 2027. Builder dates are tentative and commonly move; the binding
@@ -121,9 +117,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-The Bogart Hills is at **16860 & 16920 Leslie Street** in Leslie Street, Newmarket. Walk Score 70, Transit Score 31.
+The Bogart Hills is at **16860 & 16920 Leslie Street** in Leslie Street, Newmarket.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Bogart Hills
 

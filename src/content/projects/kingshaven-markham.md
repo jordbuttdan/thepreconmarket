@@ -23,8 +23,6 @@ sizeFrom: 1712
 sizeTo: 2837
 floorPlanCount: 21
 bedBreakdown: "3 bed x19 \u00b7 4 bed x2"
-walkScore: 22
-transitScore: 31
 lat: 43.9456137
 lng: -79.2779699
 heroImage: ../../assets/projects/kingshaven-markham/hero.jpg
@@ -70,8 +68,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Kingshaven located?"
     a: >-
-      Kingshaven is at Highway 48 & 19th Avenue in Rural Markham, Markham, Ontario, with a Walk
-      Score of 22 and a Transit Score of 31.
+      Kingshaven is at Highway 48 & 19th Avenue in Rural Markham, Markham, Ontario.
   - q: "When is occupancy at Kingshaven?"
     a: >-
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
@@ -125,9 +122,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Kingshaven is at **Highway 48 & 19th Avenue** in Rural Markham, Markham. Walk Score 22, Transit Score 31.
+Kingshaven is at **Highway 48 & 19th Avenue** in Rural Markham, Markham.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Kingshaven
 

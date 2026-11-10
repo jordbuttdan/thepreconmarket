@@ -23,8 +23,6 @@ sizeTo: 2233
 lotWidths: [20]
 floorPlanCount: 8
 bedBreakdown: "3 bed x8, optional 4th at $15,500"
-walkScore: 28
-transitScore: 36
 lat: 43.8483352
 lng: -78.9986006
 heroImage: ../../assets/projects/lakewind-ajax/hero.jpg
@@ -69,8 +67,7 @@ projectFaq:
       rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Lakewind located?"
     a: >-
-      Lakewind is at Shoal Point Road & Bayly Street East in South Ajax, Ajax, Ontario, with a Walk
-      Score of 28 and a Transit Score of 36.
+      Lakewind is at Shoal Point Road & Bayly Street East in South Ajax, Ajax, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -115,9 +112,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Lakewind is at **Shoal Point Road & Bayly Street East** in South Ajax, Ajax. Walk Score 28, Transit Score 36.
+Lakewind is at **Shoal Point Road & Bayly Street East** in South Ajax, Ajax.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Lakewind
 

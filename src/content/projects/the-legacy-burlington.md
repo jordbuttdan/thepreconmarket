@@ -24,8 +24,6 @@ sizeTo: 4766
 lotWidths: [50]
 floorPlanCount: 12
 bedBreakdown: "4 bed x8 plus bungalow and smaller designs"
-walkScore: 57
-transitScore: 36
 lat: 43.3795
 lng: -79.7895
 heroImage: ../../assets/projects/the-legacy-burlington/hero.jpg
@@ -67,8 +65,7 @@ projectFaq:
       relation, and CRA determines eligibility.
   - q: "Where is The Legacy located?"
     a: >-
-      The Legacy is at Millcroft Park Drive in Millcroft, Burlington, Ontario, with a Walk Score of
-      57 and a Transit Score of 36.
+      The Legacy is at Millcroft Park Drive in Millcroft, Burlington, Ontario.
   - q: "When is occupancy at The Legacy?"
     a: >-
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
@@ -108,9 +105,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-The Legacy is at **Millcroft Park Drive** in Millcroft, Burlington. Walk Score 57, Transit Score 36.
+The Legacy is at **Millcroft Park Drive** in Millcroft, Burlington.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at The Legacy
 

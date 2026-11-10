@@ -14,17 +14,15 @@ salesStatus: "Developer Selling & Platinum Access"
 launchDate: "2026-09-28"
 occupancy: "Fall 2027 \u2013 Spring 2028"
 shortAnswer: >-
-  Bond by Sunny Communities is 111 townhomes in Oak Ridges with a Walk Score of 70, the most
-  walkable new low-rise community on this site. Built by Sunny Communities, it offers freehold
-  townhome homes from 1,325 to 1,911 sq ft, priced $699,900 to $999,900. Launched 2026-09-28.
+  Bond by Sunny Communities is 111 townhomes in Oak Ridges across stacked, back-to-back and
+  traditional formats, from $699,900. Built by Sunny Communities, it offers freehold townhome homes
+  from 1,325 to 1,911 sq ft, priced $699,900 to $999,900. Launched 2026-09-28.
 priceFrom: 699900
 priceTo: 999900
 sizeFrom: 1325
 sizeTo: 1911
 floorPlanCount: 14
 bedBreakdown: "3 bed \u00d712 \u00b7 3.5 bed \u00d72"
-walkScore: 70
-transitScore: 42
 lat: 43.9410328
 lng: -79.4669937
 heroImage: ../../assets/projects/bond-oak-ridges/hero.jpeg
@@ -33,7 +31,6 @@ highlights:
   - "111 townhomes in the Richmond, Mill Pond and King collections"
   - "Stacked, back-to-back and traditional formats"
   - "POTL $160/month plus condo fee $168/month"
-  - "Walk Score 70 \u2014 the highest of any project on this site"
   - "Quartz counters, 9-foot main floor ceilings"
 depositStructure:
   - "$20,000 on signing"
@@ -47,7 +44,7 @@ incentives:
 projectFaq:
   - q: "Is Bond by Sunny Communities freehold or condo?"
     a: >-
-      Bond by Sunny Communities is freehold, buyers own the land and the building outright. The
+      Bond by Sunny Communities is freehold — buyers own the land and the building outright. The
       community includes a POTL or common-elements fee for shared areas; the amount is listed in the
       project data on this page.
   - q: "Who is building Bond by Sunny Communities?"
@@ -75,8 +72,7 @@ projectFaq:
       pays the difference at closing.
   - q: "Where is Bond by Sunny Communities located?"
     a: >-
-      Bond by Sunny Communities is at 115 Bond Crescent in Oak Ridges, Richmond Hill, Ontario. The
-      location has a Walk Score of 70 and a Transit Score of 42.
+      Bond by Sunny Communities is at 115 Bond Crescent in Oak Ridges, Richmond Hill, Ontario.
   - q: "When is occupancy at Bond by Sunny Communities?"
     a: >-
       Occupancy at Bond by Sunny Communities is listed for Fall 2027 – Spring 2028. Builder closing
@@ -102,9 +98,9 @@ Listed prices run **$699,900 to $999,900** across 14 floor plans. Here is what t
 | Ontario ENHR (no first-time buyer test) | **$55,992** | **$79,992** |
 | Federal rebate (first-time buyers only) | **$34,995** | **$49,995** |
 
-**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate**. That is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $55,992. This is not unusual and it is not a trick, but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
+**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate** — that is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $55,992. This is not unusual and it is not a trick — but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-At the entry end, $699,900 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $699,900 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -113,7 +109,7 @@ At the entry end, $699,900 sits **below $1,000,000**, the full 8% Ontario rebate
 - Balance to 10% at 210 days
 - 5% on occupancy
 
-Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -125,21 +121,21 @@ Incentives are withdrawn and changed without notice, and **a promise that is not
 
 ## Location
 
-Bond by Sunny Communities is at **115 Bond Crescent** in Oak Ridges, Richmond Hill. Walk Score 70, Transit Score 42.
+Bond by Sunny Communities is at **115 Bond Crescent** in Oak Ridges, Richmond Hill.
 
-That is a relatively walkable score for new low-rise, which usually means the community is infill or adjacent to an established area rather than on a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Bond by Sunny Communities
 
-Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
 
-Floor plans, the current price list and deposit structures for Bond by Sunny Communities go to registered buyers, [register for access](/vip) and I'll send what is released.
+Floor plans, the current price list and deposit structures for Bond by Sunny Communities go to registered buyers — [register for access](/vip) and I'll send what is released.
 

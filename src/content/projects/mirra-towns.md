@@ -22,8 +22,6 @@ sizeFrom: 1325
 sizeTo: 2500
 floorPlanCount: 14
 bedBreakdown: "2 bed x2 \u00b7 3 bed x12"
-walkScore: 34
-transitScore: 28
 lat: 43.9702045
 lng: -78.9608185
 heroImage: ../../assets/projects/mirra-towns/hero.jpg
@@ -68,8 +66,7 @@ projectFaq:
       or a relation, and CRA determines eligibility.
   - q: "Where is Mirra Towns located?"
     a: >-
-      Mirra Towns is at 6900 Baldwin Street North in Brooklin, Whitby, Ontario, with a Walk Score of
-      34 and a Transit Score of 28.
+      Mirra Towns is at 6900 Baldwin Street North in Brooklin, Whitby, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -113,9 +110,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Mirra Towns is at **6900 Baldwin Street North** in Brooklin, Whitby. Walk Score 34, Transit Score 28.
+Mirra Towns is at **6900 Baldwin Street North** in Brooklin, Whitby.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Mirra Towns
 

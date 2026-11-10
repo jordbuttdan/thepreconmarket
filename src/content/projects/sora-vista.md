@@ -23,8 +23,6 @@ sizeTo: 4272
 lotWidths: [42, 45]
 floorPlanCount: 13
 bedBreakdown: "4 bed x9 \u00b7 5 bed x4"
-walkScore: 1
-transitScore: 26
 lat: 43.8496445
 lng: -79.5887271
 heroImage: ../../assets/projects/sora-vista/hero.jpg
@@ -65,7 +63,7 @@ projectFaq:
   - q: "Where is Sora Vista located?"
     a: >-
       Sora Vista is at Pine Valley Drive & Ballantyne Boulevard in Vellore Village, Vaughan,
-      Ontario, with a Walk Score of 1 and a Transit Score of 26.
+      Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -101,9 +99,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Sora Vista is at **Pine Valley Drive & Ballantyne Boulevard** in Vellore Village, Vaughan. Walk Score 1, Transit Score 26.
+Sora Vista is at **Pine Valley Drive & Ballantyne Boulevard** in Vellore Village, Vaughan.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Sora Vista
 

@@ -23,8 +23,6 @@ sizeFrom: 1793
 sizeTo: 2475
 floorPlanCount: 8
 bedBreakdown: "4 bed x8"
-walkScore: 24
-transitScore: 32
 lat: 43.9052624
 lng: -79.3645399
 heroImage: ../../assets/projects/springwater-phase-4/hero.jpg
@@ -70,8 +68,7 @@ projectFaq:
       already net of that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Springwater Phase 4 located?"
     a: >-
-      Springwater Phase 4 is at 3217 Elgin Mills Road East in Rural Markham, Markham, Ontario, with
-      a Walk Score of 24 and a Transit Score of 32.
+      Springwater Phase 4 is at 3217 Elgin Mills Road East in Rural Markham, Markham, Ontario.
   - q: "When is occupancy at Springwater Phase 4?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -126,9 +123,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Springwater Phase 4 is at **3217 Elgin Mills Road East** in Rural Markham, Markham. Walk Score 24, Transit Score 32.
+Springwater Phase 4 is at **3217 Elgin Mills Road East** in Rural Markham, Markham.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Springwater Phase 4
 

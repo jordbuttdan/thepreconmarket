@@ -25,8 +25,6 @@ sizeTo: 4348
 lotWidths: [36, 43, 50]
 floorPlanCount: 6
 bedBreakdown: "3 bed x4 \u00b7 4 bed x1 \u00b7 5 bed x1"
-walkScore: 68
-transitScore: 39
 lat: 43.8793733
 lng: -79.3143207
 heroImage: ../../assets/projects/union-village-phase-3/hero.jpg
@@ -71,8 +69,7 @@ projectFaq:
       the primary residence of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Union Village Homes Phase 3 located?"
     a: >-
-      Union Village Homes Phase 3 is at 16th Avenue & Kennedy Road in Unionville, Markham, Ontario,
-      with a Walk Score of 68 and a Transit Score of 39.
+      Union Village Homes Phase 3 is at 16th Avenue & Kennedy Road in Unionville, Markham, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -117,9 +114,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Union Village Homes Phase 3 is at **16th Avenue & Kennedy Road** in Unionville, Markham. Walk Score 68, Transit Score 39.
+Union Village Homes Phase 3 is at **16th Avenue & Kennedy Road** in Unionville, Markham.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Union Village Homes Phase 3
 

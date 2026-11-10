@@ -22,8 +22,6 @@ sizeFrom: 1827
 sizeTo: 2294
 floorPlanCount: 5
 bedBreakdown: "3 bed x5"
-walkScore: 45
-transitScore: 0
 lat: 43.9314979
 lng: -79.5182426
 heroImage: ../../assets/projects/fifth-avenue-king-city/hero.jpg
@@ -69,8 +67,7 @@ projectFaq:
       the primary residence of the buyer or a relation, and CRA determines eligibility.
   - q: "Where is Fifth Avenue Homes King City located?"
     a: >-
-      Fifth Avenue Homes King City is at 1986 King Road in King City, King City, Ontario, with a
-      Walk Score of 45 and a Transit Score of 0.
+      Fifth Avenue Homes King City is at 1986 King Road in King City, King City, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - how-much-hst-rebate-new-home-ontario
@@ -115,9 +112,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Fifth Avenue Homes King City is at **1986 King Road** in King City, King City. Walk Score 45, Transit Score 0.
+Fifth Avenue Homes King City is at **1986 King Road** in King City, King City.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Fifth Avenue Homes King City
 

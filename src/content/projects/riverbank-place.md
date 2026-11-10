@@ -25,8 +25,6 @@ sizeFrom: 1803
 sizeTo: 2349
 floorPlanCount: 11
 bedBreakdown: "3 bed x11, optional 4th"
-walkScore: 42
-transitScore: 51
 lat: 43.5506
 lng: -79.6897
 heroImage: ../../assets/projects/riverbank-place/hero.jpg
@@ -72,8 +70,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Riverbank Place located?"
     a: >-
-      Riverbank Place is at 4601 Mississauga Road in Central Erin Mills, Mississauga, Ontario, with
-      a Walk Score of 42 and a Transit Score of 51.
+      Riverbank Place is at 4601 Mississauga Road in Central Erin Mills, Mississauga, Ontario.
   - q: "When is occupancy at Riverbank Place?"
     a: >-
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
@@ -119,9 +116,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Riverbank Place is at **4601 Mississauga Road** in Central Erin Mills, Mississauga. Walk Score 42, Transit Score 51.
+Riverbank Place is at **4601 Mississauga Road** in Central Erin Mills, Mississauga.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Riverbank Place
 

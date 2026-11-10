@@ -23,8 +23,6 @@ sizeFrom: 1418
 sizeTo: 2347
 floorPlanCount: 22
 bedBreakdown: "3 bed x3 \u00b7 3.5 bed x3 \u00b7 4 bed x10 \u00b7 5 bed x6"
-walkScore: 45
-transitScore: 47
 lat: 43.8510846
 lng: -79.2809884
 heroImage: ../../assets/projects/chateau-towns-markham/hero.png
@@ -69,8 +67,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Chateau Towns located?"
     a: >-
-      Chateau Towns is at 7810 McCowan Road in Milliken Mills, Markham, Ontario, with a Walk Score
-      of 45 and a Transit Score of 47.
+      Chateau Towns is at 7810 McCowan Road in Milliken Mills, Markham, Ontario.
   - q: "When is occupancy at Chateau Towns?"
     a: >-
       Occupancy is listed for Q2 2028. Builder dates are tentative and commonly move; the binding
@@ -123,9 +120,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Chateau Towns is at **7810 McCowan Road** in Milliken Mills, Markham. Walk Score 45, Transit Score 47.
+Chateau Towns is at **7810 McCowan Road** in Milliken Mills, Markham.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Chateau Towns
 

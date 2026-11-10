@@ -23,14 +23,11 @@ sizeFrom: 1489
 sizeTo: 2311
 floorPlanCount: 17
 bedBreakdown: "3 bed x11 \u00b7 4 bed x6"
-walkScore: 20
-transitScore: 57
 lat: 43.6709366
 lng: -79.833984
 highlights:
   - "Freehold homes from $638,929"
   - "1,489 to 2,311 sq ft"
-  - "Transit Score 57, high for new low-rise"
   - "Six of seventeen plans available"
 depositStructure:
   - "$40,000 on signing, single payment"
@@ -64,8 +61,7 @@ projectFaq:
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is Union Phase 3 located?"
     a: >-
-      Union Phase 3 is at 10185 Mississauga Road in Brampton Northwest, Brampton, Ontario, with a
-      Walk Score of 20 and a Transit Score of 57.
+      Union Phase 3 is at 10185 Mississauga Road in Brampton Northwest, Brampton, Ontario.
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
@@ -104,9 +100,9 @@ Incentives change without notice, and a promise not written into an amendment do
 
 ## Location
 
-Union Phase 3 is at **10185 Mississauga Road** in Brampton Northwest, Brampton. Walk Score 20, Transit Score 57.
+Union Phase 3 is at **10185 Mississauga Road** in Brampton Northwest, Brampton.
 
-New low-rise is car-dependent at launch almost without exception. The services that make an area convenient arrive years after the homes.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Union Phase 3
 

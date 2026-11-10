@@ -23,8 +23,6 @@ sizeFrom: 1904
 sizeTo: 1971
 floorPlanCount: 3
 bedBreakdown: "3 bed x3"
-walkScore: 87
-transitScore: 49
 lat: 43.4362583
 lng: -79.6786709
 heroImage: ../../assets/projects/kerr-village-towns/hero.jpg
@@ -32,7 +30,6 @@ heroAlt: "Rendering of Kerr Village Towns in Oakville, Ontario"
 highlights:
   - "Freehold POTL executive townhomes in South Oakville"
   - "Rooftop terrace with gas BBQ rough-in"
-  - "Walk Score 87"
   - "Optional elevator at $50,000 and two-car stacker lift at $20,000"
   - "Block A priced, Blocks B to D future phases"
 depositStructure:
@@ -66,8 +63,7 @@ projectFaq:
       buyer or a relation, and CRA determines eligibility.
   - q: "Where is Kerr Village Towns located?"
     a: >-
-      Kerr Village Towns is at 211 Lakeshore Road West in Kerr Village, Oakville, Ontario, with a
-      Walk Score of 87 and a Transit Score of 49.
+      Kerr Village Towns is at 211 Lakeshore Road West in Kerr Village, Oakville, Ontario.
   - q: "When is occupancy at Kerr Village Towns?"
     a: >-
       Occupancy is listed for Spring 2029. Builder dates are tentative and commonly move; the
@@ -81,7 +77,7 @@ relatedFaq:
 order: 30
 updated: 2026-11-10
 ---
-At roughly **$790 per square foot** this is the most expensive product covered on this site, and the fees reflect it: a POTL of about **$301 a month** against the $100 to $150 typical elsewhere. What you get for it is South Oakville at a Walk Score of 87, a rooftop terrace, and an optional elevator.
+At roughly **$790 per square foot** this is the most expensive product covered on this site, and the fees reflect it: a POTL of about **$301 a month** against the $100 to $150 typical elsewhere. What you get for it is South Oakville, a rooftop terrace, and an optional elevator.
 
 Occupancy is **Spring 2029**, which is a long runway. Model your financing accordingly.
 
@@ -109,9 +105,9 @@ Each date is a contractual obligation, not a guideline. Note too that Tarion's f
 
 ## Location
 
-Kerr Village Towns is at **211 Lakeshore Road West** in Kerr Village, Oakville. Walk Score 87, Transit Score 49.
+Kerr Village Towns is at **211 Lakeshore Road West** in Kerr Village, Oakville.
 
-That is a relatively walkable score for new low-rise, which usually means infill or an established area rather than a greenfield site.
+Most new low-rise is car-dependent at launch. The retail, transit and services that make an area convenient generally arrive years after the homes do, and sometimes differently than the plan showed. Worth walking the area yourself rather than relying on a score.
 
 ## Before you sign at Kerr Village Towns
 
