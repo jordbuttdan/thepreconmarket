@@ -29,7 +29,6 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
 <Base
   title={d.title}
   description={d.description ?? d.shortAnswer}
-  kicker={['Ontario', 'Guide', d.readMinutes ? `${d.readMinutes} min read` : 'Low-rise']}
   updated={d.updated}
   breadcrumbs={[
     { name: 'Home', href: '/' },

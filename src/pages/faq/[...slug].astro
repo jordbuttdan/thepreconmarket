@@ -33,7 +33,6 @@ const related = [...explicit, ...fallback].slice(0, 5);
 <Base
   title={d.title ? `${d.title}, Ontario pre-construction` : d.question}
   description={d.description ?? d.shortAnswer}
-  kicker={['Ontario', category.label]}
   updated={d.updated}
   breadcrumbs={[
     { name: 'Home', href: '/' },

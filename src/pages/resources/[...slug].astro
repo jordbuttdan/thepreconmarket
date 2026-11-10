@@ -29,7 +29,6 @@ const itemCount = d.sections.reduce((n, s) => n + s.items.length, 0);
 <Base
   title={d.title}
   description={d.description ?? d.shortAnswer}
-  kicker={['Ontario', 'Buyer tool', `${itemCount} checks`]}
   updated={d.updated}
   breadcrumbs={[
     { name: 'Home', href: '/' },

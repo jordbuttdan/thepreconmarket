@@ -63,7 +63,6 @@ const specs: { k: string; v: string }[] = [
 <Base
   title={`${d.name}, ${d.city} ${d.homeTypes.includes('detached') ? 'detached homes' : 'townhomes'}`}
   description={d.description ?? d.shortAnswer}
-  kicker={[d.city, d.ownership, d.salesStatus]}
   updated={d.updated}
   breadcrumbs={[
     { name: 'Home', href: '/' },
@@ -93,7 +92,7 @@ const specs: { k: string; v: string }[] = [
           <Image
             src={d.heroImage}
             alt={d.heroAlt ?? `${d.name} in ${d.city}`}
-            widths={[640, 960, 1400]}
+            widths={[760, 1120, 2000]}
             sizes="(min-width: 1100px) 1068px, 100vw"
             loading="eager"
             class="block h-auto w-full"
@@ -199,7 +198,7 @@ const specs: { k: string; v: string }[] = [
                     <Image
                       src={g.src}
                       alt={g.alt}
-                      widths={[480, 800]}
+                      widths={[420, 840, 1200]}
                       sizes="(min-width: 640px) 50vw, 100vw"
                       loading="lazy"
                       class="block h-auto w-full"

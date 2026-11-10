@@ -44,7 +44,6 @@ const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'))
 <Base
   title={`New homes in ${d.city}`}
   description={d.description ?? d.shortAnswer}
-  kicker={[d.region, 'Low-rise', d.priceFrom ? `${fmt(d.priceFrom)}+` : 'No active supply']}
   updated={d.updated}
   breadcrumbs={[
     { name: 'Home', href: '/' },
