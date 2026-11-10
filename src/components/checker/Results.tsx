@@ -141,7 +141,7 @@ function Gate({ state, result, onUnlocked }: { state: EncodedState; result: Reba
       ) : (
         /* Placeholder so layout can be verified before GHL codes exist. */
         <div className="mt-5 flex h-[420px] w-full flex-col items-center justify-center gap-3 border border-dashed border-rule-dark bg-paper p-6 text-center">
-          <p className="font-mono text-sm text-rule-dark">GHL form embed goes here</p>
+          <p className="font-mono text-sm text-label">GHL form embed goes here</p>
           <p className="max-w-sm text-xs text-ink/50">
             Set PUBLIC_GHL_LEAD_FORM_URL in .env / Netlify. Fields: first name, last name, email, phone (optional).
           </p>

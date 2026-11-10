@@ -139,7 +139,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
           <span class="block font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
             The Precon Market
           </span>
-          <span class="mt-0.5 block font-mono text-[10px] tracking-[0.06em] text-rule-dark uppercase">
+          <span class="mt-0.5 block font-mono text-[10px] tracking-[0.06em] text-label uppercase">
             Low-rise · Ontario
           </span>
         </a>
@@ -199,7 +199,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     {
       (kicker?.length || updated) && (
         <div class="border-b border-rule bg-paper-pure/60">
-          <div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-5 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-rule-dark uppercase sm:px-6">
+          <div class="mx-auto flex max-w-[1100px] flex-wrap items-center gap-x-5 gap-y-1 px-4 py-2 font-mono text-[11px] tracking-[0.08em] text-label uppercase sm:px-6">
             {kicker?.map((k, i) => (
               <>
                 {i > 0 && (
@@ -227,7 +227,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
             {breadcrumbs.map((b, i) => (
               <li class="flex items-center gap-2">
                 {i > 0 && (
-                  <span aria-hidden="true" class="text-rule-dark">
+                  <span aria-hidden="true" class="text-label">
                     /
                   </span>
                 )}

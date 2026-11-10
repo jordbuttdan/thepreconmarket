@@ -4,11 +4,11 @@
    Design tokens — architectural drafting aesthetic, honey/ink colourway.
 
    COLOUR RULE (important, do not break):
-   - `honey` (#C8941F) is DECORATIVE ONLY. It carries hairlines, washes,
-     section labels and large dollar figures. It must never be used as a text
-     colour for body copy or for small text on white — it fails WCAG AA.
-   - `accent` (#8A6A1F) is the deep brass used where gold must carry text:
-     links, inline emphasis. 5.9:1 on white — passes AA.
+   - `honey` (#C8941F) is DECORATIVE ONLY — hairlines, washes, bullet marks.
+     It measures 2.72:1 on white, below even the 3:1 large-text floor, so it
+     must never carry text of any size.
+   - `accent` (#8A6A1F, 5.0:1 on white) is the deep brass used wherever gold
+     must carry text: links, inline emphasis, and large figures.
    - CTAs are INK fill with white text. Gold never carries button text.
 --------------------------------------------------------------------------- */
 @theme {
@@ -17,11 +17,14 @@
   --color-paper-pure: #ffffff; /* cards, elevated surfaces */
 
   --color-honey: #c8941f; /* DECORATIVE: rules, figures, labels, accents */
-  --color-accent: #8a6a1f; /* deep brass — safe for link/text use (AA) */
+  --color-accent: #8a6a1f; /* deep brass — 5.0:1 on white, passes AA for text */
   --color-accent-tint: #fdf3dc; /* honey wash for highlighted panels */
 
   --color-rule: #e8e0ce; /* warm hairline borders, grid lines */
-  --color-rule-dark: #b5a479; /* emphasized rules, annotation labels */
+  --color-rule-dark: #b5a479; /* emphasized rules and borders (UI, 3:1) */
+  /* Annotation labels are small text and need 4.5:1, which rule-dark (2.46:1)
+     does not meet. This is the readable equivalent at 5.0:1. */
+  --color-label: #7a6e55;
 
   --color-positive: #2f6b4f; /* eligible / good news */
   --color-caution: #9a4a18; /* warnings, deadlines — warm, not alarming red */
@@ -74,7 +77,7 @@ h3 {
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-rule-dark);
+  color: var(--color-label);
 }
 
 /* Utility: card with a single near-invisible elevation. */

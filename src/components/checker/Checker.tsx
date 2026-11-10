@@ -106,7 +106,7 @@ function Option({ label, sublabel, onSelect }: OptionProps) {
       </span>
       <span
         aria-hidden="true"
-        className="figure shrink-0 text-rule-dark opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
+        className="figure shrink-0 text-label opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100"
       >
         →
       </span>
@@ -117,7 +117,7 @@ function Option({ label, sublabel, onSelect }: OptionProps) {
 function Progress({ current }: { current: number }) {
   return (
     <div aria-hidden="true" className="mb-6 flex items-center gap-3">
-      <span className="figure text-xs text-rule-dark">
+      <span className="figure text-xs text-label">
         {String(Math.min(current, MAX_STEPS)).padStart(2, '0')} / {String(MAX_STEPS).padStart(2, '0')}
       </span>
       <div className="flex flex-1 gap-1">
@@ -417,11 +417,11 @@ export default function Checker() {
             ← Back
           </button>
         ) : (
-          <span className="font-mono text-[11px] tracking-[0.06em] text-rule-dark uppercase">
+          <span className="font-mono text-[11px] tracking-[0.06em] text-label uppercase">
             Approx. 2 minutes
           </span>
         )}
-        <span className="font-mono text-[11px] tracking-[0.06em] text-rule-dark uppercase">
+        <span className="font-mono text-[11px] tracking-[0.06em] text-label uppercase">
           No email required
         </span>
       </div>
