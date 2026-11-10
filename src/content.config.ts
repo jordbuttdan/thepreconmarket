@@ -113,7 +113,7 @@ const projects = defineCollection({
     /** Neighbourhood or community, when Red Bricks has one. */
     neighbourhood: z.string().optional(),
     intersection: z.string().optional(),
-    /** Low-rise only. No condos on this site. */
+    /** Freehold low-rise: detached, semis and townhomes. */
     homeTypes: z.array(z.enum(['detached', 'semi', 'townhome', 'bungalow'])).min(1),
     ownership: z.string().default('Freehold'),
     salesStatus: z.string(),

@@ -1,102 +1,209 @@
 ---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Cta from '../components/Cta.astro';
 import { BROKER } from '../config/site';
+import jordan from '../assets/jordan/jordan.jpg';
+
+const cities = await getCollection('cities');
+const projects = await getCollection('projects');
+const faq = await getCollection('faq');
+
+const STATS = [
+  { n: String(cities.length), l: 'Cities covered' },
+  { n: String(projects.length), l: 'Projects tracked' },
+  { n: String(faq.length), l: 'Questions answered' },
+  { n: '$0', l: 'Cost to buyers' },
+];
+
+const DRIVERS = [
+  {
+    h: 'Access, not gatekeeping',
+    b: 'Register once and you see every active and upcoming low-rise release, with the builder price lists and floor plans as they come out. Not a curated handful.',
+  },
+  {
+    h: 'On the front lines',
+    b: 'I am in front of these developers and these real estate lawyers every week. That is how you know which builders hit their dates and who is flexible on amendments this quarter.',
+  },
+  {
+    h: 'Straight answers, sourced',
+    b: 'Every claim on this site about rebates, deposits or warranties cites the CRA notice or Tarion page it came from, so you can check it rather than take my word for it.',
+  },
+  {
+    h: 'Direct access to me',
+    b: 'Small caseload on purpose. You deal with me from the first enquiry through to possession, not a team you get handed to.',
+  },
+];
 ---
 
 <Base
   title="About Jordan Buttarazzi, Broker"
-  description="Jordan Buttarazzi, Broker with Valery Real Estate Inc., Brokerage. RECO #5009855. Buyer representation for new freehold low-rise across the GTA: detached homes, townhomes and semis."
+  description="Jordan Buttarazzi, Broker at Valery Real Estate Inc. Helping GTA buyers navigate pre-construction low-rise with straight answers, project access and relationships with the developers and lawyers on the front lines."
   kicker={['Ontario', 'Low-rise', 'About']}
   width="narrow"
   breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]}
 >
-  <div class="mx-auto max-w-[760px] px-4 pt-10 sm:px-6">
+  <div class="mx-auto max-w-[820px] px-4 pt-12 sm:px-6">
+    <!-- HERO -->
     <p class="section-label">About</p>
-    <h1 class="mt-4 text-[2rem] font-semibold sm:text-[2.6rem]">
-      {BROKER.name}
+    <h1 class="mt-5 text-[2.3rem] leading-[1.05] font-semibold tracking-[-0.02em] sm:text-[3rem]">
+      I wasn't a fan of pre-con.<br />
+      <span class="text-accent">Then the numbers changed.</span>
     </h1>
-    <p class="mt-2 text-[16px] text-ink/60">{BROKER.title}, {BROKER.brokerage}</p>
+    <p class="mt-7 max-w-[56ch] text-[17px] leading-[1.7] text-ink/80">
+      For years the premium over resale did not make sense to me. Today some projects price at or
+      even below resale, two new rebate programs are in play, and almost nothing written online has
+      caught up.
+    </p>
+  </div>
 
-    <p class="lede mt-7">
-      I represent buyers of new freehold low-rise across the GTA. Detached homes, townhomes and
-      semis. Not condos.
+  <!-- STATS -->
+  <div class="mx-auto mt-12 max-w-[820px] px-4 sm:px-6">
+    <ul class="grid grid-cols-2 gap-px border border-rule bg-rule sm:grid-cols-4">
+      {
+        STATS.map((s) => (
+          <li class="bg-paper-pure px-4 py-5 text-center">
+            <p class="figure text-[1.75rem] leading-none text-ink">{s.n}</p>
+            <p class="section-label mt-2">{s.l}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+
+  <!-- BIO -->
+  <div class="mx-auto mt-14 max-w-[820px] px-4 sm:px-6">
+    <div class="grid gap-8 sm:grid-cols-12 sm:gap-x-10">
+      <div class="sm:col-span-5">
+        <figure class="tick-corners overflow-hidden border border-rule">
+          <Image
+            src={jordan}
+            alt={`${BROKER.name}, ${BROKER.title} at ${BROKER.brokerage}`}
+            widths={[320, 520]}
+            sizes="(min-width: 640px) 320px, 100vw"
+            loading="eager"
+            class="block aspect-[3/4] h-auto w-full object-cover"
+          />
+        </figure>
+        <ul class="mt-4 space-y-2 text-[13px] text-ink/75">
+          <li class="flex gap-2.5">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey"></span>
+            <span><strong class="font-semibold text-ink">{BROKER.name}</strong></span>
+          </li>
+          <li class="flex gap-2.5">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey"></span>
+            <span>RECO Lic. <strong class="font-semibold text-ink">{BROKER.reco}</strong></span>
+          </li>
+          <li class="flex gap-2.5">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey"></span>
+            <span>{BROKER.brokerage}</span>
+          </li>
+          <li class="flex gap-2.5">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey"></span>
+            <span>Service area: <strong class="font-semibold text-ink">GTA</strong></span>
+          </li>
+          <li class="flex gap-2.5">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-2.5 shrink-0 bg-honey"></span>
+            <span>Focus: <strong class="font-semibold text-ink">freehold low-rise</strong></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sm:col-span-7">
+        <p class="text-[22px] font-semibold tracking-[-0.01em]">{BROKER.name}</p>
+        <p class="mt-1 text-[14px] text-ink/60">
+          {BROKER.title} · Pre-construction specialist · GTA
+        </p>
+
+        <div class="mt-6 space-y-4 text-[16px] leading-[1.75] text-ink/85">
+          <p>
+            For a long stretch I steered people away from pre-construction. The premium over resale
+            was real, the closings were years out, and you were essentially paying for the privilege
+            of waiting. <strong class="font-semibold text-ink">The math did not work.</strong>
+          </p>
+          <p>
+            That has genuinely changed. Some low-rise releases are now priced at or even below
+            comparable resale, and two rebate programs landed this year that can return a six-figure
+            amount to a qualifying buyer. For the first time in a while, the numbers are worth a
+            serious look.
+          </p>
+          <p>
+            What has not changed is the quality of the information. There is more noise and more
+            misconception around pre-construction right now than I have ever seen. Rules shifted
+            mid-year. Half of what is written online is out of date, and a good deal of the rest was
+            written to move units.
+          </p>
+        </div>
+
+        <blockquote class="mt-7 border-l-2 border-honey pl-5">
+          <p class="text-[18px] leading-[1.6] font-medium text-ink">
+            Their job is to sell the project. Mine is to help you decide whether it is right for
+            you.
+          </p>
+        </blockquote>
+
+        <div class="mt-7 space-y-4 text-[16px] leading-[1.75] text-ink/85">
+          <p>
+            Which is why relationships matter more than listings. I am in front of these developers
+            and these real estate lawyers every week, day in and day out. That is how you find out
+            which builders actually hit their closing dates, who will move on an amendment this
+            quarter, and which releases are worth your Saturday.
+          </p>
+          <p>
+            I work in freehold low-rise, detached homes, townhomes and semis, because it is where I
+            can be genuinely useful. It is also the corner of the market that gets written about
+            least, since most pre-construction coverage is aimed at condominiums.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MID CTA -->
+  <div class="mx-auto mt-14 max-w-[820px] px-4 text-center sm:px-6">
+    <a href="/vip" class="btn w-full px-6 text-sm sm:w-auto">Work with Jordan</a>
+    <p class="mt-2.5 text-[12px] text-ink/55">
+      Register in a minute, or <a href="/book" class="text-accent underline underline-offset-2">book a call</a>.
+    </p>
+  </div>
+
+  <!-- WHAT DRIVES THIS SERVICE -->
+  <section class="mt-16 border-t border-rule bg-paper-pure/50">
+    <div class="mx-auto max-w-[820px] px-4 py-14 sm:px-6">
+      <p class="section-label">What drives this service</p>
+      <ul class="mt-7 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+        {
+          DRIVERS.map((d) => (
+            <li>
+              <h2 class="text-[17px] font-semibold">{d.h}</h2>
+              <p class="mt-2 text-[15px] leading-relaxed text-ink/75">{d.b}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHAT I'M NOT -->
+  <div class="mx-auto max-w-[820px] px-4 pt-14 sm:px-6">
+    <h2 class="text-xl font-semibold">What I'm not</h2>
+    <p class="mt-3 text-[16px] leading-[1.75] text-ink/85">
+      A lawyer, an accountant or a mortgage agent. The rebate content on this site explains
+      published CRA and Tarion rules and cites its sources. When a question turns on the law or on
+      your tax position, I will tell you to take it to the right person. On a rebate worth up to
+      $80,000, that is the only responsible answer.
+    </p>
+    <p class="mt-4 text-[13px] text-ink/55">
+      Full terms are on the
+      <a href="/disclaimer" class="text-accent underline underline-offset-2">disclaimer page</a>.
     </p>
 
-    <div class="mt-10 space-y-5 text-[16px] leading-[1.75] text-ink/85">
-      <p>
-        Most pre-construction advice is written about condominiums, because that is where the
-        marketing budgets are. Low-rise is a different transaction. The agreement is firmer, the
-        deposit protection is thinner, the closing costs are higher, and the purchase is usually
-        larger. Nobody writes about it properly, so I did.
-      </p>
-      <p>
-        What I actually do is unglamorous and it is where the money is. I read the agreement
-        alongside your lawyer and tell you what the HST clause really commits you to. I tell you
-        which builders hit their dates and which do not, because that is not on any price list. I
-        tell you which lot premiums hold their value and which are three feet of grass. And I tell
-        you when a release is not worth your time.
-      </p>
-      <p>
-        The builder budgets a co-operating commission into the price whether or not you bring a
-        broker. Walk into a sales centre alone and they keep it. The price does not drop. So the
-        real choice is not whether to pay for representation. It is whether to have someone in the
-        room whose obligation is to you.
-      </p>
+    <div class="mt-10 flex flex-wrap items-center gap-3 border-t border-rule pt-8">
+      <a href="/vip" class="btn px-6 text-sm">Register for access</a>
+      <a href="/book" class="btn-secondary px-6 text-sm">Book a call</a>
+      <a href={BROKER.phoneHref} class="figure text-sm text-accent underline underline-offset-2">
+        {BROKER.phone}
+      </a>
     </div>
-
-    <section class="mt-12 border-t border-rule pt-8">
-      <h2 class="text-xl font-semibold">What I am not</h2>
-      <p class="mt-3 text-[16px] leading-[1.75] text-ink/85">
-        A lawyer, an accountant or a mortgage agent. The rebate content on this site explains
-        published CRA and Tarion rules and cites its sources so you can check them. When a question
-        turns on the law or on your tax position, I will tell you to take it to the right person.
-        On a rebate worth up to $80,000, that is the only responsible answer.
-      </p>
-    </section>
-
-    <section class="mt-10 border-t border-rule pt-8">
-      <h2 class="text-xl font-semibold">Registration</h2>
-      <dl class="mt-4 space-y-2.5 text-[15px]">
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">Brokerage</dt>
-          <dd class="font-medium text-ink">{BROKER.brokerage}</dd>
-        </div>
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">Registrant</dt>
-          <dd class="text-ink">{BROKER.name}, {BROKER.title}</dd>
-        </div>
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">RECO</dt>
-          <dd class="figure text-ink">#{BROKER.reco}</dd>
-        </div>
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">Phone</dt>
-          <dd>
-            <a href={BROKER.phoneHref} class="figure text-accent underline underline-offset-2">
-              {BROKER.phone}
-            </a>
-          </dd>
-        </div>
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">Email</dt>
-          <dd>
-            <a href={`mailto:${BROKER.email}`} class="text-accent underline underline-offset-2">
-              {BROKER.email}
-            </a>
-          </dd>
-        </div>
-        <div class="flex gap-4">
-          <dt class="w-28 shrink-0 text-ink/55">Serves</dt>
-          <dd class="text-ink/80">{BROKER.areaServed}</dd>
-        </div>
-      </dl>
-      <p class="mt-5 text-[13px] text-ink/55">
-        Full terms on which this information is provided are on the
-        <a href="/disclaimer" class="text-accent underline underline-offset-2">disclaimer page</a>.
-      </p>
-    </section>
-
-    <Cta variant="vip" heading="Buying new low-rise?" />
   </div>
 </Base>
