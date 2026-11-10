@@ -87,6 +87,7 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-lead-form]')) {
     try {
       await post(cfg.webhookUrl, {
         email,
+        area: String(data.get('area') ?? '').trim(),
         homeType: String(data.get('homeType') ?? ''),
         budget: String(data.get('budget') ?? ''),
         timeline: String(data.get('timeline') ?? ''),

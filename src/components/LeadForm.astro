@@ -14,6 +14,7 @@
  * form is method="post", so a submit can never fall through to a GET with
  * the visitor's details in the URL.
  */
+import { getCollection } from 'astro:content';
 import { slugify } from '../lib/leadTags';
 
 interface Props {
@@ -56,6 +57,12 @@ const {
 } = Astro.props;
 
 const uid = Math.random().toString(36).slice(2, 8);
+
+// Area suggestions for the follow-up step. Free text, so a buyer can name a
+// neighbourhood or several cities; the list just saves typing.
+const cityEntries = await getCollection('cities');
+const cityNames = cityEntries.map((c) => c.data.city).sort();
+const cityPrefill = city ? (cityEntries.find((c) => c.id === city)?.data.city ?? '') : '';
 
 const tags: string[] = [intent];
 if (project) tags.push(`project:${project}`);
@@ -161,17 +168,32 @@ const two = compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2';
         {fields === 'contact' && (
           <form method="post" data-step="details" class="mt-5 border-t border-rule pt-5">
             <p class="text-[13px] font-medium text-ink/80">
-              Optional: three quick answers so I send you the right releases.
+              Optional: four quick answers so I send you the right releases.
             </p>
-            <div class={`mt-3 ${compact ? 'space-y-3' : 'grid gap-3 sm:grid-cols-3'}`}>
-              <select class={field} name="homeType" aria-label="Home type">
+            <div class={`mt-3 ${compact ? 'space-y-3' : 'grid gap-3 sm:grid-cols-2'}`}>
+              <div>
+                <input
+                  class={field.replace('mt-1.5 ', '')}
+                  name="area"
+                  type="text"
+                  list={`lf-areas-${uid}`}
+                  value={cityPrefill}
+                  placeholder="Area or city"
+                  aria-label="Area or city"
+                  autocomplete="off"
+                />
+                <datalist id={`lf-areas-${uid}`}>
+                  {cityNames.map((c) => <option value={c} />)}
+                </datalist>
+              </div>
+              <select class={field.replace('mt-1.5 ', '')} name="homeType" aria-label="Home type">
                 <option value="">Home type</option>
                 <option value="detached">Detached</option>
                 <option value="semi">Semi-detached</option>
                 <option value="townhome">Townhome</option>
                 <option value="any-lowrise">Any low-rise</option>
               </select>
-              <select class={field} name="budget" aria-label="Budget">
+              <select class={field.replace('mt-1.5 ', '')} name="budget" aria-label="Budget">
                 <option value="">Budget</option>
                 <option value="under-800k">Under $800k</option>
                 <option value="800k-1m">$800k to $1M</option>
@@ -179,7 +201,7 @@ const two = compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2';
                 <option value="1.3m-1.6m">$1.3M to $1.6M</option>
                 <option value="over-1.6m">Over $1.6M</option>
               </select>
-              <select class={field} name="timeline" aria-label="Timeline">
+              <select class={field.replace('mt-1.5 ', '')} name="timeline" aria-label="Timeline">
                 <option value="">Timeline</option>
                 <option value="asap">Ready now</option>
                 <option value="3-6-months">3 to 6 months</option>
