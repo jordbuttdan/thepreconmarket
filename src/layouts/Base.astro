@@ -1,9 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-longform.png';
 import '@fontsource-variable/inter';
 import '@fontsource/jetbrains-mono/400.css';
 import '@fontsource/jetbrains-mono/500.css';
 import '../styles/global.css';
-import { SITE, BROKER, FOOTER_LINE, NAV } from '../config/site';
+import { SITE, BROKER, NAV } from '../config/site';
 import Schema from '../components/seo/Schema.astro';
 import StickyMobileCta from '../components/StickyMobileCta.astro';
 
@@ -140,8 +142,16 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
 
     <header class="border-b border-rule bg-paper/95 backdrop-blur">
       <div class="mx-auto flex max-w-[1100px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a href="/" class="shrink-0 font-mono text-sm font-medium tracking-[0.08em] text-ink uppercase">
-          The Precon Market
+        <a href="/" class="shrink-0" aria-label={`${SITE.name}, home`}>
+          {/* Served at up to 3x its display height so it stays crisp on dense screens. */}
+          <Image
+            src={logo}
+            alt={SITE.name}
+            height={144}
+            densities={[1, 2]}
+            loading="eager"
+            class="block h-9 w-auto sm:h-12"
+          />
         </a>
 
         <nav aria-label="Main" class="flex items-center gap-4 sm:gap-6">
@@ -243,68 +253,97 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     <StickyMobileCta />
 
     <!-- pb-24 on mobile keeps the sticky CTA from covering footer content. -->
-    <footer class="mt-20 border-t border-rule bg-paper pb-24 lg:pb-0">
-      <div class="mx-auto max-w-[1100px] px-4 py-10 sm:px-6">
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <p class="section-label">Browse</p>
-            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
-              <li><a href="/how-it-works" class="hover:text-accent">How it works</a></li>
-              <li><a href="/new-homes" class="hover:text-accent">New home communities</a></li>
-              <li><a href="/projects" class="hover:text-accent">All projects</a></li>
-              <li><a href="/vip" class="hover:text-accent">Register for VIP access</a></li>
-              <li><a href="/book" class="hover:text-accent">Book a call</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="section-label">Learn</p>
-            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
-              <li><a href="/hst-rebate" class="hover:text-accent">HST &amp; GST rebates</a></li>
-              <li><a href="/hst-rebate/checker" class="hover:text-accent">Rebate checker</a></li>
-              <li><a href="/guides" class="hover:text-accent">Buyer guides</a></li>
-              <li><a href="/resources" class="hover:text-accent">Free checklists</a></li>
-              <li><a href="/faq" class="hover:text-accent">Questions &amp; answers</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="section-label">Contact</p>
-            <ul class="mt-3 space-y-1.5 text-sm text-ink/75">
-              <li>
-                <a href={BROKER.phoneHref} class="figure hover:text-accent">{BROKER.phone}</a>
-              </li>
-              <li><a href={`mailto:${BROKER.email}`} class="hover:text-accent">Email Jordan</a></li>
-              <li><a href="/about" class="hover:text-accent">About</a></li>
-              <li><a href="/disclaimer" class="hover:text-accent">Disclaimer</a></li>
-            </ul>
-          </div>
-          <div>
-            <p class="section-label">Registered brokerage</p>
-            <!-- RECO: brokerage name at least as prominent as the individual's. -->
-            <p class="mt-3 text-sm leading-relaxed text-ink">
-              <span class="block font-medium">{BROKER.brokerage}</span>
-              <span class="block text-ink/75">{BROKER.name}, {BROKER.title}</span>
-              <span class="figure mt-1 block text-[11px] text-ink/55">RECO #{BROKER.reco}</span>
+    <footer class="mt-20 border-t border-rule-dark bg-paper-pure pb-24 lg:pb-0">
+      <div class="mx-auto max-w-[1100px] px-4 pt-12 pb-8 sm:px-6">
+        <div class="grid gap-10 lg:grid-cols-12 lg:gap-x-12">
+          <!-- Brand block: the logo, one line on what the site is, and the two
+               ways to reach a person. -->
+          <div class="lg:col-span-5">
+            <a href="/" class="inline-block" aria-label={`${SITE.name}, home`}>
+              <Image
+                src={logo}
+                alt={SITE.name}
+                height={168}
+                densities={[1, 2]}
+                loading="lazy"
+                class="block h-11 w-auto sm:h-14"
+              />
+            </a>
+            <p class="mt-4 max-w-[38ch] text-[15px] leading-relaxed text-ink/75">
+              New construction across the GTA, with a broker who represents your interests, not
+              the builder's.
             </p>
+            {/* No button here: the header and the mobile bar already carry
+                "Book a call" on every page. Just the direct lines. */}
+            <div class="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2">
+              <a
+                href={BROKER.phoneHref}
+                class="figure text-[15px] font-medium text-ink hover:text-accent"
+              >
+                {BROKER.phone}
+              </a>
+              <a
+                href={`mailto:${BROKER.email}`}
+                class="text-sm text-accent underline underline-offset-2"
+              >
+                Email Jordan
+              </a>
+            </div>
           </div>
+
+          <nav aria-label="Footer" class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-7">
+            <div>
+              <p class="section-label">Browse</p>
+              <ul class="mt-3 space-y-2 text-sm text-ink/75">
+                <li><a href="/projects" class="hover:text-accent">All projects</a></li>
+                <li><a href="/new-homes" class="hover:text-accent">Browse by city</a></li>
+                <li><a href="/vip" class="hover:text-accent">Register for VIP access</a></li>
+                <li><a href="/how-it-works" class="hover:text-accent">How it works</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="section-label">Learn</p>
+              <ul class="mt-3 space-y-2 text-sm text-ink/75">
+                <li><a href="/hst-rebate" class="hover:text-accent">HST &amp; GST rebates</a></li>
+                <li><a href="/hst-rebate/checker" class="hover:text-accent">Rebate checker</a></li>
+                <li><a href="/guides" class="hover:text-accent">Buyer guides</a></li>
+                <li><a href="/resources" class="hover:text-accent">Free checklists</a></li>
+                <li><a href="/faq" class="hover:text-accent">Questions &amp; answers</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="section-label">Company</p>
+              <ul class="mt-3 space-y-2 text-sm text-ink/75">
+                <li><a href="/about" class="hover:text-accent">About Jordan</a></li>
+                <li><a href="/disclaimer" class="hover:text-accent">Disclaimer</a></li>
+                <li><a href="/privacy" class="hover:text-accent">Privacy policy</a></li>
+                <li><a href="/sitemap-index.xml" class="hover:text-accent">Sitemap</a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <p class="mt-8 border-t border-rule pt-5 text-xs leading-relaxed text-ink/55">
-          {FOOTER_LINE}
-        </p>
-        <p class="mt-3 text-xs leading-relaxed text-ink/55">
-          This site provides general information about published program rules, not tax, legal or
-          accounting advice. Rebate eligibility is determined by the Canada Revenue Agency.
-          Confirm your situation with your own lawyer and accountant before relying on any figure.
-          Read the <a href="/disclaimer" class="text-accent underline underline-offset-2">full disclaimer</a>.
-        </p>
-        <div
-          class="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule pt-4 text-xs text-ink/50"
-        >
-          <span class="font-mono">{SITE.domain}</span>
-          <a href="/privacy" class="hover:text-accent">Privacy policy</a>
-          <a href="/sitemap-index.xml" class="hover:text-accent">Sitemap</a>
-          <span>© {year} {BROKER.brokerage}</span>
+        <!-- Compliance, stated once. RECO: the brokerage name is at least as
+             prominent as the individual's, so it leads and carries the weight. -->
+        <div class="mt-10 grid gap-6 border-t border-rule pt-6 lg:grid-cols-12 lg:gap-x-12">
+          <p class="text-sm leading-relaxed lg:col-span-5">
+            <span class="block font-semibold text-ink">{BROKER.brokerage}</span>
+            <span class="block text-ink/75">{BROKER.name}, {BROKER.title}</span>
+            <span class="figure mt-1 block text-[11px] text-ink/55">RECO #{BROKER.reco}</span>
+          </p>
+          <p class="text-xs leading-relaxed text-ink/55 lg:col-span-7">
+            This site provides general information about published program rules, not tax, legal
+            or accounting advice. Rebate eligibility is determined by the Canada Revenue Agency.
+            Confirm your situation with your own lawyer and accountant before relying on any
+            figure. Not intended to solicit buyers or sellers currently under contract with
+            another brokerage. Read the{' '}
+            <a href="/disclaimer" class="text-accent underline underline-offset-2">full disclaimer</a>.
+          </p>
         </div>
+
+        <p class="mt-6 text-xs text-ink/50">
+          © {year} {SITE.name}
+        </p>
       </div>
     </footer>
   </body>

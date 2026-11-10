@@ -3,7 +3,6 @@ import Base from '../../layouts/Base.astro';
 import Checker from '../../components/checker/Checker';
 import Disclaimer from '../../components/Disclaimer.astro';
 import { LAST_UPDATED } from '../../lib/rebateRules';
-import { BROKER } from '../../config/site';
 
 const updated = new Date(LAST_UPDATED);
 ---
@@ -45,16 +44,9 @@ const updated = new Date(LAST_UPDATED);
         </p>
       </div>
 
-      <!-- Credential block, set like a drawing stamp. -->
+      <!-- The brokerage details live in the footer on every page; only the
+           disclaimer needs to sit beside the tool itself. -->
       <div class="lg:col-span-5 lg:col-start-1 lg:row-start-2 lg:self-start">
-        <div class="tick-corners border border-rule bg-paper-pure/70 p-4">
-          <p class="section-label">Prepared by</p>
-          <p class="mt-2 text-sm font-medium text-ink">{BROKER.name}, {BROKER.title}</p>
-          <p class="text-sm text-ink/70">{BROKER.brokerage}</p>
-          <p class="figure mt-2 text-[11px] text-ink/50">
-            RECO #{BROKER.reco} · {BROKER.phone}
-          </p>
-        </div>
         <Disclaimer variant="compact" />
       </div>
     </div>
