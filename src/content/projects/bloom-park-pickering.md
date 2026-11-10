@@ -45,7 +45,7 @@ incentives:
 projectFaq:
   - q: "Is Bloom Park freehold or condo?"
     a: >-
-      Bloom Park is freehold — buyers own the land and the building outright. There is no
+      Bloom Park is freehold, buyers own the land and the building outright. There is no
       condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Bloom Park?"
     a: >-
@@ -97,7 +97,7 @@ Confirm with the builder whether the advertised prices are quoted net of the HST
 - 36' detached: $20,000 on signing, $20,000 at 30, 60 and 90 days, $10,000 at 150 and 180 days ($100,000)
 - 43' detached: $120,000 total
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -117,15 +117,12 @@ Most new low-rise is car-dependent at launch. The retail, transit and services t
 
 ## Before you sign at Bloom Park
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
-
-Floor plans, the current price list and deposit structures for Bloom Park go to registered buyers — [register for access](/vip) and I'll send what is released.
-

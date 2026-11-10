@@ -4,9 +4,11 @@ import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import VipForm from '../../components/VipForm';
+import ProjectGate from '../../components/ProjectGate.astro';
 import Disclaimer from '../../components/Disclaimer.astro';
 import { GHL } from '../../config/ghl';
 import { BROKER } from '../../config/site';
+import { statusTag } from '../../lib/leadTags';
 
 /**
  * Only `featured` projects get their own page. Catalogue entries are listed on
@@ -166,6 +168,22 @@ const specs: { k: string; v: string }[] = [
           )
         }
 
+        {/* Deliverables, not body copy. See the note in ProjectGate.astro. */}
+        <ProjectGate
+          name={d.name}
+          builders={d.builder}
+          salesStatus={d.salesStatus}
+          slug={entry.id}
+          citySlug={citySlug}
+          webhookUrl={GHL.vipWebhookUrl}
+          priceFrom={d.priceFrom}
+          sizeFrom={d.sizeFrom}
+          sizeTo={d.sizeTo}
+          floorPlanCount={d.floorPlanCount}
+          lotWidths={d.lotWidths}
+          hasDeposit={d.depositStructure.length > 0}
+        />
+
         {
           d.projectFaq.length > 0 && (
             /* Rendered as plain text, not an accordion: content hidden behind
@@ -253,7 +271,16 @@ const specs: { k: string; v: string }[] = [
               Register and I'll send what's released for {d.name} as it comes out.
             </p>
             <div class="mt-4">
-              <VipForm webhookUrl={GHL.vipWebhookUrl} project={entry.id} city={citySlug} compact client:idle />
+              <VipForm
+                webhookUrl={GHL.vipWebhookUrl}
+                project={entry.id}
+                projectName={d.name}
+                builders={d.builder}
+                projectStatus={statusTag(d.salesStatus)}
+                city={citySlug}
+                compact
+                client:idle
+              />
             </div>
           </div>
 

@@ -1,0 +1,129 @@
+---
+/**
+ * Mid-scroll registration block on a project page.
+ *
+ * This deliberately gates *deliverables*, not the page. Everything written
+ * above it stays in the HTML and stays crawlable, which is the point: hiding
+ * body copy behind a form reads as cloaking to Google unless it is marked up
+ * as paywalled content, and it would also remove this page from exactly the
+ * AI answers it exists to appear in. What sits behind the form is the
+ * builder's own material, price lists, floor plans and allocation dates,
+ * which is not ours to publish anyway.
+ *
+ * The bullets are generated from this project's own data rather than written
+ * once and reused, because "175 floor plans across three builders" converts
+ * and "register for more information" does not.
+ */
+import VipForm from './VipForm';
+import { statusTag } from '../lib/leadTags';
+
+interface Props {
+  name: string;
+  builders: string[];
+  salesStatus: string;
+  slug: string;
+  citySlug: string;
+  webhookUrl: string;
+  priceFrom?: number;
+  sizeFrom?: number;
+  sizeTo?: number;
+  floorPlanCount?: number;
+  lotWidths: number[];
+  hasDeposit: boolean;
+}
+
+const {
+  name,
+  builders,
+  salesStatus,
+  slug,
+  citySlug,
+  webhookUrl,
+  priceFrom,
+  sizeFrom,
+  sizeTo,
+  floorPlanCount,
+  lotWidths,
+  hasDeposit,
+} = Astro.props;
+
+const released = priceFrom != null;
+const num = (n: number) => n.toLocaleString('en-CA');
+
+const items: string[] = [];
+
+if (floorPlanCount && sizeFrom && sizeTo) {
+  items.push(
+    `All ${floorPlanCount} floor plans, ${num(sizeFrom)} to ${num(sizeTo)} sq ft, with room dimensions`,
+  );
+} else if (floorPlanCount) {
+  items.push(`All ${floorPlanCount} floor plans, with room dimensions`);
+} else {
+  items.push('Floor plans with room dimensions, as the builder releases them');
+}
+
+items.push(
+  released
+    ? 'The lot-by-lot price list, including the premiums that are not in the starting price'
+    : 'The opening price list the day it is set, before the public release',
+);
+
+if (builders.length > 1) {
+  items.push(`Separate price lists from ${builders.join(', ')}, so you can compare them side by side`);
+}
+
+if (lotWidths.length) {
+  items.push(`Which ${lotWidths.join(', ')} ft lots are actually still available`);
+}
+
+items.push(
+  hasDeposit
+    ? 'Release and allocation dates ahead of the public launch'
+    : 'The deposit structure and allocation dates as soon as the builder publishes them',
+);
+---
+
+<section
+  id="register"
+  class="tick-corners mt-12 scroll-mt-6 border border-rule-dark bg-accent-tint/60 p-6 sm:p-8"
+>
+  <p class="section-label">Registered buyers</p>
+  <h2 class="mt-2 text-[1.5rem] font-semibold sm:text-[1.75rem]">
+    What I can send you on {name}
+  </h2>
+  <p class="mt-3 max-w-[58ch] text-[15px] leading-relaxed text-ink/80">
+    Everything above is on this page for anyone to read, and it stays that way. What follows is the
+    builder's own material, which is released to registered buyers rather than published:
+  </p>
+
+  <div class="mt-6 grid gap-8 lg:grid-cols-12 lg:gap-x-10">
+    <ul class="space-y-2.5 lg:col-span-5">
+      {
+        items.map((x) => (
+          <li class="flex items-baseline gap-2.5 text-[14px] leading-relaxed text-ink/85">
+            <span aria-hidden="true" class="mt-[0.5em] h-px w-3 shrink-0 bg-honey" />
+            <span>{x}</span>
+          </li>
+        ))
+      }
+      <li class="pt-2 text-[13px] leading-relaxed text-ink/60">
+        Registering costs nothing and commits you to nothing. The builder pays the commission
+        whether you are represented or not, so there is no version of this where using a broker
+        makes the home more expensive.
+      </li>
+    </ul>
+
+    <div class="lg:col-span-7">
+      <VipForm
+        webhookUrl={webhookUrl}
+        project={slug}
+        projectName={name}
+        builders={builders}
+        projectStatus={statusTag(salesStatus)}
+        city={citySlug}
+        submitLabel={`Register for ${name}`}
+        client:idle
+      />
+    </div>
+  </div>
+</section>

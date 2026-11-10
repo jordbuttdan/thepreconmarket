@@ -165,5 +165,3 @@ Because Arista, DECO and OPUS are selling side by side, you can and should compa
 - **Delivery record**, each builder's history on closing dates. [How to assess a builder](/guides/builder-due-diligence-guide).
 
 Same community, same streets, materially different deals. That comparison is the single most useful thing to do here, and it is difficult from a price list alone.
-
-Floor plans, builder-by-builder pricing and deposit structures are available to registered buyers, [register for access](/vip) and I will send what is released as it comes out.

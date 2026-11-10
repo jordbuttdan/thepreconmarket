@@ -49,7 +49,7 @@ incentives:
 projectFaq:
   - q: "Is Founders Walk freehold or condo?"
     a: >-
-      Founders Walk is freehold — buyers own the land and the building outright. There is no
+      Founders Walk is freehold, buyers own the land and the building outright. There is no
       condominium corporation and no standard monthly maintenance fee.
   - q: "Who is building Founders Walk?"
     a: >-
@@ -91,7 +91,7 @@ relatedFaq:
 order: 20
 updated: 2026-11-09
 ---
-Prices here are the builder's **PRICE AFTER REBATE** column, and the lists assume *four* separate programs apply and are assigned to the vendor — the federal rebate, the Ontario new housing rebate, the Ontario Enhanced rebate and the affordability payment. That is the most aggressive stack of assumptions on this site, so confirming your eligibility matters more here than almost anywhere.
+Prices here are the builder's **PRICE AFTER REBATE** column, and the lists assume *four* separate programs apply and are assigned to the vendor, the federal rebate, the Ontario new housing rebate, the Ontario Enhanced rebate and the affordability payment. That is the most aggressive stack of assumptions on this site, so confirming your eligibility matters more here than almost anywhere.
 
 ## Pricing and your rebate position
 
@@ -102,9 +102,9 @@ Listed prices run **$759,990 to $1,497,189** across 26 floor plans. Here is what
 | Ontario ENHR (no first-time buyer test) | **$60,799** | **$80,000** |
 | Federal rebate (first-time buyers only) | **$37,999** | **$281** |
 
-**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate** — that is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $60,799. This is not unusual and it is not a trick — but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
+**Read the price list carefully here.** The builder's advertised prices are stated **net of the enhanced HST rebate**, that is, they already assume you qualify and that you assign the rebate to the vendor at closing. If you turn out not to qualify, or the rebate is reduced or denied, **you are responsible for the difference at closing**, in certified funds. At this price point that is a five-figure exposure, and at the top of the range it approaches $60,799. This is not unusual and it is not a trick, but it is the single most important thing to confirm before you sign. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
-At the entry end, $759,990 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $759,990 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -113,7 +113,7 @@ At the entry end, $759,990 sits **below $1,000,000** — the full 8% Ontario reb
 - $10,000 at 210 days
 - One further structure for detached
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -132,15 +132,12 @@ Most new low-rise is car-dependent at launch. The retail, transit and services t
 
 ## Before you sign at Founders Walk
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
-
-Floor plans, the current price list and deposit structures for Founders Walk go to registered buyers — [register for access](/vip) and I'll send what is released.
-

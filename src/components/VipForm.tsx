@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
+import { slugify } from '../lib/leadTags';
 
 /**
  * VIP registration form.
@@ -20,6 +21,12 @@ export interface VipFormProps {
   webhookUrl: string;
   /** Project slug, when the form sits on a project page. */
   project?: string;
+  /** Readable project name, so the CRM record is legible without a lookup. */
+  projectName?: string;
+  /** Builder names for this project. Tagged as slugs, shown as written. */
+  builders?: string[];
+  /** Controlled sales-stage slug, see src/lib/leadTags.ts. */
+  projectStatus?: string;
   /** City slug, when the form sits on a city page. */
   city?: string;
   /** Resource slug, when the form is a checklist download capture. */
@@ -35,6 +42,9 @@ type Status = 'idle' | 'sending' | 'done' | 'error';
 export default function VipForm({
   webhookUrl,
   project,
+  projectName,
+  builders,
+  projectStatus,
   city,
   resource,
   submitLabel,
@@ -50,6 +60,9 @@ export default function VipForm({
   // their history and any outbound referrer. The button stays disabled until
   // this flips, and method="post" below is the second line of defence.
   const [hydrated, setHydrated] = useState(false);
+  // Rendered twice on a project page, so ids must be unique per instance
+  // or every label would point at the first copy's field.
+  const uid = useId();
 
   useEffect(() => {
     mountedAt.current = Date.now();
@@ -79,6 +92,11 @@ export default function VipForm({
     if (project) tags.push(`project:${project}`);
     if (city) tags.push(`city:${city}`);
     if (resource) tags.push(`resource:${resource}`);
+    // Builder and stage, so a release can be worked by builder relationship
+    // and a "launching soon" lead can be called before the release date
+    // rather than after it.
+    for (const b of builders ?? []) tags.push(`builder:${slugify(b)}`);
+    if (projectStatus) tags.push(`status:${projectStatus}`);
 
     const payload = {
       firstName: String(data.get('firstName') ?? '').trim(),
@@ -90,6 +108,7 @@ export default function VipForm({
       timeline: String(data.get('timeline') ?? ''),
       notes: String(data.get('notes') ?? '').trim(),
       project: project ?? '',
+      projectName: projectName ?? '',
       city: city ?? '',
       resource: resource ?? '',
       sourcePage,
@@ -129,16 +148,41 @@ export default function VipForm({
   }
 
   if (status === 'done') {
+    // On a project page, say the project's name back. It confirms the lead
+    // landed against the right community, and it is the difference between a
+    // generic receipt and one the buyer trusts.
+    const names = builders ?? [];
+    const builderList =
+      names.length === 0
+        ? ''
+        : names.length === 1
+          ? names[0]
+          : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+
     return (
       <div className="tick-corners border border-rule bg-accent-tint/60 p-5 sm:p-6">
         <p className="section-label">{resource ? 'Sent' : 'Registered'}</p>
         <h3 className="mt-2 text-lg font-semibold">
-          {resource ? 'Check your inbox.' : "You're on the list."}
+          {resource
+            ? 'Check your inbox.'
+            : projectName
+              ? `You're registered for ${projectName}.`
+              : "You're on the list."}
         </h3>
         <p className="mt-2 text-[14px] leading-relaxed text-ink/75">
-          {resource
-            ? "The PDF is on its way. The full checklist is on this page too, so you can work through it right now without waiting."
-            : "You'll hear from Jordan directly, usually the same day, with what's releasing, what the deposit structure looks like, and whether it's worth your time."}
+          {resource ? (
+            "The PDF is on its way. The full checklist is on this page too, so you can work through it right now without waiting."
+          ) : projectName ? (
+            <>
+              {builderList
+                ? `You'll get the ${builderList} price list${names.length > 1 ? 's' : ''} and floor plans as they're released, `
+                : "You'll get the price list and floor plans as they're released, "}
+              plus a note from Jordan on what the lot selection actually looks like before you
+              commit to anything.
+            </>
+          ) : (
+            "You'll hear from Jordan directly, usually the same day, with what's releasing, what the deposit structure looks like, and whether it's worth your time."
+          )}
         </p>
         <a href="/book" className="btn mt-4 text-sm">
           Book a call now instead
@@ -155,12 +199,12 @@ export default function VipForm({
     <form onSubmit={onSubmit} method="post" noValidate={false} className="space-y-4">
       <div className={compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2'}>
         <div>
-          <label className={label} htmlFor="vip-first">
+          <label className={label} htmlFor={`vip-first-${uid}`}>
             First name
           </label>
           <input
             className={field}
-            id="vip-first"
+            id={`vip-first-${uid}`}
             name="firstName"
             type="text"
             autoComplete="given-name"
@@ -168,12 +212,12 @@ export default function VipForm({
           />
         </div>
         <div>
-          <label className={label} htmlFor="vip-last">
+          <label className={label} htmlFor={`vip-last-${uid}`}>
             Last name
           </label>
           <input
             className={field}
-            id="vip-last"
+            id={`vip-last-${uid}`}
             name="lastName"
             type="text"
             autoComplete="family-name"
@@ -184,12 +228,12 @@ export default function VipForm({
 
       <div className={compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-2'}>
         <div>
-          <label className={label} htmlFor="vip-email">
+          <label className={label} htmlFor={`vip-email-${uid}`}>
             Email
           </label>
           <input
             className={field}
-            id="vip-email"
+            id={`vip-email-${uid}`}
             name="email"
             type="email"
             autoComplete="email"
@@ -197,12 +241,12 @@ export default function VipForm({
           />
         </div>
         <div>
-          <label className={label} htmlFor="vip-phone">
+          <label className={label} htmlFor={`vip-phone-${uid}`}>
             Phone
           </label>
           <input
             className={field}
-            id="vip-phone"
+            id={`vip-phone-${uid}`}
             name="phone"
             type="tel"
             autoComplete="tel"
@@ -213,10 +257,10 @@ export default function VipForm({
 
       <div className={compact ? 'space-y-4' : 'grid gap-4 sm:grid-cols-3'}>
         <div>
-          <label className={label} htmlFor="vip-type">
+          <label className={label} htmlFor={`vip-type-${uid}`}>
             Home type
           </label>
-          <select className={field} id="vip-type" name="homeType" defaultValue="">
+          <select className={field} id={`vip-type-${uid}`} name="homeType" defaultValue="">
             <option value="">No preference</option>
             <option value="detached">Detached</option>
             <option value="semi">Semi-detached</option>
@@ -225,10 +269,10 @@ export default function VipForm({
           </select>
         </div>
         <div>
-          <label className={label} htmlFor="vip-budget">
+          <label className={label} htmlFor={`vip-budget-${uid}`}>
             Budget
           </label>
-          <select className={field} id="vip-budget" name="budget" defaultValue="">
+          <select className={field} id={`vip-budget-${uid}`} name="budget" defaultValue="">
             <option value="">Not sure yet</option>
             <option value="under-800k">Under $800k</option>
             <option value="800k-1m">$800k – $1M</option>
@@ -238,10 +282,10 @@ export default function VipForm({
           </select>
         </div>
         <div>
-          <label className={label} htmlFor="vip-timeline">
+          <label className={label} htmlFor={`vip-timeline-${uid}`}>
             Timeline
           </label>
-          <select className={field} id="vip-timeline" name="timeline" defaultValue="">
+          <select className={field} id={`vip-timeline-${uid}`} name="timeline" defaultValue="">
             <option value="">Not sure yet</option>
             <option value="asap">Ready now</option>
             <option value="3-6-months">3–6 months</option>
@@ -253,12 +297,12 @@ export default function VipForm({
 
       {!compact && (
         <div>
-          <label className={label} htmlFor="vip-notes">
+          <label className={label} htmlFor={`vip-notes-${uid}`}>
             Anything specific? <span className="font-normal text-ink/50">(optional)</span>
           </label>
           <textarea
             className={`${field} min-h-[88px] py-2`}
-            id="vip-notes"
+            id={`vip-notes-${uid}`}
             name="notes"
             rows={3}
             placeholder="Areas you're considering, lot preferences, questions about the HST rebate…"
@@ -268,8 +312,8 @@ export default function VipForm({
 
       {/* Honeypot. Hidden from humans, not from naive bots. */}
       <div aria-hidden="true" className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
-        <label htmlFor="vip-company">Company</label>
-        <input id="vip-company" name="company" type="text" tabIndex={-1} autoComplete="off" />
+        <label htmlFor={`vip-company-${uid}`}>Company</label>
+        <input id={`vip-company-${uid}`} name="company" type="text" tabIndex={-1} autoComplete="off" />
       </div>
 
       <button

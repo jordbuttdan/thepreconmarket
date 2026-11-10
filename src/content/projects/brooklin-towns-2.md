@@ -14,7 +14,7 @@ salesStatus: "Developer Selling & Platinum Access"
 launchDate: "2026-06-11"
 occupancy: "2028"
 shortAnswer: >-
-  Brooklin Towns 2.0 is freehold townhomes in Brooklin from $479,990 with a $5,000 first deposit —
+  Brooklin Towns 2.0 is freehold townhomes in Brooklin from $479,990 with a $5,000 first deposit -
   the lowest entry point of any community here. Built by Madison Group, it offers freehold townhome
   homes from 829 to 1,694 sq ft, priced $479,990 to $559,990. Launched 2026-06-11.
 priceFrom: 479990
@@ -28,7 +28,7 @@ lng: -78.9614734
 heroImage: ../../assets/projects/brooklin-towns-2/hero.jpg
 heroAlt: "Rendering of Brooklin Towns 2.0 in Whitby, Ontario"
 highlights:
-  - "Freehold towns from $479,990 \u2014 the lowest entry price on this site"
+  - "Freehold towns from $479,990, the lowest entry price on this site"
   - "829 to 1,694 sq ft"
   - "$5,000 first deposit"
   - "Common element fee approximately $0.26 per sq ft"
@@ -45,7 +45,7 @@ incentives:
 projectFaq:
   - q: "Is Brooklin Towns 2.0 freehold or condo?"
     a: >-
-      Brooklin Towns 2.0 is freehold — buyers own the land and the building outright. The community
+      Brooklin Towns 2.0 is freehold, buyers own the land and the building outright. The community
       includes a POTL or common-elements fee for shared areas; the amount is listed in the project
       data on this page.
   - q: "Who is building Brooklin Towns 2.0?"
@@ -98,7 +98,7 @@ Listed prices run **$479,990 to $559,990** across 9 floor plans. Here is what th
 
 Confirm with the builder whether the advertised prices are quoted net of the HST rebate. Where they are, the price assumes you qualify, and a buyer who does not is billed the difference at closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-At the entry end, $479,990 sits **below $1,000,000** — the full 8% Ontario rebate band, and the most favourable position in the whole structure.
+At the entry end, $479,990 sits **below $1,000,000**, the full 8% Ontario rebate band, and the most favourable position in the whole structure.
 
 ## Deposit
 
@@ -107,7 +107,7 @@ At the entry end, $479,990 sits **below $1,000,000** — the full 8% Ontario reb
 - $10,000 at 90, 180 and 210 days
 - Balance to 10% at 240 days
 
-Each of those dates is a contractual obligation, not a guideline — missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
+Each of those dates is a contractual obligation, not a guideline, missing one is a default under the agreement. Check the schedule against money you actually hold rather than money you expect. Note too that Tarion's freehold deposit protection caps at 10% of the price up to $100,000, so a larger deposit leaves an uninsured balance riding on the builder's solvency. [Deposit protection](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Current incentives
 
@@ -126,15 +126,12 @@ Most new low-rise is car-dependent at launch. The retail, transit and services t
 
 ## Before you sign at Brooklin Towns 2.0
 
-Freehold purchases in Ontario carry **no cooling-off period** — once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+Freehold purchases in Ontario carry **no cooling-off period**, once the builder accepts your agreement you are bound, with no statutory right to reconsider. The ten-day rescission right is a condominium provision. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 
 So the review has to happen first:
 
 - **Have a lawyer read the agreement before you sign.** [What they look for](/faq/lawyer-review-agreement-pre-construction)
 - **Confirm your HST rebate eligibility in writing**, especially the [spousal test](/faq/spouse-owned-home-first-time-buyer)
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
-- **Decide your lot priorities in advance** — the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
+- **Decide your lot priorities in advance**, the lot is the decision you cannot revisit. [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register for representation before your first visit.** The builder budgets the commission either way. [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
-
-Floor plans, the current price list and deposit structures for Brooklin Towns 2.0 go to registered buyers — [register for access](/vip) and I'll send what is released.
-

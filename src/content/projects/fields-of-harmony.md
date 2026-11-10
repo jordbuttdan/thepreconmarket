@@ -112,6 +112,3 @@ Freehold purchases in Ontario carry **no cooling-off period**. Once the builder 
 - **Ask for a cap on development charges** if one is not already offered. [Why](/faq/development-charges-levies-cap)
 - **Decide your lot priorities in advance.** [Choosing a lot](/guides/choosing-a-lot-new-low-rise)
 - **Register before your first visit.** [Why it costs you nothing](/faq/does-it-cost-more-to-use-a-realtor-precon)
-
-Floor plans, the current price list and deposit structures for Fields of Harmony go to registered buyers. [Register for access](/vip).
-
