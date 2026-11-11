@@ -170,10 +170,10 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
                     href={item.href}
                     aria-current={isActive(item.href) ? 'page' : undefined}
                     class:list={[
-                      'py-1 transition-colors hover:text-accent',
+                      'border-b-2 py-1 transition-colors hover:border-honey',
                       isActive(item.href)
-                        ? 'border-b border-honey font-medium text-ink'
-                        : 'text-ink/75',
+                        ? 'border-honey font-medium text-ink'
+                        : 'border-transparent text-ink/75',
                     ]}
                   >
                     {item.label}
@@ -200,7 +200,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
                   class:list={[
                     'inline-block py-1 whitespace-nowrap',
                     isActive(item.href)
-                      ? 'border-b border-honey font-medium text-ink'
+                      ? 'border-b-2 border-honey font-medium text-ink'
                       : 'text-ink/70',
                   ]}
                 >
@@ -260,7 +260,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     <StickyMobileCta />
 
     <!-- pb-24 on mobile keeps the sticky CTA from covering footer content. -->
-    <footer class="mt-20 border-t border-rule-dark bg-paper-pure pb-24 lg:pb-0">
+    <footer class="mt-20 border-t-2 border-honey bg-paper-pure pb-24 lg:pb-0">
       <div class="mx-auto max-w-[1100px] px-4 pt-12 pb-8 sm:px-6">
         <div class="grid gap-10 lg:grid-cols-12 lg:gap-x-12">
           <!-- Brand block: the logo, one line on what the site is, and the two

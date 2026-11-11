@@ -4,7 +4,7 @@
    Design tokens — architectural drafting aesthetic, honey/ink colourway.
 
    COLOUR RULE (important, do not break):
-   - `honey` (#C8941F) is DECORATIVE ONLY — hairlines, washes, bullet marks.
+   - `honey` (#F5B60C, sampled from the logo) is DECORATIVE ONLY — hairlines, washes, bullet marks.
      It measures 2.72:1 on white, below even the 3:1 large-text floor, so it
      must never carry text of any size.
    - `accent` (#8A6A1F, 5.0:1 on white) is the deep brass used wherever gold
@@ -24,7 +24,7 @@
   --color-paper: #fffdf7; /* warm near-white page background */
   --color-paper-pure: #ffffff; /* cards, elevated surfaces */
 
-  --color-honey: #c8941f; /* DECORATIVE: rules, figures, labels, accents */
+  --color-honey: #f5b60c; /* The logo yellow. DECORATIVE only: far too light for text */
   --color-accent: #8a6a1f; /* deep brass — 5.0:1 on white, passes AA for text */
   --color-accent-tint: #fdf3dc; /* honey wash for highlighted panels */
 
@@ -198,6 +198,8 @@ h3 {
 }
 .prose-precon a:hover {
   color: var(--color-ink);
+  text-decoration-color: var(--color-honey);
+  text-decoration-thickness: 2px;
 }
 .prose-precon strong {
   font-weight: 600;
