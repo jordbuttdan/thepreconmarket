@@ -47,17 +47,6 @@ import { BROKER } from '../config/site';
           </li>
         </ul>
 
-        <div class="tick-corners mt-8 border border-rule bg-paper-pure/70 p-4">
-          <p class="section-label">Speak to</p>
-          <p class="mt-2 text-sm font-medium text-ink">{BROKER.name}, {BROKER.title}</p>
-          <p class="text-sm text-ink/70">{BROKER.brokerage}</p>
-          <p class="figure mt-2 text-[11px] text-ink/50">RECO #{BROKER.reco}</p>
-          <p class="mt-3">
-            <a href={BROKER.phoneHref} class="figure text-sm text-accent underline underline-offset-2">
-              {BROKER.phone}
-            </a>
-          </p>
-        </div>
       </div>
 
       <div class="lg:col-span-7">
@@ -80,6 +69,17 @@ import { BROKER } from '../config/site';
             </div>
           )
         }
+        <div class="tick-corners mt-6 border border-rule bg-paper-pure/70 p-4">
+          <p class="section-label">Speak to</p>
+          <p class="mt-2 text-sm font-medium text-ink">{BROKER.name}, {BROKER.title}</p>
+          <p class="text-sm text-ink/70">{BROKER.brokerage}</p>
+          <p class="figure mt-2 text-[11px] text-ink/50">RECO #{BROKER.reco}</p>
+          <p class="mt-3">
+            <a href={BROKER.phoneHref} class="figure text-sm text-accent underline underline-offset-2">
+              {BROKER.phone}
+            </a>
+          </p>
+        </div>
       </div>
     </div>
 
