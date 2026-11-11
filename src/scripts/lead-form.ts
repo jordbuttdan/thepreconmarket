@@ -70,7 +70,7 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-lead-form]')) {
         ...base(),
         tags: cfg.tags,
       });
-      track('generate_lead', { intent: cfg.tags[0], project: cfg.project, city: cfg.city, topic: cfg.topic });
+      track('generate_lead', { intent: cfg.tags[1], project: cfg.project, city: cfg.city, topic: cfg.topic });
       show();
     } catch {
       error.hidden = false;
@@ -84,15 +84,28 @@ for (const root of document.querySelectorAll<HTMLElement>('[data-lead-form]')) {
     const data = new FormData(details);
     const btn = details.querySelector<HTMLButtonElement>('button')!;
     btn.disabled = true;
+    const area = String(data.get('area') ?? '').trim();
+    const homeType = String(data.get('homeType') ?? '');
+    const budget = String(data.get('budget') ?? '');
+    const timeline = String(data.get('timeline') ?? '');
+    // The answers also travel as tags, so they land on the contact without
+    // any custom fields having to exist in the CRM.
+    const slug = (v: string) => v.toLowerCase().replace(/[^a-z0-9.]+/g, '-').replace(/^-+|-+$/g, '');
+    const answerTags = [
+      area && `area:${slug(area)}`,
+      homeType && `type:${homeType}`,
+      budget && `budget:${budget}`,
+      timeline && `timeline:${timeline}`,
+    ].filter(Boolean);
     try {
       await post(cfg.webhookUrl, {
         email,
-        area: String(data.get('area') ?? '').trim(),
-        homeType: String(data.get('homeType') ?? ''),
-        budget: String(data.get('budget') ?? ''),
-        timeline: String(data.get('timeline') ?? ''),
+        area,
+        homeType,
+        budget,
+        timeline,
         ...base(),
-        tags: ['lead-details', ...cfg.tags.slice(1)],
+        tags: ['site:thepreconmarket', 'lead-details', ...answerTags],
       });
     } catch {
       /* the lead itself is already in; nothing to surface */

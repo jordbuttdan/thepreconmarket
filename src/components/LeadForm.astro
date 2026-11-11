@@ -64,7 +64,7 @@ const cityEntries = await getCollection('cities');
 const cityNames = cityEntries.map((c) => c.data.city).sort();
 const cityPrefill = city ? (cityEntries.find((c) => c.id === city)?.data.city ?? '') : '';
 
-const tags: string[] = [intent];
+const tags: string[] = ['site:thepreconmarket', intent];
 if (project) tags.push(`project:${project}`);
 if (city) tags.push(`city:${city}`);
 if (resource) tags.push(`resource:${resource}`);
