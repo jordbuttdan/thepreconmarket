@@ -21,7 +21,7 @@
 
 @theme {
   --color-ink: #14161a; /* near-black — primary text AND all buttons */
-  --color-paper: #fffdf7; /* warm near-white page background */
+  --color-paper: #fffefb; /* warm near-white page background */
   --color-paper-pure: #ffffff; /* cards, elevated surfaces */
 
   --color-honey: #f5b60c; /* The logo yellow. DECORATIVE only: far too light for text */
