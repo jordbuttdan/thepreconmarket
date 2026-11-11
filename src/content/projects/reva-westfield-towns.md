@@ -15,7 +15,7 @@ launchDate: "2026-02-26"
 shortAnswer: >-
   Reva Westfield Towns is a townhome community by Great Gulf Homes at Mississauga Road & Steeles
   Avenue West in Brampton Northwest, Brampton. Freehold homes from 1,405 to 2,190 sq ft priced
-  $692,990 to $972,990 across 8 floor plans. Launched 2026-02-26.
+  $692,990 to $972,990 across 8 floor plans. Launched February 26th, 2026.
 priceFrom: 692990
 priceTo: 972990
 sizeFrom: 1405

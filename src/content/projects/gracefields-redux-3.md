@@ -15,7 +15,7 @@ launchDate: "2026-04-29"
 shortAnswer: >-
   Gracefields Redux 3 is a detached community by Lindvest at 116 Grady Drive in Newcastle,
   Clarington. Freehold homes from 1,963 to 2,747 sq ft priced $839,735 to $923,805 across 13 floor
-  plans. Launched 2026-04-29.
+  plans. Launched April 29th, 2026.
 priceFrom: 839735
 priceTo: 923805
 sizeFrom: 1963

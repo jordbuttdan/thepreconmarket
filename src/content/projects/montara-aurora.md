@@ -16,7 +16,7 @@ occupancy: "Fall 2027 to Spring 2028"
 shortAnswer: >-
   Montara is a townhome community by Treasure Hill Homes at Leslie Street & Wellington Street East
   in Bayview Northeast, Aurora. Freehold homes from 1,900 to 2,320 sq ft priced $799,900 to $839,900
-  across 6 floor plans. Launched 2026-07-31.
+  across 6 floor plans. Launched July 31st, 2026.
 priceFrom: 799900
 priceTo: 839900
 sizeFrom: 1900

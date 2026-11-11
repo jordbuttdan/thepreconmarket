@@ -15,7 +15,7 @@ launchDate: "2026-04-29"
 shortAnswer: >-
   Mirra Towns is a townhome community by Treasure Hill Homes at 6900 Baldwin Street North in
   Brooklin, Whitby. Freehold homes from 1,325 to 2,500 sq ft priced $599,900 to $1,099,900 across 14
-  floor plans. Launched 2026-04-29.
+  floor plans. Launched April 29th, 2026.
 priceFrom: 599900
 priceTo: 1099900
 sizeFrom: 1325

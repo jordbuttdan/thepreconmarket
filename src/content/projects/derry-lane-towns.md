@@ -18,7 +18,7 @@ occupancy: "July 2028 (towns), Fall 2027 (semis and detached)"
 shortAnswer: >-
   Derry Lane Towns is a detached, semi, townhome community by Ballymore Homes at 376 & 390 Derry
   Road West in Derry Road West, Mississauga. Freehold homes from 1,630 to 2,274 sq ft priced
-  $769,990 to $1,289,990 across 16 floor plans. Launched 2026-10-01.
+  $769,990 to $1,289,990 across 16 floor plans. Launched October 1st, 2026.
 priceFrom: 769990
 priceTo: 1289990
 sizeFrom: 1630

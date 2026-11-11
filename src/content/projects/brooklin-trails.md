@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Brooklin Trails is a detached community by Tribute Communities at Baldwin Street North & Columbus
   Road West in Brooklin, Whitby. Freehold homes from 1,360 to 2,979 sq ft priced $719,469 to
-  $787,611 across 15 floor plans. Launched 2026-04-10.
+  $787,611 across 15 floor plans. Launched April 10th, 2026.
 priceFrom: 719469
 priceTo: 787611
 sizeFrom: 1360

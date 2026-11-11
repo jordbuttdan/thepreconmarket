@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   Valley Brooke Townhomes is ten dual-front and three-storey townhome designs on Chatfield Drive in
   Woodbridge, from 1,921 sq ft. Built by Tiffany Park Homes, it offers freehold townhome homes from
-  1,921 to 2,383 sq ft, priced $888,990 to $1,010,990. Launched 2026-10-27.
+  1,921 to 2,383 sq ft, priced $888,990 to $1,010,990. Launched October 27th, 2026.
 priceFrom: 888990
 priceTo: 1010990
 sizeFrom: 1921

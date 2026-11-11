@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Avella is a detached community by Treasure Hill Homes at Leslie Street & Addison Hall Circle in
   Bayview Northeast, Aurora. Freehold homes from 2,200 to 2,330 sq ft priced $799,900 to $859,900
-  across 9 floor plans. Launched 2026-05-25.
+  across 9 floor plans. Launched May 25th, 2026.
 priceFrom: 799900
 priceTo: 859900
 sizeFrom: 2200

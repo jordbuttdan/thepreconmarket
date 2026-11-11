@@ -16,7 +16,7 @@ launchDate: "2026-05-05"
 shortAnswer: >-
   Oakpointe in Upper Joshua Creek Phase 2 is a detached, townhome community by Arista Homes at 1019
   Dundas Street East in Rural Oakville, Oakville. Freehold homes from 1,675 to 3,180 sq ft priced
-  $906,186 to $1,791,962 across 27 floor plans. Launched 2026-05-05.
+  $906,186 to $1,791,962 across 27 floor plans. Launched May 5th, 2026.
 priceFrom: 906186
 priceTo: 1791962
 sizeFrom: 1675

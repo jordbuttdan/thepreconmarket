@@ -15,7 +15,7 @@ launchDate: "2026-06-09"
 shortAnswer: >-
   Wellington Place is a townhome community by Arkfield at 200 Wellington Street West in King West,
   Aurora. Freehold homes from 1,707 to 2,472 sq ft priced $799,990 to $1,039,990 across 14 floor
-  plans. Launched 2026-06-09.
+  plans. Launched June 9th, 2026.
 priceFrom: 799990
 priceTo: 1039990
 sizeFrom: 1707

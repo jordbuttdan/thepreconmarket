@@ -1,3 +1,4 @@
+import { longDate } from '../../lib/dates';
 import { useEffect, useMemo, useState } from 'react';
 import {
   assessRebates,
@@ -68,7 +69,7 @@ function Disclaimer() {
         intended to solicit buyers or sellers currently under contract with another brokerage.
       </p>
       <p className="mt-2 font-mono">
-        Rebate rules current as of {LAST_UPDATED}. Programs are time-limited and subject to change.
+        Rebate rules current as of {longDate(LAST_UPDATED)}. Programs are time-limited and subject to change.
       </p>
     </div>
   );

@@ -15,7 +15,7 @@ launchDate: "2026-10-13"
 shortAnswer: >-
   Sora Vista is a detached community by CountryWide Homes at Pine Valley Drive & Ballantyne
   Boulevard in Vellore Village, Vaughan. Freehold homes from 2,734 to 4,272 sq ft priced $1,950,990
-  to $2,439,990 across 13 floor plans. Launched 2026-10-13.
+  to $2,439,990 across 13 floor plans. Launched October 13th, 2026.
 priceFrom: 1950990
 priceTo: 2439990
 sizeFrom: 2734

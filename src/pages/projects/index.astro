@@ -1,4 +1,5 @@
 ---
+import { longDate } from '../../lib/dates';
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
@@ -38,7 +39,7 @@ const latest = all.length
         <span class="section-label">Why timing matters</span>
         <span class="mt-2 block">
           The Ontario Enhanced New Housing Rebate of up to <span class="figure">$80,000</span>
-          {' '}requires an agreement signed before <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>,
+          {' '}requires an agreement signed before <span class="figure">{longDate(ON_ENHR.WINDOW_CLOSES)}</span>,
           and it has no first-time buyer test. It runs on the signing date, not the closing date,
           so which phase you buy into matters as much as which community.
           {' '}<a href="/hst-rebate" class="text-accent underline underline-offset-2">How the rebates work</a>.

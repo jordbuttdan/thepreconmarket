@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   Woodbine Parkside is a detached, townhome community by 95 Developments at 1954 Major MacKenzie
   Drive in Cathedraltown, Markham. Freehold homes from 2,003 to 3,102 sq ft priced $989,900 to
-  $1,189,900 across 17 floor plans. Launched 2026-03-18.
+  $1,189,900 across 17 floor plans. Launched March 18th, 2026.
 priceFrom: 989900
 priceTo: 1189900
 sizeFrom: 2003

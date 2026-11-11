@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Novella is a detached community by Greenpark Group at Lisgar Drive & Doug Leavens Boulevard in
   Meadowvale, Mississauga. Freehold homes from 2,105 to 3,748 sq ft priced $1,298,900 to $1,611,900
-  across 23 floor plans. Launched 2026-02-25.
+  across 23 floor plans. Launched February 25th, 2026.
 priceFrom: 1298900
 priceTo: 1611900
 sizeFrom: 2105

@@ -18,7 +18,7 @@ occupancy: "2027"
 shortAnswer: >-
   Windrose at Caledon Trails is detached homes and towns in Mayfield West, Caledon, with a finished
   basement included. Built by Laurier Homes and Yorkwood Homes, it offers freehold detached,
-  townhome homes from 1,540 to 3,500 sq ft, priced $699,900 to $1,373,900. Launched 2026-08-18.
+  townhome homes from 1,540 to 3,500 sq ft, priced $699,900 to $1,373,900. Launched August 18th, 2026.
 priceFrom: 699900
 priceTo: 1373900
 sizeFrom: 1540

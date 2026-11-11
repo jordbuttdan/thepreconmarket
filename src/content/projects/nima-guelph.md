@@ -16,7 +16,7 @@ launchDate: "2026-03-27"
 shortAnswer: >-
   Nima is a detached, townhome community by Terra View Homes at 2 Nicholas Way in Grange Road,
   Guelph. Freehold homes from 1,658 to 1,739 sq ft priced $684,867 to $817,610 across 5 floor plans.
-  Launched 2026-03-27.
+  Launched March 27th, 2026.
 priceFrom: 684867
 priceTo: 817610
 sizeFrom: 1658

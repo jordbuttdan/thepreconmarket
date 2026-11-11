@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   Arbourwoods is a detached, townhome community by Greenpark Group at Peter Rupert Avenue &
   Rutherford Road in Patterson, Vaughan. Freehold homes from 1,623 to 1,998 sq ft priced $969,900 to
-  $1,103,900 across 6 floor plans. Launched 2026-01-28.
+  $1,103,900 across 6 floor plans. Launched January 28th, 2026.
 priceFrom: 969900
 priceTo: 1103900
 sizeFrom: 1623

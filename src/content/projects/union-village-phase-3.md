@@ -17,7 +17,7 @@ launchDate: "2026-09-16"
 shortAnswer: >-
   Union Village Homes Phase 3 is a detached, townhome community by Minto and Metropia at 16th Avenue
   & Kennedy Road in Unionville, Markham. Freehold homes from 1,976 to 4,348 sq ft priced $1,163,900
-  to $2,529,900 across 6 floor plans. Launched 2026-09-16.
+  to $2,529,900 across 6 floor plans. Launched September 16th, 2026.
 priceFrom: 1163900
 priceTo: 2529900
 sizeFrom: 1976

@@ -15,7 +15,7 @@ launchDate: "2026-10-15"
 shortAnswer: >-
   Everpine Towns is 44 contemporary freehold townhomes off Yonge Street in Jefferson, with an EV
   charger rough-in included. Built by Arkfield, it offers freehold townhome homes from 2,020 to
-  2,039 sq ft, priced $899,990 to $979,990. Launched 2026-10-15.
+  2,039 sq ft, priced $899,990 to $979,990. Launched October 15th, 2026.
 priceFrom: 899990
 priceTo: 979990
 sizeFrom: 2020

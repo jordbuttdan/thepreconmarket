@@ -16,7 +16,7 @@ occupancy: "Spring 2029"
 shortAnswer: >-
   Kerr Village Towns is a townhome community by Brightstone at 211 Lakeshore Road West in Kerr
   Village, Oakville. Freehold homes from 1,904 to 1,971 sq ft priced $1,499,990 to $1,549,990 across
-  3 floor plans. Launched 2026-10-06.
+  3 floor plans. Launched October 6th, 2026.
 priceFrom: 1499990
 priceTo: 1549990
 sizeFrom: 1904

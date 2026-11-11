@@ -16,7 +16,7 @@ launchDate: "2026-03-17"
 shortAnswer: >-
   Union Phase 3 is a detached, townhome community by Mattamy Homes at 10185 Mississauga Road in
   Brampton Northwest, Brampton. Freehold homes from 1,489 to 2,311 sq ft priced $638,929 to $795,990
-  across 17 floor plans. Launched 2026-03-17.
+  across 17 floor plans. Launched March 17th, 2026.
 priceFrom: 638929
 priceTo: 795990
 sizeFrom: 1489

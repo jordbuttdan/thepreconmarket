@@ -16,7 +16,7 @@ launchDate: "2026-09-27"
 shortAnswer: >-
   Mayfield Village is a detached, townhome community by Regal Crest Homes at 4545 Mayfield Road in
   Brampton Northwest, Brampton. Freehold homes from 2,033 to 3,143 sq ft priced $1,091,900 to
-  $1,666,900 across 14 floor plans. Launched 2026-09-27.
+  $1,666,900 across 14 floor plans. Launched September 27th, 2026.
 priceFrom: 1091900
 priceTo: 1666900
 sizeFrom: 2033

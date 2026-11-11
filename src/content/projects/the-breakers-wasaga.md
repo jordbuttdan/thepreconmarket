@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   The Breakers is a townhome community by Stonebridge Building Group at 14 First Street North in
   Wasaga Beach, Wasaga Beach. Freehold homes from 1,516 to 2,153 sq ft priced $795,000 to $1,073,900
-  across 6 floor plans. Launched 2026-10-23.
+  across 6 floor plans. Launched October 23rd, 2026.
 priceFrom: 795000
 priceTo: 1073900
 sizeFrom: 1516

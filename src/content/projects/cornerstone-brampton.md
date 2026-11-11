@@ -17,7 +17,7 @@ occupancy: "2028"
 shortAnswer: >-
   Cornerstone is Phase One of Heritage Heights in northwest Brampton, from $629,990 across towns and
   33 and 36 foot detached. Built by Primont Homes, it offers freehold detached, townhome homes from
-  1,241 to 3,477 sq ft, priced $629,990 to $1,329,990. Launched 2026-09-16.
+  1,241 to 3,477 sq ft, priced $629,990 to $1,329,990. Launched September 16th, 2026.
 priceFrom: 629990
 priceTo: 1329990
 sizeFrom: 1241

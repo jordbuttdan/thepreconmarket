@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Springwater Phase 4 is a townhome community by Mattamy Homes at 3217 Elgin Mills Road East in
   Rural Markham, Markham. Freehold homes from 1,793 to 2,475 sq ft priced $899,106 to $1,025,990
-  across 8 floor plans. Launched 2026-06-12.
+  across 8 floor plans. Launched June 12th, 2026.
 priceFrom: 899106
 priceTo: 1025990
 sizeFrom: 1793

@@ -16,7 +16,7 @@ launchDate: "2026-10-14"
 shortAnswer: >-
   Five Oaks is freehold detached and townhomes beside Lions Valley Park in Oakville, spanning 1,388
   to 5,170 sq ft. Built by Caivan Communities, it offers freehold detached, townhome homes from
-  1,388 to 5,170 sq ft, priced $799,106 to $2,126,990. Launched 2026-10-14.
+  1,388 to 5,170 sq ft, priced $799,106 to $2,126,990. Launched October 14th, 2026.
 priceFrom: 799106
 priceTo: 2126990
 sizeFrom: 1388

@@ -24,7 +24,7 @@ shortAnswer: >-
   Unionglen is a detached, townhome community by Arista Homes, DECO Homes, OPUS Homes, Fieldgate
   Homes, Greenpark Group, Madison Group and Forest Hill Homes at Kennedy Road & Major Mackenzie
   Drive East in Angus Glen, Markham. Freehold homes from 1,570 to 3,430 sq ft priced $834,504 to
-  $1,449,990 across 138 floor plans. Launched 2026-03-13.
+  $1,449,990 across 138 floor plans. Launched March 13th, 2026.
 priceFrom: 834504
 priceTo: 1449990
 sizeFrom: 1570

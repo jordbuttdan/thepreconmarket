@@ -15,7 +15,7 @@ launchDate: "2026-02-18"
 shortAnswer: >-
   Ladyslipper Place at Vista Hills is a detached community by Activa Group at 259 Sweet Gale Street
   in Vista Hills, Waterloo. Freehold homes from 3,166 to 3,195 sq ft priced $1,121,900 to $1,160,900
-  across 2 floor plans. Launched 2026-02-18.
+  across 2 floor plans. Launched February 18th, 2026.
 priceFrom: 1121900
 priceTo: 1160900
 sizeFrom: 3166

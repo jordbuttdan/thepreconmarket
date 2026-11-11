@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   Rolling Woods Towns is a townhome community by Regency Development at 150 Rollingwood Drive in
   Downtown Brampton, Brampton. Freehold homes from 1,325 to 1,971 sq ft priced $669,000 to $839,000
-  across 11 floor plans. Launched 2026-04-01.
+  across 11 floor plans. Launched April 1st, 2026.
 priceFrom: 669000
 priceTo: 839000
 sizeFrom: 1325

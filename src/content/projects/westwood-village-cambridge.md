@@ -16,7 +16,7 @@ occupancy: "Move-in ready"
 shortAnswer: >-
   Westwood Village is a townhome community by Cachet Homes at 273 Bismark Drive in Westwood,
   Cambridge. Freehold homes from 1,985 to 1,985 sq ft priced $699,990 to $699,990 across 1 floor
-  plans. Launched 2026-01-18.
+  plans. Launched January 18th, 2026.
 priceFrom: 699990
 priceTo: 699990
 sizeFrom: 1985

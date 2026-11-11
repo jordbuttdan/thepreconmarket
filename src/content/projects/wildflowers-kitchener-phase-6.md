@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Wildflowers Kitchener Phase 6 is a townhome community by Mattamy Homes at 243 Rosenberg Way in
   Rosenberg, Kitchener. Freehold homes from 1,342 to 1,644 sq ft priced $516,805 to $639,990 across
-  3 floor plans. Launched 2026-10-22.
+  3 floor plans. Launched October 22nd, 2026.
 priceFrom: 516805
 priceTo: 639990
 sizeFrom: 1342

@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Bellaro at Palmetto is a townhome community by Treasure Hill Homes at Conlin Road East & Grandview
   Street North in North Oshawa, Oshawa. Freehold homes from 1,610 to 2,050 sq ft priced $599,900 to
-  $739,900 across 6 floor plans. Launched 2026-06-18.
+  $739,900 across 6 floor plans. Launched June 18th, 2026.
 priceFrom: 599900
 priceTo: 739900
 sizeFrom: 1610

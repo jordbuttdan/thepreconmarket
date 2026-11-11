@@ -15,7 +15,7 @@ launchDate: "2026-06-13"
 shortAnswer: >-
   Hawthorne East Village Phase 9 is a townhome community by Mattamy Homes at 433 Steeles Avenue East
   in Hawthorne Village, Milton. Freehold homes from 1,348 to 2,030 sq ft priced $658,398 to $868,133
-  across 9 floor plans. Launched 2026-06-13.
+  across 9 floor plans. Launched June 13th, 2026.
 priceFrom: 658398
 priceTo: 868133
 sizeFrom: 1348

@@ -16,7 +16,7 @@ occupancy: "2026"
 shortAnswer: >-
   Townhomes of Little Rouge is a townhome community by Camcos Living at Donald Cousens Parkway &
   Ninth Line in Box Grove, Markham. Freehold homes from 1,556 to 2,150 sq ft priced $768,990 to
-  $1,144,990 across 14 floor plans. Launched 2026-03-16.
+  $1,144,990 across 14 floor plans. Launched March 16th, 2026.
 priceFrom: 768990
 priceTo: 1144990
 sizeFrom: 1556

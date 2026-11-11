@@ -16,7 +16,7 @@ occupancy: "Fall 2027"
 shortAnswer: >-
   Navera at Mayfield Village is a collection of 27 detached homes on 38, 41 and 45 foot lots in
   northeast Brampton, priced from $999,999. Built by Digreen Homes, it offers freehold detached
-  homes from 2,055 to 3,655 sq ft, priced $999,999 to $1,409,999. Launched 2026-11-04.
+  homes from 2,055 to 3,655 sq ft, priced $999,999 to $1,409,999. Launched November 4th, 2026.
 priceFrom: 999999
 priceTo: 1409999
 sizeFrom: 2055

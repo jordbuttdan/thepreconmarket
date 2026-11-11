@@ -1,4 +1,5 @@
 ---
+import { longDate } from '../lib/dates';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
@@ -215,11 +216,11 @@ const homeFaqSchema = heroFaq.map((e) => ({
         </div>
         <div class="lg:col-span-7">
           <p class="text-[16px] leading-[1.75] text-ink/85">
-            The Ontario portion is up to $80,000 and has
+            The Ontario portion is up to $80,000 and has{' '}
             <span class="font-medium text-ink">no first-time buyer test</span>, which a lot of
-            move-up buyers do not realise. It requires an agreement signed before
-            <span class="figure">{ON_ENHR.WINDOW_CLOSES}</span>, and it runs on the signing date,
-            not the closing date.
+            move-up buyers do not realise. It requires an agreement signed before{' '}
+            <strong class="font-semibold text-ink">{longDate(ON_ENHR.WINDOW_CLOSES)}</strong>, and it
+            runs on the signing date, not the closing date.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="/hst-rebate/checker" class="btn px-5 text-sm">Check your eligibility</a>
@@ -228,7 +229,7 @@ const homeFaqSchema = heroFaq.map((e) => ({
             </a>
           </div>
           <p class="mt-4 font-mono text-[11px] text-ink/50">
-            Rules current as of {LAST_UPDATED}. Estimate only, not tax advice.
+            Rules current as of {longDate(LAST_UPDATED)}. Estimate only, not tax advice.
           </p>
         </div>
       </div>

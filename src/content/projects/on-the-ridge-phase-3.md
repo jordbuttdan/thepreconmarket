@@ -16,7 +16,7 @@ launchDate: "2026-04-13"
 shortAnswer: >-
   On the Ridge Phase 3 is a detached, townhome community by Rosehaven Homes at Mud Street West &
   First Road West in Stoney Creek Mountain, Hamilton. Freehold homes from 1,799 to 3,330 sq ft
-  priced $699,990 to $1,179,990 across 20 floor plans. Launched 2026-04-13.
+  priced $699,990 to $1,179,990 across 20 floor plans. Launched April 13th, 2026.
 priceFrom: 699990
 priceTo: 1179990
 sizeFrom: 1799

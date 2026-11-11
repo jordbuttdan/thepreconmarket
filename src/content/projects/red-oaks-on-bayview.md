@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   Red Oaks on Bayview is a detached, townhome community by Trinity Point Developments at Bayview
   Avenue & Elgin Mills Road East in Devonsleigh, Richmond Hill. Freehold homes from 2,033 to 2,314
-  sq ft priced $989,900 to $1,099,900 across 3 floor plans. Launched 2026-04-06.
+  sq ft priced $989,900 to $1,099,900 across 3 floor plans. Launched April 6th, 2026.
 priceFrom: 989900
 priceTo: 1099900
 sizeFrom: 2033

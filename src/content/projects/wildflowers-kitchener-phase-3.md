@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   Wildflowers Kitchener Phase 3 is a detached, townhome community by Mattamy Homes at Fischer-
   Hallman Road in Rosenberg, Kitchener. Freehold homes from 1,342 to 2,712 sq ft priced $600,876 to
-  $1,055,990 across 26 floor plans. Launched 2026-06-12.
+  $1,055,990 across 26 floor plans. Launched June 12th, 2026.
 priceFrom: 600876
 priceTo: 1055990
 sizeFrom: 1342

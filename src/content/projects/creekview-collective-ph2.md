@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   Creekview Collective Towns Phase 2 is a townhome community by Branthaven Homes at Derry Road &
   Fourth Line in Nelson, Milton. Freehold homes from 1,260 to 2,550 sq ft priced $719,990 to
-  $994,990 across 17 floor plans. Launched 2026-06-07.
+  $994,990 across 17 floor plans. Launched June 7th, 2026.
 priceFrom: 719990
 priceTo: 994990
 sizeFrom: 1260

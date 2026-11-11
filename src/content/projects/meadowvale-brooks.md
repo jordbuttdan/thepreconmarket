@@ -15,7 +15,7 @@ launchDate: "2026-10-16"
 shortAnswer: >-
   Meadowvale Brooks Homes is a detached community by Camcos Living at 2636 Inlake Court in
   Meadowvale, Mississauga. Freehold homes from 1,984 to 3,549 sq ft priced $1,174,990 to $2,518,490
-  across 16 floor plans. Launched 2026-10-16.
+  across 16 floor plans. Launched October 16th, 2026.
 priceFrom: 1174990
 priceTo: 2518490
 sizeFrom: 1984

@@ -15,7 +15,7 @@ launchDate: "2026-03-04"
 shortAnswer: >-
   Bondhead is a detached community by CountryWide Homes at Simcoe County Road 27 & Cunningham Drive
   in Bond Head, Bradford West Gwillimbury. Freehold homes from 3,102 to 3,131 sq ft priced
-  $1,349,990 to $1,349,990 across 4 floor plans. Launched 2026-03-04.
+  $1,349,990 to $1,349,990 across 4 floor plans. Launched March 4th, 2026.
 priceFrom: 1349990
 priceTo: 1349990
 sizeFrom: 3102

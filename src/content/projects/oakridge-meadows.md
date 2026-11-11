@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   Oakridge Meadows is a detached, townhome community by CountryWide Homes at 10 William Logan Drive
   in Oak Ridges, Richmond Hill. Freehold homes from 1,618 to 3,857 sq ft priced $1,051,990 to
-  $2,371,990 across 17 floor plans. Launched 2026-07-17.
+  $2,371,990 across 17 floor plans. Launched July 17th, 2026.
 priceFrom: 1051990
 priceTo: 2371990
 sizeFrom: 1618

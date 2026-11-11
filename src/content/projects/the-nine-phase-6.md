@@ -16,7 +16,7 @@ occupancy: "November\u2013December 2027"
 shortAnswer: >-
   The Nine Phase 6 is a townhome community by Mattamy Homes at 6578 Ninth Line in Ninth Line,
   Mississauga. Freehold homes from 1,793 to 2,420 sq ft priced $849,990 to $969,990 across 15 floor
-  plans. Launched 2026-10-17.
+  plans. Launched October 17th, 2026.
 priceFrom: 849990
 priceTo: 969990
 sizeFrom: 1793

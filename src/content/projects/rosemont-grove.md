@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Rosemont Grove is a detached community by Hallett Homes at Heritage Road & Steeles Avenue West in
   Brampton Northwest, Brampton. Freehold homes from 2,306 to 3,540 sq ft priced $1,119,990 to
-  $1,339,990 across 9 floor plans. Launched 2026-08-20.
+  $1,339,990 across 9 floor plans. Launched August 20th, 2026.
 priceFrom: 1119990
 priceTo: 1339990
 sizeFrom: 2306

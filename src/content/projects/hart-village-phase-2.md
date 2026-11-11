@@ -15,7 +15,7 @@ launchDate: "2026-04-13"
 shortAnswer: >-
   Hart Village Phase 2 is a detached community by Terra View Homes at 214 Carrington Drive in Hart
   Village, Guelph. Freehold homes from 1,290 to 3,528 sq ft priced $772,900 to $1,466,900 across 15
-  floor plans. Launched 2026-04-13.
+  floor plans. Launched April 13th, 2026.
 priceFrom: 772900
 priceTo: 1466900
 sizeFrom: 1290

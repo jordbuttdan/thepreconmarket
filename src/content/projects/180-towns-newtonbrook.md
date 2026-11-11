@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   180 Towns is a townhome community by Icon Homes and Dash Developments at 180 Drewry Avenue in
   Newtonbrook, Toronto. Freehold homes from 1,350 to 1,975 sq ft priced $929,990 to $1,449,990
-  across 8 floor plans. Launched 2026-04-29.
+  across 8 floor plans. Launched April 29th, 2026.
 priceFrom: 929990
 priceTo: 1449990
 sizeFrom: 1350

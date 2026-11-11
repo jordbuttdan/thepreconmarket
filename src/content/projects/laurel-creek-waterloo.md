@@ -16,7 +16,7 @@ launchDate: "2026-09-27"
 shortAnswer: >-
   Laurel Creek is a detached, townhome community by Mattamy Homes at 556, 560 & 576 Conservation
   Drive in Conservation Drive, Waterloo. Freehold homes from 1,342 to 2,712 sq ft priced $623,000 to
-  $953,973 across 50 floor plans. Launched 2026-09-27.
+  $953,973 across 50 floor plans. Launched September 27th, 2026.
 priceFrom: 623000
 priceTo: 953973
 sizeFrom: 1342

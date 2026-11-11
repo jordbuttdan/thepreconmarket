@@ -15,7 +15,7 @@ launchDate: "2026-09-23"
 shortAnswer: >-
   Trails of Whitevale Towns is freehold 17 and 20 foot townhomes in Whitevale, Pickering, from
   $659,990 and already under construction. Built by Sundial Homes, it offers freehold townhome homes
-  from 1,450 to 2,901 sq ft, priced $659,990 to $851,990. Launched 2026-09-23.
+  from 1,450 to 2,901 sq ft, priced $659,990 to $851,990. Launched September 23rd, 2026.
 priceFrom: 659990
 priceTo: 851990
 sizeFrom: 1450

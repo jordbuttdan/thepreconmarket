@@ -17,7 +17,7 @@ shortAnswer: >-
   UpTown Woodbridge is 50 freehold floor plans spanning back-to-back towns through 42-foot detached,
   at the same Weston and Teston intersection as Bridgelands. Built by Fieldgate Homes, it offers
   freehold detached, townhome homes from 1,265 to 3,606 sq ft, priced $699,990 to $1,749,990.
-  Launched 2026-10-29.
+  Launched October 29th, 2026.
 priceFrom: 699990
 priceTo: 1749990
 sizeFrom: 1265

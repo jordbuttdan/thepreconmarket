@@ -16,7 +16,7 @@ occupancy: "Fall 2027 \u2013 Spring 2028"
 shortAnswer: >-
   Bond by Sunny Communities is 111 townhomes in Oak Ridges across stacked, back-to-back and
   traditional formats, from $699,900. Built by Sunny Communities, it offers freehold townhome homes
-  from 1,325 to 1,911 sq ft, priced $699,900 to $999,900. Launched 2026-09-28.
+  from 1,325 to 1,911 sq ft, priced $699,900 to $999,900. Launched September 28th, 2026.
 priceFrom: 699900
 priceTo: 999900
 sizeFrom: 1325

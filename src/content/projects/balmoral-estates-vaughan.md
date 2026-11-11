@@ -16,7 +16,7 @@ occupancy: "Spring 2028"
 shortAnswer: >-
   Balmoral Estates is a detached community by Lormel Homes at Pine Valley Drive & Teston Road in
   Pine Valley, Vaughan. Freehold homes from 3,530 to 4,379 sq ft priced $1,789,990 to $2,154,990
-  across 22 floor plans. Launched 2026-10-21.
+  across 22 floor plans. Launched October 21st, 2026.
 priceFrom: 1789990
 priceTo: 2154990
 sizeFrom: 3530

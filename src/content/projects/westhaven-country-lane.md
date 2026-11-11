@@ -16,7 +16,7 @@ occupancy: "2027\u20132028"
 shortAnswer: >-
   WestHaven at Country Lane is a townhome community by Andrin Homes at Country Lane & Taunton Road
   West in Country Lane, Whitby. Freehold homes from 1,621 to 2,003 sq ft priced $699,990 to $829,990
-  across 6 floor plans. Launched 2026-06-25.
+  across 6 floor plans. Launched June 25th, 2026.
 priceFrom: 699990
 priceTo: 829990
 sizeFrom: 1621

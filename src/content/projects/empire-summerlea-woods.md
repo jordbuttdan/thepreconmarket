@@ -17,7 +17,7 @@ occupancy: "April 2027"
 shortAnswer: >-
   Empire Summerlea Woods is a detached, townhome community by Empire Communities at 176 McWatters
   Street in Binbrook, Hamilton. Freehold homes from 2,018 to 2,393 sq ft priced $875,212 to $914,150
-  across 3 floor plans. Launched 2026-11-03.
+  across 3 floor plans. Launched November 3rd, 2026.
 priceFrom: 875212
 priceTo: 914150
 sizeFrom: 2018

@@ -16,7 +16,7 @@ shortAnswer: >-
   Trails of Whitevale, Detached is 21 detached designs from three to six bedrooms in Whitevale,
   Pickering, already under construction with levies capped at $5,000. Built by Sundial Homes, it
   offers freehold detached homes from 1,682 to 3,380 sq ft, priced $839,990 to $1,193,990. Launched
-  2026-09-23.
+  September 23rd, 2026.
 priceFrom: 839990
 priceTo: 1193990
 sizeFrom: 1682

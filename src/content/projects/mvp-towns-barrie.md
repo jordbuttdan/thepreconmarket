@@ -17,7 +17,7 @@ occupancy: "2027"
 shortAnswer: >-
   MVP Towns is a townhome community by Fernbrook Homes and Tiffany Park Homes at Mapleview Drive
   East & 20th Sideroad in Mapleview, Barrie. Freehold homes from 1,484 to 1,540 sq ft priced
-  $560,973 to $601,682 across 2 floor plans. Launched 2026-06-04.
+  $560,973 to $601,682 across 2 floor plans. Launched June 4th, 2026.
 priceFrom: 560973
 priceTo: 601682
 sizeFrom: 1484

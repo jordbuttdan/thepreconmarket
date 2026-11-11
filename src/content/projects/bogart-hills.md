@@ -17,7 +17,7 @@ occupancy: "Late 2027"
 shortAnswer: >-
   The Bogart Hills is a detached, townhome community by City Park Homes at 16860 & 16920 Leslie
   Street in Leslie Street, Newmarket. Freehold homes from 1,477 to 2,186 sq ft priced $719,900 to
-  $897,900 across 15 floor plans. Launched 2026-08-18.
+  $897,900 across 15 floor plans. Launched August 18th, 2026.
 priceFrom: 719900
 priceTo: 897900
 sizeFrom: 1477

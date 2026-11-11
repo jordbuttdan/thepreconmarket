@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   Kingshaven is a townhome community by Kingsmen Group Inc. at Highway 48 & 19th Avenue in Rural
   Markham, Markham. Freehold homes from 1,712 to 2,837 sq ft priced $829,990 to $1,159,990 across 21
-  floor plans. Launched 2026-06-18.
+  floor plans. Launched June 18th, 2026.
 priceFrom: 829990
 priceTo: 1159990
 sizeFrom: 1712

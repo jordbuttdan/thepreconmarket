@@ -15,7 +15,7 @@ launchDate: "2026-06-26"
 shortAnswer: >-
   Vellore Trails is a townhome community by Arista Homes at Weston Road & Comdel Boulevard in
   Vellore Village, Vaughan. Freehold homes from 1,590 to 2,475 sq ft priced $764,593 to $1,033,990
-  across 16 floor plans. Launched 2026-06-26.
+  across 16 floor plans. Launched June 26th, 2026.
 priceFrom: 764593
 priceTo: 1033990
 sizeFrom: 1590

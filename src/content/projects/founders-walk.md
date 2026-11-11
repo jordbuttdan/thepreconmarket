@@ -18,7 +18,7 @@ occupancy: "Spring 2028"
 shortAnswer: >-
   Founders Walk is freehold towns and 36 and 40 foot detached homes in Stouffville by Fairgate and
   OPUS, from $759,990. Built by Fairgate Homes and OPUS Homes, it offers freehold detached, townhome
-  homes from 1,707 to 3,130 sq ft, priced $759,990 to $1,497,189. Launched 2026-10-20.
+  homes from 1,707 to 3,130 sq ft, priced $759,990 to $1,497,189. Launched October 20th, 2026.
 priceFrom: 759990
 priceTo: 1497189
 sizeFrom: 1707

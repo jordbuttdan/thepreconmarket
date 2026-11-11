@@ -15,7 +15,7 @@ launchDate: "2026-09-19"
 shortAnswer: >-
   Shining Hills, Gates of St. Anne's is a detached community by Regal Crest Homes at Yonge Street &
   St. John's Sideroad in Shining Hill, Aurora. Freehold homes from 2,626 to 3,431 sq ft priced
-  $1,729,900 to $2,052,900 across 7 floor plans. Launched 2026-09-19.
+  $1,729,900 to $2,052,900 across 7 floor plans. Launched September 19th, 2026.
 priceFrom: 1729900
 priceTo: 2052900
 sizeFrom: 2626

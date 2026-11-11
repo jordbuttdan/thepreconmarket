@@ -1,4 +1,5 @@
 ---
+import { longDate } from '../../lib/dates';
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import RebateBands from '../../components/RebateBands.astro';
@@ -97,7 +98,7 @@ const sources = [
             <li>Full rebate to $1,000,000</li>
             <li>Zero at $1,500,000</li>
             <li class="text-ink">First-time buyers only</li>
-            <li>Signed {FTHB_GST.WINDOW_OPENS} → before 2031</li>
+            <li>Signed {longDate(FTHB_GST.WINDOW_OPENS)} → before 2031</li>
           </ul>
           <a
             href="/faq/first-time-home-buyers-gst-rebate"
@@ -120,7 +121,7 @@ const sources = [
             <li>Flat $80,000 from $1M–$1.5M</li>
             <li>Partial to $1,850,000</li>
             <li class="text-ink">No first-time buyer test</li>
-            <li>Signed {ON_ENHR.WINDOW_OPENS} → {ON_ENHR.WINDOW_CLOSES}</li>
+            <li>Signed {longDate(ON_ENHR.WINDOW_OPENS)} → {longDate(ON_ENHR.WINDOW_CLOSES)}</li>
           </ul>
           <a
             href="/faq/ontario-enhanced-new-housing-rebate"
@@ -171,7 +172,7 @@ const sources = [
 
       <p class="mt-6 max-w-[68ch] border-l-2 border-honey pl-4 text-[15px] leading-relaxed text-ink/80">
         The two do not simply add to $180,000. Ontario's 5% top-up is reduced by whatever federal
-        rebate you claim, which is what pins realistic combined relief around
+        rebate you claim, which is what pins realistic combined relief around{' '}
         <span class="figure">$130,000</span>. Where you land depends on your
         <span class="text-ink">agreement date</span>, not your closing date.
       </p>
@@ -181,11 +182,11 @@ const sources = [
     <section class="mt-16 border border-caution/30 bg-accent-tint/60 p-5 sm:p-7">
       <p class="section-label">Deadline</p>
       <h2 class="mt-2 text-xl font-semibold">
-        The Ontario rebate window closes {ON_ENHR.WINDOW_CLOSES}
+        The Ontario rebate window closes {longDate(ON_ENHR.WINDOW_CLOSES)}
       </h2>
       <p class="mt-3 max-w-[66ch] text-[15px] leading-relaxed text-ink/80">
         The ENHR requires an agreement of purchase and sale signed between
-        {' '}{ON_ENHR.WINDOW_OPENS} and {ON_ENHR.WINDOW_CLOSES}. It runs on the
+        {' '}{longDate(ON_ENHR.WINDOW_OPENS)} and {longDate(ON_ENHR.WINDOW_CLOSES)}. It runs on the
         <span class="text-ink"> signing date, not the closing date</span>, so a home bought in
         February 2027 that closes in 2030 still qualifies, and one bought in May 2027 does not.
         Outside the window you fall back to the standard Ontario rebate of

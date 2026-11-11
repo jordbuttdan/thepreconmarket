@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Newmarket Glenway Towns is a townhome community by Andrin Homes at Bathurst Street & Sykes Road in
   Glenway, Newmarket. Freehold homes from 1,615 to 2,103 sq ft priced $699,991 to $848,664 across 13
-  floor plans. Launched 2026-05-19.
+  floor plans. Launched May 19th, 2026.
 priceFrom: 699991
 priceTo: 848664
 sizeFrom: 1615

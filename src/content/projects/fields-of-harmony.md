@@ -15,7 +15,7 @@ launchDate: "2026-11-02"
 shortAnswer: >-
   Fields of Harmony is a detached community by Greycrest Homes at Harmony Road North & Conlin Road
   East in North Oshawa, Oshawa. Freehold homes from 1,582 to 3,292 sq ft priced $799,900 to
-  $1,249,900 across 11 floor plans. Launched 2026-11-02.
+  $1,249,900 across 11 floor plans. Launched November 2nd, 2026.
 priceFrom: 799900
 priceTo: 1249900
 sizeFrom: 1582

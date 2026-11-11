@@ -15,7 +15,7 @@ launchDate: "2026-10-13"
 shortAnswer: >-
   Lakewind is a townhome community by CedarOak Homes at Shoal Point Road & Bayly Street East in
   South Ajax, Ajax. Freehold homes from 1,731 to 2,233 sq ft priced $729,195 to $836,595 across 8
-  floor plans. Launched 2026-10-13.
+  floor plans. Launched October 13th, 2026.
 priceFrom: 729195
 priceTo: 836595
 sizeFrom: 1731

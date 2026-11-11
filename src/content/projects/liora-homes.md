@@ -18,7 +18,7 @@ occupancy: "Fall 2027 to Spring 2028"
 shortAnswer: >-
   Liora Homes is a detached, townhome, bungalow community by Treasure Hill Homes at Church Street &
   Woodbine Avenue in Keswick, Georgina. Freehold homes from 1,690 to 3,305 sq ft priced $589,900 to
-  $889,900 across 35 floor plans. Launched 2026-09-16.
+  $889,900 across 35 floor plans. Launched September 16th, 2026.
 priceFrom: 589900
 priceTo: 889900
 sizeFrom: 1690

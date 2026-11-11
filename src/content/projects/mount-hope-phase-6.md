@@ -15,7 +15,7 @@ launchDate: "2026-02-05"
 shortAnswer: >-
   Mount Hope Phase 6 is a townhome community by Cachet Homes at 9179 Airport Road West in Mount
   Hope, Hamilton. Freehold homes from 1,469 to 1,964 sq ft priced $619,990 to $699,990 across 11
-  floor plans. Launched 2026-02-05.
+  floor plans. Launched February 5th, 2026.
 priceFrom: 619990
 priceTo: 699990
 sizeFrom: 1469

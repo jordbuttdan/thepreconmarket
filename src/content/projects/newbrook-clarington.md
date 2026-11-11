@@ -16,7 +16,7 @@ launchDate: "2026-07-13"
 shortAnswer: >-
   Newbrook is a detached, townhome community by Brookfield Residential at 879 North Street in
   Newcastle, Clarington. Freehold homes from 1,400 to 3,280 sq ft priced $599,991 to $1,113,990
-  across 22 floor plans. Launched 2026-07-13.
+  across 22 floor plans. Launched July 13th, 2026.
 priceFrom: 599991
 priceTo: 1113990
 sizeFrom: 1400

@@ -16,7 +16,7 @@ occupancy: "Q2 2028"
 shortAnswer: >-
   Chateau Towns is a townhome community by Regency Development at 7810 McCowan Road in Milliken
   Mills, Markham. Freehold homes from 1,418 to 2,347 sq ft priced $788,990 to $1,258,990 across 22
-  floor plans. Launched 2026-09-11.
+  floor plans. Launched September 11th, 2026.
 priceFrom: 788990
 priceTo: 1258990
 sizeFrom: 1418

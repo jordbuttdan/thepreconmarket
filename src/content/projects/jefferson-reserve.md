@@ -17,7 +17,7 @@ occupancy: "January\u2013February 2028"
 shortAnswer: >-
   Jefferson Reserve Homes is ten 25-foot detached and semi-detached homes in Jefferson, Richmond
   Hill, with closings in early 2028. Built by CountryWide Homes, it offers freehold detached, semi
-  homes from 1,771 to 2,383 sq ft, priced $1,169,990 to $1,344,990. Launched 2026-10-28.
+  homes from 1,771 to 2,383 sq ft, priced $1,169,990 to $1,344,990. Launched October 28th, 2026.
 priceFrom: 1169990
 priceTo: 1344990
 sizeFrom: 1771

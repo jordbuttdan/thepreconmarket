@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   Brooklin Towns 2.0 is freehold townhomes in Brooklin from $479,990 with a $5,000 first deposit -
   the lowest entry point of any community here. Built by Madison Group, it offers freehold townhome
-  homes from 829 to 1,694 sq ft, priced $479,990 to $559,990. Launched 2026-06-11.
+  homes from 829 to 1,694 sq ft, priced $479,990 to $559,990. Launched June 11th, 2026.
 priceFrom: 479990
 priceTo: 559990
 sizeFrom: 829

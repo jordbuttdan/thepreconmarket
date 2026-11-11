@@ -15,7 +15,7 @@ launchDate: "2026-06-19"
 shortAnswer: >-
   The Ridge at Rutherford is a townhome community by Royal Pine Homes at Peter Rupert Avenue & Maple
   Valley Road in Vellore Village, Vaughan. Freehold homes from 2,475 to 2,810 sq ft priced $993,900
-  to $1,013,900 across 4 floor plans. Launched 2026-06-19.
+  to $1,013,900 across 4 floor plans. Launched June 19th, 2026.
 priceFrom: 993900
 priceTo: 1013900
 sizeFrom: 2475

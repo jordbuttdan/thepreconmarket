@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Georgina View Homes is a detached community by Greenpark Group at 2 Church Street in Keswick,
   Georgina. Freehold homes from 2,306 to 4,222 sq ft priced $935,900 to $1,350,900 across 22 floor
-  plans. Launched 2026-05-05.
+  plans. Launched May 5th, 2026.
 priceFrom: 935900
 priceTo: 1350900
 sizeFrom: 2306

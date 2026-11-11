@@ -17,7 +17,7 @@ occupancy: "October 2027"
 shortAnswer: >-
   Northgate Trails is a master-planned freehold community in North Ajax from $559,990, with no
   condominium fees on any home. Built by Lakeview Homes, it offers freehold detached, townhome homes
-  from 1,393 to 3,008 sq ft, priced $559,990 to $1,109,990. Launched 2026-11-03.
+  from 1,393 to 3,008 sq ft, priced $559,990 to $1,109,990. Launched November 3rd, 2026.
 priceFrom: 559990
 priceTo: 1109990
 sizeFrom: 1393

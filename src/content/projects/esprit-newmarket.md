@@ -15,7 +15,7 @@ launchDate: "2026-09-29"
 shortAnswer: >-
   Esprit at Newmarket is a townhome community by Sundial Homes at William Booth Avenue & Davis Drive
   West in Davis Drive West, Newmarket. Freehold homes from 1,566 to 2,402 sq ft priced $749,990 to
-  $836,990 across 7 floor plans. Launched 2026-09-29.
+  $836,990 across 7 floor plans. Launched September 29th, 2026.
 priceFrom: 749990
 priceTo: 836990
 sizeFrom: 1566

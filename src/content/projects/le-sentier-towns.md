@@ -16,7 +16,7 @@ occupancy: "March 2028"
 shortAnswer: >-
   Le Sentier Towns is a townhome community by Rysense Development at Elgin Mills Road East & Yonge
   Street in Westbrook, Richmond Hill. Freehold homes from 1,711 to 2,262 sq ft priced $990,000 to
-  $1,329,000 across 8 floor plans. Launched 2026-10-18.
+  $1,329,000 across 8 floor plans. Launched October 18th, 2026.
 priceFrom: 990000
 priceTo: 1329000
 sizeFrom: 1711

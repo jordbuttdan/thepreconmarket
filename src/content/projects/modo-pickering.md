@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   MODO is a townhome community by DECO Homes at Brock Road & Whitevale Road in Seaton, Pickering.
   Freehold homes from 1,614 to 1,855 sq ft priced $764,593 to $808,841 across 4 floor plans.
-  Launched 2026-05-23.
+  Launched May 23rd, 2026.
 priceFrom: 764593
 priceTo: 808841
 sizeFrom: 1614

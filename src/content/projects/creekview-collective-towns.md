@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Creekview Collective Towns is a townhome community by Branthaven Homes at Derry Road & James Snow
   Parkway in Trafalgar, Milton. Freehold homes from 1,260 to 2,550 sq ft priced $799,990 to
-  $1,013,326 across 12 floor plans. Launched 2026-01-23.
+  $1,013,326 across 12 floor plans. Launched January 23rd, 2026.
 priceFrom: 799990
 priceTo: 1013326
 sizeFrom: 1260

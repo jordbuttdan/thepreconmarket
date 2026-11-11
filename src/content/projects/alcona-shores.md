@@ -15,7 +15,7 @@ launchDate: "2026-09-10"
 shortAnswer: >-
   Alcona Shores is a townhome community by Bayview Wellington Homes at 2160 Grainger Loop in Alcona,
   Innisfil. Freehold homes from 1,858 to 2,834 sq ft priced $639,990 to $779,990 across 14 floor
-  plans. Launched 2026-09-10.
+  plans. Launched September 10th, 2026.
 priceFrom: 639990
 priceTo: 779990
 sizeFrom: 1858

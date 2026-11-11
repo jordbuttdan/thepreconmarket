@@ -18,7 +18,7 @@ occupancy: "2027"
 shortAnswer: >-
   Riverbank Place is a detached, semi, townhome community by Kingridge Developments at 4601
   Mississauga Road in Central Erin Mills, Mississauga. Freehold homes from 1,803 to 2,349 sq ft
-  priced $999,900 to $1,369,900 across 11 floor plans. Launched 2026-05-27.
+  priced $999,900 to $1,369,900 across 11 floor plans. Launched May 27th, 2026.
 priceFrom: 999900
 priceTo: 1369900
 sizeFrom: 1803

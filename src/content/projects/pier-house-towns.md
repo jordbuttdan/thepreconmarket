@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Pier House Towns is a townhome community by Branthaven Homes at 861 Hydro Road in Lakeview,
   Mississauga. Freehold homes from 1,255 to 2,195 sq ft priced $819,900 to $1,264,900 across 10
-  floor plans. Launched 2026-03-04.
+  floor plans. Launched March 4th, 2026.
 priceFrom: 819900
 priceTo: 1264900
 sizeFrom: 1255

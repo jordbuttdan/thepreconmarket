@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   The Heights of Harmony East is a detached community by Minto at 2443 Harmony Road North in North
   Oshawa, Oshawa. Freehold homes from 1,527 to 2,982 sq ft priced $773,363 to $1,253,900 across 14
-  floor plans. Launched 2026-04-22.
+  floor plans. Launched April 22nd, 2026.
 priceFrom: 773363
 priceTo: 1253900
 sizeFrom: 1527

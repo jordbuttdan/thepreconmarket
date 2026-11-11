@@ -15,7 +15,7 @@ launchDate: "2026-10-14"
 shortAnswer: >-
   Bloom Park is eight four-bedroom detached designs on 36 and 43 foot lots in Seaton, Pickering,
   with levies capped at $7,500. Built by DECO Homes, it offers freehold detached homes from 2,294 to
-  3,550 sq ft, priced $1,017,690 to $1,292,027. Launched 2026-10-14.
+  3,550 sq ft, priced $1,017,690 to $1,292,027. Launched October 14th, 2026.
 priceFrom: 1017690
 priceTo: 1292027
 sizeFrom: 2294

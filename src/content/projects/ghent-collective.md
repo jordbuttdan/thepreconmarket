@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   The Ghent Collective is a townhome community by Northern Cardinal Homes at 2170 Ghent Avenue in
   Brant, Burlington. Freehold homes from 1,475 to 2,116 sq ft priced $899,000 to $1,040,000 across 4
-  floor plans. Launched 2026-10-13.
+  floor plans. Launched October 13th, 2026.
 priceFrom: 899000
 priceTo: 1040000
 sizeFrom: 1475

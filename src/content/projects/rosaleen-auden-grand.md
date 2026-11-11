@@ -16,7 +16,7 @@ occupancy: "Fall 2027"
 shortAnswer: >-
   Rosaleen Collection at Auden Grand is a townhome community by Sunny Communities at Elgin Mills
   Road East & Bayview Avenue in Devonsleigh, Richmond Hill. Freehold homes from 3,202 to 3,330 sq ft
-  priced $1,198,800 to $1,268,800 across 5 floor plans. Launched 2026-07-24.
+  priced $1,198,800 to $1,268,800 across 5 floor plans. Launched July 24th, 2026.
 priceFrom: 1198800
 priceTo: 1268800
 sizeFrom: 3202

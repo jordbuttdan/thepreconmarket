@@ -18,7 +18,7 @@ occupancy: "2027"
 shortAnswer: >-
   The Valley is a detached community by Marycroft Homes, Remington Homes and Poetry Living at 300
   Clarence Street in Woodbridge, Vaughan. Freehold homes from 2,408 to 4,873 sq ft priced $1,769,000
-  to $2,234,990 across 57 floor plans. Launched 2026-04-15.
+  to $2,234,990 across 57 floor plans. Launched April 15th, 2026.
 priceFrom: 1769000
 priceTo: 2234990
 sizeFrom: 2408

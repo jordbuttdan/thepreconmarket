@@ -16,7 +16,7 @@ occupancy: "2028"
 shortAnswer: >-
   The Legacy is a detached community by Hallett Homes at Millcroft Park Drive in Millcroft,
   Burlington. Freehold homes from 2,131 to 4,766 sq ft priced $2,019,990 to $2,749,990 across 12
-  floor plans. Launched 2026-06-16.
+  floor plans. Launched June 16th, 2026.
 priceFrom: 2019990
 priceTo: 2749990
 sizeFrom: 2131

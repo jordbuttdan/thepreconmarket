@@ -16,7 +16,7 @@ launchDate: "2026-06-17"
 shortAnswer: >-
   Wildfield Village is freehold detached homes and towns at The Gore and Mayfield in Caledon, with a
   graduated deposit to 365 days. Built by Solmar Development Corp, it offers freehold detached,
-  townhome homes from 1,351 to 2,618 sq ft, priced $749,900 to $1,199,900. Launched 2026-06-17.
+  townhome homes from 1,351 to 2,618 sq ft, priced $749,900 to $1,199,900. Launched June 17th, 2026.
 priceFrom: 749900
 priceTo: 1199900
 sizeFrom: 1351

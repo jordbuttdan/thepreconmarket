@@ -15,7 +15,7 @@ launchDate: "2026-02-20"
 shortAnswer: >-
   Fifth Avenue Homes King City is a townhome community by Fifth Avenue Homes at 1986 King Road in
   King City, King City. Freehold homes from 1,827 to 2,294 sq ft priced $1,299,850 to $1,388,850
-  across 5 floor plans. Launched 2026-02-20.
+  across 5 floor plans. Launched February 20th, 2026.
 priceFrom: 1299850
 priceTo: 1388850
 sizeFrom: 1827

@@ -16,7 +16,7 @@ occupancy: "Fall 2028"
 shortAnswer: >-
   Collection on 27 is 166 three-storey back-to-back and front-lane townhomes in Woodbridge, from
   $699,990 with a $80,000 total deposit. Built by UNIQ Communities, it offers freehold townhome
-  homes from 1,323 to 2,383 sq ft, priced $699,990 to $977,990. Launched 2026-10-22.
+  homes from 1,323 to 2,383 sq ft, priced $699,990 to $977,990. Launched October 22nd, 2026.
 priceFrom: 699990
 priceTo: 977990
 sizeFrom: 1323

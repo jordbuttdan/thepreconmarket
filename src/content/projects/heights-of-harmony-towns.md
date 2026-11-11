@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   The Heights of Harmony Freehold Townhomes is a townhome community by Minto at Harmony Road North &
   Nancy Diamond Boulevard in North Oshawa, Oshawa. Freehold homes from 1,565 to 2,077 sq ft priced
-  $596,372 to $702,566 across 16 floor plans. Launched 2026-10-22.
+  $596,372 to $702,566 across 16 floor plans. Launched October 22nd, 2026.
 priceFrom: 596372
 priceTo: 702566
 sizeFrom: 1565

@@ -16,7 +16,7 @@ launchDate: "2026-10-28"
 shortAnswer: >-
   North Hill is detached homes and 25-foot extra-wide freehold townhomes in Upper Bolton, with walk-
   out and look-out lots available. Built by Solmar Development Corp, it offers freehold detached,
-  townhome homes from 1,351 to 2,618 sq ft, priced $789,900 to $1,299,900. Launched 2026-10-28.
+  townhome homes from 1,351 to 2,618 sq ft, priced $789,900 to $1,299,900. Launched October 28th, 2026.
 priceFrom: 789900
 priceTo: 1299900
 sizeFrom: 1351

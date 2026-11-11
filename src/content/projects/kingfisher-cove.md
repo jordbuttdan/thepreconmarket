@@ -15,7 +15,7 @@ launchDate: "2026-10-25"
 shortAnswer: >-
   Kingfisher Cove is a townhome community by Stonebridge Building Group at Stonebridge Boulevard in
   Stonebridge, Wasaga Beach. Freehold homes from 1,837 to 1,874 sq ft priced $702,566 to $718,496
-  across 3 floor plans. Launched 2026-10-25.
+  across 3 floor plans. Launched October 25th, 2026.
 priceFrom: 702566
 priceTo: 718496
 sizeFrom: 1837

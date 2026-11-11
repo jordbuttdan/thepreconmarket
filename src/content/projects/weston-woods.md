@@ -17,7 +17,7 @@ occupancy: "Spring 2028"
 shortAnswer: >-
   Weston Woods is a detached, townhome community by Paradise Developments at Weston Road & Teston
   Road in Kleinburg, Vaughan. Freehold homes from 1,630 to 3,040 sq ft priced $849,990 to $1,559,990
-  across 24 floor plans. Launched 2026-10-31.
+  across 24 floor plans. Launched October 31st, 2026.
 priceFrom: 849990
 priceTo: 1559990
 sizeFrom: 1630

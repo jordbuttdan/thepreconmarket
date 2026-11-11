@@ -16,7 +16,7 @@ occupancy: "Summer 2028"
 shortAnswer: >-
   Elements Towns is three-storey 20-foot towns in South Milton with double-car rear-lane garages,
   from $669,900. Built by Trinity Point Developments, it offers freehold townhome homes from 1,856
-  to 1,918 sq ft, priced $669,900 to $729,900. Launched 2026-10-21.
+  to 1,918 sq ft, priced $669,900 to $729,900. Launched October 21st, 2026.
 priceFrom: 669900
 priceTo: 729900
 sizeFrom: 1856

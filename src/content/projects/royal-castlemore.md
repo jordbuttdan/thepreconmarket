@@ -15,7 +15,7 @@ launchDate: "2026-11-02"
 shortAnswer: >-
   Royal Castlemore is a detached community by Umbria Development Group at Castlemore Road & McVean
   Drive in Castlemore, Brampton. Freehold homes from 2,543 to 7,102 sq ft priced $1,198,900 to
-  $2,999,900 across 9 floor plans. Launched 2026-11-02.
+  $2,999,900 across 9 floor plans. Launched November 2nd, 2026.
 priceFrom: 1198900
 priceTo: 2999900
 sizeFrom: 2543

@@ -16,7 +16,7 @@ launchDate: "2026-03-07"
 shortAnswer: >-
   Southbay at River's Edge is a detached community by Fernbrook Homes and Zancor Homes at Sunnidale
   Road South & Sun Valley Avenue in River's Edge, Wasaga Beach. Freehold homes from 1,564 to 3,098
-  sq ft priced $809,000 to $979,000 across 9 floor plans. Launched 2026-03-07.
+  sq ft priced $809,000 to $979,000 across 9 floor plans. Launched March 7th, 2026.
 priceFrom: 809000
 priceTo: 979000
 sizeFrom: 1564

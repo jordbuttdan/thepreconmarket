@@ -16,7 +16,7 @@ occupancy: "2027"
 shortAnswer: >-
   Abacot Hill Homes is a detached community by Hallett Homes at 1720 Sherwood Forrest Circle in
   Sheridan Park, Mississauga. Freehold homes from 2,720 to 4,194 sq ft priced $1,499,990 to
-  $2,599,990 across 10 floor plans. Launched 2026-10-29.
+  $2,599,990 across 10 floor plans. Launched October 29th, 2026.
 priceFrom: 1499990
 priceTo: 2599990
 sizeFrom: 2720

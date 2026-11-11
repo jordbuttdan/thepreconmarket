@@ -16,7 +16,7 @@ launchDate: "2026-06-17"
 shortAnswer: >-
   Ashburn Hills is detached homes and towns in Brooklin, Whitby, with a $70,000 total deposit and
   development charges capped at $0. Built by Mattamy Homes, it offers freehold detached, townhome
-  homes from 1,444 to 2,729 sq ft, priced $700,876 to $1,043,990. Launched 2026-06-17.
+  homes from 1,444 to 2,729 sq ft, priced $700,876 to $1,043,990. Launched June 17th, 2026.
 priceFrom: 700876
 priceTo: 1043990
 sizeFrom: 1444
