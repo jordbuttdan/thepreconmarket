@@ -153,10 +153,12 @@ h3 {
   border-right: 1px solid var(--color-honey);
 }
 
-/* All dollar figures render in mono with tabular numerals. */
+/* Dollar figures and other numbers: the body typeface, with tabular numerals
+   so columns of figures still line up. */
 @utility figure {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
 }
 
 /* Utility: the answer-first lede paragraph on FAQ and guide pages. This is
