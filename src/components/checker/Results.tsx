@@ -8,10 +8,9 @@ import {
   type RiskFlag,
 } from '../../lib/rebateRules';
 import { decodeAnswers, type EncodedState } from '../../lib/encodeAnswers';
-import { GHL } from '../../config/ghl';
 
 /* ---------------------------------------------------------------------------
-   /results, free verdict immediately, full breakdown behind the GHL gate.
+   /results, the verdict and the full breakdown, both free, nothing gated.
 --------------------------------------------------------------------------- */
 
 const FLAG_COPY: Record<RiskFlag, string> = {
@@ -76,91 +75,6 @@ function Disclaimer() {
 }
 
 /** Fire-and-forget webhook post. Never blocks or breaks the UI. */
-function postToWebhook(state: EncodedState, result: RebateResult) {
-  if (!GHL.checkerWebhookUrl) return;
-  try {
-    const a = state.answers;
-    void fetch(GHL.checkerWebhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        signedStatus: a.stage,
-        signingDate: a.signingDate ?? null,
-        propertyType: a.propertyType,
-        price: a.price,
-        occupancyIntent: a.occupancy,
-        firstTimeBuyerStatus: a.ownedBefore,
-        spousalOwnershipStatus: a.spouseOwned ?? null,
-        province: state.provinceCode,
-        rebateAssignmentStatus: a.rebateAssignment,
-        federalEstimate: result.federalEstimate,
-        provincialEstimate: result.provincialEstimate,
-        onhapEstimate: result.onhapEstimate,
-        combinedEstimate: result.combinedEstimate,
-        riskFlags: result.flags,
-        leadQuality: result.leadTag,
-        submittedAt: new Date().toISOString(),
-      }),
-    }).catch(() => {});
-  } catch {
-    // Never let analytics/webhook failures affect the buyer.
-  }
-}
-
-function Gate({ state, result, onUnlocked }: { state: EncodedState; result: RebateResult; onUnlocked: () => void }) {
-  useEffect(() => {
-    // GHL form embeds postMessage on submission. The exact event payload
-    // varies by form builder version, after pasting the real embed, verify
-    // the event in DevTools and adjust the match below if needed.
-    function onMessage(e: MessageEvent) {
-      const data = typeof e.data === 'string' ? e.data : JSON.stringify(e.data ?? '');
-      if (/form.{0,40}submit/i.test(data)) {
-        postToWebhook(state, result);
-        onUnlocked();
-      }
-    }
-    window.addEventListener('message', onMessage);
-    return () => window.removeEventListener('message', onMessage);
-  }, [state, result, onUnlocked]);
-
-  return (
-    <section aria-label="Get the full breakdown" className="card tick-corners mt-8 p-5 sm:p-8">
-      <p className="section-label">02 / Full breakdown</p>
-      <h2 className="mt-3 text-xl font-semibold">Want the line-by-line version?</h2>
-      <p className="mt-2 text-[15px] text-ink/80">
-        You already have your answer above, that part's free. Leave your details and you'll get the full breakdown:
-        the arithmetic behind each program, your specific eligibility risks in plain English, what to bring to your
-        lawyer, and a next-steps checklist, plus a PDF summary by email.
-      </p>
-
-      {GHL.leadFormEmbedUrl ? (
-        <iframe
-          src={GHL.leadFormEmbedUrl}
-          title="Get your full rebate breakdown"
-          className="mt-5 h-[420px] w-full border-0"
-        />
-      ) : (
-        /* Placeholder so layout can be verified before GHL codes exist. */
-        <div className="mt-5 flex h-[420px] w-full flex-col items-center justify-center gap-3 border border-dashed border-rule-dark bg-paper p-6 text-center">
-          <p className="font-mono text-sm text-label">GHL form embed goes here</p>
-          <p className="max-w-sm text-xs text-ink/50">
-            Set PUBLIC_GHL_LEAD_FORM_URL in .env / Netlify. Fields: first name, last name, email, phone (optional).
-          </p>
-          <button
-            type="button"
-            onClick={() => {
-              postToWebhook(state, result);
-              onUnlocked();
-            }}
-            className="mt-2 border border-rule-dark px-4 py-2 font-mono text-xs text-ink/60 hover:border-accent hover:text-accent"
-          >
-            [dev] simulate submission
-          </button>
-        </div>
-      )}
-    </section>
-  );
-}
 
 function Breakdown({ result }: { result: RebateResult }) {
   return (
@@ -238,7 +152,6 @@ function Breakdown({ result }: { result: RebateResult }) {
 export default function Results() {
   const [state, setState] = useState<EncodedState | null>(null);
   const [loaded, setLoaded] = useState(false);
-  const [unlocked, setUnlocked] = useState(false);
 
   useEffect(() => {
     const param = new URLSearchParams(window.location.search).get('d');
@@ -330,12 +243,8 @@ export default function Results() {
         <Disclaimer />
       </section>
 
-      {/* --------------------------- THE GATE -------------------------- */}
-      {unlocked ? (
-        <Breakdown result={result} />
-      ) : (
-        <Gate state={state} result={result} onUnlocked={() => setUnlocked(true)} />
-      )}
+      {/* ------------------- FULL BREAKDOWN, ALWAYS FREE ------------------- */}
+      <Breakdown result={result} />
 
       {/* ---------------------- ALWAYS: BOOKING CTA --------------------- */}
       <section className="mt-8 border-t border-rule pt-6">

@@ -47,9 +47,11 @@ interface Props {
   breadcrumbs?: Breadcrumb[];
   /** True only on the home page, adds WebSite + SearchAction. */
   isHome?: boolean;
+  /** True on the About page, adds ProfilePage pointing at the broker. */
+  person?: boolean;
 }
 
-const { pageTitle, pageDescription, faq, article, place, breadcrumbs, isHome } = Astro.props;
+const { pageTitle, pageDescription, faq, article, place, breadcrumbs, isHome, person } = Astro.props;
 
 const abs = (path: string) => new URL(path, SITE.url).href;
 
@@ -62,6 +64,8 @@ const agentNode = {
   telephone: BROKER.phone,
   email: BROKER.email,
   url: SITE.url,
+  // The broker's own site, so the two are understood as the same person.
+  sameAs: ['https://razzrealestate.ca'],
   areaServed: {
     '@type': 'AdministrativeArea',
     name: BROKER.areaServed,
@@ -95,6 +99,16 @@ if (isHome) {
     name: SITE.name,
     description: SITE.description,
     publisher: { '@id': abs('/#broker') },
+    inLanguage: 'en-CA',
+  });
+}
+
+if (person) {
+  graph.push({
+    '@type': 'ProfilePage',
+    '@id': new URL(Astro.url.pathname, SITE.url).href + '#profile',
+    name: pageTitle,
+    mainEntity: { '@id': abs('/#broker') },
     inLanguage: 'en-CA',
   });
 }

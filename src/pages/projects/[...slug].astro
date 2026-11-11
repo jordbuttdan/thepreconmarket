@@ -1,4 +1,5 @@
 ---
+import { builderIndex, hasBuilderPage, builderSlug } from '../../lib/builders';
 import { longDate } from '../../lib/dates';
 import type { GetStaticPaths } from 'astro';
 import { getCollection, render } from 'astro:content';
@@ -33,6 +34,17 @@ const faqBySlug = new Map(allFaq.map((e) => [e.id, e]));
 const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != null);
 
 const citySlug = d.city.toLowerCase().replace(/\s+/g, '-');
+
+// Cross-links: builders that have their own page, and other communities in
+// the same city. Most project pages had only two links pointing at them.
+const allProjects = (await getCollection('projects')).filter((p) => p.data.tier === 'featured');
+const builderPages = new Set(builderIndex(allProjects).filter(hasBuilderPage).map((b) => b.slug));
+// Not every project city has a city page (King City sits under King Township).
+const cityPageExists = (await getCollection('cities')).some((c) => c.id === citySlug);
+const sameCity = allProjects
+  .filter((p) => p.data.city === d.city && p.id !== entry.id)
+  .sort((x, y) => x.data.name.localeCompare(y.data.name))
+  .slice(0, 8);
 const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'));
 const priceLabel =
   d.priceFrom != null
@@ -108,7 +120,18 @@ const specs: { k: string; v: string }[] = [
       <article class="lg:col-span-8">
         <p class="section-label">{d.neighbourhood ? `${d.neighbourhood}, ` : ''}{d.city}</p>
         <h1 class="mt-3 text-[2rem] font-semibold sm:text-[2.5rem]">{d.name}</h1>
-        <p class="mt-2 text-[15px] text-ink/65">{d.builder.join(' · ')}</p>
+        <p class="mt-2 text-[15px] text-ink/65">
+          {d.builder.map((name, i) => (
+            <>
+              {i > 0 && ' · '}
+              {builderPages.has(builderSlug(name)) ? (
+                <a href={`/builders/${builderSlug(name)}`} class="underline decoration-rule-dark underline-offset-2 hover:text-accent">{name}</a>
+              ) : (
+                name
+              )}
+            </>
+          ))}
+        </p>
 
         <p class="lede mt-6">{d.shortAnswer}</p>
 
@@ -229,6 +252,31 @@ const specs: { k: string; v: string }[] = [
               <p class="mt-2 font-mono text-[11px] text-ink/45">
                 Renderings are the builder's and are subject to change. Not a representation.
               </p>
+            </section>
+          )
+        }
+
+        {
+          sameCity.length > 0 && (
+            <section class="mt-12">
+              <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+                <h2 class="text-lg font-semibold">More new homes in {d.city}</h2>
+                {cityPageExists && (
+                  <a href={`/new-homes/${citySlug}`} class="ml-auto text-[13px] text-accent underline underline-offset-2">
+                    All of {d.city}
+                  </a>
+                )}
+              </div>
+              <ul class="mt-2 grid gap-x-10 sm:grid-cols-2">
+                {sameCity.map((p) => (
+                  <li class="flex items-baseline gap-3 border-b border-rule/60 py-2.5 text-[14px]">
+                    <a href={`/projects/${p.id}`} class="font-medium text-ink/90 hover:text-accent">{p.data.name}</a>
+                    <span class="figure ml-auto shrink-0 text-[13px] text-ink/60">
+                      {p.data.priceFrom ? `from $${Math.round(p.data.priceFrom / 1000)}k` : 'launching'}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </section>
           )
         }

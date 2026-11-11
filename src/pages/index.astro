@@ -1,4 +1,5 @@
 ---
+import Testimonials from '../components/Testimonials.astro';
 import { longDate } from '../lib/dates';
 import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
@@ -70,9 +71,8 @@ const homeFaqSchema = heroFaq.map((e) => ({
   <section class="mx-auto max-w-[1100px] px-4 pt-14 pb-4 sm:px-6 lg:pt-20">
     <div class="grid items-end gap-10 lg:grid-cols-12 lg:gap-x-12">
       <div class="lg:col-span-7">
-        <p class="section-label">Ontario pre-construction</p>
         <h1
-          class="mt-5 text-[2.6rem] leading-[0.98] font-semibold tracking-[-0.03em] sm:text-[3.6rem] lg:text-[4.1rem]"
+          class="text-[2.6rem] leading-[0.98] font-semibold tracking-[-0.03em] sm:text-[3.6rem] lg:text-[4.1rem]"
         >
           Get in early.<br />Buy with confidence.
         </h1>
@@ -201,6 +201,9 @@ const homeFaqSchema = heroFaq.map((e) => ({
     </ul>
   </section>
 
+  <!-- ======================= TESTIMONIALS ======================= -->
+  <Testimonials />
+
   <!-- ======================= THE REBATE ======================= -->
   <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
     <div class="tick-corners border border-rule bg-accent-tint/60 p-6 sm:p-10">
@@ -262,6 +265,9 @@ const homeFaqSchema = heroFaq.map((e) => ({
     <a href="/faq" class="mt-8 inline-block text-[13px] text-accent underline underline-offset-2">
       All {faq.length} questions
     </a>
+    <a href="/resources" class="mt-8 ml-6 inline-block text-[13px] text-accent underline underline-offset-2">
+      Free checklists to take to your lawyer
+    </a>
   </section>
 
   <!-- ===================== BROWSE BY CITY ===================== -->
@@ -287,35 +293,6 @@ const homeFaqSchema = heroFaq.map((e) => ({
     <a href="/new-homes" class="mt-6 inline-block text-[13px] text-accent underline underline-offset-2">
       All {cities.length} cities
     </a>
-  </section>
-
-  <!-- ======================== FREE TOOLS ======================== -->
-  <section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
-    <div class="grid gap-8 lg:grid-cols-12 lg:gap-x-12">
-      <div class="lg:col-span-4">
-        <p class="section-label">Free tools</p>
-        <h2 class="mt-2 text-2xl font-semibold">Checklists worth having in your hand</h2>
-        <p class="mt-3 text-[15px] leading-relaxed text-ink/75">
-          For the moments that matter: before you sign, at the walkthrough, and when you are
-          budgeting for closing.
-        </p>
-        <a href="/resources" class="mt-4 inline-block text-[13px] text-accent underline underline-offset-2">
-          All {resources.length} tools
-        </a>
-      </div>
-      <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-8">
-        {
-          resources.map((r) => (
-            <li class="card p-4">
-              <a href={`/resources/${r.id}`} class="text-[15px] font-medium hover:text-accent">
-                {r.data.title}
-              </a>
-              <p class="mt-1.5 text-[13px] leading-relaxed text-ink/70">{r.data.shortAnswer}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
   </section>
 
   <!-- ========================= CLOSE ========================= -->

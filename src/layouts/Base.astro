@@ -41,6 +41,8 @@ interface Props {
   };
   /** Set true on thin utility pages that should not be indexed. */
   noindex?: boolean;
+  /** True on the About page: emits the person profile markup. */
+  person?: boolean;
   /**
    * Content measure. 'narrow' is for single-column reading pages; the date
    * and breadcrumb strips match it so nothing sits out of alignment.
@@ -58,6 +60,7 @@ const {
   article,
   place,
   noindex,
+  person,
   width = 'wide',
 } = Astro.props;
 
@@ -65,7 +68,26 @@ const measure = width === 'narrow' ? 'max-w-[820px]' : 'max-w-[1100px]';
 
 const year = new Date().getFullYear();
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
-const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+// Search results cut titles at about 60 characters, so the site name is only
+// appended where it fits; a long page title is worth more than the suffix.
+const withName = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
+const fullTitle = withName.length <= 60 ? withName : title;
+
+// Descriptions are cut at about 160. Longer ones (most reuse the page's short
+// answer) are trimmed to whole sentences, or to a word boundary.
+function metaDescription(text: string): string {
+  const t = text.replace(/\s+/g, ' ').trim();
+  if (t.length <= 158) return t;
+  const sentences = t.match(/[^.!?]+[.!?]+/g) ?? [];
+  let out = '';
+  for (const s of sentences) {
+    if ((out + s).trim().length > 158) break;
+    out += s;
+  }
+  if (out.trim().length >= 70) return out.trim();
+  return t.slice(0, 155).replace(/\s+\S*$/, '') + '…';
+}
+const metaDesc = metaDescription(description);
 const path = Astro.url.pathname;
 const isActive = (href: string) => path === href || path.startsWith(href + '/');
 
@@ -85,7 +107,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDesc} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -102,7 +124,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
 
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDesc} />
     <meta property="og:type" content={article ? 'article' : 'website'} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en_CA" />
@@ -112,7 +134,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={`${SITE.url}/og.png`} />
     <meta name="twitter:title" content={fullTitle} />
-    <meta name="twitter:description" content={description} />
+    <meta name="twitter:description" content={metaDesc} />
 
     <meta name="author" content={`${BROKER.name}, ${BROKER.title}`} />
     <meta name="geo.region" content="CA-ON" />
@@ -128,6 +150,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
       place={place}
       breadcrumbs={breadcrumbs}
       isHome={isHome}
+      person={person}
     />
 
     <!-- ANALYTICS PLACEHOLDER: GA4 -->
@@ -304,6 +327,7 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
               <ul class="mt-3 space-y-2 text-sm text-ink/75">
                 <li><a href="/projects" class="hover:text-accent">All projects</a></li>
                 <li><a href="/launching" class="hover:text-accent">Launching now</a></li>
+                <li><a href="/builders" class="hover:text-accent">Builders</a></li>
                 <li><a href="/new-homes" class="hover:text-accent">Browse by city</a></li>
                 <li><a href="/vip" class="hover:text-accent">Register for VIP access</a></li>
                 <li><a href="/how-it-works" class="hover:text-accent">How it works</a></li>

@@ -1,0 +1,174 @@
+---
+/**
+ * One page per builder with two or more tracked communities. A builder with
+ * a single project would be a thin page restating that project, so those are
+ * listed on /builders and link straight to the project instead.
+ *
+ * Facts only: what the builder is selling, where, at what prices and on what
+ * published terms. No ratings and no reputation claims.
+ */
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { GHL } from '../../config/ghl';
+import { builderIndex, hasBuilderPage } from '../../lib/builders';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const projects = (await getCollection('projects')).filter((p) => p.data.tier === 'featured');
+  return builderIndex(projects)
+    .filter(hasBuilderPage)
+    .map((b) => ({ params: { slug: b.slug }, props: { b } }));
+};
+
+const { b } = Astro.props;
+const money = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'));
+const list = (xs: string[]) =>
+  xs.length <= 1 ? (xs[0] ?? '') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`;
+const typeWord: Record<string, string> = {
+  detached: 'detached homes',
+  semi: 'semi-detached homes',
+  townhome: 'townhomes',
+  bungalow: 'bungalows',
+};
+const types = list(b.homeTypes.map((t) => typeWord[t] ?? t));
+const priced = b.projects.filter((p) => p.data.priceFrom != null);
+const upcoming = b.projects.filter((p) => p.data.priceFrom == null);
+const priceLine =
+  b.priceFrom != null ? `${money(b.priceFrom)} to ${money(b.priceTo)}` : 'pricing not yet released';
+const latest = new Date(Math.max(...b.projects.map((p) => p.data.updated.getTime())));
+
+const shortAnswer = `${b.name} has ${b.projects.length} freehold low-rise communities tracked on this site, in ${list(b.cities)}, offering ${types}. ${
+  b.priceFrom != null ? `Current list prices run ${priceLine}.` : 'Pricing has not been released yet.'
+}${upcoming.length ? ` ${upcoming.length === 1 ? 'One is' : `${upcoming.length} are`} still to launch.` : ''}`;
+
+const incentives = [...new Set(b.projects.flatMap((p) => p.data.incentives))].slice(0, 8);
+
+const faq = [
+  { question: `What is ${b.name} building in Ontario right now?`, answer: shortAnswer },
+  {
+    question: `Where is ${b.name} building new homes?`,
+    answer: `${b.name} communities tracked here: ${b.projects.map((p) => `${p.data.name} in ${p.data.city}`).join('; ')}.`,
+  },
+  ...(priced.length
+    ? [
+        {
+          question: `How much do ${b.name} homes cost?`,
+          answer: `By community: ${priced
+            .map((p) => `${p.data.name}, ${money(p.data.priceFrom)}${p.data.priceTo && p.data.priceTo !== p.data.priceFrom ? ` to ${money(p.data.priceTo)}` : ''}`)
+            .join('; ')}. These are builder list prices; lot premiums and upgrades are extra.`,
+        },
+      ]
+    : []),
+  {
+    question: `How can I check ${b.name}'s record before buying?`,
+    answer: `Look the builder up in the Ontario Builder Directory run by the Home Construction Regulatory Authority. It shows whether the builder is licensed, how many homes it has built, and any Tarion warranty claims or conduct findings against it.`,
+  },
+];
+---
+
+<Base
+  title={`${b.name}: current new home communities in Ontario`}
+  description={shortAnswer}
+  updated={latest}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Builders', href: '/builders' },
+    { name: b.name, href: `/builders/${b.slug}` },
+  ]}
+  faq={faq}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">Builder</p>
+    <h1 class="mt-4 text-[2rem] font-semibold sm:text-[2.6rem]">{b.name}</h1>
+    <p class="lede mt-6 max-w-[66ch]">{shortAnswer}</p>
+
+    <dl class="mt-8 grid gap-x-10 gap-y-4 border-y border-rule py-5 text-[14px] sm:grid-cols-4">
+      <div><dt class="section-label">Communities</dt><dd class="figure mt-1 text-[17px] font-semibold">{b.projects.length}</dd></div>
+      <div><dt class="section-label">Cities</dt><dd class="mt-1 text-ink/85">{b.cities.join(', ')}</dd></div>
+      <div><dt class="section-label">Home types</dt><dd class="mt-1 text-ink/85">{types}</dd></div>
+      <div><dt class="section-label">List prices</dt><dd class="figure mt-1 text-ink/85">{priceLine}</dd></div>
+    </dl>
+
+    <section class="mt-12">
+      <h2 class="border-b border-rule-dark pb-2 text-lg font-semibold">{b.name} communities</h2>
+      <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {b.projects.map((p) => <li class="flex"><ProjectCard project={p} /></li>)}
+      </ul>
+    </section>
+
+    <div class="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-x-12">
+      <div class="lg:col-span-7">
+        {
+          incentives.length > 0 && (
+            <section>
+              <h2 class="text-lg font-semibold">Incentives currently published</h2>
+              <p class="mt-2 text-[14px] leading-relaxed text-ink/70">
+                Across the communities above. They differ by project and phase, change without
+                notice, and only count once written into an amendment.
+              </p>
+              <ul class="mt-4 grid gap-x-8 gap-y-1 sm:grid-cols-2">
+                {incentives.map((x) => (
+                  <li class="flex items-baseline gap-2 border-b border-rule/60 py-2 text-[14px] text-ink/80">
+                    <span aria-hidden="true" class="mt-[0.45em] h-px w-2.5 shrink-0 bg-honey" />
+                    <span>{x}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        <section class="mt-10">
+          <h2 class="text-lg font-semibold">{b.name}, common questions</h2>
+          <dl class="mt-5 space-y-5">
+            {faq.map((f) => (
+              <div class="border-l-2 border-honey pl-4">
+                <dt class="text-[15px] font-semibold text-ink">{f.question}</dt>
+                <dd class="mt-1.5 text-[14px] leading-relaxed text-ink/80">{f.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
+        <section class="mt-10 border border-rule bg-paper-pure p-5">
+          <h2 class="text-[17px] font-semibold">Checking a builder yourself</h2>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
+            This page lists what {b.name} is selling. It does not rate the builder. For licensing,
+            homes built and warranty history, use the{' '}
+            <a href="https://obd.hcraontario.ca/" rel="noopener" target="_blank" class="text-accent underline underline-offset-2">Ontario Builder Directory</a>, and read{' '}
+            <a href="/guides/builder-due-diligence-guide" class="text-accent underline underline-offset-2">how to assess a builder</a>.
+            If you want to know what they are like to deal with in practice,{' '}
+            <a href="/book" class="text-accent underline underline-offset-2">ask me</a>.
+          </p>
+        </section>
+      </div>
+
+      <aside class="lg:col-span-5">
+        <div class="tick-corners sticky top-6 border border-rule-dark bg-accent-tint/60 p-5 sm:p-6">
+          <p class="section-label">Release alerts</p>
+          <h2 class="mt-2 text-[17px] font-semibold">New {b.name} releases</h2>
+          <p class="mt-2 text-[13px] leading-relaxed text-ink/75">
+            One email when {b.name} puts out a new community or phase, with the price list and
+            floor plans.
+          </p>
+          <div class="mt-4">
+            <LeadForm
+              webhookUrl={GHL.vipWebhookUrl}
+              fields="email"
+              intent="launch-alert"
+              builders={[b.name]}
+              submitLabel={`Email me ${b.name} releases`}
+              doneHeading="You're on the list."
+              doneBody={`You will get an email when ${b.name} releases something new.`}
+            />
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <Disclaimer />
+  </div>
+</Base>

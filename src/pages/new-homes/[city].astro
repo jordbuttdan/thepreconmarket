@@ -39,12 +39,30 @@ const relatedFaq = d.relatedFaq.map((s) => faqBySlug.get(s)).filter((e) => e != 
 const featured = projects.filter((p) => p.data.tier === 'featured');
 const catalogue = projects.filter((p) => p.data.tier === 'catalogue');
 const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'));
+
+// Question-shaped markup for the two things people ask about a city. Both
+// answers are stated on the page itself.
+const cityFaq = [
+  { question: `What new homes are being built in ${d.city}?`, answer: d.shortAnswer },
+  ...(featured.length
+    ? [
+        {
+          question: `Which new communities are selling in ${d.city} right now?`,
+          answer: `Freehold low-rise communities tracked in ${d.city}: ${featured
+            .map((p) => `${p.data.name} by ${p.data.builder.join(', ')}${p.data.priceFrom ? `, from ${fmt(p.data.priceFrom)}` : ''}`)
+            .join('; ')}.`,
+        },
+      ]
+    : []),
+];
 ---
 
 <Base
   title={`New homes in ${d.city}`}
   description={d.description ?? d.shortAnswer}
   updated={d.updated}
+  faq={cityFaq}
+  noindex={featured.length === 0}
   breadcrumbs={[
     { name: 'Home', href: '/' },
     { name: 'New homes', href: '/new-homes' },

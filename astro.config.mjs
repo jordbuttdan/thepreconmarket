@@ -16,7 +16,14 @@ export default defineConfig({
       // the sitemap so crawl budget goes to the indexable answers.
       // /results is rendered client-side from checker state — a crawler sees
       // an empty shell, so it must not be advertised in the sitemap.
-      filter: (page) => !['/privacy', '/results', '/thank-you', '/404'].some((p) => page.includes(p)),
+      // The last seven are city pages with no projects yet; they are noindex
+      // until they have one, so they stay out of the sitemap too.
+      filter: (page) =>
+        ![
+          '/privacy', '/results', '/thank-you', '/404',
+          '/new-homes/dundas', '/new-homes/elora', '/new-homes/essa', '/new-homes/fergus',
+          '/new-homes/mono', '/new-homes/shelburne', '/new-homes/welland',
+        ].some((p) => page.includes(p)),
       changefreq: 'weekly',
       lastmod: new Date(),
     }),

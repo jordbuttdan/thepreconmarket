@@ -1,0 +1,64 @@
+---
+/**
+ * Client reviews, quoted from Jordan's Google Business Profile.
+ *
+ * First name and last initial only, no dates, by the owner's instruction.
+ * The words are the reviewers' own; where a review is long it is excerpted,
+ * never reworded. One review concerns a rental, so its excerpt is the part
+ * about working with Jordan and it is not presented as a purchase.
+ *
+ * Deliberately no Review or AggregateRating structured data: Google does not
+ * accept review markup a business publishes about itself, and adding it risks
+ * a manual action for the whole site.
+ */
+interface Props {
+  /** How many to show. Defaults to all. */
+  limit?: number;
+  heading?: string;
+}
+const { limit, heading = 'What clients say' } = Astro.props;
+
+const REVIEWS = [
+  {
+    name: 'Karen R.',
+    quote:
+      'He invested time whereby he learned about our goals. He was an excellent guide. Expect an honest appraisal and transparency. He had our best interests at heart. I will forever be thankful for his honesty and deep knowledge of the market.',
+  },
+  {
+    name: 'Sabrina S.',
+    quote:
+      'He has always been patient with us and never pushed us to make a decision we weren’t comfortable with. He explained the whole process and answered every question we had. He was there with us every step of the way.',
+  },
+  {
+    name: 'Devin S.',
+    quote:
+      'Jordan was an amazing help through our process of buying our first home. Could not recommend him enough for both his clarity during the search process and the extra mile he goes for the purchase.',
+  },
+  {
+    name: 'Josiah O.',
+    quote:
+      'His calmness, assessment skillset, dedication and negotiating power is what any potential buyer or seller would enjoy most about working with Jordan just like I did.',
+  },
+];
+const shown = limit ? REVIEWS.slice(0, limit) : REVIEWS;
+---
+
+<section class="mx-auto max-w-[1100px] px-4 pt-20 sm:px-6">
+  <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+    <h2 class="text-2xl font-semibold">{heading}</h2>
+    <span class="ml-auto text-[12px] text-ink/55">5-star reviews on Google</span>
+  </div>
+  <ul class="mt-6 grid gap-5 sm:grid-cols-2">
+    {
+      shown.map((r) => (
+        <li class="card flex flex-col border-l-2 border-l-honey p-5 sm:p-6">
+          <p class="text-[13px] tracking-[0.15em] text-honey" aria-label="Five stars">★★★★★</p>
+          <blockquote class="mt-3 grow text-[15px] leading-relaxed text-ink/85">
+            “{r.quote}”
+          </blockquote>
+          <p class="mt-4 text-[13px] font-semibold text-ink">{r.name}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>

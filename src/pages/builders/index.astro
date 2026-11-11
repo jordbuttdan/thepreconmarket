@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+import { builderIndex, hasBuilderPage } from '../../lib/builders';
+
+const projects = (await getCollection('projects')).filter((p) => p.data.tier === 'featured');
+const builders = builderIndex(projects);
+const withPages = builders.filter(hasBuilderPage);
+const single = builders.filter((b) => !hasBuilderPage(b));
+const money = (n?: number) => (n == null ? null : '$' + Math.round(n / 1000) + 'k');
+const latest = new Date(Math.max(...projects.map((p) => p.data.updated.getTime())));
+---
+
+<Base
+  title="Ontario new home builders and what they are selling now"
+  description={`${builders.length} builders with freehold low-rise communities currently selling or launching across the GTA and southern Ontario, with each one's communities, cities and list prices.`}
+  updated={latest}
+  breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Builders', href: '/builders' }]}
+>
+  <div class="mx-auto max-w-[1100px] px-4 pt-8 sm:px-6">
+    <p class="section-label">Builders</p>
+    <h1 class="mt-4 max-w-[24ch] text-[2rem] font-semibold sm:text-[2.6rem]">
+      Who is building, and what they are selling
+    </h1>
+    <p class="lede mt-6 max-w-[62ch]">
+      {builders.length} builders have freehold low-rise communities tracked here. Each page lists
+      that builder's current communities, cities and list prices. These pages state facts and do
+      not rate builders.
+    </p>
+
+    <section class="mt-12">
+      <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+        <h2 class="text-lg font-semibold">Builders with several communities</h2>
+        <span class="figure text-[11px] text-ink/45">{withPages.length}</span>
+      </div>
+      <ul class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          withPages.map((b) => (
+            <li>
+              <a href={`/builders/${b.slug}`} class="card block h-full p-5 transition-colors hover:border-honey">
+                <h3 class="text-[17px] font-semibold">{b.name}</h3>
+                <p class="mt-1 text-[13px] text-ink/65">
+                  {b.projects.length} communities · {b.cities.join(', ')}
+                </p>
+                <p class="figure mt-3 text-[13px] text-ink">
+                  {b.priceFrom != null ? `${money(b.priceFrom)} – ${money(b.priceTo)}` : 'Pricing to come'}
+                </p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-14">
+      <div class="flex items-baseline gap-3 border-b border-rule-dark pb-2">
+        <h2 class="text-lg font-semibold">Builders with one community</h2>
+        <span class="figure text-[11px] text-ink/45">{single.length}</span>
+      </div>
+      <ul class="mt-4 grid gap-x-10 sm:grid-cols-2">
+        {
+          single.map((b) => (
+            <li class="flex flex-wrap items-baseline gap-x-3 border-b border-rule/60 py-2.5 text-[14px]">
+              <span class="font-medium text-ink/90">{b.name}</span>
+              <a href={`/projects/${b.projects[0].id}`} class="text-accent underline underline-offset-2">
+                {b.projects[0].data.name}, {b.projects[0].data.city}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <Disclaimer />
+  </div>
+</Base>
