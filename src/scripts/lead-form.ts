@@ -4,15 +4,21 @@
  */
 const MIN_FILL_MS = 2500;
 
-function post(url: string, payload: Record<string, unknown>) {
-  // GHL inbound webhooks return no CORS headers, so the response is opaque.
-  return fetch(url, {
+async function post(url: string, payload: Record<string, unknown>) {
+  // A normal cross-origin request, NOT mode: 'no-cors'. In no-cors mode the
+  // browser silently downgrades Content-Type to text/plain, and GHL rejects a
+  // text/plain body ("invalid data: Body payload") while still answering 200,
+  // so every lead was dropped without any visible error. GHL's webhook does
+  // send CORS headers, so the JSON request is allowed and the reply readable.
+  const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload),
-    mode: 'no-cors',
     keepalive: true,
   });
+  const text = await res.text().catch(() => '');
+  // GHL answers 200 even when it rejects the body, so read what it said.
+  if (!res.ok || /"status"\s*:\s*"Error/i.test(text)) throw new Error('lead not accepted');
 }
 
 function track(event: string, params: Record<string, unknown>) {
