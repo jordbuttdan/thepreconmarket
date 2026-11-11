@@ -1,4 +1,5 @@
 ---
+import BuilderPlate from './BuilderPlate.astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 
@@ -53,17 +54,9 @@ const href = `/projects/${project.id}`;
           />
         </a>
       ) : (
-        /* Not every project has a builder rendering available. A drawn panel
-           keeps the grid even and reads as intentional rather than broken. */
-        <a
-          href={href}
-          class="flex aspect-[16/10] items-center justify-center border-b border-rule bg-accent-tint/50"
-          aria-hidden="true"
-          tabindex="-1"
-        >
-          <span class="font-mono text-[11px] tracking-[0.08em] text-label uppercase">
-            {d.city}
-          </span>
+        /* No rendering yet: the builder's logo, or its name, stands in. */
+        <a href={href} class="block" aria-label={`${d.name} in ${d.city}`}>
+          <BuilderPlate builders={d.builder} />
         </a>
       )}
       <div class="flex grow flex-col p-5">

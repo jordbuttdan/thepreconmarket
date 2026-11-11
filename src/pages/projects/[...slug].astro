@@ -1,4 +1,5 @@
 ---
+import BuilderPlate from '../../components/BuilderPlate.astro';
 import { builderIndex, hasBuilderPage, builderSlug } from '../../lib/builders';
 import { longDate } from '../../lib/dates';
 import type { GetStaticPaths } from 'astro';
@@ -100,6 +101,9 @@ const specs: { k: string; v: string }[] = [
   }}
 >
   <div class="mx-auto max-w-[1100px] px-4 pt-6 sm:px-6">
+    {
+      !d.heroImage && <BuilderPlate builders={d.builder} size="hero" />
+    }
     {
       d.heroImage && (
         <figure class="tick-corners border border-rule">

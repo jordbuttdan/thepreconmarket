@@ -1,0 +1,66 @@
+---
+/**
+ * Stands in for a rendering on projects that have none yet.
+ *
+ * Shows the builder's logo where one is on file (src/assets/builders/, named
+ * by builder slug), and otherwise sets the builder's name in type so the two
+ * cases read as the same element. Logos are shown in greyscale and small: the
+ * plate identifies who is building, it is not an endorsement or a partnership
+ * badge, and a wall of full-colour logos would read as one.
+ *
+ * To add a logo, drop a file named <builder-slug>.(svg|png|jpg) into
+ * src/assets/builders/. Nothing else needs changing.
+ */
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import { builderSlug } from '../lib/builders';
+
+interface Props {
+  builders: string[];
+  /** 'card' fills a project card's image slot; 'hero' is the wide page banner. */
+  size?: 'card' | 'hero';
+  note?: string;
+}
+const { builders, size = 'card', note = 'Renderings to come' } = Astro.props;
+
+const files = import.meta.glob<{ default: ImageMetadata }>('../assets/builders/*.{svg,png,jpg,jpeg}', { eager: true });
+const logos = new Map<string, ImageMetadata>();
+for (const [path, mod] of Object.entries(files)) {
+  logos.set(path.split('/').pop()!.replace(/\.[a-z]+$/, ''), mod.default);
+}
+const withLogo = builders.find((b) => logos.has(builderSlug(b)));
+const logo = withLogo ? logos.get(builderSlug(withLogo)) : undefined;
+---
+
+<div
+  class:list={[
+    'flex flex-col items-center justify-center gap-3 bg-paper-pure px-6 text-center',
+    size === 'card' ? 'aspect-[16/10] border-b border-rule' : 'tick-corners border border-rule py-12 sm:py-16',
+  ]}
+>
+  {
+    logo ? (
+      <Image
+        src={logo}
+        alt={`${withLogo} logo`}
+        height={size === 'card' ? 112 : 160}
+        densities={[1, 2]}
+        loading="lazy"
+        class:list={[
+          'w-auto object-contain opacity-80 grayscale',
+          size === 'card' ? 'max-h-14 max-w-[70%]' : 'max-h-20 max-w-[60%]',
+        ]}
+      />
+    ) : (
+      <p
+        class:list={[
+          'font-semibold tracking-[0.02em] text-ink/75',
+          size === 'card' ? 'text-[19px]' : 'text-[26px]',
+        ]}
+      >
+        {builders[0]}
+      </p>
+    )
+  }
+  <p class="font-mono text-[10px] tracking-[0.08em] text-label uppercase">{note}</p>
+</div>
