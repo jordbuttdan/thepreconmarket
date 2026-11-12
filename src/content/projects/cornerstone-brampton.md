@@ -50,8 +50,7 @@ incentives:
 projectFaq:
   - q: "Is Cornerstone freehold or condo?"
     a: >-
-      Cornerstone is freehold, buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly maintenance fee.
+      Cornerstone is freehold, buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Cornerstone?"
     a: >-
       Cornerstone is being built by Primont Homes, in Brampton's Heritage Heights area.

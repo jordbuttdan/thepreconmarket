@@ -2,6 +2,7 @@
 name: "The Nine Phase 6"
 redBricksId: "9687"
 tier: featured
+potl: true
 builder:
   - "Mattamy Homes"
 city: "Mississauga"
@@ -77,7 +78,7 @@ projectFaq:
       Occupancy is listed for November–December 2027. Builder dates are tentative and commonly move;
       the binding dates are in your agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

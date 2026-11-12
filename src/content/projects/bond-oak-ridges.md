@@ -2,6 +2,7 @@
 name: "Bond by Sunny Communities"
 redBricksId: "9100"
 tier: featured
+potl: true
 builder:
   - "Sunny Communities"
 city: Richmond Hill
@@ -79,7 +80,7 @@ projectFaq:
       dates are tentative and commonly move; the binding dates are the ones set out in your
       agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

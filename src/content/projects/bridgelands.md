@@ -188,12 +188,12 @@ This is not a prediction about these builders, all three are long-established. I
 
 ## What to sort out now
 
-Lots are allocated in order and the best ones went first, so at this stage preparation is most of the advantage:
+At this stage, preparation is most of the advantage:
 
 - **Register for representation.** Most builders require your broker to be registered **at or before your first visit** for it to count. [Why this matters](/faq/do-i-need-a-realtor-pre-construction).
 - **Have your deposit draft ready.** The first instalment is normally a bank draft on signing, at the sales office.
 - **Decide your lot priorities in writing**, width, orientation, walkout grade, what is behind it. You choose in minutes, not days. [How to choose a lot](/guides/choosing-a-lot-new-low-rise).
-- **Brief a real estate lawyer** so a same-day agreement review is a phone call. There is **no cooling-off period on freehold in Ontario**, the agreement binds on acceptance. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
+- **Brief a real estate lawyer** so a same-day agreement review is a phone call. There is **no cooling-off period on freehold in Ontario**, the agreement binds on acceptance, unless your lot is a POTL, where a 10-day right may apply. [This is the one to understand](/faq/cooling-off-period-freehold-ontario).
 - **Ask for a cap on development charges and levies.** DECO is offering levies capped at **$0** at launch. That is the most valuable single term on the incentive sheet for a closing three or four years out, and it is worth asking the other two builders to match. [Why](/faq/development-charges-levies-cap).
 
 ## Comparing the three builders

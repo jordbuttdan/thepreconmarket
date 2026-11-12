@@ -44,8 +44,7 @@ depositStructure:
 projectFaq:
   - q: "Is MVP Towns freehold or condo?"
     a: >-
-      MVP Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      MVP Towns is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building MVP Towns?"
     a: >-
       MVP Towns is being built by Fernbrook Homes and Tiffany Park Homes in Mapleview, Barrie.

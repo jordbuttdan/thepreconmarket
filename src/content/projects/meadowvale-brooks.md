@@ -40,8 +40,7 @@ depositStructure:
 projectFaq:
   - q: "Is Meadowvale Brooks Homes freehold or condo?"
     a: >-
-      Meadowvale Brooks Homes is freehold, so buyers own the land and the building outright. There
-      is no condominium corporation and no standard monthly fee.
+      Meadowvale Brooks Homes is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Meadowvale Brooks Homes?"
     a: >-
       Meadowvale Brooks Homes is being built by Camcos Living in Meadowvale, Mississauga.

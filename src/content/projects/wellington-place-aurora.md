@@ -2,6 +2,7 @@
 name: "Wellington Place"
 redBricksId: "7360"
 tier: featured
+potl: true
 builder:
   - "Arkfield"
 city: "Aurora"
@@ -71,7 +72,7 @@ projectFaq:
     a: >-
       Wellington Place is at 200 Wellington Street West in King West, Aurora, Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

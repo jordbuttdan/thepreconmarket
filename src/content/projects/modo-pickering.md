@@ -39,8 +39,7 @@ depositStructure:
 projectFaq:
   - q: "Is MODO freehold or condo?"
     a: >-
-      MODO is freehold, so buyers own the land and the building outright. There is no condominium
-      corporation and no standard monthly fee.
+      MODO is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building MODO?"
     a: >-
       MODO is being built by DECO Homes in Seaton, Pickering.

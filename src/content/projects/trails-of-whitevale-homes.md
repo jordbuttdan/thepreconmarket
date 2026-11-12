@@ -47,7 +47,7 @@ projectFaq:
   - q: "Is Trails of Whitevale Detached freehold or condo?"
     a: >-
       Trails of Whitevale, Detached is freehold, buyers own the land and the building outright.
-      There is no condominium corporation and no standard monthly maintenance fee.
+      Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Trails of Whitevale Detached?"
     a: >-
       Trails of Whitevale, Detached is being built by Sundial Homes, in Pickering's Whitevale area.

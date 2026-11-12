@@ -58,7 +58,7 @@ const specs: { k: string; v: string }[] = [
   { k: 'Builder', v: d.builder.join(', ') },
   { k: 'Location', v: d.intersection ?? `${d.neighbourhood ?? ''} ${d.city}`.trim() },
   { k: 'City', v: d.city },
-  { k: 'Ownership', v: d.ownership },
+  { k: 'Ownership', v: d.potl ? `${d.ownership} (POTL)` : d.ownership },
   { k: 'Home types', v: d.homeTypes.join(', ') },
   { k: 'Status', v: d.salesStatus },
   ...(d.launchDate
@@ -155,6 +155,20 @@ const specs: { k: string; v: string }[] = [
         <div class="prose-precon mt-10">
           <Content />
         </div>
+
+        {
+          d.potl && (
+            <aside class="mt-10 border-l-2 border-honey bg-accent-tint/50 p-5">
+              <p class="section-label">POTL: read this before signing</p>
+              <p class="mt-2 text-[14px] leading-relaxed text-ink/80">
+                Homes here are freehold but tied to a common elements condominium corporation, which
+                carries a monthly fee. Because of that, a 10-day statutory rescission right may apply,
+                unlike a pure freehold purchase. Have your lawyer confirm it on your agreement.{' '}
+                <a href="/faq/potl-common-elements-condo-fees" class="text-accent underline underline-offset-2">What a POTL is</a>
+              </p>
+            </aside>
+          )
+        }
 
         {
           (d.depositStructure.length > 0 || d.incentives.length > 0) && (

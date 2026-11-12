@@ -38,8 +38,7 @@ depositStructure:
 projectFaq:
   - q: "Is Arbourwoods freehold or condo?"
     a: >-
-      Arbourwoods is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Arbourwoods is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Arbourwoods?"
     a: >-
       Arbourwoods is being built by Greenpark Group in Patterson, Vaughan.

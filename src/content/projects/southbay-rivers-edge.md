@@ -35,8 +35,7 @@ highlights:
 projectFaq:
   - q: "Is Southbay at River's Edge freehold or condo?"
     a: >-
-      Southbay at River's Edge is freehold, so buyers own the land and the building outright. There
-      is no condominium corporation and no standard monthly fee.
+      Southbay at River's Edge is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Southbay at River's Edge?"
     a: >-
       Southbay at River's Edge is being built by Fernbrook Homes and Zancor Homes in River's Edge,

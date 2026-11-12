@@ -44,8 +44,7 @@ incentives:
 projectFaq:
   - q: "Is WestHaven at Country Lane freehold or condo?"
     a: >-
-      WestHaven at Country Lane is freehold, so buyers own the land and the building outright. There
-      is no condominium corporation and no standard monthly fee.
+      WestHaven at Country Lane is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building WestHaven at Country Lane?"
     a: >-
       WestHaven at Country Lane is being built by Andrin Homes in Country Lane, Whitby.

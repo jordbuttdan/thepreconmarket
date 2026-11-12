@@ -2,6 +2,7 @@
 name: "Le Sentier Towns"
 redBricksId: "7077"
 tier: featured
+potl: true
 builder:
   - "Rysense Development"
 city: "Richmond Hill"
@@ -73,7 +74,7 @@ projectFaq:
       Occupancy is listed for March 2028. Builder dates are tentative and commonly move; the binding
       dates are in your agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

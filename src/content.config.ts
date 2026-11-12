@@ -116,6 +116,8 @@ const projects = defineCollection({
     /** Freehold low-rise: detached, semis and townhomes. */
     homeTypes: z.array(z.enum(['detached', 'semi', 'townhome', 'bungalow'])).min(1),
     ownership: z.string().default('Freehold'),
+    /** Tied to a common elements condo corporation: monthly fee, and a 10-day rescission right may apply. */
+    potl: z.boolean().default(false),
     salesStatus: z.string(),
     shortAnswer: z.string(),
     description: z.string().optional(),

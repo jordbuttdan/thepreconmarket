@@ -35,8 +35,7 @@ highlights:
 projectFaq:
   - q: "Is Kingfisher Cove freehold or condo?"
     a: >-
-      Kingfisher Cove is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Kingfisher Cove is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Kingfisher Cove?"
     a: >-
       Kingfisher Cove is being built by Stonebridge Building Group in Stonebridge, Wasaga Beach.

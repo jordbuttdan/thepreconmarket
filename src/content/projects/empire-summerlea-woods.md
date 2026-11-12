@@ -45,8 +45,7 @@ incentives:
 projectFaq:
   - q: "Is Empire Summerlea Woods freehold or condo?"
     a: >-
-      Empire Summerlea Woods is freehold, so buyers own the land and the building outright. There is
-      no condominium corporation and no standard monthly fee.
+      Empire Summerlea Woods is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Empire Summerlea Woods?"
     a: >-
       Empire Summerlea Woods is being built by Empire Communities in Binbrook, Hamilton.

@@ -2,6 +2,7 @@
 name: "Lakewind"
 redBricksId: "9531"
 tier: featured
+potl: true
 builder:
   - "CedarOak Homes"
 city: "Ajax"
@@ -69,7 +70,7 @@ projectFaq:
     a: >-
       Lakewind is at Shoal Point Road & Bayly Street East in South Ajax, Ajax, Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

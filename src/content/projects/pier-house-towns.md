@@ -46,8 +46,7 @@ incentives:
 projectFaq:
   - q: "Is Pier House Towns freehold or condo?"
     a: >-
-      Pier House Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Pier House Towns is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Pier House Towns?"
     a: >-
       Pier House Towns is being built by Branthaven Homes in Lakeview, Mississauga.

@@ -2,6 +2,7 @@
 name: "Bellaro at Palmetto"
 redBricksId: "7792"
 tier: featured
+potl: true
 builder:
   - "Treasure Hill Homes"
 city: "Oshawa"
@@ -46,8 +47,8 @@ incentives:
 projectFaq:
   - q: "Is Bellaro at Palmetto freehold or condo?"
     a: >-
-      Bellaro at Palmetto is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Bellaro at Palmetto is freehold, so buyers own the land and the building outright. Homes are POTLs, tied to a common
+      elements condominium corporation for shared areas, which normally carries a monthly fee.
   - q: "Who is building Bellaro at Palmetto?"
     a: >-
       Bellaro at Palmetto is being built by Treasure Hill Homes in North Oshawa, Oshawa.
@@ -76,7 +77,7 @@ projectFaq:
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
       are in your agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

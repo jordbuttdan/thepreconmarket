@@ -30,8 +30,7 @@ highlights:
 projectFaq:
   - q: "Is Robinson Creek Estates freehold or condo?"
     a: >-
-      Robinson Creek Estates is freehold, so buyers own the land and the building outright. There is
-      no condominium corporation and no standard monthly fee.
+      Robinson Creek Estates is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Robinson Creek Estates?"
     a: >-
       Robinson Creek Estates is being built by Castle Rock Developments in Unionville, Markham.

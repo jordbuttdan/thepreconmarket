@@ -2,6 +2,7 @@
 name: "Hawthorne East Village Phase 9"
 redBricksId: "7815"
 tier: featured
+potl: true
 builder:
   - "Mattamy Homes"
 city: "Milton"
@@ -71,7 +72,7 @@ projectFaq:
       Hawthorne East Village Phase 9 is at 433 Steeles Avenue East in Hawthorne Village, Milton,
       Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

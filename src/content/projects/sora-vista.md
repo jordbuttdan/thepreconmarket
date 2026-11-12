@@ -39,8 +39,7 @@ depositStructure:
 projectFaq:
   - q: "Is Sora Vista freehold or condo?"
     a: >-
-      Sora Vista is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Sora Vista is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Sora Vista?"
     a: >-
       Sora Vista is being built by CountryWide Homes in Vellore Village, Vaughan.

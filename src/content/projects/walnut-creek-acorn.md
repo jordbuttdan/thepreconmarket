@@ -2,6 +2,7 @@
 name: "Walnut Creek"
 redBricksId: "9151"
 tier: featured
+potl: true
 builder:
   - "Acorn Developments"
 city: "East Gwillimbury"
@@ -9,7 +10,7 @@ neighbourhood: "Sharon"
 intersection: "18490 Leslie Street"
 homeTypes:
   - townhome
-ownership: Freehold (POTL)
+ownership: Freehold
 salesStatus: "Developer Selling & Platinum Access"
 launchDate: "November 11, 2026"
 occupancy: "2028"

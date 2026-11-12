@@ -2,6 +2,7 @@
 name: "Collection on 27"
 redBricksId: "9206"
 tier: featured
+potl: true
 builder:
   - "UNIQ Communities"
 city: Vaughan
@@ -77,7 +78,6 @@ projectFaq:
       commonly move; the binding dates are the ones set out in your agreement and the Tarion
       addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

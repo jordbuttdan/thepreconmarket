@@ -43,8 +43,7 @@ incentives:
 projectFaq:
   - q: "Is Trails of Whitevale Towns freehold or condo?"
     a: >-
-      Trails of Whitevale Towns is freehold, buyers own the land and the building outright. There
-      is no condominium corporation and no standard monthly maintenance fee.
+      Trails of Whitevale Towns is freehold, buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Trails of Whitevale Towns?"
     a: >-
       Trails of Whitevale Towns is being built by Sundial Homes, in Pickering's Whitevale area.

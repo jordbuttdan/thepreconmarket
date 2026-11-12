@@ -46,8 +46,7 @@ incentives:
 projectFaq:
   - q: "Is North Hill freehold or condo?"
     a: >-
-      North Hill is freehold, buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly maintenance fee.
+      North Hill is freehold, buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building North Hill?"
     a: >-
       North Hill is being built by Solmar Development Corp, in Bolton's Upper Bolton area.

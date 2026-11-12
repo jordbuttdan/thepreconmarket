@@ -2,6 +2,7 @@
 name: "Alcona Shores"
 redBricksId: "9152"
 tier: featured
+potl: true
 builder:
   - "Bayview Wellington Homes"
 city: "Innisfil"
@@ -66,7 +67,7 @@ projectFaq:
     a: >-
       Alcona Shores is at 2160 Grainger Loop in Alcona, Innisfil, Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - price-net-of-hst-rebate-meaning
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

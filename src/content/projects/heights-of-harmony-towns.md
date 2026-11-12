@@ -42,7 +42,7 @@ projectFaq:
   - q: "Is The Heights of Harmony Freehold Townhomes freehold or condo?"
     a: >-
       The Heights of Harmony Freehold Townhomes is freehold, so buyers own the land and the building
-      outright. There is no condominium corporation and no standard monthly fee.
+      outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building The Heights of Harmony Freehold Townhomes?"
     a: >-
       The Heights of Harmony Freehold Townhomes is being built by Minto in North Oshawa, Oshawa.

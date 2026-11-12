@@ -44,8 +44,7 @@ incentives:
 projectFaq:
   - q: "Is Jefferson Reserve Homes freehold or condo?"
     a: >-
-      Jefferson Reserve Homes is freehold, buyers own the land and the building outright. There is
-      no condominium corporation and no standard monthly maintenance fee.
+      Jefferson Reserve Homes is freehold, buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Jefferson Reserve Homes?"
     a: >-
       Jefferson Reserve Homes is being built by CountryWide Homes, in Richmond Hill's Jefferson

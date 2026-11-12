@@ -47,8 +47,7 @@ incentives:
 projectFaq:
   - q: "Is 180 Towns freehold or condo?"
     a: >-
-      180 Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      180 Towns is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building 180 Towns?"
     a: >-
       180 Towns is being built by Icon Homes and Dash Developments in Newtonbrook, Toronto.

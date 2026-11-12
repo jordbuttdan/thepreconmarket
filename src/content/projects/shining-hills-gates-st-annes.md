@@ -41,7 +41,7 @@ projectFaq:
   - q: "Is Shining Hills, Gates of St. Anne's freehold or condo?"
     a: >-
       Shining Hills, Gates of St. Anne's is freehold, so buyers own the land and the building
-      outright. There is no condominium corporation and no standard monthly fee.
+      outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Shining Hills, Gates of St. Anne's?"
     a: >-
       Shining Hills, Gates of St. Anne's is being built by Regal Crest Homes in Shining Hill,

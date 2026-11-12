@@ -39,8 +39,7 @@ incentives:
 projectFaq:
   - q: "Is Brooklin Trails freehold or condo?"
     a: >-
-      Brooklin Trails is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Brooklin Trails is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Brooklin Trails?"
     a: >-
       Brooklin Trails is being built by Tribute Communities in Brooklin, Whitby.

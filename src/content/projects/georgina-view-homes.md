@@ -40,8 +40,7 @@ depositStructure:
 projectFaq:
   - q: "Is Georgina View Homes freehold or condo?"
     a: >-
-      Georgina View Homes is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Georgina View Homes is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Georgina View Homes?"
     a: >-
       Georgina View Homes is being built by Greenpark Group in Keswick, Georgina.

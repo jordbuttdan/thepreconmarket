@@ -49,7 +49,7 @@ projectFaq:
   - q: "Is The Heights of Harmony East freehold or condo?"
     a: >-
       The Heights of Harmony East is freehold, so buyers own the land and the building outright.
-      There is no condominium corporation and no standard monthly fee.
+      Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building The Heights of Harmony East?"
     a: >-
       The Heights of Harmony East is being built by Minto in North Oshawa, Oshawa.

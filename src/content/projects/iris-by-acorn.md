@@ -38,8 +38,7 @@ incentives:
 projectFaq:
   - q: "Is Iris by Acorn freehold or condo?"
     a: >-
-      Iris by Acorn is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Iris by Acorn is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Iris by Acorn?"
     a: >-
       Iris by Acorn is being built by Acorn Developments in King City, King City.

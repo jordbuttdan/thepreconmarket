@@ -35,8 +35,7 @@ depositStructure:
 projectFaq:
   - q: "Is Hart Village Phase 2 freehold or condo?"
     a: >-
-      Hart Village Phase 2 is freehold, so buyers own the land and the building outright. There is
-      no condominium corporation and no standard monthly fee.
+      Hart Village Phase 2 is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Hart Village Phase 2?"
     a: >-
       Hart Village Phase 2 is being built by Terra View Homes in Hart Village, Guelph.

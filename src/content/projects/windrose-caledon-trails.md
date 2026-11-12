@@ -46,8 +46,7 @@ incentives:
 projectFaq:
   - q: "Is Windrose at Caledon Trails freehold or condo?"
     a: >-
-      Windrose at Caledon Trails is freehold, buyers own the land and the building outright. There
-      is no condominium corporation and no standard monthly maintenance fee.
+      Windrose at Caledon Trails is freehold, buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Windrose at Caledon Trails?"
     a: >-
       Windrose at Caledon Trails is being built by Laurier Homes and Yorkwood Homes, in Caledon's

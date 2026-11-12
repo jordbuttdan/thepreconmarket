@@ -46,8 +46,7 @@ incentives:
 projectFaq:
   - q: "Is Oakridge Meadows freehold or condo?"
     a: >-
-      Oakridge Meadows is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Oakridge Meadows is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Oakridge Meadows?"
     a: >-
       Oakridge Meadows is being built by CountryWide Homes in Oak Ridges, Richmond Hill.

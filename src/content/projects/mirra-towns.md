@@ -2,6 +2,7 @@
 name: "Mirra Towns"
 redBricksId: "7229"
 tier: featured
+potl: true
 builder:
   - "Treasure Hill Homes"
 city: "Whitby"
@@ -43,8 +44,8 @@ incentives:
 projectFaq:
   - q: "Is Mirra Towns freehold or condo?"
     a: >-
-      Mirra Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Mirra Towns is freehold, so buyers own the land and the building outright. Homes are POTLs, tied to a common
+      elements condominium corporation for shared areas, which normally carries a monthly fee.
   - q: "Who is building Mirra Towns?"
     a: >-
       Mirra Towns is being built by Treasure Hill Homes in Brooklin, Whitby.
@@ -68,7 +69,7 @@ projectFaq:
     a: >-
       Mirra Towns is at 6900 Baldwin Street North in Brooklin, Whitby, Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

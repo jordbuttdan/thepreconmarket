@@ -47,8 +47,7 @@ incentives:
 projectFaq:
   - q: "Is Rosemont Grove freehold or condo?"
     a: >-
-      Rosemont Grove is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Rosemont Grove is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Rosemont Grove?"
     a: >-
       Rosemont Grove is being built by Hallett Homes in Brampton Northwest, Brampton.

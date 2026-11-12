@@ -48,8 +48,7 @@ incentives:
 projectFaq:
   - q: "Is Weston Woods freehold or condo?"
     a: >-
-      Weston Woods is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Weston Woods is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Weston Woods?"
     a: >-
       Weston Woods is being built by Paradise Developments in Kleinburg, Vaughan.

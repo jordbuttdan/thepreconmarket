@@ -47,8 +47,7 @@ incentives:
 projectFaq:
   - q: "Is Balmoral Estates freehold or condo?"
     a: >-
-      Balmoral Estates is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Balmoral Estates is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Balmoral Estates?"
     a: >-
       Balmoral Estates is being built by Lormel Homes in Pine Valley, Vaughan.

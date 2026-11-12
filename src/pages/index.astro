@@ -25,7 +25,23 @@ const SHOWCASE = [
   'brooklin-towns-2',
 ];
 const showcase = SHOWCASE.map((s) => byId.get(s)).filter((p) => p != null);
-const hero = byId.get('bridgelands');
+// Hero carousel: the most recent priced launches that have a rendering.
+const launchedAt = (p: (typeof allProjects)[number]) => {
+  // ISO dates parse as UTC midnight, which shows as the day before in Toronto.
+  const raw = p.data.launchDate ?? '';
+  const t = Date.parse(/^\d{4}-\d{2}-\d{2}$/.test(raw) ? `${raw}T12:00` : raw);
+  return Number.isNaN(t) ? null : t;
+};
+const recentLaunches = allProjects
+  .filter((p) => p.data.tier === 'featured' && p.data.priceFrom != null && p.data.heroImage && launchedAt(p) != null)
+  .sort((a, b) => launchedAt(b)! - launchedAt(a)!)
+  .slice(0, 6);
+const shortDate = (t: number) =>
+  new Intl.DateTimeFormat('en-CA', { month: 'short', day: 'numeric' }).format(new Date(t));
+const fromPrice = (n: number) =>
+  Math.round(n / 1000) >= 1000
+    ? `$${(n / 1_000_000).toFixed(2).replace(/\.?0+$/, '')}M`
+    : `$${Math.round(n / 1000)}K`;
 
 const activeCities = cities.filter((c) => c.data.priceFrom != null);
 
@@ -86,33 +102,68 @@ const homeFaqSchema = heroFaq.map((e) => ({
         </div>
       </div>
 
-      <!-- Featured release. Labelled, not decoration. -->
+      <!-- Recent launches carousel. -->
       {
-        hero?.data.heroImage && (
-          <div class="lg:col-span-5">
-            <a href={`/projects/${hero.id}`} class="group block">
-              <figure class="tick-corners overflow-hidden border border-rule">
-                <Image
-                  src={hero.data.heroImage}
-                  alt={hero.data.heroAlt ?? hero.data.name}
-                  widths={[500, 1000, 1500]}
-                  sizes="(min-width: 1024px) 440px, 100vw"
-                  loading="eager"
-                  fetchpriority="high"
-                  class="block aspect-[16/10] h-auto w-full object-cover"
-                />
-              </figure>
-              <div class="mt-3 flex items-baseline gap-3">
-                <p class="section-label">{hero.data.priceFrom != null ? 'Now selling' : 'Launching soon'}</p>
-                <span class="ml-auto font-mono text-[11px] text-ink/50">
-                  {hero.data.city}
-                </span>
+        recentLaunches.length > 0 && (
+          <div class="min-w-0 lg:col-span-5" data-carousel>
+            <div class="flex items-baseline gap-3">
+              <p class="section-label">Just launched</p>
+              <a href="/launching" class="ml-auto font-mono text-[11px] text-ink/55 underline underline-offset-2 hover:text-accent">
+                All launches
+              </a>
+            </div>
+            <ul
+              class="mt-3 flex snap-x snap-mandatory overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              data-track
+              aria-label="Recently launched projects"
+            >
+              {recentLaunches.map((p, i) => (
+                <li class="w-full shrink-0 snap-start" aria-label={`${i + 1} of ${recentLaunches.length}`}>
+                  <a href={`/projects/${p.id}`} class="group block">
+                    <figure class="tick-corners relative overflow-hidden border border-rule">
+                      <Image
+                        src={p.data.heroImage!}
+                        alt={p.data.heroAlt ?? p.data.name}
+                        widths={[500, 1000, 1500]}
+                        sizes="(min-width: 1024px) 440px, 100vw"
+                        loading={i === 0 ? 'eager' : 'lazy'}
+                        fetchpriority={i === 0 ? 'high' : 'auto'}
+                        class="block aspect-[16/10] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      />
+                      <span class="absolute top-3 left-3 bg-honey px-2.5 py-1 font-mono text-[10px] font-semibold tracking-[0.08em] text-ink uppercase">
+                        Launched {shortDate(launchedAt(p)!)}
+                      </span>
+                      <span class="absolute right-3 bottom-3 bg-ink/85 px-2.5 py-1 text-[13px] font-semibold text-white">
+                        From {fromPrice(p.data.priceFrom!)}
+                      </span>
+                    </figure>
+                    <div class="mt-3 flex items-baseline gap-3">
+                      <p class="text-[17px] font-semibold group-hover:text-accent">{p.data.name}</p>
+                      <span class="ml-auto font-mono text-[11px] text-ink/50">{p.data.city}</span>
+                    </div>
+                    <p class="mt-0.5 text-[13px] text-ink/60">{p.data.builder.join(' · ')}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {recentLaunches.length > 1 && (
+              <div class="mt-4 flex items-center gap-3">
+                <div class="flex gap-1.5" data-dots>
+                  {recentLaunches.map((_, i) => (
+                    <button
+                      type="button"
+                      class="h-1.5 w-5 bg-ink/15 transition-colors aria-[current=true]:bg-honey"
+                      aria-label={`Show slide ${i + 1}`}
+                      aria-current={i === 0 ? 'true' : 'false'}
+                    />
+                  ))}
+                </div>
+                <div class="ml-auto flex gap-2">
+                  <button type="button" data-prev aria-label="Previous" class="grid h-8 w-8 place-items-center border border-rule-dark text-ink/70 hover:border-ink hover:text-ink">&larr;</button>
+                  <button type="button" data-next aria-label="Next" class="grid h-8 w-8 place-items-center border border-rule-dark text-ink/70 hover:border-ink hover:text-ink">&rarr;</button>
+                </div>
               </div>
-              <p class="mt-1 text-[17px] font-semibold group-hover:text-accent">
-                {hero.data.name}
-              </p>
-              <p class="mt-0.5 text-[13px] text-ink/60">{hero.data.builder.join(' · ')}</p>
-            </a>
+            )}
           </div>
         )
       }
@@ -317,4 +368,31 @@ const homeFaqSchema = heroFaq.map((e) => ({
       </div>
     </div>
   </section>
+  <script>
+    for (const root of document.querySelectorAll<HTMLElement>('[data-carousel]')) {
+      const track = root.querySelector<HTMLElement>('[data-track]')!;
+      const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-dots] button')];
+      const n = track.children.length;
+      if (n < 2) continue;
+      let timer = 0;
+      const stop = () => {
+        if (timer) window.clearInterval(timer);
+        timer = 0;
+      };
+      const index = () => Math.round(track.scrollLeft / track.clientWidth);
+      const go = (i: number) => track.scrollTo({ left: ((i + n) % n) * track.clientWidth, behavior: 'smooth' });
+      root.querySelector('[data-prev]')?.addEventListener('click', () => { stop(); go(index() - 1); });
+      root.querySelector('[data-next]')?.addEventListener('click', () => { stop(); go(index() + 1); });
+      dots.forEach((d, i) => d.addEventListener('click', () => { stop(); go(i); }));
+      track.addEventListener('scroll', () => {
+        const i = index();
+        dots.forEach((d, j) => d.setAttribute('aria-current', String(i === j)));
+      }, { passive: true });
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        timer = window.setInterval(() => go(index() + 1), 5000);
+      }
+      root.addEventListener('pointerenter', stop, { once: true });
+      track.addEventListener('touchstart', stop, { once: true, passive: true });
+    }
+  </script>
 </Base>

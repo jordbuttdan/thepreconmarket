@@ -39,8 +39,7 @@ incentives:
 projectFaq:
   - q: "Is Mount Hope Phase 6 freehold or condo?"
     a: >-
-      Mount Hope Phase 6 is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Mount Hope Phase 6 is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Mount Hope Phase 6?"
     a: >-
       Mount Hope Phase 6 is being built by Cachet Homes in Mount Hope, Hamilton.

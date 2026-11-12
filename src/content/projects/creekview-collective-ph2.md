@@ -2,6 +2,7 @@
 name: "Creekview Collective Towns Phase 2"
 redBricksId: "7718"
 tier: featured
+potl: true
 builder:
   - "Branthaven Homes"
 city: "Milton"
@@ -77,7 +78,7 @@ projectFaq:
       Occupancy is listed for 2028. Builder dates are tentative and commonly move; the binding dates
       are in your agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

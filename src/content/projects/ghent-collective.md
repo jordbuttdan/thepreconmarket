@@ -2,6 +2,7 @@
 name: "The Ghent Collective"
 redBricksId: "4573"
 tier: featured
+potl: true
 builder:
   - "Northern Cardinal Homes"
 city: "Burlington"
@@ -72,7 +73,7 @@ projectFaq:
       Occupancy is listed for 2027. Builder dates are tentative and commonly move; the binding dates
       are in your agreement and the Tarion addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

@@ -41,8 +41,7 @@ depositStructure:
 projectFaq:
   - q: "Is Fields of Harmony freehold or condo?"
     a: >-
-      Fields of Harmony is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Fields of Harmony is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Fields of Harmony?"
     a: >-
       Fields of Harmony is being built by Greycrest Homes in North Oshawa, Oshawa.

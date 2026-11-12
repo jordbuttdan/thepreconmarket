@@ -50,8 +50,7 @@ incentives:
 projectFaq:
   - q: "Is Liora Homes freehold or condo?"
     a: >-
-      Liora Homes is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Liora Homes is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Liora Homes?"
     a: >-
       Liora Homes is being built by Treasure Hill Homes in Keswick, Georgina.

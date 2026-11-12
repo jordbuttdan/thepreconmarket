@@ -43,8 +43,7 @@ incentives:
 projectFaq:
   - q: "Is Rolling Woods Towns freehold or condo?"
     a: >-
-      Rolling Woods Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Rolling Woods Towns is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Rolling Woods Towns?"
     a: >-
       Rolling Woods Towns is being built by Regency Development in Downtown Brampton, Brampton.

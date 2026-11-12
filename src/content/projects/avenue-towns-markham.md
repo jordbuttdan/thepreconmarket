@@ -29,8 +29,7 @@ highlights:
 projectFaq:
   - q: "Is Avenue Towns freehold or condo?"
     a: >-
-      Avenue Towns is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Avenue Towns is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Avenue Towns?"
     a: >-
       Avenue Towns is being built by Camcos Living in Markham, Markham.

@@ -2,6 +2,7 @@
 name: "Brooklin Towns 2.0"
 redBricksId: "7091"
 tier: featured
+potl: true
 builder:
   - "Madison Group"
 city: Whitby
@@ -77,7 +78,7 @@ projectFaq:
       commonly move; the binding dates are the ones set out in your agreement and the Tarion
       addendum.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

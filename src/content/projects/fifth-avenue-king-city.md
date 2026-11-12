@@ -46,7 +46,7 @@ projectFaq:
   - q: "Is Fifth Avenue Homes King City freehold or condo?"
     a: >-
       Fifth Avenue Homes King City is freehold, so buyers own the land and the building outright.
-      There is no condominium corporation and no standard monthly fee.
+      Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Fifth Avenue Homes King City?"
     a: >-
       Fifth Avenue Homes King City is being built by Fifth Avenue Homes in King City, King City.

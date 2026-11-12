@@ -46,8 +46,7 @@ incentives:
 projectFaq:
   - q: "Is The Valley freehold or condo?"
     a: >-
-      The Valley is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      The Valley is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building The Valley?"
     a: >-
       The Valley is being built by Marycroft Homes, Remington Homes and Poetry Living in Woodbridge,

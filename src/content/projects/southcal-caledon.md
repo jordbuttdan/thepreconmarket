@@ -51,8 +51,7 @@ incentives:
 projectFaq:
   - q: "Is SouthCal freehold or condo?"
     a: >-
-      SouthCal is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      SouthCal is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building SouthCal?"
     a: >-
       SouthCal is being built by Arista Homes, OPUS Homes and DECO Homes in Southfields, Caledon.

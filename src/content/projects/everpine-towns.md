@@ -2,6 +2,7 @@
 name: "Everpine Towns"
 redBricksId: "9158"
 tier: featured
+potl: true
 builder:
   - "Arkfield"
 city: Richmond Hill
@@ -70,7 +71,7 @@ projectFaq:
     a: >-
       Everpine Towns is at 25, 45 & 61 Harris Avenue in Jefferson, Richmond Hill, Ontario.
 relatedFaq:
-  - cooling-off-period-freehold-ontario
+  - potl-common-elements-condo-fees
   - how-much-hst-rebate-new-home-ontario
   - typical-deposit-structure-pre-construction-ontario
   - development-charges-levies-cap

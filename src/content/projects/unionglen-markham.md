@@ -54,8 +54,7 @@ incentives:
 projectFaq:
   - q: "Is Unionglen freehold or condo?"
     a: >-
-      Unionglen is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Unionglen is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Unionglen?"
     a: >-
       Unionglen is being built by Arista Homes, DECO Homes, OPUS Homes, Fieldgate Homes, Greenpark

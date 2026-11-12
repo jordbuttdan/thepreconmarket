@@ -40,8 +40,7 @@ depositStructure:
 projectFaq:
   - q: "Is Gracefields Redux 3 freehold or condo?"
     a: >-
-      Gracefields Redux 3 is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Gracefields Redux 3 is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Gracefields Redux 3?"
     a: >-
       Gracefields Redux 3 is being built by Lindvest in Newcastle, Clarington.

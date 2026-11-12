@@ -47,7 +47,7 @@ projectFaq:
   - q: "Is Union Village Homes Phase 3 freehold or condo?"
     a: >-
       Union Village Homes Phase 3 is freehold, so buyers own the land and the building outright.
-      There is no condominium corporation and no standard monthly fee.
+      Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Union Village Homes Phase 3?"
     a: >-
       Union Village Homes Phase 3 is being built by Minto and Metropia in Unionville, Markham.

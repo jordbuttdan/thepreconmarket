@@ -38,8 +38,7 @@ incentives:
 projectFaq:
   - q: "Is Union Phase 3 freehold or condo?"
     a: >-
-      Union Phase 3 is freehold, so buyers own the land and the building outright. There is no
-      condominium corporation and no standard monthly fee.
+      Union Phase 3 is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Union Phase 3?"
     a: >-
       Union Phase 3 is being built by Mattamy Homes in Brampton Northwest, Brampton.

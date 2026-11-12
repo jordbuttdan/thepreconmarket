@@ -5,7 +5,7 @@ shortAnswer: >-
   No. Ontario law gives no statutory cooling-off period on a freehold detached home,
   semi or townhome. The agreement binds you the moment it is signed and accepted. The
   10-day rescission period people have heard about applies to condominium purchases,
-  not freehold ones.
+  not freehold ones. The exception to check is a POTL townhome, where a 10-day right may apply.
 category: contracts-and-cooling-off
 order: 1
 updated: 2026-11-09

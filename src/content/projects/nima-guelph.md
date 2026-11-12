@@ -39,8 +39,7 @@ depositStructure:
 projectFaq:
   - q: "Is Nima freehold or condo?"
     a: >-
-      Nima is freehold, so buyers own the land and the building outright. There is no condominium
-      corporation and no standard monthly fee.
+      Nima is freehold, so buyers own the land and the building outright. Unless the community includes a POTL, there is no condominium corporation and no monthly fee, so confirm it in the agreement.
   - q: "Who is building Nima?"
     a: >-
       Nima is being built by Terra View Homes in Grange Road, Guelph.
