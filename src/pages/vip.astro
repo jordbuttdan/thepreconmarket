@@ -18,9 +18,8 @@ import { GHL } from '../config/ghl';
           New low-rise releases, sent to you as they open.
         </h1>
         <p class="lede mt-6">
-          Builders release new communities in phases. Register and I will send you price lists,
-          floor plans and deposit structures for freehold detached homes, townhomes and semis
-          across the GTA as they become available, and help you make sense of them.
+          Price lists, floor plans and deposits for new freehold releases across the GTA, sent as
+          they open.
         </p>
 
         <div class="mt-8 space-y-5">
@@ -29,22 +28,22 @@ import { GHL } from '../config/ghl';
               {
                 n: '01',
                 h: 'Release details',
-                b: 'Price lists, floor plans and deposit structures for the releases that match your home type, budget and area.',
+                b: 'Matched to your home type, budget and area.',
               },
               {
                 n: '02',
-                h: 'Help choosing a lot',
-                b: 'On low-rise the lot is the decision you cannot revisit. We go through width, orientation, grading and what sits behind it before you choose.',
+                h: 'Lot advice',
+                b: 'Width, orientation and grading, checked before you choose.',
               },
               {
                 n: '03',
                 h: 'Honest assessment',
-                b: 'Including when a release is not worth your time. You will hear about the builder’s delivery record and date reliability, not just the renderings.',
+                b: 'Including when a release is not worth it.',
               },
               {
                 n: '04',
                 h: 'Guidance to the keys',
-                b: 'Agreement review with your lawyer, deposit dates, the décor appointment, the pre-delivery inspection and possession.',
+                b: 'Agreement, deposits, décor, PDI and possession.',
               },
             ].map((item) => (
               <div class="flex gap-4">
@@ -63,22 +62,18 @@ import { GHL } from '../config/ghl';
       <div class="lg:col-span-7">
         <div class="card p-5 sm:p-7">
           <p class="section-label">Register</p>
-          <h2 class="mt-2 text-xl font-semibold">Tell me what you're looking for</h2>
-          <p class="mt-2 text-[14px] leading-relaxed text-ink/70">
-            Name, email and phone. That is all it takes to get started.
-          </p>
+          <h2 class="mt-2 text-xl font-semibold">Get VIP access</h2>
+          <p class="mt-2 text-[14px] leading-relaxed text-ink/70">Takes 30 seconds.</p>
           <div class="mt-6">
             <LeadForm webhookUrl={GHL.vipWebhookUrl} />
           </div>
         </div>
 
         <div class="mt-6 border border-rule bg-accent-tint/40 p-5">
-          <p class="section-label">One important note</p>
+          <p class="section-label">Before you visit</p>
           <p class="mt-2 text-[14px] leading-relaxed text-ink/75">
-            Most builders require your broker to be registered <strong class="font-semibold">at or
-            before your first visit</strong> for representation to be recognised. If you visit a
-            sales centre unrepresented, you often cannot add representation afterward. Register
-            before you go.
+            Register <strong class="font-semibold">before your first sales centre visit</strong>.
+            Most builders won't recognise a broker added afterward.
           </p>
           <a
             href="/faq/do-i-need-a-realtor-pre-construction"
