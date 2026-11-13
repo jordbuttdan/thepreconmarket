@@ -1,0 +1,82 @@
+[
+  {
+    "id": "2026-11-16-hillsborough",
+    "date": "2026-11-16T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/hillsborough-holland-landing/hero.jpg", "badge": "JUST LAUNCHED · NOV 12",
+       "kicker": "Holland Landing · Andrin Homes", "name": "Hillsborough Phase 3",
+       "stats": [["From", "$1.04M"], ["Deposit", "$120K"], ["Lots", "38–45 ft"]]}
+    ],
+    "caption": "Hillsborough Phase 3 by Andrin Homes just released in Holland Landing.\n\nFrom $1,039,550. Two-storey detached on 38 to 45 ft lots.\nDeposit on the 38s: $120,000. That is $20K above what Tarion protects.\nPrices already include the $80K Ontario HST rebate. Don't qualify? You pay it back at closing.\n\nFull breakdown and price list: link in bio.\n\n#preconstruction #newhomes #hollandlanding #eastgwillimbury #yorkregion #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-11-18-ontario-rebate",
+    "date": "2026-11-18T12:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "HST rebate", "headline": "The *$80,000* Ontario rebate isn't just for first-time buyers.", "size": 92},
+      {"type": "number", "label": "Up to $1M", "figure": "8%", "headline": "of the price, back.", "body": "Ontario's Enhanced New Housing Rebate returns the full provincial HST on a new home up to $1,000,000."},
+      {"type": "text", "label": "$1M to $1.5M", "headline": "A flat *$80,000*.", "body": "Partial up to $1.85M. Above that, the standard $24,000."},
+      {"type": "text", "label": "The catch", "headline": "It runs on your *signing date*.", "body": "Agreements signed April 1, 2026 to March 31, 2027. The home must be the primary residence of you or a relation."},
+      {"type": "cta", "headline": "See what you could *claim*.", "body": "Free rebate checker. Two minutes.", "button": "thepreconmarket.ca/hst-rebate"}
+    ],
+    "caption": "Most people think the new-home HST rebate is a first-time buyer thing. The Ontario one isn't.\n\nUp to $80,000 back on a new home, no first-time buyer test, for agreements signed by March 31, 2027.\n\nSwipe for how it works. Free checker: link in bio.\n\nGeneral information, not tax advice. CRA decides eligibility.\n\n#hstrebate #newhomes #preconstruction #ontariorealestate #movingup #gtarealestate"
+  },
+  {
+    "id": "2026-11-20-views",
+    "date": "2026-11-20T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/views-jeffery-oshawa/hero.jpg", "badge": "JUST LAUNCHED · NOV 11",
+       "kicker": "North Oshawa · Jeffery Homes", "name": "Views",
+       "stats": [["From", "$862K"], ["Deposit", "$100K"], ["Lots", "36–40 ft"]]}
+    ],
+    "caption": "Views by Jeffery Homes launched in north Oshawa, minutes from the 407.\n\nFrom $861,938. Ten detached designs, including a bungalow.\nDeposit: $100,000 over 8 months, right at the Tarion cap.\nPrices include the Ontario HST rebate, so check you qualify before you sign.\n\nFull breakdown: link in bio.\n\n#oshawa #durhamregion #newhomes #preconstruction #bungalow #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-11-22-countdown",
+    "date": "2026-11-22T19:00:00-05:00",
+    "slides": [
+      {"type": "number", "label": "Ontario HST rebate", "figure": "129 days", "headline": "left to sign and still get up to $80,000 back.", "body": "Agreements must be signed by March 31, 2027. Closing can be years later."}
+    ],
+    "caption": "129 days.\n\nThat is how long is left to sign a new-home agreement and still qualify for Ontario's enhanced HST rebate. It's the signing date that counts, not closing.\n\nWhat's launching now: link in bio.\n\n#hstrebate #preconstruction #newhomes #ontariorealestate #gtarealestate"
+  },
+  {
+    "id": "2026-11-23-walnut-creek",
+    "date": "2026-11-23T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/walnut-creek-acorn/hero.jpg", "badge": "JUST LAUNCHED · NOV 11",
+       "kicker": "East Gwillimbury · Acorn Developments", "name": "Walnut Creek",
+       "stats": [["From", "$600K"], ["Deposit", "$50K"], ["Fee", "~$185/mo"]]}
+    ],
+    "caption": "Walnut Creek by Acorn launched in East Gwillimbury, just west of the 404.\n\nTownhomes from $599,990.\nDeposit: $5,000 every 30 days, $50K in total.\nThese are POTL towns, so there is a monthly fee of about $185 and a 10-day cooling-off right may apply.\n\nFull breakdown: link in bio.\n\n#eastgwillimbury #townhomes #newhomes #preconstruction #yorkregion #firsttimehomebuyer"
+  },
+  {
+    "id": "2026-11-25-cooling-off",
+    "date": "2026-11-25T12:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "Contracts", "headline": "Signed a freehold pre-con deal? There's *no 10-day cooling-off*.", "size": 88},
+      {"type": "text", "label": "Condo vs freehold", "headline": "Condos get 10 days. *Freehold doesn't.*", "body": "The 10-day right comes from the Condominium Act. A freehold detached or townhome agreement is firm once you sign."},
+      {"type": "text", "label": "The exception", "headline": "*POTL* townhomes.", "body": "A parcel of tied land belongs to a common elements condo, so a 10-day right may apply. Check the agreement."},
+      {"type": "text", "label": "What to do", "headline": "The review happens *before* you sign.", "body": "Have a lawyer read it first, or ask the builder for a lawyer-review condition."},
+      {"type": "cta", "headline": "Read it before you *sign it*.", "body": "Plain-English answers on pre-con contracts.", "button": "thepreconmarket.ca/faq"}
+    ],
+    "caption": "The most expensive misunderstanding in pre-con: assuming you get 10 days to back out.\n\nThat right is for condos. On a freehold detached or townhome, the deal is firm the moment you sign.\n\nSwipe for the exception and what to do instead.\n\nGeneral information, not legal advice.\n\n#preconstruction #newhomes #ontariorealestate #freehold #homebuyingtips #gtarealestate"
+  },
+  {
+    "id": "2026-11-27-bridgelands",
+    "date": "2026-11-27T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/bridgelands/detached-streetscape.jpg", "badge": "JUST LAUNCHED · NOV 10",
+       "kicker": "Vaughan · OPUS, DECO & Arista", "name": "Bridgelands",
+       "stats": [["From", "$711K"], ["Lots", "26–42 ft"], ["Deposits", "$80–170K"]]}
+    ],
+    "caption": "Bridgelands launched in Vaughan with three builders: OPUS, DECO and Arista.\n\nTownhomes and detached from $711,496.\nLots from 26 to 42 ft.\nDeposits run $80K on the towns to $170K on the 42s. Anything over $100K sits outside Tarion's protection.\n\nFull breakdown: link in bio.\n\n#vaughan #bridgelands #newhomes #preconstruction #yorkregion #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-11-29-register-first",
+    "date": "2026-11-29T19:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "Myth vs fact", "headline": "Myth: you can add an agent *after* you visit the sales centre.", "size": 80, "body": "Most builders only recognise a broker who is registered at or before your first visit. Register first, then go."}
+    ],
+    "caption": "Walked into a sales centre on your own? Most builders won't let you add representation after that first visit.\n\nRegister first, then go. It costs buyers nothing.\n\nVIP access to new releases: link in bio.\n\n#preconstruction #newhomes #ontariorealestate #gtarealestate #homebuyingtips"
+  }
+]
