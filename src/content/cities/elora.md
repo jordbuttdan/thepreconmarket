@@ -3,9 +3,9 @@ city: Elora
 region: Wellington County
 title: New homes in Elora
 shortAnswer: >-
-  There are no significant new freehold low-rise communities tracked in Elora right now.
-  Buyers looking in this area generally widen the search to Guelph, where new detached
-  homes and townhomes are actively releasing.
+  Everstone by Cachet Homes is the new freehold community in Elora, launched October 12, 2026 at
+  $549,990 to $1,059,990 for 20 foot towns, detached links and 36 and 42 foot detached homes, with
+  closings from spring 2028. Buyers wanting more choice also look at Fergus and Guelph.
 communities:
   - Elora
   - Centre Wellington
@@ -16,16 +16,16 @@ relatedFaq:
   - hst-rebate-deadline-march-2027
   - development-charges-levies-cap
   - typical-deposit-structure-pre-construction-ontario
-updated: 2026-11-09
+updated: 2026-11-12
 order: 100
 ---
 ## What's being built in Elora
 
-Elora has no significant new low-rise subdivision supply currently tracked. It is a small heritage village on the Grand River, part of Centre Wellington, where development is tightly constrained by the gorge, the conservation area and heritage designation.
+Elora is a small heritage village on the Grand River, part of Centre Wellington, where new supply is constrained by the gorge, the conservation area and heritage designation. The main release now is [Everstone by Cachet Homes](/projects/everstone-elora) on Woolwich Street East, with towns from $549,990 and detached homes to $1,059,990, quoted net of HST for principal residents.
 
 ## What you could claim here
 
-Even with no active communities, the programs are worth understanding before you widen your search, because they are time-limited and they run on your **signing date**.
+The programs are worth understanding before you widen your search, because they are time-limited and they run on your **signing date**.
 
 The [Ontario Enhanced New Housing Rebate](/faq/ontario-enhanced-new-housing-rebate) pays the 8% provincial portion of HST up to **$80,000** on a new home, and it has **no first-time buyer test**. The [federal first-time buyer GST rebate](/faq/first-time-home-buyers-gst-rebate) adds up to **$50,000** on top for those who qualify. Both require a new build, and both require the home to be your primary residence.
 
