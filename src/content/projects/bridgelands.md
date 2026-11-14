@@ -178,9 +178,9 @@ Second, **lot premiums and upgrades count toward your price**, and the published
 
 The published deposit totals are **$80,000 on townhomes**, **$110,000** on 26 and 32 foot rear-lane detached and DECO's courtyard detached, **$150,000** on 38 foot detached and **$170,000** on 42 foot detached. Arista has not published its terms yet.
 
-Here is the thing to understand before you write the cheque. **Tarion's deposit protection for a freehold home caps at $100,000.** So:
+Here is the thing to understand before you write the cheque. **Tarion protects a freehold deposit up to 10% of the price, capped at $100,000.** So:
 
-- On a **townhome at $80,000**, your deposit is fully covered.
+- On an **entry townhome at $711,496 with $80,000 down**, Tarion covers about **$71,150**, so roughly **$8,850** is not covered.
 - On a **38 foot detached at $150,000**, roughly **$50,000 sits outside** that coverage.
 - On a **42 foot detached at $170,000**, roughly **$70,000 does.**
 

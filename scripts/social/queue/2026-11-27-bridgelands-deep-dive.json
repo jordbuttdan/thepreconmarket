@@ -1,0 +1,16 @@
+[
+  {
+    "id": "2026-11-27-bridgelands-deep-dive",
+    "date": "2026-11-27T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/bridgelands/aerial.jpg", "badge": "DEEP DIVE · BRIDGELANDS",
+       "kicker": "Weston & Teston, Vaughan", "name": "Bridgelands",
+       "stats": [["Plans", "179"], ["Builders", "3"], ["From", "$711K"]]},
+      {"type": "text", "label": "What's released", "headline": "Detached on *26 to 42 ft* lots. Towns in three formats.", "body": "Rear-lane, laneway and back-to-back towns. 131 of the 179 plans are four-bedroom."},
+      {"type": "number", "label": "Entry town at $711,496", "figure": "$56,919", "headline": "Ontario rebate, if you qualify.", "body": "Plus up to $35,574 federally for a first-time buyer. No first-time buyer test on the Ontario one."},
+      {"type": "text", "label": "Deposits", "headline": "*$80K* on towns. Up to *$170K* on the 42s.", "body": "Tarion protects 10% of the price, capped at $100,000. On the larger homes, a big part of the deposit relies on the builder."},
+      {"type": "cta", "headline": "Get the Bridgelands *price list*.", "body": "Plans, deposits and the rebate math.", "button": "thepreconmarket.ca/projects/bridgelands"}
+    ],
+    "caption": "Bridgelands is the biggest freehold release in Vaughan this fall. Here's what's actually in it.\n\n179 plans from Arista, DECO and OPUS at Weston and Teston.\nDetached on 26 to 42 ft lots, plus three town formats.\nThe entry towns sit under $1M, the best spot for the HST rebates.\n\nSwipe for the deposits and rebate math. Price list: link in bio.\n\nGeneral information, not tax advice.\n\n#bridgelands #vaughan #woodbridge #newhomes #preconstruction #yorkregion #freehold"
+  }
+]
