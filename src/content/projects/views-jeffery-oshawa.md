@@ -52,8 +52,8 @@ projectFaq:
   - q: "What is the deposit structure at Views?"
     a: >-
       $25,000 on signing, $25,000 at 60 days, $25,000 at 120 days, $15,000 at 180 days and $10,000
-      at 240 days, $100,000 in all over eight months. That is exactly the amount Tarion protects on a
-      freehold deposit.
+      at 240 days, $100,000 in all over eight months. Tarion protects a freehold deposit up to 10% of
+      the price, so about $86,000 of it at the $861,938 starting price.
   - q: "Is Views freehold or condo?"
     a: >-
       Views is freehold detached homes, so buyers own the land and the house outright. Unless the
@@ -98,7 +98,7 @@ If you do not qualify for the Ontario rebate, expect to pay it back at closing. 
 
 ## Deposits
 
-**$100,000 over eight months**: $25,000 on signing, then $25,000 at 60 and 120 days, $15,000 at 180 days and $10,000 at 240 days. That matches the Tarion cap on a freehold deposit exactly. [What protects a deposit](/faq/is-my-deposit-protected-freehold-ontario).
+**$100,000 over eight months**: $25,000 on signing, then $25,000 at 60 and 120 days, $15,000 at 180 days and $10,000 at 240 days. Tarion protects up to 10% of the price, capped at $100,000, so at the $861,938 starting price about $86,000 is covered and the rest relies on the builder. [What protects a deposit](/faq/is-my-deposit-protected-freehold-ontario).
 
 ## Location
 
