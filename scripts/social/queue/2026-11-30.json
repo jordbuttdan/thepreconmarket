@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2026-11-30-navera",
+    "date": "2026-11-30T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/navera-mayfield-village/hero.jpg", "badge": "NOW SELLING · LAUNCHED NOV 4",
+       "kicker": "Mayfield Village, Brampton · Digreen Homes", "name": "Navera",
+       "stats": [["From", "$1.0M"], ["Deposit", "$120K"], ["Lots", "38–45 ft"]]}
+    ],
+    "caption": "Navera at Mayfield Village by Digreen Homes is selling in northeast Brampton.\n\nDetached on 38 to 45 ft lots, from $999,999.\nDeposit: $120,000 spread over 390 days. Tarion protects $100,000 of it.\n$0 development charges and free assignment.\n\nFull breakdown: link in bio.\n\n#brampton #newhomes #preconstruction #peelregion #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-12-02-deposit-protection",
+    "date": "2026-12-02T12:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "Deposits", "headline": "Your pre-con deposit is *not fully protected*.", "size": 92},
+      {"type": "number", "label": "Homes over $600K", "figure": "$100K", "headline": "is the most Tarion protects.", "body": "And only up to 10% of the price. On an $862,000 home that is $86,200."},
+      {"type": "number", "label": "Homes $600K or less", "figure": "$60K", "headline": "is the limit.", "body": "Freehold deposits, agreements signed since 2018."},
+      {"type": "text", "label": "Run the numbers", "headline": "20% down on $1.2M is *$240,000*.", "body": "Tarion covers $100,000 of it. $140,000 relies on the builder alone."},
+      {"type": "cta", "headline": "Know what's covered *before you sign*.", "body": "Plain-English answers on deposits.", "button": "thepreconmarket.ca/faq"}
+    ],
+    "caption": "Big deposits are normal in pre-con. Full protection isn't.\n\nTarion protects a freehold deposit up to 10% of the price, capped at $100,000. Under $600K, the cap is $60,000.\n\nSwipe for how it works on a real number.\n\nGeneral information, not legal advice.\n\n#preconstruction #newhomes #tarion #ontariorealestate #homebuyingtips #gtarealestate"
+  },
+  {
+    "id": "2026-12-04-northgate-trails",
+    "date": "2026-12-04T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/northgate-trails/hero.jpeg", "badge": "NOW SELLING · LAUNCHED NOV 3",
+       "kicker": "North Ajax · Lakeview Homes", "name": "Northgate Trails",
+       "stats": [["From", "$560K"], ["Lots", "20–37 ft"], ["Condo fees", "$0"]]}
+    ],
+    "caption": "Northgate Trails by Lakeview Homes is selling in North Ajax, close to the 401 and 412.\n\nTownhomes and detached from $559,990, on 20 to 37 ft lots.\nEvery home is freehold, with no condo fees.\nDeposit on the back-to-back towns: $70,000 over 6 months.\n\nFull breakdown: link in bio.\n\n#ajax #durhamregion #newhomes #preconstruction #townhomes #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-12-06-countdown",
+    "date": "2026-12-06T19:00:00-05:00",
+    "slides": [
+      {"type": "number", "label": "Ontario HST rebate", "figure": "115 days", "headline": "left to sign and still get up to $80,000 back.", "body": "Agreements must be signed by March 31, 2027. Closing can be years later."}
+    ],
+    "caption": "115 days.\n\nThat is what's left to sign a new-home agreement and still get Ontario's enhanced HST rebate, up to $80,000. It's the signing date that counts.\n\nWhat's launching now: link in bio.\n\n#hstrebate #preconstruction #newhomes #ontariorealestate #gtarealestate"
+  }
+]
