@@ -1,0 +1,43 @@
+[
+  {
+    "id": "2026-12-07-woodslee-meadows",
+    "date": "2026-12-07T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/woodslee-meadows-paris/hero.jpg", "badge": "NOW SELLING · LAUNCHED NOV 12",
+       "kicker": "Paris, Ontario · Pinevest Homes", "name": "Woodslee Meadows",
+       "stats": [["From", "$506K"], ["Deposit", "10%"], ["Occupancy", "2027"]]}
+    ],
+    "caption": "Woodslee Meadows by Pinevest Homes is selling in Paris, about 10 minutes from Brantford and the 403.\n\nTownhomes from $505,900, 1,379 to 2,333 sq ft.\nDeposit: 10% over five months, about $50,600 at the starting price. Tarion covers all of it.\nThe Aspen plans are back-to-backs, so confirm the tenure and any POTL fee in the agreement.\n\nFull breakdown: link in bio.\n\n#parisontario #brantford #newhomes #preconstruction #townhomes #ontariorealestate"
+  },
+  {
+    "id": "2026-12-09-potl-fees",
+    "date": "2026-12-09T12:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "POTL", "headline": "Freehold, but there's a *monthly fee*? That's a POTL.", "size": 88},
+      {"type": "text", "label": "What it is", "headline": "A *parcel of tied land*.", "body": "You own your home and lot outright. A common elements corporation owns and maintains only the shared parts."},
+      {"type": "number", "label": "Typical fee", "figure": "$75–250", "size": 190, "headline": "a month in most new low-rise communities.", "body": "Shared laneways, visitor parking, snow clearing, insurance and a reserve fund."},
+      {"type": "text", "label": "Before you sign", "headline": "Get the fee *in writing*.", "body": "Ask what it covers and whether a reserve fund study has been done. First-year budgets are estimates and tend to rise."},
+      {"type": "cta", "headline": "Know the fee *before you sign*.", "body": "Plain-English answers on freehold fees.", "button": "thepreconmarket.ca/faq"}
+    ],
+    "caption": "Told freehold means no fees, then found one in the agreement? That's a POTL.\n\nYou own your home and lot. A common elements corporation looks after shared laneways, visitor parking and similar.\nMost new low-rise POTL fees run about $75 to $250 a month.\nA POTL may also bring a short rescission right, so ask your lawyer early.\n\nSwipe for what to check. More: link in bio.\n\nGeneral information, not legal advice.\n\n#potl #freehold #townhomes #preconstruction #newhomes #ontariorealestate"
+  },
+  {
+    "id": "2026-12-11-summerlea-woods",
+    "date": "2026-12-11T07:30:00-05:00",
+    "slides": [
+      {"type": "launch", "image": "src/assets/projects/empire-summerlea-woods/hero.jpg", "badge": "NOW SELLING · LAUNCHED NOV 3",
+       "kicker": "Binbrook, Hamilton · Empire Communities", "name": "Summerlea Woods",
+       "stats": [["From", "$875K"], ["Deposit", "5%"], ["Lots", "34 ft"]]}
+    ],
+    "caption": "Empire Summerlea Woods is selling in Binbrook, Hamilton, with closings from April 2027.\n\nDetached on 34 ft lots, 2,018 to 2,393 sq ft, from $875,212.\nDeposit: $10,000 on signing, balance to 5% at 30 days. Tarion covers all of it.\nPrices are net of the Ontario HST rebate, so if you don't qualify you pay the difference at closing.\n\nFull breakdown: link in bio.\n\n#hamilton #binbrook #newhomes #preconstruction #detachedhomes #ontariorealestate #freehold"
+  },
+  {
+    "id": "2026-12-13-closing-delays",
+    "date": "2026-12-13T19:00:00-05:00",
+    "slides": [
+      {"type": "text", "label": "Myth vs fact", "headline": "Myth: your closing date is *the day you move in*.", "size": 80,
+       "body": "The first date is tentative and builders can extend it on notice. Tarion delay compensation tops out at $7,500 in total."}
+    ],
+    "caption": "Planning a move around the date in your agreement? Wait until it's firm.\n\nThe first closing date is tentative, and builders can set new dates on notice.\nTarion's delay compensation is $150 a day, capped at $7,500, and you must claim within 180 days.\n\nHow closing dates work: link in bio.\n\nGeneral information, not legal advice.\n\n#preconstruction #newhomes #ontariorealestate #homebuyingtips #closingday #gtarealestate"
+  }
+]
