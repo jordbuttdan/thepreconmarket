@@ -15,15 +15,15 @@ launchDate: "2026-11-12"
 shortAnswer: >-
   Hillsborough Holland Landing is a freehold detached community by Andrin Homes off Crimson King Way
   near Highway 11 in Holland Landing, East Gwillimbury. Phase 3 released November 12, 2026 at
-  $1,039,550 to $1,093,900 for two-storey homes on 38, 40 and 45 foot lots. Listed prices already
+  $1,039,550 to $1,278,553 for two-storey homes on 38, 40 and 45 foot lots. Listed prices already
   include the Ontario enhanced HST rebate, so a buyer who does not qualify pays more at closing.
 priceFrom: 1039550
-priceTo: 1093900
+priceTo: 1278553
 sizeFrom: 2376
 sizeTo: 3464
 lotWidths: [38, 40, 45]
-floorPlanCount: 10
-bedBreakdown: "4 bed x3 · 4 bed + den x7"
+floorPlanCount: 12
+bedBreakdown: "4 bed x3 · 4 bed + den x9"
 lat: 44.0992492554151
 lng: -79.5063880022255
 heroImage: ../../assets/projects/hillsborough-holland-landing/hero.jpg
@@ -31,7 +31,7 @@ heroAlt: "Rendering of a two-storey brick detached home at Hillsborough Holland 
 highlights:
   - "Freehold detached homes on 38, 40 and 45 foot lots"
   - "Two-storey plans with two-car garages"
-  - "Six of ten plans available at launch, 2,430 to 2,870 sq ft"
+  - "Eight of twelve plans available, 2,376 to 3,464 sq ft"
   - "From $1,039,550, about $404 per sq ft"
   - "$0 development charges"
   - "Prices include the Ontario enhanced HST rebate"
@@ -46,8 +46,8 @@ incentives:
 projectFaq:
   - q: "How much do homes at Hillsborough Holland Landing cost?"
     a: >-
-      Phase 3 released on November 12, 2026 at $1,039,550 to $1,093,900 for the six plans available
-      at launch, 2,430 to 2,870 sq ft. Andrin's listed prices include the Ontario enhanced HST rebate,
+      Phase 3 released on November 12, 2026 from $1,039,550. As of November 15, eight of twelve
+      plans are available at $1,039,550 to $1,278,553, 2,376 to 3,464 sq ft. Andrin's listed prices include the Ontario enhanced HST rebate,
       and lot premiums are extra.
   - q: "What is the deposit structure at Hillsborough Holland Landing?"
     a: >-
@@ -80,15 +80,15 @@ relatedFaq:
   - cooling-off-period-freehold-ontario
   - lot-premiums-explained
 order: 30
-updated: 2026-11-12
+updated: 2026-11-15
 ---
-**Andrin Homes released Phase 3 of Hillsborough on November 12, 2026, from $1,039,550.** These are freehold two-storey detached homes with two-car garages on 38, 40 and 45 foot lots in Holland Landing, near Crimson King Way and Highway 11. Six of the ten plans were available at launch, from 2,430 to 2,870 sq ft, and development charges are waived.
+**Andrin Homes released Phase 3 of Hillsborough on November 12, 2026, from $1,039,550.** These are freehold two-storey detached homes with two-car garages on 38, 40 and 45 foot lots in Holland Landing, near Crimson King Way and Highway 11. As of November 15, eight of twelve plans are available from 2,376 to 3,464 sq ft, priced up to $1,278,553, and development charges are waived.
 
 ## The price already includes the rebate
 
 Andrin's listed prices **include the Ontario enhanced HST rebate**. Every home here is priced between $1,000,000 and $1,500,000, where that rebate is a flat **$80,000**. If you qualify, the price you see is the price you pay. If you do not, for example because the home will not be your or a relation's primary residence, expect roughly $80,000 more on closing. [How this works](/faq/builder-keeps-hst-rebate-assignment).
 
-First-time buyers may also qualify for the federal rebate, which is phasing out at this price: about **$46,000 at $1,039,550** and **$40,600 at $1,093,900**. Ask whether the listed price already counts on that too. [The federal rebate](/faq/first-time-home-buyers-gst-rebate).
+First-time buyers may also qualify for the federal rebate, which is phasing out at this price: about **$46,000 at $1,039,550** and **about $22,100 at $1,278,553**. Ask whether the listed price already counts on that too. [The federal rebate](/faq/first-time-home-buyers-gst-rebate).
 
 ## Deposits above the Tarion cap
 
@@ -98,4 +98,4 @@ The 38 foot collection asks **$120,000 over five months**: $25,000 on signing, $
 
 The Phase 3 lots sit near **Crimson King Way, Dogwood Boulevard and Whippletree Drive**, off Highway 11 at the north end of Holland Landing, with Newmarket a short drive south and Highway 404 to the east. The Walk Score is 9, so this is a car-first location.
 
-Details on this page come from Andrin's November 12, 2026 release as reported by Red Bricks.
+Details on this page come from Andrin's November 12, 2026 release as reported by Red Bricks, updated November 15, 2026.
