@@ -23,8 +23,43 @@ Plus, done by hand:
 - Freehold low-rise only. No condos, stacked towns, life lease or land lease.
 - No overpromising ("best lots", "won't last", guaranteed savings).
 - Rebate and contract posts say "General information, not tax/legal advice".
-- The broker line (name, Broker, brokerage) is on every image. RECO requires it.
-- No em-dashes. Captions: hook, 3 facts, "link in bio", 5 to 7 hashtags.
+- The renderer puts "Valery Real Estate Inc., Brokerage" small on every image. RECO requires
+  the brokerage name on all advertising. Never add Jordan's name to images.
+- No em-dashes.
+
+## Post style (Nov 2026)
+
+**Launch slide** (`type: launch`, no badge): `area` with the pin, e.g. "Holland Landing, East
+Gwillimbury" (neighbourhood, then city or region); `product`, e.g. "Two-storey detached homes";
+`name`, short enough for one line; `builder`, e.g. "Andrin Homes"; three `stats`
+(`["From","$1.04M"]`). Don't repeat the product line in the stats.
+
+**Launch caption:**
+
+```
+📍 <area>
+🏗️ <builder> · <project>
+
+<home type> just released 👇        (launched in the last 14 days; otherwise "now selling 👇")
+
+🏡 <lots / sizes>
+💰 From $<full price>
+🔐 <deposit, with Tarion coverage worked out from the price>
+🧾 <rebate or POTL fee note>
+🚗 <location note, optional>
+
+📲 Price list and floor plans: link in bio
+
+#<area> #<region> #newhomes #preconstruction ... (5 to 7)
+```
+
+**Rules, myth and countdown captions:** a one-line hook ending in one emoji, a blank line,
+3 or 4 emoji bullets, a blank line, `👉 Swipe for ...` (carousels only), `📲 <what>: link in bio`,
+then the disclaimer line and hashtags. One emoji per line, nothing loud.
+
+Each post in a queue file has a `link` (the full https URL). Facebook gets the same caption
+with "link in bio" replaced by that URL. A re-rendered post gets `"rev": n`, which makes the
+files `<id>-v<n>-<slide>.jpg` so GHL never serves a cached old image.
 
 ## Making a week
 
