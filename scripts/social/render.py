@@ -8,7 +8,7 @@ Social Planner pulls media from those public URLs.
 
 Slide types:
   launch  – project render on top; area (pin), product, name, builder (hard hat),
-            three stats, footer. Fields: image, area, product, name, builder, stats
+            three stats, footer. Fields: image (optional; without it, give price and note), area, product, name, builder, stats
   text    – ink card: label, headline (wrap *words* in asterisks for honey), body
   number  – ink card with one giant honey figure
   cta     – closing slide pointing to the site
@@ -141,11 +141,19 @@ def hat_icon(d, x, y, s, color):
 def slide_launch(s, page):
     """Area first (pin), then home type, project name, builder (hard hat), stats."""
     im = Image.new('RGB', (W, H), PAPER)
-    hero = Image.open(os.path.join(ROOT, s['image'])).convert('RGB')
     HERO_H = 700
-    hero = ImageOps.fit(hero, (W, HERO_H), Image.LANCZOS, centering=tuple(s.get('focus', (0.5, 0.5))))
-    im.paste(hero, (0, 0))
     d = ImageDraw.Draw(im)
+    if s.get('image'):
+        hero = Image.open(os.path.join(ROOT, s['image'])).convert('RGB')
+        hero = ImageOps.fit(hero, (W, HERO_H), Image.LANCZOS, centering=tuple(s.get('focus', (0.5, 0.5))))
+        im.paste(hero, (0, 0))
+    else:
+        # No clean rendering yet: an ink panel led by the starting price.
+        d.rectangle([0, 0, W, HERO_H], fill=INK)
+        d.text((PAD, 250), 'FROM', font=mono(30), fill=HONEY)
+        f = inter(150, 750)
+        d.text((PAD - 6, 300), s['price'], font=f, fill=HONEY)
+        d.text((PAD, 500), s.get('note', 'Renderings to come'), font=inter(36, 400), fill=SOFT)
     # area
     y = HERO_H + 40
     x = pin_icon(d, PAD, y + 2, 40, HONEY)

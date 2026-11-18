@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2026-12-01-jefferson-reserve",
+    "date": "2026-12-01T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/jefferson-reserve",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "Jefferson, Richmond Hill",
+        "product": "25 ft detached and semis",
+        "name": "Jefferson Reserve",
+        "builder": "CountryWide Homes",
+        "stats": [
+          [
+            "From",
+            "$1.17M"
+          ],
+          [
+            "Lots",
+            "25 ft"
+          ],
+          [
+            "Closing",
+            "2028"
+          ]
+        ],
+        "image": "src/assets/projects/jefferson-reserve/hero.jpg"
+      }
+    ],
+    "caption": "📍 Jefferson, Richmond Hill\n🏗️ CountryWide Homes · Jefferson Reserve\n\nDetached and semis now selling 👇\n\n🏡 Three-storey 25 ft homes, 1,771 to 2,383 sq ft\n💰 From $1,169,990\n🔐 $100,000 on the semis is within Tarion cover; $125,000 on the detached is $25,000 above it\n📐 Only 10 plans in the release\n🗓️ Closings early 2028\n\n📲 Price list and floor plans: link in bio\n\n#richmondhill #jefferson #yorkregion #newhomes #preconstruction #freehold"
+  },
+  {
+    "id": "2026-12-03-lot-premiums",
+    "date": "2026-12-03T12:00:00-05:00",
+    "link": "https://thepreconmarket.ca/faq/lot-premiums-explained",
+    "slides": [
+      {
+        "type": "text",
+        "label": "Lot premiums",
+        "headline": "Lot premiums run from a few thousand to *over $150,000*.",
+        "body": "Permanent advantages like a walkout or a protected view tend to hold value. Small size differences often don't.",
+        "size": 76
+      }
+    ],
+    "caption": "The price on the list is rarely the price of the lot you want. 🏡\n\n💰 Corner, ravine, walkout and park-backing lots cost extra\n📈 Premiums for permanent advantages tend to hold value\n🤔 Premiums for a few extra feet often do not\n\n📲 Lot premiums explained: link in bio\n\n#preconstruction #newhomes #ontariorealestate #homebuyingtips #freehold"
+  },
+  {
+    "id": "2026-12-05-fields-of-harmony",
+    "date": "2026-12-05T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/fields-of-harmony",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "North Oshawa, Durham Region",
+        "product": "All-brick detached homes",
+        "name": "Fields of Harmony",
+        "builder": "Greycrest Homes",
+        "stats": [
+          [
+            "From",
+            "$800K"
+          ],
+          [
+            "Lots",
+            "30–50 ft"
+          ],
+          [
+            "Homesites",
+            "99"
+          ]
+        ],
+        "image": "src/assets/projects/fields-of-harmony/hero.jpg"
+      }
+    ],
+    "caption": "📍 North Oshawa, Durham Region\n🏗️ Greycrest Homes · Fields of Harmony\n\nDetached homes now selling 👇\n\n🏡 The final phase: 99 all-brick two-storey homesites\n💰 From $799,900, prices quoted with HST included\n🔐 $80,000 deposit on the 30s, about what Tarion covers at the starting price\n📐 30, 40 and 50 ft lots, 1,582 to 3,292 sq ft\n\n📲 Price list and floor plans: link in bio\n\n#oshawa #durhamregion #newhomes #preconstruction #detachedhomes #freehold"
+  }
+]

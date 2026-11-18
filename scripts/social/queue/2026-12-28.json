@@ -1,0 +1,115 @@
+[
+  {
+    "id": "2026-12-28-elements-towns-milton",
+    "date": "2026-12-28T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/elements-towns-milton",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "South Milton, Halton Region",
+        "product": "Three-storey 20 ft townhomes",
+        "name": "Elements Towns",
+        "builder": "Trinity Point",
+        "stats": [
+          [
+            "From",
+            "$670K"
+          ],
+          [
+            "Deposit",
+            "$70K"
+          ],
+          [
+            "Garage",
+            "2-car"
+          ]
+        ],
+        "image": "src/assets/projects/elements-towns-milton/hero.jpg"
+      }
+    ],
+    "caption": "📍 South Milton, Halton Region\n🏗️ Trinity Point Developments · Elements Towns\n\nTownhomes now selling 👇\n\n🏡 Three-storey 20 ft towns with double-car rear-lane garages\n💰 From $669,900\n🔐 $70,000 deposit, about $3,000 above Tarion cover at the starting price\n🧾 POTL fee $177 a month, waived for three years\n🗓️ Closings summer 2028\n\n📲 Price list and floor plans: link in bio\n\n#milton #haltonregion #townhomes #newhomes #preconstruction #ontariorealestate"
+  },
+  {
+    "id": "2026-12-29-rebate-cliffs",
+    "date": "2026-12-29T12:00:00-05:00",
+    "link": "https://thepreconmarket.ca/faq/hst-rebate-over-1-5-million",
+    "slides": [
+      {
+        "type": "text",
+        "label": "HST rebate",
+        "headline": "Two rebates. *Two different cliffs.*"
+      },
+      {
+        "type": "number",
+        "label": "Federal",
+        "figure": "$1.5M",
+        "headline": "and the first-time buyer GST rebate is zero."
+      },
+      {
+        "type": "number",
+        "label": "Ontario",
+        "figure": "$1.85M",
+        "headline": "and the enhanced rebate runs out.",
+        "body": "It tapers from $1.5M. Above $1.85M only the standard $24,000 rebate remains."
+      },
+      {
+        "type": "text",
+        "label": "Watch the extras",
+        "headline": "Lot premiums and upgrades can *push you over*.",
+        "body": "Check where the full agreement price lands, not just the base price."
+      },
+      {
+        "type": "cta",
+        "headline": "See where *your price* lands.",
+        "body": "Free rebate checker.",
+        "button": "thepreconmarket.ca/hst-rebate"
+      }
+    ],
+    "caption": "Shopping over $1.5M? Know where the rebates stop. 📉\n\n🇨🇦 Federal first-time buyer rebate: zero at $1.5M\n🏛️ Ontario enhanced rebate: partial to $1.85M\n🧾 Above that, only the standard $24,000 rebate\n\n👉 Swipe for the cliffs\n📲 Free rebate checker: link in bio\n\nGeneral information, not tax advice.\n\n#hstrebate #luxuryhomes #preconstruction #newhomes #ontariorealestate"
+  },
+  {
+    "id": "2026-12-30-bloom-park-pickering",
+    "date": "2026-12-30T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/bloom-park-pickering",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "Seaton, Pickering",
+        "product": "Four-bedroom detached homes",
+        "name": "Bloom Park",
+        "builder": "DECO Homes",
+        "stats": [
+          [
+            "From",
+            "$1.02M"
+          ],
+          [
+            "Lots",
+            "36–43 ft"
+          ],
+          [
+            "Levies",
+            "$7.5K cap"
+          ]
+        ],
+        "image": "src/assets/projects/bloom-park-pickering/hero.jpg"
+      }
+    ],
+    "caption": "📍 Seaton, Pickering\n🏗️ DECO Homes · Bloom Park\n\nDetached homes now selling 👇\n\n🏡 Eight four-bedroom designs, 2,294 to 3,550 sq ft\n💰 From $1,017,690\n🔐 $100,000 on the 36s is within Tarion cover; $120,000 on the 43s is $20,000 above it\n✅ Levies capped at $7,500, plus free assignment\n🌳 Beside the planned Seaton park and recreation complex\n\n📲 Price list and floor plans: link in bio\n\n#pickering #seaton #durhamregion #newhomes #preconstruction #detachedhomes"
+  },
+  {
+    "id": "2026-12-31-countdown",
+    "date": "2026-12-31T19:00:00-05:00",
+    "link": "https://thepreconmarket.ca/launching",
+    "slides": [
+      {
+        "type": "number",
+        "label": "Ontario HST rebate",
+        "figure": "90 days",
+        "headline": "left to sign and still get up to $80,000 back.",
+        "body": "Agreements must be signed by March 31, 2027. Closing can be years later."
+      }
+    ],
+    "caption": "⏳ 90 days left.\n\n✍️ The signing date counts, not closing\n💰 Up to $80,000 back on the Ontario rebate\n🗓️ Deadline: March 31, 2027\n\n📲 What's launching now: link in bio\n\nGeneral information, not tax advice.\n\n#hstrebate #preconstruction #newhomes #ontariorealestate #gtarealestate"
+  }
+]

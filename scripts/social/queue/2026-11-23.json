@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2026-11-24-weston-woods",
+    "date": "2026-11-24T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/weston-woods",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "Kleinburg, Vaughan",
+        "product": "Detached and freehold towns",
+        "name": "Weston Woods",
+        "builder": "Paradise Developments",
+        "stats": [
+          [
+            "From",
+            "$850K"
+          ],
+          [
+            "Lots",
+            "20–38 ft"
+          ],
+          [
+            "Closing",
+            "2028"
+          ]
+        ],
+        "image": "src/assets/projects/weston-woods/hero.jpg"
+      }
+    ],
+    "caption": "📍 Kleinburg, Vaughan\n🏗️ Paradise Developments · Weston Woods\n\nDetached homes and towns now selling 👇\n\n🏡 20 ft towns with backyards, 30 ft and 38 ft detached\n💰 From $849,990\n🔐 $80,000 deposit on the towns, within Tarion cover\n🎁 Design studio bonus of $15,000 to $20,000\n🚗 Minutes from Highway 400, closings spring 2028\n\n📲 Price list and floor plans: link in bio\n\n#kleinburg #vaughan #yorkregion #newhomes #preconstruction #freehold"
+  },
+  {
+    "id": "2026-11-26-myth-net-of-rebate",
+    "date": "2026-11-26T12:00:00-05:00",
+    "link": "https://thepreconmarket.ca/faq/price-net-of-hst-rebate-meaning",
+    "slides": [
+      {
+        "type": "text",
+        "label": "Myth vs fact",
+        "headline": "Myth: “net of HST rebate” means *you get a cheque*.",
+        "body": "It means the rebate is already taken off the price. Don't qualify? It's added back at closing.",
+        "size": 76
+      }
+    ],
+    "caption": "Seen “price net of HST rebate” on a price list? Here is what it means. 🧐\n\n🧾 The rebate is already subtracted from the advertised price\n✅ That assumes you qualify\n⚠️ If you don't, the amount is billed back to you at closing\n\n📲 What it means for you: link in bio\n\nGeneral information, not tax advice.\n\n#hstrebate #preconstruction #newhomes #ontariorealestate #homebuyingtips"
+  },
+  {
+    "id": "2026-11-28-uptown-woodbridge",
+    "date": "2026-11-28T07:30:00-05:00",
+    "link": "https://thepreconmarket.ca/projects/uptown-woodbridge",
+    "slides": [
+      {
+        "type": "launch",
+        "area": "Woodbridge, Vaughan",
+        "product": "Detached and townhomes",
+        "name": "UpTown Woodbridge",
+        "builder": "Fieldgate Homes",
+        "stats": [
+          [
+            "From",
+            "$700K"
+          ],
+          [
+            "Plans",
+            "50"
+          ],
+          [
+            "Lots",
+            "26–42 ft"
+          ]
+        ],
+        "image": "src/assets/projects/uptown-woodbridge/hero.png"
+      }
+    ],
+    "caption": "📍 Woodbridge, Vaughan\n🏗️ Fieldgate Homes · UpTown Woodbridge\n\nDetached homes and towns now selling 👇\n\n🏡 Back-to-back and rear-lane towns, plus 26 to 42 ft detached\n💰 From $699,990\n🔐 $80,000 deposit on the back-to-backs, about $10,000 above Tarion cover at the starting price\n✅ $0 development charges and a $10,000 to $20,000 decor credit\n📍 Same Weston and Teston corner as Bridgelands\n\n📲 Price list and floor plans: link in bio\n\n#woodbridge #vaughan #yorkregion #newhomes #preconstruction #freehold"
+  }
+]
