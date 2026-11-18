@@ -1,4 +1,0 @@
-{
- "note": "GHL edit-post calls still to make: body_type 'post', body_accountIds [accountId], body_userId from scheduled.json, body_scheduleDate, body_media, body_summary. Delete this file when done.",
- "edits": []
-}
