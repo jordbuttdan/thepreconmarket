@@ -4,14 +4,19 @@ Every post is built from site content, rendered here, hosted at
 `https://thepreconmarket.ca/social/<file>.jpg`, and scheduled in GHL Social Planner
 to the Precon Market Instagram and Facebook page together.
 
-## Weekly cadence (4 feed posts)
+## Weekly cadence (7 feed posts, one a day)
 
 | Day | Time (ET) | Pillar | Format |
 | --- | --- | --- | --- |
-| Mon | 7:30 am | **Launch watch**: newest launch on the site | Single image |
-| Wed | 12:00 pm | **Rules explained**: rebate, deposit, contract or POTL | 5-slide carousel |
-| Fri | 7:30 am | **Launch watch #2**: second launch, or a price/deposit update | Single image |
-| Sun | 7:00 pm | **Deadline or myth vs fact** | Single image |
+| Mon | 7:30 am | **Launch** | Single image |
+| Tue | 12:00 pm | **Rules explained**: rebate, deposit, contract or POTL | 5-slide carousel |
+| Wed | 7:30 am | **Launch** | Single image |
+| Thu | 12:00 pm | **Myth vs fact** | Single image |
+| Fri | 7:30 am | **Launch** | Single image |
+| Sat | 12:00 pm | **Rules, single slide** | Single image |
+| Sun | 7:00 pm | **Deadline countdown or myth** | Single image |
+
+The daily launch watch adds a second post on a day when something new releases.
 
 Plus, done by hand:
 - **1 Reel a week** of Jordan on camera, 20 to 30 seconds, using Wednesday's topic as the script.
@@ -66,8 +71,8 @@ files `<id>-v<n>-<slide>.jpg` so GHL never serves a cached old image.
 1. Write `scripts/social/queue/<monday-date>.json` (copy the last one).
 2. `python3 scripts/social/render.py scripts/social/queue/<monday-date>.json`
 3. Commit and push. Netlify publishes the images under `/social/`.
-4. Create each post in GHL (Instagram + Facebook accounts), scheduled for its `date`,
-   with media `https://thepreconmarket.ca/social/<id>-<n>.jpg`.
+4. `python3 scripts/social/ghl-schedule.py --go scripts/social/queue/<file>.json` schedules each
+   post on Instagram and Facebook and records the ids in `scheduled.json`.
 
 Slide types and the `*highlight*` syntax are documented at the top of `render.py`.
 Fonts in `fonts/` are converted from the site's own Inter and JetBrains Mono.
