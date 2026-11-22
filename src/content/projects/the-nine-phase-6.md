@@ -16,9 +16,9 @@ launchDate: "2026-10-17"
 occupancy: "November\u2013December 2027"
 shortAnswer: >-
   The Nine Phase 6 is a townhome community by Mattamy Homes at 6578 Ninth Line in Ninth Line,
-  Mississauga. Freehold homes from 1,793 to 2,420 sq ft priced $849,990 to $969,990 across 15 floor
-  plans. Launched October 17th, 2026.
-priceFrom: 849990
+  Mississauga. Freehold homes from 1,793 to 2,420 sq ft priced $869,990 to $969,990 across the
+  floor plans still available. Launched October 17th, 2026.
+priceFrom: 869990
 priceTo: 969990
 sizeFrom: 1793
 sizeTo: 2420
@@ -55,7 +55,7 @@ projectFaq:
       The Nine Phase 6 is being built by Mattamy Homes in Ninth Line, Mississauga.
   - q: "How much do homes at The Nine Phase 6 cost?"
     a: >-
-      Listed prices run $849,990 to $969,990 across 15 floor plans covering 1,793 to 2,420 sq ft.
+      Listed prices run $869,990 to $969,990 on the plans still available, covering 1,793 to 2,420 sq ft. The lowest-priced plans released at $849,990 are no longer listed.
       Lot premiums, elevation upgrades and optional layouts are quoted separately.
   - q: "What is the deposit structure at The Nine Phase 6?"
     a: >-
@@ -66,8 +66,8 @@ projectFaq:
     a: >-
       The Nine Phase 6 can qualify. The Ontario Enhanced New Housing Rebate covers agreements signed
       between April 1, 2026 and March 31, 2027, pays up to $80,000 of the provincial HST and has no
-      first-time buyer test. At $849,990 the Ontario rebate is worth about $67,999, and a first-time
-      buyer could add roughly $42,499 federally. The home must be the primary residence of the buyer
+      first-time buyer test. At $869,990 the Ontario rebate is worth about $69,599, and a first-time
+      buyer could add roughly $43,499 federally. The home must be the primary residence of the buyer
       or a relation, and CRA determines eligibility. The advertised prices here are already net of
       that rebate, so a buyer who does not qualify pays the difference at closing.
   - q: "Where is The Nine Phase 6 located?"
@@ -84,9 +84,9 @@ relatedFaq:
   - development-charges-levies-cap
   - lot-premiums-explained
 order: 30
-updated: 2026-11-10
+updated: 2026-11-22
 ---
-The Nine Phase 6 is Mattamy Homes's freehold townhome release at 6578 Ninth Line in Ninth Line, Mississauga, priced from $849,990 to $969,990 across 15 floor plans.
+The Nine Phase 6 is Mattamy Homes's freehold townhome release at 6578 Ninth Line in Ninth Line, Mississauga, priced from $869,990 to $969,990 on the plans still available, as of November 22, 2026.
 
 Worth noting the **levy cap** in the current incentives. On a closing years out an uncapped development charge clause is open-ended, so a cap is usually worth more than the décor credit sitting next to it.
 
@@ -94,16 +94,16 @@ Worth noting the **levy cap** in the current incentives. On a closing years out 
 
 There is a POTL or common-element fee of **$105 per month**. Where an incentive waives it, that is a waiver rather than a removal, so budget it from the year it starts.
 
-At the entry end, $849,990 sits below $1,000,000, which is the full 8% Ontario rebate band and the most favourable position in the structure.
+At the entry end, $869,990 sits below $1,000,000, which is the full 8% Ontario rebate band and the most favourable position in the structure.
 
 ## Pricing and your rebate position
 
-Listed prices run **$849,990 to $969,990** across 15 floor plans. Assuming you qualify, here is what the current programs are worth at each end:
+Listed prices run **$869,990 to $969,990** on the plans still available (the entry plans released at $849,990 are no longer listed). Assuming you qualify, here is what the current programs are worth at each end:
 
-| | At $849,990 | At $969,990 |
+| | At $869,990 | At $969,990 |
 | --- | --- | --- |
-| Ontario ENHR (no first-time buyer test) | **$67,999** | **$77,599** |
-| Federal rebate (first-time buyers only) | **$42,499** | **$48,499** |
+| Ontario ENHR (no first-time buyer test) | **$69,599** | **$77,599** |
+| Federal rebate (first-time buyers only) | **$43,499** | **$48,499** |
 
 **Read the price list carefully.** The advertised prices are stated net of the enhanced HST rebate, meaning they assume you qualify and assign the rebate to the vendor at closing. If you do not qualify, or the rebate is reduced, you are responsible for the difference at closing in certified funds. [How net-of-rebate pricing works](/faq/price-net-of-hst-rebate-meaning).
 
