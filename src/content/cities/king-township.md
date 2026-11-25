@@ -1,7 +1,6 @@
 ---
 city: King Township
 region: York Region
-title: New homes in King Township
 shortAnswer: >-
   New freehold low-rise in King Township currently runs roughly $1,275,000 to $3,295,000
   across detached homes, townhomes and semis. Supply is thin. Active builders include
@@ -35,7 +34,7 @@ Communities that have launched or are actively selling here include:
 - Iris by Acorn
 - Fifth Avenue Homes – King City
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in King Township:** Treasure Hill Homes, Fernbrook Homes, Zancor Homes, Greenpark Group, Acorn Developments, Fifth Avenue Homes.
 

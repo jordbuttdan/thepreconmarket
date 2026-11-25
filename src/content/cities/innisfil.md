@@ -1,7 +1,6 @@
 ---
 city: Innisfil
 region: Simcoe County
-title: New homes in Innisfil
 shortAnswer: >-
   New freehold low-rise in Innisfil currently runs roughly $566,000 to $978,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -34,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - Lakehaven Towns (Mattamy)
 - Churchill Downs Homes (First View)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Innisfil:** Mattamy Homes, Bayview Wellington Homes, First View Homes, Geranium.
 

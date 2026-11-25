@@ -1,7 +1,6 @@
 ---
 city: New Tecumseth
 region: Simcoe County
-title: New homes in New Tecumseth
 shortAnswer: >-
   New freehold low-rise in New Tecumseth currently runs roughly $779,000 to $1,300,000
   across detached homes, townhomes and semis. Supply is moderate. Active builders
@@ -32,7 +31,7 @@ Communities that have launched or are actively selling here include:
 - Beeton Village (Flato)
 - Townes II at Deer Springs (Honeyfield)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in New Tecumseth:** Highcastle Homes, Flato Developments, Honeyfield Communities.
 

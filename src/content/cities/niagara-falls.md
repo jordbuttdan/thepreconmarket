@@ -1,7 +1,6 @@
 ---
 city: Niagara Falls
 region: Niagara Region
-title: New homes in Niagara Falls
 shortAnswer: >-
   New freehold low-rise in Niagara Falls currently runs roughly $482,000 to $1,049,000
   across detached homes, townhomes and semis. Supply is moderate. Active builders
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Stonerose (Treasure Hill)
 - Legends on the Green Towns (Silvergate)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Niagara Falls:** Mountainview Building Group, Treasure Hill Homes, Silvergate Homes.
 

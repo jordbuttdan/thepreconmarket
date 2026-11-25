@@ -1,7 +1,6 @@
 ---
 city: Newmarket
 region: York Region
-title: New homes in Newmarket
 shortAnswer: >-
   New freehold low-rise in Newmarket currently runs roughly $610,000 to $899,000 across
   detached homes, townhomes and semis. Supply is thin. Active builders include Sundial
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Glenway Urban Towns Phase 2 (Andrin)
 - Aria Homes (Spotlight)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Newmarket:** Sundial Homes, Andrin Homes, Briarwood Development Group, Spotlight Development.
 

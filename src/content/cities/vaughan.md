@@ -1,7 +1,6 @@
 ---
 city: Vaughan
 region: York Region
-title: New homes in Vaughan
 shortAnswer: >-
   New freehold low-rise in Vaughan currently runs roughly $699,000 to $2,439,000 across
   detached homes, townhomes and semis. Supply is very strong. Active builders include
@@ -39,7 +38,7 @@ Communities that have launched or are actively selling here include:
 - Balmoral Estates (Lormel)
 - Vellore Trails (Arista)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Vaughan:** Arista Homes, DECO Homes, OPUS Homes, Paradise Developments, Fieldgate Homes, UNIQ Communities, Tiffany Park Homes, CountryWide Homes, Royal Pine Homes, Lormel Homes.
 

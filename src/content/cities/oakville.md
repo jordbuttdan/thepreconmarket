@@ -1,7 +1,6 @@
 ---
 city: Oakville
 region: Halton Region
-title: New homes in Oakville
 shortAnswer: >-
   New freehold low-rise in Oakville currently runs roughly $799,000 to $3,940,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -38,7 +37,7 @@ Communities that have launched or are actively selling here include:
 - Oakpointe in Upper Joshua Creek Phase 2 (Arista)
 - Trafalgar Highlands (Coscorp)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Oakville:** Mattamy Homes, Caivan Communities, Arista Homes, Great Gulf, Fernbrook Homes, Starlane Home Corporation, Branthaven Homes, Coscorp.
 

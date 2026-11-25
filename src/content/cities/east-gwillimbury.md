@@ -1,7 +1,6 @@
 ---
 city: East Gwillimbury
 region: York Region
-title: New homes in East Gwillimbury
 shortAnswer: >-
   New freehold low-rise in East Gwillimbury currently runs roughly $699,000 to
   $1,636,000 across detached homes, townhomes and semis. Supply is strong. Active
@@ -35,7 +34,7 @@ Communities that have launched or are actively selling here include:
 - Hillsborough Holland Landing (Great Gulf)
 - The Enclave Towns (Wycliffe/Thornridge)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in East Gwillimbury:** CountryWide Homes, Lakeview Homes, Minto, Great Gulf, Acorn Developments, Wycliffe Homes, Thornridge Homes.
 

@@ -1,7 +1,6 @@
 ---
 city: Essa
 region: Simcoe County
-title: New homes in Essa
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Essa right now.
   Buyers looking in this area generally widen the search to Barrie or Bradford West

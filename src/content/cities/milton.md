@@ -1,7 +1,6 @@
 ---
 city: Milton
 region: Halton Region
-title: New homes in Milton
 shortAnswer: >-
   New freehold low-rise in Milton currently runs roughly $658,000 to $1,782,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -36,7 +35,7 @@ Communities that have launched or are actively selling here include:
 - Creekview Collective Towns Phase 2 (Branthaven)
 - Milton View (Paradise)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Milton:** Mattamy Homes, Branthaven Homes, Trinity Point Developments, Great Gulf, Primont Homes, Paradise Developments, Royalpark Homes.
 

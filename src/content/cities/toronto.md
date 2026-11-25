@@ -1,7 +1,6 @@
 ---
 city: Toronto
 region: City of Toronto
-title: New homes in Toronto
 shortAnswer: >-
   New freehold low-rise in Toronto currently runs roughly $929,000 to $1,450,000 across
   detached homes, townhomes and semis. Supply is very thin. Active builders include Icon
@@ -34,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - The Woodside Collection (95 Developments, Agincourt)
 - NY Walk Towns (Menkes, Lansing-Westgate)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Toronto:** Icon Homes, Dash Developments, Menkes, 95 Developments.
 

@@ -1,7 +1,6 @@
 ---
 city: Georgina
 region: York Region
-title: New homes in Georgina
 shortAnswer: >-
   New freehold low-rise in Georgina currently runs roughly $824,000 to $1,719,000 across
   detached homes, townhomes and semis. Supply is moderate. Active builders include
@@ -34,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - Homestead Meadows Towns (Ballymore)
 - Woodbury Trails Homes (Ballymore)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Georgina:** Greenpark Group, Regal Crest Homes, Ballymore Homes.
 

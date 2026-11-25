@@ -1,7 +1,6 @@
 ---
 city: St. Catharines
 region: Niagara Region
-title: New homes in St. Catharines
 shortAnswer: >-
   New freehold low-rise in St. Catharines currently runs roughly $329,000 to $825,000
   across detached homes, townhomes and semis. Supply is moderate. Active builders
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Lot 16 Towns (Sphere)
 - Bromley Gardens (Dunsire)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in St. Catharines:** Phelps Homes, Dunsire Developments, Sphere Developments, Marydel Homes.
 

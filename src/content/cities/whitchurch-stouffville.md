@@ -1,7 +1,6 @@
 ---
 city: Whitchurch-Stouffville
 region: York Region
-title: New homes in Whitchurch-Stouffville
 shortAnswer: >-
   New freehold low-rise in Whitchurch-Stouffville currently runs roughly $759,000 to
   $1,497,000 across detached homes, townhomes and semis. Supply is moderate. Active
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Forestville Villages (Wyview)
 - The Residences of Broadway Towns (Mason)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Whitchurch-Stouffville:** OPUS Homes, Fairgate Homes, Stateview Homes, Mason Homes, Sorbara Group, Wyview Group.
 

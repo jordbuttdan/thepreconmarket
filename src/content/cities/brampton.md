@@ -1,7 +1,6 @@
 ---
 city: Brampton
 region: Peel Region
-title: New homes in Brampton
 shortAnswer: >-
   New freehold low-rise in Brampton currently runs roughly $397,000 to $1,810,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include DiGreen
@@ -38,7 +37,7 @@ Communities that have launched or are actively selling here include:
 - Spruce Trails Towns (Camcos)
 - Rosemont Grove (Hallett)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Brampton:** DiGreen Homes, Rosehaven Homes, Regal Crest Homes, Primont Homes, Camcos Living, Mattamy Homes, Great Gulf, Caliber Homes.
 

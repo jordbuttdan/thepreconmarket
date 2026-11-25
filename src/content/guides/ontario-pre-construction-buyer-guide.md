@@ -30,7 +30,7 @@ related:
 
 Pre-construction in Ontario rewards preparation and punishes improvisation. The transaction is front-loaded, the decisions that determine whether it goes well are nearly all made in the first hour at a sales centre, years before you get the keys.
 
-This guide is the whole arc, in order.
+This guide covers the decisions that matter, in order. For the mechanics on their own, see [how to buy pre-construction homes in Ontario, step by step](/faq/how-to-buy-pre-construction-ontario).
 
 ## 1. Understand what you are actually signing
 

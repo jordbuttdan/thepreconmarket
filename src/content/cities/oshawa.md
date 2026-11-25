@@ -1,7 +1,6 @@
 ---
 city: Oshawa
 region: Durham Region
-title: New homes in Oshawa
 shortAnswer: >-
   New freehold low-rise in Oshawa currently runs roughly $596,000 to $1,254,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Minto,
@@ -36,7 +35,7 @@ Communities that have launched or are actively selling here include:
 - Bellaro at Palmetto (Treasure Hill)
 - Mackenzie Park (Brightstone)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Oshawa:** Minto, Greycrest Homes, Treasure Hill Homes, Sorbara Group, Delpark Homes, Brightstone.
 

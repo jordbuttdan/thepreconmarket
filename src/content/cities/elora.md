@@ -1,7 +1,6 @@
 ---
 city: Elora
 region: Wellington County
-title: New homes in Elora
 shortAnswer: >-
   Everstone by Cachet Homes is the new freehold community in Elora, launched October 12, 2026 at
   $549,990 to $1,059,990 for 20 foot towns, detached links and 36 and 42 foot detached homes, with

@@ -1,7 +1,6 @@
 ---
 city: Mono
 region: Dufferin County
-title: New homes in Mono
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Mono right now.
   Buyers looking in this area generally widen the search to Orangeville, where new

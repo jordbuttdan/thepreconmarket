@@ -6,7 +6,7 @@ import '@fontsource/jetbrains-mono/latin-400.css';
 import '@fontsource/jetbrains-mono/latin-500.css';
 import interUrl from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import '../styles/global.css';
-import { SITE, BROKER, NAV } from '../config/site';
+import { SITE, BROKER, NAV, SISTER_SITES } from '../config/site';
 import Schema from '../components/seo/Schema.astro';
 import StickyMobileCta from '../components/StickyMobileCta.astro';
 
@@ -355,10 +355,26 @@ const dateFmt = new Intl.DateTimeFormat('en-CA', {
           </nav>
         </div>
 
+        <!-- The RAZZ family of sites: same names, descriptors and accent dots on every site. -->
+        <div class="mt-10 flex flex-col gap-3 border-t border-rule pt-6 sm:flex-row sm:items-center sm:gap-8">
+          <p class="section-label">Our sites</p>
+          <ul class="flex flex-wrap gap-x-8 gap-y-3 text-sm">
+            {SISTER_SITES.map((s) => (
+              <li>
+                <a href={s.url} class="group inline-flex items-center gap-2 text-ink/75 hover:text-ink">
+                  <span class="h-2 w-2 rounded-full ring-1 ring-rule-dark" style={`background:${s.color}`} aria-hidden="true"></span>
+                  <span class="font-medium">{s.name}</span>
+                  <span class="hidden text-xs text-ink/50 md:inline">{s.label}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <!-- Compliance, stated once, as fine print. RECO: the brokerage name is
              at least as prominent as the individual's, so it comes first and
              the two are set at the same size. -->
-        <p class="mt-10 border-t border-rule pt-6 text-xs leading-relaxed text-ink/55">
+        <p class="mt-6 border-t border-rule pt-6 text-xs leading-relaxed text-ink/55">
           {BROKER.brokerage}. {BROKER.name}, {BROKER.title}. RECO #{BROKER.reco}. This site
           provides general information about published program rules, not tax, legal or
           accounting advice. Rebate eligibility is determined by the Canada Revenue Agency.

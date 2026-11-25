@@ -1,7 +1,6 @@
 ---
 city: Orangeville
 region: Dufferin County
-title: New homes in Orangeville
 shortAnswer: >-
   New freehold low-rise in Orangeville currently runs roughly $724,000 to $1,400,000
   across detached homes, townhomes and semis. Supply is thin. Active builders include
@@ -31,7 +30,7 @@ Communities that have launched or are actively selling here include:
 - Five Creeks Estates (Great Gulf)
 - First Street Towns (Trolleybus/Saberwood)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Orangeville:** Great Gulf, Trolleybus Urban Development, Saberwood Homes.
 

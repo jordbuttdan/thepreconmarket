@@ -1,7 +1,6 @@
 ---
 city: Uxbridge
 region: Durham Region
-title: New homes in Uxbridge
 shortAnswer: >-
   New freehold low-rise in Uxbridge currently runs roughly $734,000 to $2,725,000 across
   detached homes, townhomes and semis. Supply is thin. Active builders include Oxford
@@ -32,7 +31,7 @@ Communities that have launched or are actively selling here include:
 - Countryside Pointe Towns (Evendale)
 - Coppin Forest Estates (Oxford/Twelve Stone/Wentworth)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Uxbridge:** Oxford Developments, Evendale Developments, Arya Corporation, Wentworth Homes.
 

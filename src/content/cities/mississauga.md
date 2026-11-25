@@ -1,61 +1,74 @@
 ---
 city: Mississauga
 region: Peel Region
-title: New homes in Mississauga
+title: "New homes in Mississauga: pre-construction detached & towns"
+description: >-
+  New homes in Mississauga: pre-construction freehold townhomes from $769,990 and detached homes
+  from $999,900 in Meadowvale, Lakeview, Central Erin Mills and Sheridan Park, with builders and deposits.
 shortAnswer: >-
-  New freehold low-rise in Mississauga currently runs roughly $540,000 to $1,190,000
-  across detached homes, townhomes and semis. Supply is thin. Active builders include
-  Caivan Communities, Mattamy Homes, Khanani Developments. The Ontario HST rebate window
-  closes March 31, 2027 on the signing date.
+  New freehold low-rise in Mississauga runs from about $769,990 for townhomes to $2,599,990 for
+  detached homes. Communities selling now include Derry Lane Towns, The Nine Phase 6, Pier House
+  Towns, Riverbank Place, Meadowvale Brooks, Novella and Abacot Hill. The Ontario HST rebate
+  window closes March 31, 2027 on the signing date.
 communities:
-  - Lakeview
-  - Streetsville
   - Meadowvale
+  - Lakeview
+  - Central Erin Mills
+  - Sheridan Park
   - Churchill Meadows
-  - Cooksville
-  - Port Credit
-priceFrom: 540000
-priceTo: 1190000
+  - Streetsville
+priceFrom: 769990
+priceTo: 2599990
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - do-i-have-to-be-first-time-buyer-ontario-rebate
   - hst-rebate-deadline-march-2027
   - development-charges-levies-cap
   - typical-deposit-structure-pre-construction-ontario
-updated: 2026-11-09
+updated: 2026-11-25
 order: 10
 ---
 ## What's being built in Mississauga
 
-Mississauga is a large market with comparatively little new freehold low-rise left. The city is substantially built out, so most new supply is condominium and the low-rise that does appear is infill townhomes rather than greenfield detached. When a freehold release does come, it tends to be small and to sell quickly.
+Mississauga is a large market with comparatively little new freehold low-rise left. The city is largely built out, so most new supply is condominium, and the low-rise that appears is infill: townhome blocks and small pockets of detached homes. Releases tend to be small.
 
-Communities that have launched or are actively selling here include:
+## New townhomes in Mississauga
 
-- Aura Lakeview Village Towns (Caivan)
-- The Nine Phase 3 (Mattamy)
-- OG Urban Towns (Brightstone)
-- Harmony Crossing Towns
+- **[Derry Lane Towns](/projects/derry-lane-towns)** by Ballymore Homes, on Derry Road West. Towns, semis and detached from **$769,990**.
+- **[Pier House Towns](/projects/pier-house-towns)** by Branthaven Homes, in Lakeview. From **$819,900**.
+- **[The Nine Phase 6](/projects/the-nine-phase-6)** by Mattamy Homes, on Ninth Line. From **$869,990**.
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+## New detached homes in Mississauga
 
-**Builders active in Mississauga:** Caivan Communities, Mattamy Homes, Khanani Developments, Brightstone.
+- **[Riverbank Place](/projects/riverbank-place)** by Kingridge Developments, in Central Erin Mills. Detached, semis and towns from **$999,900**.
+- **[Meadowvale Brooks](/projects/meadowvale-brooks)** by Camcos Living, in Meadowvale. Detached from **$1,174,990**.
+- **[Novella](/projects/novella-mississauga)** by Greenpark Group, in Meadowvale. Detached from **$1,298,900**.
+- **[Abacot Hill](/projects/abacot-hill)** by Hallett Homes, in Sheridan Park. Detached from **$1,499,990**.
 
-Builder choice matters more than most buyers expect. Delivery record, reliability on closing dates and how warranty items get handled vary enormously and appear on no price list. [How to assess a builder](/guides/builder-due-diligence-guide).
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here, with the price lists and floor plans.
+
+**Builders active in Mississauga:** Ballymore Homes, Branthaven Homes, Mattamy Homes, Kingridge Developments, Camcos Living, Greenpark Group, Hallett Homes.
+
+Builder choice matters more than most buyers expect. Delivery record, reliability on closing dates and how warranty items get handled vary widely and appear on no price list. [How to assess a builder](/guides/builder-due-diligence-guide).
+
+## How buying pre-construction in Mississauga works
+
+Freehold pre-construction has **no cooling-off period**: once the builder accepts, you are bound, so the agreement review happens before you sign. Deposits are usually paid over 12 to 24 months, and closing is often two to four years away. [How to buy pre-construction homes in Ontario, step by step](/faq/how-to-buy-pre-construction-ontario).
 
 ## What the rebates are worth at local prices
 
-New low-rise here currently runs roughly **$540,000 to $1,190,000**, and that band decides your rebate position. Here is the arithmetic at both ends.
+New low-rise here runs roughly **$769,990 to $2,599,990**, and where you land in that band decides your rebate position.
 
-| | At $540,000 | At $1,190,000 |
+| | At $769,990 | At $2,599,990 |
 | --- | --- | --- |
-| Ontario ENHR (no first-time buyer test) | **$43,200** | **$80,000** |
-| Federal rebate (first-time buyers only) | **$27,000** | **$31,000** |
+| Ontario ENHR (no first-time buyer test) | **$61,599** | **$0** |
+| Federal rebate (first-time buyers only) | **$38,499** | **$0** |
 
-At the entry end, a home at $540,000 sits **below $1,000,000**, which means the **full 8%** Ontario rebate, $43,200, plus the full 5% federal rebate for a first-time buyer. This is the most favourable band in the whole structure.
+A townhome at $769,990 sits **below $1,000,000**, which means the **full 8%** Ontario rebate, $61,599, plus the full 5% federal rebate for a first-time buyer.
 
-The band here straddles **$1,000,000**, which is where the structure changes: above it the Ontario rebate stops growing and sits flat at **$80,000**, while the federal rebate begins tapering toward zero at $1,500,000. Two buyers in the same community can be in different places.
+Between **$1,000,000 and $1,500,000**, where most of the detached homes here start, the Ontario rebate sits flat at **$80,000** and the federal rebate tapers toward zero. Above **$1,850,000** the enhanced Ontario rebate no longer applies and you fall back to the [$24,000 standard rebate](/faq/hst-rebate-24000-standard). [The price cliffs](/faq/hst-rebate-over-1-5-million).
 
-If you have **owned a home before**, note that the Ontario rebate still applies to you, it has no first-time buyer test, and move-up buyers routinely assume otherwise and claim nothing. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
+If you have **owned a home before**, the Ontario rebate still applies to you: it has no first-time buyer test. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
 
 These are illustrative maximums at the ends of the local range, not a quote. [Run your own numbers](/hst-rebate/checker).
 

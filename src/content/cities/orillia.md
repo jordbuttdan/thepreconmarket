@@ -1,7 +1,6 @@
 ---
 city: Orillia
 region: Simcoe County
-title: New homes in Orillia
 shortAnswer: >-
   New freehold low-rise in Orillia currently runs roughly $489,000 to $590,000 across
   detached homes, townhomes and semis. Supply is thin. Active builders include Oakleigh,
@@ -30,7 +29,7 @@ Communities that have launched or are actively selling here include:
 
 - Matchedash Mews Towns (Oakleigh)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Orillia:** Oakleigh, Kingsmen Group.
 

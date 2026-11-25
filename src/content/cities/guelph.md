@@ -1,7 +1,6 @@
 ---
 city: Guelph
 region: Wellington County
-title: New homes in Guelph
 shortAnswer: >-
   New freehold low-rise in Guelph currently runs roughly $484,000 to $660,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Thrive Towns (Marann)
 - Northside Townhouse (Granite)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Guelph:** Mattamy Homes, Granite Homes, Marann Homes, Reids Heritage Homes, Fusion Homes.
 

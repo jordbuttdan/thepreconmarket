@@ -58,3 +58,13 @@ export const NAV = [
   { href: '/faq', label: 'FAQ' },
   { href: '/about', label: 'About' },
 ] as const;
+
+/**
+ * The RAZZ family of sites. Names, descriptors and accent colours match the
+ * footers on razzrealestate.ca, thehousingmarket.ca and therentalmarket.ca.
+ */
+export const SISTER_SITES = [
+  { key: 'housing', name: 'TheHousingMarket.ca', url: 'https://thehousingmarket.ca', label: 'For buyers & owners', color: '#304C74' },
+  { key: 'rental', name: 'TheRentalMarket.ca', url: 'https://therentalmarket.ca', label: 'For tenants & landlords', color: '#FF5C1A' },
+  { key: 'razz', name: 'RAZZRealEstate.ca', url: 'https://razzrealestate.ca', label: 'RAZZ Real Estate Group', color: '#71A9BC' },
+] as const;

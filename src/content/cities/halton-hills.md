@@ -1,7 +1,6 @@
 ---
 city: Halton Hills
 region: Halton Region
-title: New homes in Halton Hills
 shortAnswer: >-
   New freehold low-rise in Halton Hills currently runs roughly $899,000 to $3,130,000
   across detached homes, townhomes and semis. Supply is moderate. Active builders
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Canvas Hill Homes (Branthaven)
 - The Chase Homes (Eden Oak)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Halton Hills:** Remington Homes, Branthaven Homes, Eden Oak, Amico Properties.
 

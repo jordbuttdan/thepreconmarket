@@ -1,7 +1,6 @@
 ---
 city: Caledon
 region: Peel Region
-title: New homes in Caledon
 shortAnswer: >-
   New freehold low-rise in Caledon currently runs roughly $699,000 to $2,250,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Solmar
@@ -36,7 +35,7 @@ Communities that have launched or are actively selling here include:
 - SouthCal by OPUS
 - Castles of Caledon (CountryWide)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Caledon:** Solmar Development Corp, Laurier Homes, Yorkwood Homes, Arista Homes, OPUS Homes, CountryWide Homes, Regal Crest Homes, Rosehaven Homes.
 

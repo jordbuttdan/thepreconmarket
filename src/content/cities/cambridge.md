@@ -1,7 +1,6 @@
 ---
 city: Cambridge
 region: Region of Waterloo
-title: New homes in Cambridge
 shortAnswer: >-
   New freehold low-rise in Cambridge currently runs roughly $534,000 to $860,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Reids
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Marquis Series at Hazel Glenn (Treasure Hill)
 - Modal At Main Towns (Reids Heritage)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Cambridge:** Reids Heritage Homes, Treasure Hill Homes, Cachet Homes, JD Development Group, Laurelcrest Homes.
 

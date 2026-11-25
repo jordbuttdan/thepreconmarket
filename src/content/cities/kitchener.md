@@ -1,7 +1,6 @@
 ---
 city: Kitchener
 region: Region of Waterloo
-title: New homes in Kitchener
 shortAnswer: >-
   New freehold low-rise in Kitchener currently runs roughly $400,000 to $920,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -34,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - Wildflowers Kitchener (Mattamy)
 - Pioneer Park Towns (Tofino)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Kitchener:** Mattamy Homes, Activa Group, Tofino Builders, VanMar Developments.
 

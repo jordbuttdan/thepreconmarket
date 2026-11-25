@@ -1,7 +1,6 @@
 ---
 city: Markham
 region: York Region
-title: New homes in Markham
 shortAnswer: >-
   New freehold low-rise in Markham currently runs roughly $676,000 to $2,530,000 across
   detached homes, townhomes and semis. Supply is very strong. Active builders include
@@ -39,7 +38,7 @@ Communities that have launched or are actively selling here include:
 - Kingshaven (Kingsmen)
 - Springwater Phase 4 (Mattamy)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Markham:** Arista Homes, DECO Homes, OPUS Homes, Fieldgate Homes, Greenpark Group, Madison Group, Forest Hill Homes, Kylemore Communities, Minto, Metropia, Mattamy Homes.
 

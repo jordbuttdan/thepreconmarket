@@ -1,7 +1,6 @@
 ---
 city: Hamilton
 region: Hamilton
-title: New homes in Hamilton
 shortAnswer: >-
   New freehold low-rise in Hamilton currently runs roughly $399,000 to $950,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Empire
@@ -35,7 +34,7 @@ Communities that have launched or are actively selling here include:
 - SOL Stacked Towns (New Horizon, Waterdown)
 - Empire Lush Towns (Stoney Creek Mountain)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Hamilton:** Empire Communities, New Horizon Development Group, Losani Homes, DeSantis Homes, Spallacci Homes, Branthaven Homes.
 

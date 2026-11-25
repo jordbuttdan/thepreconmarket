@@ -1,7 +1,6 @@
 ---
 city: Barrie
 region: Simcoe County
-title: New homes in Barrie
 shortAnswer: >-
   New freehold low-rise in Barrie currently runs roughly $694,000 to $1,594,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Sorbara
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Everwell South Barrie (Sorbara)
 - South Barrie Towns (Aspen Ridge)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Barrie:** Sorbara Group, Aspen Ridge Homes, Pace Developments, Fernbrook Homes, Tiffany Park Homes.
 

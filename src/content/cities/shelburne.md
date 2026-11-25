@@ -1,7 +1,6 @@
 ---
 city: Shelburne
 region: Dufferin County
-title: New homes in Shelburne
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Shelburne right
   now. Buyers looking in this area generally widen the search to Orangeville, where new

@@ -43,7 +43,7 @@ const fmt = (n?: number) => (n == null ? null : '$' + n.toLocaleString('en-CA'))
 // Question-shaped markup for the two things people ask about a city. Both
 // answers are stated on the page itself.
 const cityFaq = [
-  { question: `What new homes are being built in ${d.city}?`, answer: d.shortAnswer },
+  { question: `What pre-construction homes are being built in ${d.city}?`, answer: d.shortAnswer },
   ...(featured.length
     ? [
         {
@@ -58,7 +58,7 @@ const cityFaq = [
 ---
 
 <Base
-  title={`New homes in ${d.city}`}
+  title={d.title ?? `Pre-construction homes in ${d.city}: new detached & towns`}
   description={d.description ?? d.shortAnswer}
   updated={d.updated}
   faq={cityFaq}
@@ -69,7 +69,7 @@ const cityFaq = [
     { name: d.city, href: `/new-homes/${entry.id}` },
   ]}
   article={{
-    headline: `New freehold low-rise homes in ${d.city}`,
+    headline: `New and pre-construction homes in ${d.city}`,
     description: d.shortAnswer,
     dateModified: d.updated,
   }}
@@ -79,10 +79,10 @@ const cityFaq = [
       <article class="lg:col-span-8">
         <p class="section-label">{d.region}</p>
         <h1 class="mt-3 text-[2rem] font-semibold sm:text-[2.5rem]">
-          New homes in {d.city}
+          New &amp; pre-construction homes in {d.city}
         </h1>
         <p class="mt-2 text-[15px] text-ink/60">
-          Freehold detached homes, townhomes and semis
+          New construction freehold detached homes, townhomes and semis
         </p>
 
         <p class="lede mt-6">{d.shortAnswer}</p>

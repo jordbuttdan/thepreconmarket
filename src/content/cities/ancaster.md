@@ -1,7 +1,6 @@
 ---
 city: Ancaster
 region: Hamilton
-title: New homes in Ancaster
 shortAnswer: >-
   New freehold low-rise in Ancaster currently runs roughly $849,000 to $1,060,000 across
   detached homes, townhomes and semis. Supply is thin. Active builders include Landmart
@@ -31,7 +30,7 @@ Communities that have launched or are actively selling here include:
 - Meadowlands (Landmart)
 - 154 Wilson Street East Towns (Valery Homes)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Ancaster:** Landmart Homes, Valery Homes, Spallacci Homes, Starward Homes.
 

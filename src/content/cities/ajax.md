@@ -1,7 +1,6 @@
 ---
 city: Ajax
 region: Durham Region
-title: New homes in Ajax
 shortAnswer: >-
   New freehold low-rise in Ajax currently runs roughly $559,000 to $1,110,000 across
   detached homes, townhomes and semis. Supply is moderate. Active builders include
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Lakewind (CedarOak)
 - New Forest at Duffin's Creek (Haber)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Ajax:** Lakeview Homes, CedarOak Homes, Haber Homes, Your Home Developments, Stafford Homes.
 

@@ -1,59 +1,70 @@
 ---
 city: Burlington
 region: Halton Region
-title: New homes in Burlington
+title: "Pre-construction homes in Burlington: detached & towns"
+description: >-
+  Pre-construction and new construction homes in Burlington: freehold townhomes in Brant from
+  $899,000 and detached homes in Millcroft from $2,019,990, with deposits, rebates and builders.
 shortAnswer: >-
-  New freehold low-rise in Burlington currently runs roughly $749,000 to $1,141,000
-  across detached homes, townhomes and semis. Supply is thin. Active builders include
-  National Homes, Modeno Homes, Country Green Homes. The Ontario HST rebate window
-  closes March 31, 2027 on the signing date.
+  New freehold low-rise in Burlington runs from about $899,000 for townhomes to $2,749,990 for
+  detached homes. Supply is thin: the communities selling now are The Ghent Collective (Northern
+  Cardinal Homes, towns) and The Legacy in Millcroft (Hallett Homes, detached). The Ontario HST
+  rebate window closes March 31, 2027 on the signing date.
 communities:
+  - Millcroft
+  - Brant
   - Aldershot
   - Alton Village
-  - Millcroft
   - Shoreacres
-  - Orchard
-priceFrom: 749000
-priceTo: 1141000
+priceFrom: 899000
+priceTo: 2749990
 relatedFaq:
   - cooling-off-period-freehold-ontario
   - do-i-have-to-be-first-time-buyer-ontario-rebate
   - hst-rebate-deadline-march-2027
   - development-charges-levies-cap
   - typical-deposit-structure-pre-construction-ontario
-updated: 2026-11-09
+updated: 2026-11-25
 order: 10
 ---
 ## What's being built in Burlington
 
-Burlington's new low-rise supply is limited, the city is constrained by the escarpment, the lake and the greenbelt, so most new product is condominium and the freehold that appears is infill townhomes in Aldershot and the Alton corridor.
+Burlington's new low-rise supply is limited. The city is hemmed in by the escarpment, the lake and the greenbelt, so most new product is condominium, and the freehold that does appear comes as small infill releases rather than large subdivisions.
 
-Communities that have launched or are actively selling here include:
+## Pre-construction townhomes in Burlington
 
-- Northshore Towns (National Homes)
-- Prestige Shoreacres Homes (Modeno)
-- Fairwood Place West (Country Green)
+- **[The Ghent Collective](/projects/ghent-collective)** by Northern Cardinal Homes, in Brant. Freehold townhomes from **$899,000**.
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+## New construction detached homes in Burlington
 
-**Builders active in Burlington:** National Homes, Modeno Homes, Country Green Homes, Branthaven Homes.
+- **[The Legacy](/projects/the-legacy-burlington)** by Hallett Homes, in Millcroft. Detached homes from **$2,019,990**, under construction.
 
-Builder choice matters more than most buyers expect. Delivery record, reliability on closing dates and how warranty items get handled vary enormously and appear on no price list. [How to assess a builder](/guides/builder-due-diligence-guide).
+Detached product in Burlington is rare and sits at the top of the market. Buyers looking for a detached home under $1.5M usually widen the search to [Milton](/new-homes/milton), [Oakville](/new-homes/oakville) or [Hamilton](/new-homes/hamilton).
+
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here, with the price lists and floor plans.
+
+**Builders active in Burlington:** Northern Cardinal Homes, Hallett Homes, National Homes, Branthaven Homes.
+
+Builder choice matters more than most buyers expect. Delivery record, reliability on closing dates and how warranty items get handled vary widely and appear on no price list. [How to assess a builder](/guides/builder-due-diligence-guide).
+
+## How buying pre-construction in Burlington works
+
+Freehold pre-construction has **no cooling-off period**: once the builder accepts, you are bound, so the agreement review happens before you sign. Deposits are usually paid over 12 to 24 months, and closing is often two to four years away. [How to buy pre-construction homes in Ontario, step by step](/faq/how-to-buy-pre-construction-ontario).
 
 ## What the rebates are worth at local prices
 
-New low-rise here currently runs roughly **$749,000 to $1,141,000**, and that band decides your rebate position. Here is the arithmetic at both ends.
+New low-rise here runs roughly **$899,000 to $2,749,990**, and where you land in that band decides your rebate position.
 
-| | At $749,000 | At $1,141,000 |
+| | At $899,000 | At $2,749,990 |
 | --- | --- | --- |
-| Ontario ENHR (no first-time buyer test) | **$59,920** | **$80,000** |
-| Federal rebate (first-time buyers only) | **$37,450** | **$35,900** |
+| Ontario ENHR (no first-time buyer test) | **$71,920** | **$0** |
+| Federal rebate (first-time buyers only) | **$44,950** | **$0** |
 
-At the entry end, a home at $749,000 sits **below $1,000,000**, which means the **full 8%** Ontario rebate, $59,920, plus the full 5% federal rebate for a first-time buyer. This is the most favourable band in the whole structure.
+A townhome at $899,000 sits **below $1,000,000**, which means the **full 8%** Ontario rebate, $71,920, plus the full 5% federal rebate for a first-time buyer.
 
-The band here straddles **$1,000,000**, which is where the structure changes: above it the Ontario rebate stops growing and sits flat at **$80,000**, while the federal rebate begins tapering toward zero at $1,500,000. Two buyers in the same community can be in different places.
+Detached homes here sit **above $1,850,000**, where the enhanced Ontario rebate no longer applies and you fall back to the [$24,000 standard rebate](/faq/hst-rebate-24000-standard). The federal first-time buyer rebate is zero above $1,500,000. [The price cliffs](/faq/hst-rebate-over-1-5-million).
 
-If you have **owned a home before**, note that the Ontario rebate still applies to you, it has no first-time buyer test, and move-up buyers routinely assume otherwise and claim nothing. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
+If you have **owned a home before**, the Ontario rebate still applies to you: it has no first-time buyer test. [Read this one](/faq/do-i-have-to-be-first-time-buyer-ontario-rebate).
 
 These are illustrative maximums at the ends of the local range, not a quote. [Run your own numbers](/hst-rebate/checker).
 

@@ -1,7 +1,6 @@
 ---
 city: Fergus
 region: Wellington County
-title: New homes in Fergus
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Fergus right
   now. Buyers looking in this area generally widen the search to Guelph, where new

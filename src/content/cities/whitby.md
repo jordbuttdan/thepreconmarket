@@ -1,7 +1,6 @@
 ---
 city: Whitby
 region: Durham Region
-title: New homes in Whitby
 shortAnswer: >-
   New freehold low-rise in Whitby currently runs roughly $479,000 to $1,134,000 across
   detached homes, townhomes and semis. Supply is strong. Active builders include Mattamy
@@ -36,7 +35,7 @@ Communities that have launched or are actively selling here include:
 - Mirra Towns (Treasure Hill)
 - Brooklin Trails (Tribute)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Whitby:** Mattamy Homes, Madison Group, Treasure Hill Homes, Andrin Homes, Tribute Communities, Paradise Developments.
 

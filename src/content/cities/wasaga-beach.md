@@ -1,7 +1,6 @@
 ---
 city: Wasaga Beach
 region: Simcoe County
-title: New homes in Wasaga Beach
 shortAnswer: >-
   New freehold low-rise in Wasaga Beach currently runs roughly $434,000 to $1,074,000
   across detached homes, townhomes and semis. Supply is strong. Active builders include
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Southbay at River's Edge (Fernbrook/Zancor)
 - Sunnidale (RedBerry)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Wasaga Beach:** Stonebridge Building Group, Fernbrook Homes, Zancor Homes, RedBerry Homes, Sterling Group.
 

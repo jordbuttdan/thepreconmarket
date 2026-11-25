@@ -1,7 +1,6 @@
 ---
 city: Clarington
 region: Durham Region
-title: New homes in Clarington
 shortAnswer: >-
   New freehold low-rise in Clarington currently runs roughly $599,000 to $1,280,000
   across detached homes, townhomes and semis. Supply is strong. Active builders include
@@ -35,7 +34,7 @@ Communities that have launched or are actively selling here include:
 - Orchard South Homes (Treasure Hill)
 - Eden Park Phase II
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Clarington:** Brookfield Residential, Minto, Lindvest, Treasure Hill Homes, Fourteen Estates.
 

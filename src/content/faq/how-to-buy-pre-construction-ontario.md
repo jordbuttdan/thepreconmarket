@@ -1,6 +1,9 @@
 ---
-question: How does buying pre-construction actually work in Ontario?
-title: How buying pre-con works
+question: How do you buy a pre-construction home in Ontario?
+title: How to buy pre-construction homes in Ontario
+description: >-
+  How to buy a pre-construction home in Ontario, step by step: registering, the release,
+  signing, deposits, the build, the PDI and closing, plus why freehold has no cooling-off period.
 shortAnswer: >-
   You register with a broker, get early access to a release, choose a lot and model,
   sign a firm agreement with a bank draft, pay deposits over 12 to 24 months, make
@@ -8,7 +11,7 @@ shortAnswer: >-
   There is no cooling-off period on freehold.
 category: buying-process
 order: 4
-updated: 2026-11-09
+updated: 2026-11-25
 sources:
   - label: Tarion, coverage before you close
     url: https://www.tarion.com/coverage-before-you-close
@@ -21,7 +24,7 @@ related:
   - pre-delivery-inspection-pdi
 ---
 
-The process is more compressed at the front and longer at the back than most buyers expect. Here is the whole arc for a freehold low-rise purchase.
+Buying a pre-construction home in Ontario happens in six stages: before the release, the release and signing, the first year of deposits, the build, closing, and the warranty period after. The process is more compressed at the front and longer at the back than most buyers expect. Here is the whole arc, step by step, for a freehold detached home, semi or townhome.
 
 ## Before the release
 
@@ -69,5 +72,7 @@ Through this period: keep your lender updated annually, avoid new debt, and leav
 Diarise your **30-day** and **year-end** Tarion forms immediately. Missing those windows forfeits warranty claims. [Coverage](/faq/tarion-warranty-coverage-new-home).
 
 Expect [grading, sodding and the driveway](/faq/grading-sodding-driveway-timeline) to be finished after you move in, sometimes a season or two later.
+
+For the longer version, with the mistakes that cost buyers money, read [the Ontario pre-construction buyer's guide](/guides/ontario-pre-construction-buyer-guide). To see what's selling now, browse [new homes by city](/new-homes).
 
 [Start with a conversation about what you are trying to buy](/book).

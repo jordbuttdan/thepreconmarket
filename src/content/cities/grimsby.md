@@ -1,7 +1,6 @@
 ---
 city: Grimsby
 region: Niagara Region
-title: New homes in Grimsby
 shortAnswer: >-
   New freehold low-rise in Grimsby currently runs roughly $356,000 to $789,000 across
   detached homes, townhomes and semis. Supply is thin. Active builders include Rosehaven
@@ -32,7 +31,7 @@ Communities that have launched or are actively selling here include:
 - Grimsby Waterfront (Losani)
 - The Woolverton (Castlepoint Numa)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Grimsby:** Rosehaven Homes, DeSantis Homes, Losani Homes, Castlepoint Numa.
 

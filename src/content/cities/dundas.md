@@ -1,7 +1,6 @@
 ---
 city: Dundas
 region: Hamilton
-title: New homes in Dundas
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Dundas right
   now. Buyers looking in this area generally widen the search to Hamilton or Stoney

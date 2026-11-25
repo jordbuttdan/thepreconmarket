@@ -1,7 +1,6 @@
 ---
 city: Stoney Creek
 region: Hamilton
-title: New homes in Stoney Creek
 shortAnswer: >-
   New freehold low-rise in Stoney Creek currently runs roughly $899,000 to $950,000
   across detached homes, townhomes and semis. Supply is moderate. Active builders
@@ -31,7 +30,7 @@ Communities that have launched or are actively selling here include:
 - Empire Lush Towns (Stoney Creek Mountain)
 - Vera Towns (DeSantis, waterfront)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Stoney Creek:** Empire Communities, DeSantis Homes, Losani Homes.
 

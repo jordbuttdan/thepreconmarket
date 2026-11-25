@@ -1,7 +1,6 @@
 ---
 city: Aurora
 region: York Region
-title: New homes in Aurora
 shortAnswer: >-
   New freehold low-rise in Aurora currently runs roughly $749,000 to $4,890,000 across
   detached homes, townhomes and semis. Supply is moderate. Active builders include Regal
@@ -34,7 +33,7 @@ Communities that have launched or are actively selling here include:
 - Aurora Trails (Paradise)
 - Bayview Trail (Starlane)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Aurora:** Regal Crest Homes, Arkfield, Paradise Developments, Starlane Home Corporation, Geranium, Caliber Homes.
 

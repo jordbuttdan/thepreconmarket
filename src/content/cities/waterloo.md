@@ -1,7 +1,6 @@
 ---
 city: Waterloo
 region: Region of Waterloo
-title: New homes in Waterloo
 shortAnswer: >-
   New freehold low-rise in Waterloo currently runs roughly $623,000 to $954,000 across
   detached homes, townhomes and semis. Supply is moderate. Active builders include
@@ -32,7 +31,7 @@ Communities that have launched or are actively selling here include:
 - Laurel Creek (Mattamy)
 - West Haven Homes (Cook Homes)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Waterloo:** Mattamy Homes, Cook Homes, Activa Group.
 

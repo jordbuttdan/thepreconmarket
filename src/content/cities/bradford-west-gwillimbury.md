@@ -1,7 +1,6 @@
 ---
 city: Bradford West Gwillimbury
 region: Simcoe County
-title: New homes in Bradford West Gwillimbury
 shortAnswer: >-
   New freehold low-rise in Bradford West Gwillimbury currently runs roughly $864,000 to
   $1,483,000 across detached homes, townhomes and semis. Supply is moderate. Active
@@ -33,7 +32,7 @@ Communities that have launched or are actively selling here include:
 - Bond Head Towns (Sundance)
 - Holland Haus Towns (GCL)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Bradford West Gwillimbury:** Great Gulf, Bayview Wellington Homes, Sundance Homes, GCL Builds.
 

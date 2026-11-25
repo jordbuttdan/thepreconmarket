@@ -1,7 +1,6 @@
 ---
 city: Welland
 region: Niagara Region
-title: New homes in Welland
 shortAnswer: >-
   There are no significant new freehold low-rise communities tracked in Welland right
   now. Buyers looking in this area generally widen the search to Grimsby or St.
@@ -27,7 +26,7 @@ Communities that have launched or are actively selling here include:
 
 - Lock & Quay (LIV Communities)
 
-Availability changes week to week and the best lots in any phase go early, [register for access](/vip) and I'll send what's releasing here.
+Availability changes week to week. [Register for access](/vip) and I'll send what's releasing here.
 
 **Builders active in Welland:** LIV Communities, Empire Communities.
 
